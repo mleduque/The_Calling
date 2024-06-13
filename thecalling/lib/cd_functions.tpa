@@ -28,12 +28,14 @@ END
 
 // see comment on tutuize_items
 DEFINE_PATCH_MACRO eetize_soundsets BEGIN
+
   FOR (snd_off = 0xa4 ; snd_off < 0x231 ; snd_off = snd_off + 0x04) BEGIN
     READ_LONG snd_off strref 
-    PATCH_IF strref >=0 BEGIN
+    PATCH_IF ((strref >= 0) AND (strref < 200000)) BEGIN
       WRITE_LONG snd_off (THIS + 200000)
     END
   END    
+  
 END
 
 /////                                                  \\\\\
