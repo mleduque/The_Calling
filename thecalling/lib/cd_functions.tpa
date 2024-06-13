@@ -1,4 +1,42 @@
 /////                                                  \\\\\
+///// tutuize_items                                    \\\\\
+/////                                                  \\\\\
+
+// this is exceptionally lazy; don't do this at home, kids
+DEFINE_PATCH_FUNCTION tutuize_items 
+  INT_VAR item_number = 0
+          item_offset = 0
+          item_length = 0x14
+  BEGIN
+  
+  FOR (index = 0 ; index < item_number ; ++index) BEGIN
+    READ_ASCII (item_offset + (index * item_length)) item
+    PATCH_IF (("%item%" STRING_COMPARE_REGEXP "^[Cc][Dd].+$") AND
+              ("%item%" STRING_COMPARE_REGEXP "^[Rr][Nn][Dd][Tt][Rr][Ee].+$") AND
+              ("%item%" STRING_COMPARE_CASE "helmnoan") AND
+              ("%item%" STRING_COMPARE_CASE "misc07")) BEGIN
+      WRITE_ASCIIE (item_offset + (index * item_length)) ~%tutu_var%%item%~ #8
+    END
+  END
+    
+END
+
+/////                                                  \\\\\
+///// eetize_soundsets                                 \\\\\
+/////                                                  \\\\\
+
+
+// see comment on tutuize_items
+DEFINE_PATCH_MACRO eetize_soundsets BEGIN
+  FOR (snd_off = 0xa4 ; snd_off < 0x231 ; snd_off = snd_off + 0x04) BEGIN
+    READ_LONG snd_off strref 
+    PATCH_IF strref >=0 BEGIN
+      WRITE_LONG snd_off (THIS + 200000)
+    END
+  END    
+END
+
+/////                                                  \\\\\
 ///// cd_make_bag_from_ammo                            \\\\\
 /////                                                  \\\\\
 
