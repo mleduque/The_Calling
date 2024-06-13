@@ -1007,8 +1007,16 @@ COMPILE EVALUATE_BUFFER ~thecalling/dlg/werewolf.d~
                         ~thecalling/baf/dw#kcut1.baf~
                         ~thecalling/baf/dw#kcut2.baf~
                         ~thecalling/baf/dw#kcut3.baf~
+                        
+ACTION_IF game_is_eet BEGIN
 						
-ADD_JOURNAL EXISTING TITLE (#31414) @21614 @21648 @21637 @21638 
+  ADD_JOURNAL EXISTING TITLE (#231414) @21614 @21648 @21637 @21638 
+
+END ELSE BEGIN
+						
+  ADD_JOURNAL EXISTING TITLE (#31414) @21614 @21648 @21637 @21638 
+
+END
 
 ACTION_IF game_is_bgt BEGIN // bgt doesn't assign kaishas to kaish2
 
