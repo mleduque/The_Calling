@@ -12,18 +12,21 @@
     @3 = ~This component is not available yet.~
     @4 = ~DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.~
     @5 = ~This component is not available in your language yet.~
+    @6 = ~No Callings installed~
 
-  @100 = ~The Calling~
+  @100 = ~The Calling: Mage - The Cursed Bracers~
   @101 = ~Would you like to install cheats?
 
   a) No cheats; keep it one calling per game
   b) Allow multiple callings but keep class restrictions
   c) Allow multiple callings with no class restrictions~
 
-@10000 = ~Expanded Gnoll Fortress~
+@10000 = ~The Calling: Fighter - Expanded Gnoll Fortress~
 
 @20000 = ~Peaceful Werewolf Isle Resolution~
 
 @30000 = ~The Movanic Cult~
 
 @40000 = ~Exotic Item Pack~
+
+@50000 = ~Make All Calling Quests Open to All Classes~

@@ -1,0 +1,77 @@
+IF
+  See([PC])
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END
+
+IF
+  Global("CDGnollQuest","GLOBAL",2)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SmallWait(2)
+    FadeToColor([30.0],0)
+    Wait(2)
+    SpawnPtDeactivate("SpawnPoint1")
+    SpawnPtDeactivate("SpawnPoint2")
+    SpawnPtDeactivate("SpawnPoint3")
+    SpawnPtDeactivate("SpawnPoint4")
+    SpawnPtDeactivate("SpawnPoint5")
+    SpawnPtDeactivate("SpawnPoint6")
+    SpawnPtDeactivate("SpawnPoint7")
+    SpawnPtDeactivate("SpawnPoint8")
+    SpawnPtDeactivate("SpawnPoint9")
+    SpawnPtDeactivate("SpawnPoint10")
+    SpawnPtDeactivate("SpawnPoint11")
+    SpawnPtDeactivate("SpawnPoint12")
+    SpawnPtDeactivate("SpawnPoint13")
+    SpawnPtDeactivate("SpawnPoint14")
+    SpawnPtDeactivate("SpawnPoint15")
+    SpawnPtDeactivate("SpawnPoint16")
+    SpawnPtDeactivate("SpawnPoint17")
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+    SetGlobal("CDGnollQuest","GLOBAL",3)
+    JumpToPoint([1300.1200])
+    MoveToPoint([1300.1200])
+    Wait(1)
+    FadeFromColor([30.0],0)
+    EndCutSceneMode()
+END
+
+IF
+    Global("CDGnollQuest","GLOBAL",5)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SmallWait(2)
+    FadeToColor([30.0],0)
+    Wait(2)
+    CreateCreature("CD51SOL3",[1380.1150],0)
+    CreateCreature("CD51SOL1",[700.1370],1)
+    CreateCreature("CD51SOL2",[800.1430],1)
+    CreateCreature("CD51SOL1",[840.880],2)
+    CreateCreature("CD51SOL1",[890.900],2)
+    CreateCreature("CD51SOL2",[940.920],2)
+    CreateCreature("CD51SOL2",[800.960],9)
+    CreateCreature("CD51SOL1",[1400.1300],1)
+    CreateCreature("CD51SOL1",[1050.900],0)
+    CreateCreature("CD51SOL1",[1600.870],0)
+    CreateCreature("CD51SOL2",[1610.920],3)
+    CreateCreature("CD51SOL1",[1050.1080],0)
+    CreateCreature("CD51SOL2",[1140.965],9)
+    CreateCreature("CD51SHOP",[1516.1463],10)
+    Wait(1)
+    FadeFromColor([30.0],0)
+    SetGlobal("CDGnollQuest","GLOBAL",6)
+    EndCutSceneMode()
+END
+
+IF
+  Global("CDGnollQuest","GLOBAL",6)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END

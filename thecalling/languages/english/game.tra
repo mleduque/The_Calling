@@ -1,7 +1,7 @@
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
-///// the calling                                      \\\\\
+///// Mage - The Cursed Bracers                        \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -49,6 +49,717 @@ Reduces intelligence, wisdom, and charisma by two while worn~
   @125 = ~Black Pearl~
   @126 = ~White Pearl~
   @127 = ~Enshelled Black Pearl~ // Black pearl from Balduran's Seatower, @546 in that mod
+  
+  
+
+@1000 = ~Good, though it was the greatest of luck you did not retain a wing for a limb.  You always were a bit cockeyed, but I suppose that doesn't count.~
+@1001 = ~We must endeavor to find those bracers, lest they curse some other unfortunate soul. <CHARNAME>, I will need all the help I can get, and you are a <PRO_MANWOMAN> of magic. Can you assist me?~
+@1002 = ~Of course we'll help.~
+@1003 = ~What do you need from me?~
+@1004 = ~I have better ways to spend my time.~
+@1005 = ~And end up feathered and passing eggs? I think not!~
+@1006 = ~That may be, but I have little experience with breaking curses.~
+@1007 = ~There's really no call *cluck* for that. As you can see *cluck*, I've made a full *cluck* recovery.~
+@1008 = ~Excellent. Our first order of business is to locate the bracers. If they are not in the area, then I fear we can do nothing further. Melicamp!~
+@1009 = ~Yes master Thalantyr?~
+@1010 = ~Take this note to Taerom Fuiruim in Beregost. We shall need a scrying device to assist us in divining the location of the bracers.~
+@1011 = ~Taerom has helped with such baubles in the past, and he can build the mechanical half of this item. Assist him with whatever he needs.~
+@1012 = ~I am off *cluck* to Beregost.~
+@1013 = ~And Melicamp? Be careful, for Mystra's sake. Should you experience anything odd return here immediately.~
+@1014 = ~*cluck*~
+@1015 = ~Yes, well... more odd than clucking.~
+@1016 = ~Now, <CHARNAME>, I will need your assistance with powering the device. I will need three different gems.~
+@1017 = ~I shall leave it to your discretion as to which gems would be best served for divination.~
+@1018 = ~How will I know if a gem will work?~
+@1019 = ~Where should I start looking?~
+@1020 = ~Do you have any preferences for the gems?~
+@1021 = ~Very well, I shall return with the gems.~
+@1022 = ~You must choose your own path, of course. Now, if you'll excuse us, Melicamp and I will have to take on this task ourselves.~
+@1023 = ~The curse on the bracers is rather unconventional. I had kept the bracers, rather than destroying them, as I felt they would be worthwhile to study.~
+@1024 = ~The destruction should be straightforward, but the immediate problem is their location. If they've gone too far, there's nothing we can do.~
+@1025 = ~If someone has found them then that, too, will cause complications.~
+@1026 = ~I will not promise you any monetary rewards, though due to the unconventional nature of the bracers you will probably learn much of magic that was never covered in your training.~
+@1027 = ~I will help, if only to further my own abilities.~
+@1028 = ~No money, no help. We're gone.~
+@1029 = ~Any gem will work, but some will work better for divination than others, and will make the remainder of the task easier. Figuring out which ones is your task, <CHARNAME>.~
+@1030 = ~Don't be silly, gems are everywhere. Simply pay attention in your travels.~
+@1031 = ~Black pearls are good for scrying devices, and are prized by sirines. Other than that you will have to do your own research.~
+@1032 = ~Then I wish you well in your task. Good day.~
+//@1033 = ~Welcome back, <CHARNAME>. Any progress?~
+//@1034 = ~Not yet. In the meantime, can I see your wares?~
+@1035 = ~I have some gems for the scrying device.~
+//@1036 = ~Nothing to report yet.~
+@1037 = ~Which gem do you wish to use?~
+@1038 = ~Actually, I think I'll look some more and then come back.~
+@1039 = ~I've changed my mind. Can I see your wares instead?~
+@1040 = ~Hmm.~
+@1041 = ~An interesting choice.~
+@1042 = ~A very valuable stone. You may discover, however, that value does not necessarily mean that it's the best choice of components.~
+@1043 = ~An excellent choice.~
+@1044 = ~Do you have any more?~
+@1045 = ~Yes we do.~
+@1046 = ~That's all for now.~
+@1047 = ~We do not. But while we're here can we see your wares?~
+@1048 = ~Well you've made your selections; that's all three.~
+@1049 = ~I do not think you've put any thought into your picks, but what's done is done.~
+@1050 = ~You could have done better--much better--but we shall muddle through regardless.~
+@1051 = ~You made solid choices overall.~
+@1052 = ~Some excellent choices, <CHARNAME>. I don't think we'll have any problems with the divination.~
+@1053 = ~I don't think I could ask for three better gems to work with. You've done your homework.~
+@1054 = ~We now have the gems, but I still need a device to mount them. Could you nip over to the Thunder Hammer Smithy and check on Melicamp?~
+@1055 = ~It would be just like him to screw up such a simple assignment.~
+@1056 = ~We'll go help Melicamp then.~
+@1057 = ~I'm not your errand girl! He'll be back when he's back.~
+@1058 = ~I'm not your errand boy! He'll be back when he's back.~
+@1059 = ~Sure, but can we do some shopping first?~
+@1060 = ~Fare thee well.~
+@1061 = ~Do you know anything of black pearls?~
+@1062 = ~They are highly prized by sirines, and the contingent here at the temple have given them occasionally as offerings to the Morninglord for special occasions.~
+@1063 = ~May we have one?~
+@1064 = ~Give us one!~
+@1065 = ~What would it take to get one from you?~
+@1066 = ~Interesting. Thanks.~
+@1067 = ~These are gifts consecrated to Lathander! I cannot.~
+@1068 = ~Please, we are trying to track down cursed bracers for Thalantyr. We need them to help build a scrying device.~
+@1069 = ~You can either give us the pearls, or we can take everything here... including your life.~
+@1070 = ~Perhaps a donation would compensate for their loss. Gold, too, can be consecrated to Lathander, yes?~
+@1071 = ~I will not be intimidated by some petty thief! To me, my brethren!~
+@1072 = ~Can I assist you with anything else?~
+@1073 = ~Yes, but...~
+@1074 = ~The pearls are pretty, but you can not help the poor and needy much with them, can you?~
+@1075 = ~You've seen the good we've done here. Can you not help us in return?~
+@1076 = ~I'm sure we can find a mutually beneficial arrangement.~
+@1077 = ~The pearl was a prize of the Temple, and it is very thoughtful of you to give us a new one.~
+@1078 = ~We found another black pearl in our journeys. We'd like to donate it to the Temple as a replacement for the one you gave to us.~
+@1079 = ~I think not! I will not hand over a pearl for gold, as if this is a common store.~
+@1080 = ~I suppose a donation of... 500 gold would offset its loss.~
+@1081 = ~I don't have that kind of money right now.~
+@1082 = ~No, your price is too steep.~
+@1083 = ~Sounds good.~
+@1084 = ~Then you'll have to find another pearl. Good day.~
+@1085 = ~I'd like to discuss black pearls again.~
+@1086 = ~Very well.~
+@1087 = ~We discussed donating gold to the temple in exchange for a black pearl.~
+@1088 = ~True, you have helped the temple in the past~
+@1089 = ~I hear nothing but good things about your exploits from the townspeople.~
+@1090 = ~You can have the pearl then, with the Morninglord's blessing. It will be a loss to the temple, but it's better served being put to use for good than in a display case.~
+@1091 = ~Thalantyr, the denizen of the High Hedge? What are you doing with him?~
+@1092 = ~His apprentice was cursed, and we are seeking to destroy the item that cursed him.~
+@1093 = ~My business is with Thalantyr.~
+@1094 = ~Thalantyr wishes to build a scrying device.~
+@1095 = ~Thalantyr is known to me, as is your party.~
+@1096 = ~I cannot hand over a gift to Lathander unless you are willing to discuss how it will be used.~
+@1097 = ~Thalantyr is known to me, but I do not know you well enough. Perhaps in time when I know you better.~
+@1098 = ~Until then, I must decline. Good day to you.~
+@1099 = ~So be it.~
+@1100 = ~And I'm sure I can trust your discretion in this.~
+@1101 = ~Have you seen Melicamp? Mage apprentice, clucks a lot?~
+@1102 = ~Oh sure. He was looking for some ore that we don't have on hand at the moment, so I sent him down to the Nashkel mines.~
+@1103 = ~A friend of mine, Grace, was going to get the special ores he needed.~
+@1104 = ~Where was Melicamp again?~
+@1105 = ~Sorry, I'm too busy dealing with the problems at the mine.~
+@1106 = ~You are Grace? Have you seen Melicamp?~
+@1107 = ~Good day to you.~
+@1108 = ~And to you as well.~
+@1109 = ~Where was Melicamp again?~
+@1110 = ~I gave Melicamp some of the ore he needed, and he went down into the mines to get the rest.~
+@1111 = ~We're all grateful for your assistance with the mines.~
+@1112 = ~*Bwaak* Oh, <GABBER>, thank goodness you're here!~
+@1113 = ~It's the miners, something's gone *cluck* wrong, they're not making much sense... I need *cluck* your help.~
+@1114 = ~Slow down, Melicamp, and tell me what's wrong.~
+@1115 = ~Quit yer babbling!~
+@1116 = ~*cluck*~
+@1117 = ~After talking with Grace, I came *cluck* down here to gather the last of the ore for Taerom.~
+@1118 = ~I was *cluck* cornered by some kobolds. I fought them off, but, well... *cluck*~
+@1119 = ~Some of my magic, uh, kinda... *cluck*... backfired.~
+@1120 = ~These two miners were caught *cluck* in the backlash, and I think there's *cluck* something wrong with their memory.~
+@1121 = ~Please, you've got to *cluck* help me.~
+@1122 = ~I don't have time to clean up your mess! You fix it, we're gone.~
+@1123 = ~Honestly Melicamp, you must learn to control yourself.~
+@1124 = ~What do you suggest?~
+@1125 = ~Fine, *cluck* thanks for nothing. C'mon you two we're outta here.~
+@1126 = ~Who are you?~
+@1127 = ~Huh?~
+@1128 = ~I'll meet *cluck* you back at the High Hedge after I sort this out.~
+@1129 = ~Yeah, easy for *cluck* you to say. I don't hear you clucking.~
+@1130 = ~The memory loss doesn't seem too bad, and may even wear off on its own.~
+@1131 = ~But I feel terrible, and I can't leave them like this. Perhaps if we could jog their memory a bit...~
+@1132 = ~The other miners in the area may be able to help. Ask around and see if you can learn something about them.~
+@1133 = ~It's not much of a plan, but we'll try.~
+@1134 = ~We'll go interview the other miners and return.~
+@1135 = ~I'll stay here and make sure they don't wander off.~
+@1136 = ~How did I get here?~
+@1137 = ~How do I work this?~
+@1138 = ~Where is that large oxcart?~
+@1139 = ~What is that beautiful house?~
+@1140 = ~Where does that highway go?~
+@1141 = ~Am I right? ...am I wrong?~
+@1142 = ~Do you know anything about Sal or James? Their memories have been damaged.~
+@1143 = ~Can't say that I do.~
+@1144 = ~Sorry pal, I don't know nothin' about nothin'.~
+@1145 = ~Nah, they kept to themselves mostly.~
+@1146 = ~It's hard to talk much in these conditions.~
+@1147 = ~But I remember James goin' on and on about his gal back in Beregost. Name of Winnie, if memory serves.~
+@1148 = ~Those two? No, sorry.~
+@1149 = ~Who are Sal and James?~
+@1150 = ~Until recently, I've been working deeper in the mine. I don't know the miners on this level so well.~
+@1151 = ~Yeah, Sal's got two kids back home.~
+@1152 = ~Twins, actually. Robby and Ned.~
+@1153 = ~Sal, don't you remember your twin boys? Bobby and Ned?~
+@1154 = ~Sal, don't you remember your twin boys? Bobby and Ted?~
+@1155 = ~Sal, don't you remember your twin boys? Robby and Ned?~
+@1156 = ~Sal, don't you remember your twin boys? Robby and Ted?~
+@1157 = ~I feel like a fog is lifting... yeah, my boys... wait, what?~
+@1158 = ~It's Robby and Ned! I've got to go see them right away.~
+@1159 = ~I feel like a fog is lifting... yeah, my boys...~
+@1160 = ~Robby and Ned! Poppa's coming home!~
+@1161 = ~James, try to remember your sweetie in Beregost, Minnie.~
+@1162 = ~James, try to remember your sweetie in Beregost, Winnie.~
+@1163 = ~James, try to remember your sweetie in Nashkel, Minnie.~
+@1164 = ~James, try to remember your sweetie in Nashkel, Winnie.~
+@1165 = ~Yeah, I can just make out her face. Ah, my cutie pie!~
+@1166 = ~But it's Winnie of Beregost. Thanks for your help anyway, I'm off to see her.~
+@1167 = ~Winnie! I'm off to Beregost to see you again!~
+@1168 = ~Any luck yet?~
+@1169 = ~No, not yet.~
+@1170 = ~We've learned the name of Sal's twin boys.~
+@1171 = ~We know that James has a sweetheart back home.~
+@1172 = ~Sal is good, but we're still working on James.~
+@1173 = ~James is good, but we're still working on Sal.~
+@1174 = ~Good work. Try *cluck* jogging Sal's memory with it.~
+@1175 = ~Nicely done. See if you *cluck* can restore James's memory.~
+@1176 = ~Hey, it *cluck* worked! Now if we can only find something *cluck* else for the other...~
+@1177 = ~I'm sure someone *cluck* around here must know something. Keep asking around.~
+@1178 = ~Phew, you really saved my *cluck* giblets.~
+@1179 = ~I'm going to head back to *cluck* Thalantyr before anything else happens. Take this ore *cluck* to Taerom for me.~
+@1180 = ~Thalantyr wants to commission you for a scrying device. We've brought some ore for the task.~
+@1181 = ~Yes, Thalantyr sent over some directions and mentioned young Melicamp would be by with the ore.~
+@1182 = ~I'm guessing since you're here that Melicamp managed to run *ahem* afowl of his task again?~
+@1183 = ~Give me, say, two days and I'll have that ready for Thalantyr.~
+@1184 = ~No, not yet. Give me a bit more time.~
+@1185 = ~Hey there <GABBER>. I've got that astrolabe ready for Thalantyr. He had already paid in advance, so take it back to him with my compliments.~
+@1186 = ~Thanks Taerom, I'll do that.~
+@1187 = ~Thanks. While we're here, can we see your wares?~
+@1188 = ~Just wanted to check and see if you have Thalantyr's project ready yet.~
+@1189 = ~Welcome back, <GABBER>. I see you come bearing Taerom's work for me as well.~
+@1190 = ~I've already prepared the gems, so it's just a matter of slotting them into the settings...~
+@1191 = ~And there we go! Shall we begin?~
+@1192 = ~Master Thalantyr, I have *cluck* returned.~
+@1193 = ~Melicamp, what took you so long?~
+@1194 = ~A few *cluck* complications, but no matter. Here's your new *cluck* scryer from Taerom.~
+@1195 = ~Yes, please go ahead.~
+@1196 = ~How exactly is this going to work?~
+@1197 = ~Divination is, even under ideal conditions, an imprecise art. Being a specialist in divination, you already know that, don't you <CHARNAME>?~
+@1198 = ~Divination is, even under ideal conditions, an imprecise art.~
+@1199 = ~A lot will depend on the spell components we've selected to power the scrying device. Your selection of gemstones will have the most significant impact.~
+@1200 = ~Let's get started then.~
+@1201 = ~And that, as they say, is that.~
+@1202 = ~Bah! As I feared, the device was only good for one shot.~
+@1203 = ~Your choices of gems were exceedingly poor. The bracers are still in the region, but I could only narrow it down to an area north of Firewine.~
+@1204 = ~Your choice of gems hampered the effectiveness of the device. The bracers are still in the region; look for a flower north of Firewine.~
+@1205 = ~It went just about as expected. The bracers are in Gullykin, as near as I can determine.~
+@1206 = ~Your selection of gems was very good. The bracers are in Gullykin, on a halfling woman.~
+@1207 = ~You could not have selected better gems. I could see the bracers clearly on an "Iris Cotton" in Gullykin.~
+@1208 = ~You must go and retrieve the bracers.~ 
+@1209 = ~If someone is wearing them, then do not try to remove them! They will likely disappear as they did for Melicamp.~
+@1210 = ~I cannot stress this enough. It would render all of our efforts so far moot.~
+@1211 = ~Go now, and return with the bracers.~
+@1212 = ~Please adventurers, you've got to help me.~
+@1213 = ~My wife Iris found these bracers and she just turned into a squirrel!~
+@1214 = ~I don't know what to do!~
+@1215 = ~Calm down. We're actually in Gullykin for just this reason.~
+@1216 = ~Sure, we can help. For a price.~
+@1217 = ~Looks like we found the cursed bracers.~
+@1218 = ~I am but a poor halfling, but you can the little gold I have, all 40 pieces of it, if you can save my wife.~
+@1219 = ~Sorry, but it'll cost you more than that.~
+@1220 = ~40 gold isn't even worth taking. C'mon you runt, we'll help you anyway. Keep your gold.~
+@1221 = ~Fork it over.~
+@1222 = ~Fine, I guess I'll just go see Alvanhendar.~
+@1223 = ~Thanks, I guess.~
+@1224 = ~Take it, take it!~
+@1225 = ~Please, how can you help?~
+@1226 = ~A mage near Beregost has been searching for these bracers. You need to travel to the High Hedge.~
+@1227 = ~We can help but you need to travel to the High Hedge, west of Beregost, to see the mage Thalantyr.~
+@1228 = ~A mage? Why not a priest? Alvanhendar, here in town, has performed services such as this in the past.~
+@1229 = ~These bracers carry an unusual curse. Alvanhendar may be able to remove the curse, but the bracers will disappear.~
+@1230 = ~Alvanhendar will not be able to help you.~
+@1231 = ~Thalantyr has been studying these bracers for some time and knows what to do with them.~
+@1232 = ~But my wife will be safe, right? Who cares if the bracers disappear, that's the whole point!~
+@1233 = ~But the bracers will move on to some other poor innocent, like your wife.~
+@1234 = ~True enough, I suppose. Head on over to the temple then.~
+@1235 = ~Trust us, it's safer just to see Thalantyr.~
+@1236 = ~I hadn't thought of that. Yeah, I wouldn't want someone else to go through this.~
+@1237 = ~We'll meet you over at the High Hedge then.~
+@1238 = ~How can you be so sure?~
+@1239 = ~We haven't been running across the Sword Coast in an idle attempt to destroy these bracers. Trust us.~
+@1240 = ~Thalantyr has already lifted the curse once. He can do it again.~
+@1241 = ~Nothing is for sure, but Thalantyr has been researching the matter quite a bit.~
+@1242 = ~Alright, I'll give this Thalantyr a try.~
+@1243 = ~Squeak!~
+@1244 = ~We've made it here safely.~
+@1245 = ~Good, <CHARNAME>, I was hoping you'd turn up soon.~
+@1246 = ~While you were out retrieving the Cottons, Melicamp and I have been doing some research.~
+@1247 = ~We think we've found *cluck* a way to remove the bracers but not have them disappear.~
+@1248 = ~The incantation takes three mages, though, so we'll need your help. Mr. Cotton, are you and your wife ready?~
+@1249 = ~As ready as we can, I suppose.~
+@1250 = ~Good, then let's begin.~
+@1251 = ~Wait a minute, what's the incantation?~
+@1252 = ~Right you are. Let's begin.~
+@1253 = ~I'm not ready! You haven't explained my role yet.~
+@1254 = ~Hold on, what am I supposed to do?~
+@1255 = ~There is no fixed incantation. It will be chanted in three verses of three. I will incant a line, then Melicamp, then you, and then we repeat the process.~
+@1256 = ~I do not know exactly what I will need to do, so you and Melicamp will have to follow and chant the proper words.~
+@1257 = ~Search for the patterns in the words. You are a mage, after all, and I expect you to show your intelligence.~
+@1258 = ~Let us begin.~
+@1259 = ~Avra boriden covra!~
+@1260 = ~Destius ennui *cluck* fristias!~
+@1261 = ~Bebeshia kikirt lalaji!~
+@1262 = ~Kukuty *cluck* nenerzuo poposh!~
+@1263 = ~Lopitaph heuroz zampe!~
+@1264 = ~Ephestues solidar *cluck* rillan!~
+@1265 = ~Nozika abersto omerth!~
+@1266 = ~Amari estus culirn!~
+@1267 = ~Gharmas huegas inferita!~
+@1268 = ~Tatagh yoyost wiwirshu!~
+@1269 = ~Xavros yuca zylenos!~
+@1270 = ~Now the final touch...~
+@1271 = ~Behold!~
+@1272 = ~And that, as they say, is that.~
+@1273 = ~Err. Again.~
+@1274 = ~Sorry for that, Miss Cotton, though I'm glad to see the curse lifted. I can supply you with some draughts to deal with your pain and discomfort.~
+@1275 = ~That was most unpleasant, though I thank you for your efforts.~
+@1276 = ~Honestly <CHARNAME>, were you even trying? It's a wonder the poor lass wasn't killed.~
+@1277 = ~And with the incantation butchered, naturally the bracers are gone. Melicamp, we have more work to do, though we shall definitely have to find more reliable help this time.~
+@1278 = ~Of course, *cluck* master Thalantyr.~
+@1279 = ~Well, thanks for your efforts anyway <CHARNAME>. I hope you at least managed to learn something from this.~
+@1280 = ~Well, it looks like the curse is lifted, at least. How do you feel, Miss Cotton?~
+@1281 = ~And it seems... yes, unfortunate. The bracers are gone. You flubbed too many lines, <CHARNAME>.~
+@1282 = ~Your services are no longer needed. Melicamp and I shall have another go at finding them.~
+@1283 = ~Well done, well done. Miss Cotton, does everything feel right?~
+@1284 = ~Yes, thank you! Though I do feel like some peanuts...~
+@1285 = ~That may *cluck* take a bit longer to pass.~
+@1286 = ~And at last, we have the bracers! Let me make one final adjustment to them to ensure they can't be worn.~
+@1287 = ~<CHARNAME>, with this powder, Taerom's forge should burn hot enough to destroy them at last.~
+@1288 = ~Thank you for your help.~
+@1289 = ~Thalantyr has sent us here to destroy some cursed bracers in your forge.~
+@1290 = ~What's he on about? He knows this is just a normal forge.~
+@1291 = ~He gave us these powders. He said they would make your forge hot enough to destroy the bracers.~
+@1292 = ~With this powder, your forge should be hot enough to break the curse.~
+@1293 = ~Well, he's usually right about these things. Though an idea occurs to me...~
+@1294 = ~<CHARNAME>, I may be able to forge something new once the bracers melt. Once imbued, materials sometime retain their powers, though in a weaker or changed manner, even after the item is broken or drained.~
+@1295 = ~I can't really predict what, if any, magical properties it may have. It may even remain cursed.~
+@1296 = ~If you don't want to take the risk, we'll simply scatter the remains on the coals and let it burn off.~
+@1297 = ~We've worked too hard to destroy them. I won't take the risk of simply forging a new cursed item.~
+@1298 = ~What could you make?~
+@1299 = ~Nay, destroy them. No good can come of their remains, no matter how reforged.~
+@1300 = ~We'll lose most of the metal in the forge and to Thalantyr's powder, though I expect we'll have enough for a piece of jewelry. An amulet, perhaps.~
+@1301 = ~Sure, we'll take that risk.~
+@1302 = ~Let's fire up the forge then.~
+@1303 = ~Thalantyr's powder worked like a charm!~
+@1304 = ~Well, we'll keep that forge plenty hot until we can burn off as much of those bracers as possible.~
+@1305 = ~Until then, we'll use the other forges just in case.~
+@1306 = ~And this is for you. Just in case, I'd strongly suggest identifying it before using it.~
+@1307 = ~We cannot proceed further until you find Melicamp. I sent him to see Taerom at the Thunderhammer Smithy.~
+//@1308 = ~Yes, but first we need to see your wares.~
+//@1309 = ~Understood.~
+@1310 = ~I am glad that Melicamp has returned. Now we just need Taerom to finish the mechanical device.~
+@1311 = ~We can proceed once Melicamp returns from the Thunderhammer Smithy.~
+@1312 = ~You must find those bracers and bring them here.~
+@1313 = ~Take those bracers and the powder to Taerom, so that we may finally be done.~
+@1314 = ~So... is that it?~
+@1315 = ~Yes, I'm afraid so.~
+@1316 = ~Oh, it's you again. Alvanhendar, these were the adventurers I mentioned.~
+@1317 = ~I've tried everything I know. Your mage friend may be their only hope now.~
+@1318 = ~We'll meet you at the High Hedge then.~
+@1319 = ~Thalantyr should have everything ready. Let's head out.~
+@1320 = ~We must endeavor to find those bracers, lest they curse some other unfortunate soul. <CHARNAME>, I will need all the help I can get, and you are an adventurer. Can you assist me?~
+@1321 = ~The incantation takes three people, though, so we'll need your help. Mr. Cotton, are you and your wife ready?~
+@1322 = ~What do we need to do next for the bracers?~
+@1323 = ~The bracers are still in the region, but I could only narrow it down to an area north of Firewine.~
+@1324 = ~The bracers are still in the region; look for a flower north of Firewine.~
+@1325 = ~The bracers are in Gullykin, as near as I can determine.~
+@1326 = ~The bracers are in Gullykin, on a halfling woman.~
+@1327 = ~I could see the bracers clearly on an "Iris Cotton" in Gullykin.~
+@1328 = ~Where did you say the bracers were again?~
+@1329 = ~What should I do with the bracers now?~
+@1330 = ~Is there anything else?~
+@1331 = ~This is a magnificent pearl, but I'm afraid it's too unseasoned for our purposes. I would be pleased if you found another.~
+@1332 = ~Black pearls need to age a bit before they're ready to be utilized in such a fashion.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Fighter - Expanded Gnoll Stronghold              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@10000 = ~Expanded Gnoll Stronghold~
+@10001 = ~Argh, I saw you coming... Now I will see you fall! Arg! Auu!~
+@10002 = ~Gnoll-Weakling~
+@10003 = ~Shaman Sirkhr~
+@10004 = ~Gnoll Witherling~
+@10005 = ~Chieftain Hvalanya~
+@10006 = ~Watchdog Purkht~
+@10007 = ~Captain Stilind~
+@10008 = ~Amnian Soldier~
+@10009 = ~Amnian Scout Manlytoe~
+@10010 = ~Kalvranalan~
+@10011 = ~Staff of Corrosive Thoughts +1~
+@10012 = ~Belt of Omens~
+@10013 = ~This unusual belt was created for an assassin named Mudbone. He was specialized in killing priests, especially those that were considered obstacles to those who had very little respect to people of faith. The belt looks well made. It must have been made using high quality materials.
+
+STATISTICS:
+
+Damage:  +2 bonus vs. Clerics
+Magic Resistance:  2%
+
+Weight: 2~
+//@10014 = ~~
+@10015 = ~Chain of Primitive Respect +1~
+@10016 = ~There is something really raw and primitive about this chain mail, but you sense some magical energy from its links. It should be able to protect its user in battle and the magic may prove to be helpful while in the wilderness. However, the armor has a strange scent that reminds you of dog's fur.
+
+STATISTICS:
+
+Equipped Abilities: Armor Class vs. Animals: +2
+Equipped Abilities: -1 Charisma
+Armor Class: 4
+Weight: 20
+Requires: 8 Strength
+Not Usable By:
+ Druid 
+ Mage 
+ Thief~
+@10017 = ~Nook~
+@10018 = ~Cloak of Shape Stability~
+@10019 = ~This cloak was made of enchanted fabric that may prove to be quite useful when fighting enemies like basilisks, protecting its user from their deadly gaze.
+
+STATISTICS:
+
+Special Abilities: +4 bonus to all saves vs. polymorph~
+@10020 = ~Archway~
+@10021 = ~Amulet of Dark Misfortune~
+@10022 = ~This amulet was cursed with some dark magic. Whoever wears it suffers from bad luck, and when on the road or during an adventure... luck may prove to be a matter of life and death.
+
+STATISTICS:
+
+Luck:  reduced by 1
+Special:  can only be removed by a 'remove curse' spell~
+@10023 = ~Temple to the Beast of Butchery~
+@10024 = ~Broken Spirit Arrow +1~
+@10025 = ~This arrow looks broken, but even when you hold one half of it, the other half levitates right next to it. Even though it's not really powerful, it may be useful in situation when an adventurer runs out of normal arrows.
+
+STATISTICS:
+
+Returns to the wielder when shot
+
+Special: Strikes as a +1 weapon
+Damage:  1
+Damage Type:  missile (piercing)
+Weight: 0
+Launcher:  Bow
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
+@10026 = ~Gnoll Stronghold Interior~
+
+/*
+The staff of Corrosive Thoughts uses @10011 as its name. on EE, this staff uses @10028 as its descript 
+and boosts acid damage +10%. Since this can't be done on the original engine, there it has the ability 
+to cast Melf's Acid Arrow once per day and uses @10027
+*/
+@10027 = ~This staff was previously used by a Gnoll Shaman from the Gnoll Stronghold on the Sword Coast.
+
+It is hard to say who created it. It feels quite raw and while its power isn't the most powerful, there are certainly situations when it may be used. 
+
+STATISTICS:
+
+Special Abilities: Can cast Melf's Acid Arrow once per day
+THAC0: +1
+Damage: 1d6+1
+Damage type: crushing
+Speed Factor: 3
+Proficiency Type: Staff
+Type:  2-handed
+Requires: 5 Strength~
+@10028 = ~~ // see ee.tra
+
+@10029 = ~Cloak of the Regent-Warrior~
+@10030 = ~This purple cloak has quite a majestic aura and it is believed to have been created for a king, but... the legend does not specify which one. It is meant not only to protect the one that uses it, but also make those around them believe their every word and worship them.
+
+You were given this cloak as a token of trust and gratitude for securing the Gnoll Stronghold.
+
+STATISTICS:
+
+STATISTICS:
+
+Armor Class:  +2 bonus
+Saving Throw:  +2 bonus
+Charisma:  Set to 19 (fighters only)
+Weight:  3~
+@10031 = ~Gnoll's Ritual Book~
+@10032 = ~This book describes rituals: some to tame the natural energy and some to please Yeenoghu, the Beast of Butchery. One ritual is especially morbid, describing the burning of human skulls.~
+@10033 = ~Medical Supplies~
+@10034 = ~This bag is filled with medical supplies.~
+@10035 = ~Meat~
+@10036 = ~Yeenoghu's Burning Flesh~
+@10037 = ~This burning meat is actually Yeenoghu's burning flesh. Those that decide to consume it may gain special blessing of the Prince of Gnolls, but it comes with a price.
+
+STATISTICS:
+
+Special: If consumed it lowers Charisma by 1, but provides +2 Damage vs. Good creatures. The bonus is permanent.
+
+Weight: 2~
+@10038 = ~Primitive Key~
+@10039 = ~You found this primitive key at the Gnoll Stronghold. It must open something at that location.~
+@10040 = ~I was asked to tell you that "hope walks the Athkatlan streets".~
+@10041 = ~Ah, intrepid adventurers at our door. Helm guards over all the realms, and his servants are at your disposal. The Vigilant One stands ready to mend thy ailments and so divert the unyielding gaze of the Great Guide... for a suitable donation, of course. Just to demonstrate our mutual goodwill, you understand.~
+@10042 = ~What kind of services do you provide?~
+@10043 = ~I don't need anything from you right now. Goodbye.~
+@10044 = ~Hmm? I understand you say that for a reason. You're here for the supplies I was asked to prepare in case of an emergency, yes?~
+@10045 = ~Yes.~
+@10046 = ~Well, how do you think?~
+@10047 = ~My duty is not to question you but to give you this. Take this chest and bring it to those that need it.~
+@10048 = ~Know that Helm shall watch over you.~
+@10049 = ~Argh! We... have some guests... Grr! Foolish things! You know not to bother Chieftain Hvalanya?!~
+@10050 = ~No, I don't think anyone mentioned that on my way here. But they were all busy being dead.~
+@10051 = ~I am sorry, Hvalanya, but I cannot let you attack people of the Sword Coast. I'm here to stop you.~
+@10052 = ~Hahahaha! You are a funny small thing! Me and my boys will show you that you do not just bark at Chieftain Hvalanya and expect to get out of this in one piece! Auuu!~
+@10053 = ~I salute you, friend.~
+@10054 = ~You! Argh, your kind know not when to leave gnolls alone...! Evil old ones, hated by strong gnolls, even the chieftan.~
+@10055 = ~Who are you?~
+@10056 = ~Now, now. That's quite a collection of things you've got here. Impressive for someone of your kind.~
+@10057 = ~Now you ask...?! After you kill old or hurt gnolls? Argh!~
+@10058 = ~This is all mine...!~
+@10059 = ~Old gnolls deserve respect and we... took this place. And this room, where an old priest used to live. Now he dead. Now I use this place.~
+@10060 = ~Many of other gnolls treat me and old and weaker gnolls like sick dogs! They laugh! Piss at us! But even though we live under their home, we know our worth... We know our strength!~
+@10061 = ~We praise Yeenoghu! And we kill. And we eat. Even if we need to eat our own... but you...~
+@10062 = ~You may be so much more tasty... We will feast today.~
+@10063 = ~Be careful, adventurers. This is a dangerous place... I... I lost most of my people to monsters that occupy nearby stronghold. You look like a good warrior, <PRO_RACE>, but these creatures here are fierce!~
+@10064 = ~What happened to those people you speak of? Are they dead?~
+@10065 = ~They must have been weak if they died because of some crude creatures.~
+@10066 = ~They were good men and women... We came here to claim this place. It should belong to Amnian army, not to these creatures. We were sent here from Athkatla, to investigate the place and see if a group of twenty may quietly eliminate the gnolls and turn this into an operation point. But we were noticed.~
+@10067 = ~We fell into a trap. They threw boulders on us, others were killed with their halberds and blades.~
+@10068 = ~Minsc is not afraid of those creatures. They're evil and evil will always have its butt properly kicked, eventually! Most likely by Minsc and Boo. *squeak*~
+@10069 = ~Well, of course the unprepared will always fail. (That is why one always needs a proper plan. And some buffoons that may be used as cannon fodder.)~
+@10070 = ~P-poor people. I c-can only imagine how difficult it may feel t-to lose trusted friends...~
+@10071 = ~I am the only one that survived this. But... you look strong. Perhaps you could actually survive.~
+@10072 = ~Perhaps we can still do something about this. Since we are already here, perhaps we can help you and avenge your people.~
+@10073 = ~Well, poor you. I suppose you should get back home and thank whichever god you serve for sparing you your pathetic life. Now excuse me, but I need to go.~
+@10074 = ~You want to help me? That... that would be truly wonderful.~
+@10075 = ~What I found out is that there are two groups here. The weaker gnolls, old ones, and those that were hurt and no longer are as useful as they used to be. They are led by some shaman.~
+@10076 = ~But there is also another group of the younger, stronger gnolls. They are led by their chieftain. A female gnoll. They call her "Chieftain Hvalanya". She is said to be quite cruel. At least that's what we deduced from how they speak about of her.~
+@10077 = ~They both need to be stopped if we are to take over this place. But there is also a third individual that should also be stopped...~
+@10078 = ~A third one?~
+@10079 = ~Who is the third? Just tell me already!~
+@10080 = ~The third one isn't exactly a leader, but some sort of... watchdog. He's usually standing on one of the towers. I'm not sure which one, though.~
+@10081 = ~Hmm, but it may be a good idea to take him down too. So, two leaders and a watchdog.~
+@10082 = ~That's all? Hah! They'll be dead before you can say "my whole squad died".~
+@10083 = ~Precisely.~
+@10084 = ~Seriously? Their death is a tragedy. Do not mock it.~
+@10085 = ~Killing these three gnolls should make others run or hide. They won't be a real thread without the most important members of their pack or clan or whatever they call themselves!~
+@10086 = ~Are you sure that's something you can handle? You look strong, but I just need to ask you that. There are so damn many of them.~
+@10087 = ~No worries. I know what I'm doing.~
+@10088 = ~We won't know until I try.~
+@10089 = ~If I decide there are too many of them, I'll just run.~
+@10090 = ~Right. If you think you stand a chance against them, and if you manage to kill those three, please, return to me and let me know that lives of my friends were not wasted for nothing.~
+@10091 = ~You are a cruel person. Perhaps with time you will understand that... that this place must be freed from under the influence of these creatures. If you do, return to me then.~
+@10092 = ~It's you again? Are you here to mock me and my dead friends.~
+@10093 = ~Remind me: what happened to your friends?~
+@10094 = ~I care little about you or them. Goodbye.~
+@10095 = ~Ah, you return. Have you managed to deal with the gnoll leaders and the watchdog?~
+@10096 = ~Yes. They are all dead. It looks like the gnolls are mostly gone, but there may be some of them here and there. Without leaders they should be easy targets.~
+@10097 = ~I am still working on this.~
+@10098 = ~You... you've really done it! I wish my friends were here to listen to this. But I want to believe there are part of this. Part of this victory. But the work isn't done just yet. There is still much to do.~
+@10099 = ~Let's meet deeper in the stronghold. There we should continue our mission. If you're interested that is. But let me tell you it will be worth your time, my warrior-friend.~
+@10100 = ~Hmm. All looks good... Now, I managed to send a signal from the tower, as I would mention to the scouts south from here. I think they may send me few more people, but I don't want things to go bad again.~
+@10101 = ~And I presume you need me to do something to prevent such things from happening, correct? Tell me, how can I help.~
+@10102 = ~Sorry, but I don't have time for helping you.~
+@10103 = ~There is mining town nearby. Nashkel is its name. There is a temple there and I would like you to go there and bring me some medical supplies. The priest was informed that we may need some help, if I'm correct. A pity we haven't talked to him before I lost my friends, maybe if we had those--no. It wouldn't prevent that tragedy. I'm sorry, they're still on my mind.~
+@10104 = ~It is now that we may need those supplies. The stronghold may have been cleared, but who knows, maybe there are more of these creatures roaming these mountains and trails. So while we wait for more men and women to come here and aid me, perhaps you could go to Nashkel and ask the priest for the supplies.~
+@10105 = ~And will the cleric just believe me that you sent me?~
+@10106 = ~It feels like an easy task. I know where Nashkel is.~
+@10107 = ~Sorry, but no. I don't have time for this. Actually, I need to go. Goodbye.~
+@10108 = ~All you need to do is say: "Hope walks the Athkatlan streets." He'll know that you were sent for the supplies.~
+@10109 = ~Sounds easy.~
+@10110 = ~Sounds easy. Can't you do it yourself?~
+@10111 = ~It sounds boring and... I don't have time for this. Goodbye.~
+@10112 = ~It is.~
+@10113 = ~I need to wait for the reinforcements. Besides someone needs to stay here.~
+@10114 = ~The hard part may be reaching Nashkel, but if you know the way, it's going to be easier for you. Easier than it would be for me to go there on my own.~
+@10115 = ~Help me with the task, please. I really need your help.~
+@10116 = ~Once you have the supplies, just come here. And I'll start thinking how I may reward you when all the situation is under complete control.~
+@10117 = ~You're back, I see. Do you have the supplies?~
+@10118 = ~I have the supplies here.~
+@10119 = ~I'm still working on this. I'll let you know once I have them.~
+@10120 = ~Splendid! Just in time! Look! The reinforcements are here!~
+@10121 = ~Manlytoe! Here!~
+@10122 = ~It's good to see you alive, Stilind! Where are the others?~
+@10123 = ~They're...~
+@10124 = ~...~
+@10125 = ~I'm really sorry, Stilind. I truly am. Was Mandar with them? I know the two of you were inseparable.~
+@10126 = ~Yes. He... he's gone, too...~
+@10127 = ~Gods, his family will be devastated.~
+@10128 = ~I'll tell them. Once I'm back. Once our mission is over.~
+@10129 = ~Let's... focus on the matters at hand. Please.~
+@10130 = ~Of course. What's the situation?~
+@10131 = ~The Stronghold is secured. I got help from this brave fighter over here.~
+@10132 = ~Well... you're welcome.~
+@10133 = ~I'm doing it for a reward. I hope that's clear.~
+@10134 = ~You must be quite strong. Good work.~
+@10135 = ~I see. That's... good to know.~
+@10136 = ~It must have been difficult, facing all these creatures.~
+@10137 = ~Yes... In case things went bad again, our friend here fetched the medical supplies for us. The ones from Nashkel.~
+@10138 = ~Good. But let's hope we won't need them.~
+@10139 = ~Right.~
+@10140 = ~You and your people should rest now and check these halls and walls by yourself. It may prove to be useful. Meanwhile, there is one last favor I need to ask our helper. Talk to me when you're ready.~
+@10141 = ~You helped us a lot, my friend. But there is one last favor I need to ask you.~
+@10142 = ~What is it?~
+@10143 = ~Sorry, but I don't have time for this. I should be going.~
+@10144 = ~You see, when you left for Nashkel, I found out there is a strange creature in the tower over there. There is a crack in the wall and... that tower seems to be haunted by some bizarre ghost.~
+@10145 = ~I'm unsure if any of those men and women have any experience fighting ghosts so I hoped that maybe you could slay it for us. I promise this is going to be the last favor I will ever ask you. And when it's over, you will get something from me.~
+@10146 = ~You helped us greatly so that would be only fair.~
+@10147 = ~So... a ghost you say...~
+@10148 = ~No. I'm done helping you. I need to go now. Goodbye.~
+@10149 = ~Yes. Help us, please. I promise that what I've got for you is really worth it.~
+@10150 = ~Hello, friend! Have you managed to slay the ghost I told you about?~
+@10151 = ~Yes. It will no longer cause you distress.~
+@10152 = ~No, not yet. Goodbye.~
+@10153 = ~Gods! You are truly one of the mightiest warriors I have ever met.~
+@10154 = ~This mission isn't a failure thanks to you. We will use this place to make sure travels from Athkatla to Nashkel will be safer from now on.~
+@10155 = ~As I promised, I have something for you. A special cloak that will protect you. I hope it will serve you well. Furthermore, take these few coins. Six hundred gold pieces. I know it's not much, but... that's all I can offer.~
+@10156 = ~Thank you for everything you've done for us. You can be sure your name will be a synonym of a fearless warrior for all of us here.~
+@10157 = ~I'm always happy to see you, my friend.~
+@10158 = ~I suppose I should clean my sword later.~
+@10159 = ~Gods, I really hope we won't die here.~
+@10160 = ~I'll do some push-ups before sleep.~
+@10161 = ~The path here was a dangerous one, but I really believe we can do some good work here.~
+@10162 = ~Gnoll Stronghold Interior - Second Level~
+@10163 = ~Gnoll Stronghold - Spooky Room~
+@10164 = ~Gnoll Stronghold - Western Storage Room~
+@10165 = ~Gnoll Stronghold - Eastern Storage Room~
+@10166 = ~Well, the place isn't in its best shape, but I believe that with some resources it can be fixed. Walls can be patched. That will require some gold, but... none of this is impossible. I brought some goods here, in case we need some weapons or potions.~
+@10167 = ~It's good to see you again.~
+@10168 = ~If you need something, I can show you what I've got.~
+@10169 = ~Show me your goods.~
+@10170 = ~I think I've got everything I need. Goodbye.~
+@10171 = ~Farewell.~
+@10172 = ~Quartermaster~
+@10173 = ~Securing the Gnoll Stronghold~
+@10174 = ~Securing the Gnoll Stronghold
+
+I met Captain Stilind at the entrance to the Gnoll Stronghold. He wanted help with some nonsense and I declined.~
+@10175 = ~Securing the Gnoll Stronghold
+
+I met Captain Stilind at the entrance to the Gnoll Stronghold. He's the last remnant of a troop sent from Athkatla to secure the Gnoll Stronghold. He's asked for my help in defeating their leader, Chieftain Hvalanya, as well as a shaman from a rival group. There's also a gnoll watching from one of the towers that must be defeated as well.~
+@10176 = ~Securing the Gnoll Stronghold
+
+We have defeated the gnoll leader, Chieftain Hvalanya.~
+@10177 = ~Securing the Gnoll Stronghold
+
+Shaman Sirkhr, the rival gnoll faction's leader, has been defeated in an old temple under the Stronghold.~
+@10178 = ~Securing the Gnoll Stronghold
+
+The watcher from the towers, Purkht, has been killed.~
+@10179 = ~Securing the Gnoll Stronghold
+
+I have defeated the three gnolls as requested by Captain Stilind. I should report back to him at the entrance to the Stronghold.~
+@10180 = ~Securing the Gnoll Stronghold
+
+Captain Stilind is confident the other gnolls will scatter, now that their leaders are gone. He's asked me to meet him deeper in the Stronghold.~
+@10181 = ~Securing the Gnoll Stronghold
+
+Stilind has asked me to get medical supplies while he awaits reinforcements from Athkatla. I should travel to the Temple of Helm in Nashkel and tell the priest "Hope walks the Athkatlan streets".~
+@10182 = ~Securing the Gnoll Stronghold
+
+I should return to Captain Stilind in the Gnoll Stronghold with the medical supplies from Nalin.~
+@10183 = ~Securing the Gnoll Stronghold
+
+With his medical supplies in hand and reinforcements at his back, Captain Stilind is now in firm command of the Gnoll Stronghold. He'd like to speak to me later of one more task.~
+@10184 = ~Securing the Gnoll Stronghold
+
+Captain Stilind has asked me to investigate a ghost, lurking in a crack in the wall on the next level.~
+@10185 = ~Securing the Gnoll Stronghold
+
+Captain Stilind's ghost is no more. I should report my success.~
+@10186 = ~Securing the Gnoll Stronghold
+
+The Gnoll Stronghold is now a stronghold of Amn, thanks to my efforts. I've been well rewarded for my work by Captain Stilind.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Peaceful Kaishas resolution                      \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@21604 = ~Why must we fight? Cannot let you leave knowing all this. We could have existed peacefully, but now you have fought and will never accept. Others will come to kill or capture. Adventurers like you always come, do they not? No, I must fight, and you must die! We may still have hope if Selaad returns, but you cannot help anymore.~
+@21605 = ~Kaishas, we fought only because we were forced to. It was not our doing, but yours, and there is no need for it to go on.~
+@21606 = ~We were forced to fight, Kaishas, and we fought well - do you really think you can stop us boarding this ship?~
+@21607 = ~Your village and the tunnels beneath it are now filled with the corpses of your kind. If you really want to fight then so be it, but you're making a mistake.~
+@21608 = ~Die, then - if you are a monster, I shall treat you as one.~
+@21609 = ~Such generosity, but if you leave you will exterminate anyway. Others will come, other fools just to fight the "evil" we are. No, we must remain alone here now, and so must you. Die and sleep, and you will not know the loneliness. Perhaps if Selaad returns we will try again. Until then, we stay.~
+@21610 = ~Kaishas, there is no need for this. This isn't my choice, but we'll kill you if we have to. Do you really think you can stop us where Karoug and Daese couldn't?~
+@21611 = ~ I... fear that we cannot. But we shall try. No choice remains to us.~
+@21612 = ~Kaishas, this is insane. You are going to your death, and I don't even want to kill you!~
+@21613 = ~Perhaps not. But you are wounded and tired, and the pack is close behind you. Even adventurers can fight only so long. Regardless, it must be so. Truly, I am sorry.~
+@21614 = ~The Mysterious Island
+I have reluctantly fought with Kaishas. She seemed to think there was no other way. She mentioned they might have a second chance if Selaad returned one day. He was their missing chieftain, if I remember correctly.~
+@21615 = ~Perhaps monsters we are. But we do what we must to survive.~
+@21616 = ~ You only remind me that this must be. Too much has happened between us. I do not know whether we can stop you or not, but the answer will be known swiftly.~
+@21617 = ~What choice is there? If truth is known, ruin will come to us!~
+@21618 = ~Then so be it.~
+@21619 = ~You can trust us. We'll tell no-one about your people - it will be as if we never came to this place.~
+@21620 = ~Die well... I am truly sorry that it ends this way.~
+@21621 = ~How much I would like to believe you! But understand well, the future of my people is at stake here. I cannot take chances.~
+@21622 = ~We've been risking our lives for your damn people every day since we washed up here! What more do we have to do to persuade you? How many more babies do we have to save from wolfweres? ~
+@21623 = ~We've been risking our lives for your damn people every day since we washed up here! What more do we have to do to persuade you?~
+@21624 = ~You can do nothing. Truly, I am sorry.~
+@21625 = ~You... can do nothing. Maralee will be grateful forever for your deed.... as will I. But brave though it was, you did it without realising our true nature.~
+@21626 = ~And now I do. Prepare yourself, Kaishas - this ends now.~
+@21627 = ~This grows ridiculous. Your ingratitude sickens me - I'd hoped that I wouldn't need to see you as a monster, but it looks as if I was wrong.~
+@21628 = ~Kaishas, do you take me for a fool? I knew you were werewolves before I even spoke to Karoug... frankly I was damn suspicious within five minutes of entering the village! If you're going to try to kill us then go right ahead, but for Ao's sake give us some credit for intelligence!~
+@21629 = ~I give you much credit, for intelligence and bravery both. Yet a headwoman's duty is all. I cannot risk that you lie.~
+@21630 = ~Kaishas, please, wait! <CHARNAME> isn't lying! We grew close... long after <PRO_HESHE> must have realised the truth about us! Spare <PRO_HIMHER> - <PRO_HESHE> may know our nature, but <PRO_HESHE> will keep our secret.~
+@21631 = ~ I...~
+@21632 = ~Kaishas, my Peladan is still alive because of these outsiders. Do I have to let him grow up knowing that we slaughtered Peladan's saviour? That we are monsters in truth as well as form?~
+@21633 = ~I... I have been a fool. Forgive me, <CHARNAME>, that I brought us to the brink of kinship with the beasts. But we are better than Karoug... thank you for knowing that, even as I forgot it.~
+@21634 = ~Go, in peace. I do not know what will befall when you confront my husband. Greatly I fear for him, but he brings his fate upon himself. If he will not take back the gift willingly... then you must do what you must do.~
+@21635 = ~One day, I hope, Peladan will have a <PRO_BROTHERSISTER>. <PRO_HISHER> name will be "<CHARNAME>".~
+@21636 = ~We will never meet again, <CHARNAME> It.. grieves me. Remember me, even as you forget all else about our people.~
+@21637 = ~I managed to persuade Kaishas Gan to let us leave in peace... with a bit of help from Delainy. A lovely girl, but some things are not meant to be, I suppose.~
+@21638 = ~I managed to persuade Kaishas Gan to let us leave in peace... with a bit of help from Durlyle. There was something special between us... but some things are not meant to be, I suppose.~
+@21639 = ~Indeed it does. Truly, I am sorry.~
+@21640 = ~You shame me, outsider. Great is our debt to you. Yet a headwoman's duty is all. I cannot risk that you lie.~
+@21641 = ~You have returned! And you are pack... I smell it on you. But where is Kaishas? Where is my mate?~
+@21642 = ~Why did you send us? What was meant to happen on that island?~
+@21643 = ~She remained on the island. Your mate would have killed us when we rejected the curse she laid upon us... but at the last she saw wisdom. Lift the "gift" from us and return to her, "Mendas". There is nothing here for you.~
+@21644 = ~The log book was nothing! Balduran was nothing! He refused the gift that grandfathers offered him. You were only to give sea charts to Kaishas and kill Karoug so he could not follow. Kaishas would have brought pack here, where I have prepare place for them. Miserable ones! You could not accomplish such simple things? Instead you abandon my family and steal the boat to save your cruel selves?~
+@21645 = ~It is time to end this banter now, Mendas. It is time that you pay for your lies and your evil. Prepare to die.~
+@21646 = ~This ends here. Lift the "gift" from us, Mendas, and return to your mate. There is nothing here for you.~
+@21647 = ~Dogs! You are not fit to die at my hand but die you shall! To me, Baresh! A bloody reckoning is at hand!~
+@21648 = ~The Mysterious Island
+The mystery of this island has become clear. Mendas/Selaad sent us to the island on the false pretenses of retrieving evidence from what was believed to be Balduran's shipwreck. It was indeed the adventurer's ship, though his personal fate yet remains a mystery. Balduran's crew were infected with lycanthropy sometime during that fateful voyage. The ship was beached and wrecked leaving the two strains of lycanthropes, werewolves and wolfweres, to fight amongst themselves for survival. The more organized werewolves built the village that we recently shipwrecked near on our own fateful voyage. The chaotic wolfweres took residence in the ruins of Balduran's ship and both packs survived in uneasy co-existence since then. Mendas/Selaad eventually took the risk of sailing for the mainland. Somehow he made it and, upon discovering that someone had finally found the island, made up a plausible tale and had us first steal the sea charts, and later travel to the island to put them in his werewolf mate's hands. She had us kill the wolfweres and then infected the party with lycanthropy, intending us to join the pack or die fighting, but we persuaded her to let us leave peacefully. We sailed home to finally discover the truth of Mendas' duplicity. Fate seems to enjoy toying with me.~
+@21649 = ~I am puzzled, Mendas, or should I say Selaad. Since you are the leader of the werewolves, why did you not sail back to the island yourself?~
+@21650 = ~I am no sailor. I stay to prepare place for my people. For generations we have been trapped on island. It is time to return home to the land of grandfathers' birth. They needed charts and I needed adventurers who do not ask too much questions. Yet you have failed. I ask again - where is Kaishas?~
+@21651 = ~"Lift" it? My foolish mate, what have you told them? It is not a curse to be lifted - it is a gift to be savoured! It can only be "cured" by killing the chieftain of the werewolves. I am chieftain and I judge you unworthy to run with my pack. You will die here today. To me Baresh! A bloody reckoning is at hand!~
+@21652 = ~Selaad Gan is the chief of the true people. He awaits the return of his mate Kaishas. Why have you not returned with her?~
+@21653 = ~It is not your place to question me. What part do you play in this?~
+@21654 = ~It seems that we have been deceived. Kaishas is dead and her murderous ilk died with her.~
+@21655 = ~We were hired to retrieve the logbook of Balduran. Here we have brought it and now we expect payment.~
+@21656 = ~It seems that we have been deceived. Kaishas remains on the island. We must confront Selaad and have him remove this curse which his mate has foolishly bestowed upon us.~
+@21657 = ~The master wishes to see his wife, Kaishas Gan. Is she on the vessel still?~
+@21658 = ~It is not your business. Step aside.~
+@21659 = ~Who is your master? We work for Mendas of Waterdeep.~
+@21660 = ~I am Baresh. I am of the true race as you are not. The master wishes to see his wife, Kaishas Gan. Is she on the vessel still?~
+@21661 = ~The book is nothing! Thy task was to rescue the master's kin. Where is the master's mate, Kaishas?~
+@21662 = ~Thy task was clear. Travel to the island-home and retrieve master's kin. Failing that, Kaishas was to take the sea charts from thee. Useless manlings! Selaad does not brook failure well.~
+@21663 = ~Idiot! We were sent on false pretences and somehow it is our fault? Kaishas attacked us and we were forced to defend ourselves. Mendas was betrayed by his own cleverness.~
+@21664 = ~Mendas deceived us. He is the one that we must confront. You are merely a flunky.~
+@21665 = ~Idiot! We were sent on false pretences and somehow it is our fault? Now, take us to Selaad!~
+@21666 = ~Useless wretch! The master will eat thy marrow for this!~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

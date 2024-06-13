@@ -1,0 +1,5 @@
+BEGIN CD51GO
+
+CHAIN IF ~NumTimesTalkedTo(0)~ THEN CD51GO 01
+@10001
+DO ~Enemy()~ EXIT

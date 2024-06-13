@@ -3,35 +3,41 @@ SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=201~ // forum url
 
 ALWAYS
 
-  ACTION_IF !GAME_IS ~tutu tutu_totsc bgt bgee eet~ THEN BEGIN FAIL @0 END
-
   ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @4 END // Modmerge check
+
+  ACTION_IF NOT VARIABLE_IS_SET tutu_gen THEN BEGIN // just do this part once per install
+
+    INCLUDE ~thecalling/lib/game_checks.tpa~
+    
+  END  
+
+  ACTION_IF (!tutu_gen AND !game_is_bgt AND !game_is_bgee AND !game_is_eet) THEN BEGIN FAIL @0 END
 
   ACTION_IF NOT VARIABLE_IS_SET tutu_var THEN BEGIN // just do this part once per install
 
     // covers STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH
     APPEND ~state.ids~ ~0x00000FC0 STATE_REALLY_DEAD~ UNLESS ~^0x00000FC0[ %TAB]+STATE_REALLY_DEAD[ %TAB%%LNL%%MNL%%WNL%]~
+    
     // new state as shortcut for unavailable for dialogue; covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH,
     // STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING
     APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~^0x80101FEF[ %TAB]+CD_STATE_NOTVALID[ %TAB%%LNL%%MNL%%WNL%]~
 
     INCLUDE ~thecalling/lib/g3_cpmvars_master.tpa~
-    INCLUDE ~thecalling/lib/tob2soa.tpa~
+    APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~ 
 
-    ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+    ACTION_IF enhanced_edition THEN BEGIN
       
-      OUTER_SPRINT ~tra_location~ ~thecalling/languages~      
-      LOAD_TRA ~thecalling/languages/%LANGUAGE%/ee.tra~
-      OUTER_SET enhanced_edition = 1
+      OUTER_SPRINT ~tra_location~ ~thecalling/languages~     
+      LOAD_TRA ~thecalling/languages/%LANGUAGE%/ee.tra~      
     
    END ELSE BEGIN    
       
-      OUTER_SPRINT ~tra_location~ ~weidu_external/thecalling/languages~
-      OUTER_SET enhanced_edition = 0
+      OUTER_SPRINT ~tra_location~ ~weidu_external/thecalling/languages~      
+      INCLUDE ~thecalling/lib/tob2soa.tpa~    
 
       // convert strings from UTF-8 for originals  
-      ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu ee END // strings exclusively for the installer and EE, respectively
-      ACTION_DEFINE_ARRAY cdreload BEGIN game mage werewolf END // actual content strings
+      ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu 0_ee 10_ee _ee 20_ee 30_ee 40_ee END // strings exclusively for the installer and EE, respectively
+      ACTION_DEFINE_ARRAY cdreload BEGIN END // actual content strings
       LAF HANDLE_CHARSETS INT_VAR from_utf8 = 1 infer_charsets = 1 
                           STR_VAR default_language = ~english~ tra_path = ~thecalling/languages~ out_path = ~weidu_external/thecalling/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
 
@@ -41,7 +47,7 @@ ALWAYS
 
 END
 
-VERSION ~v5~
+VERSION ~v6_preview3~
 README ~thecalling/readme-thecalling-%LANGUAGE%.html~ ~thecalling/readme-thecalling.html~
 AUTO_TRA ~%tra_location%/%s~
 
@@ -97,34 +103,24 @@ LANGUAGE ~Simplified Chinese (Translation from bg2_tweaks by Miranda, distance20
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
-///// The Calling                                      \\\\\
+///// Mage - The Cursed Bracers                        \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 BEGIN @100 DESIGNATED 0
-REQUIRE_PREDICATE FILE_EXISTS ~thecalling/languages/%LANGUAGE%/mage.tra~ @5 // skip if translation doesn't exist
+REQUIRE_PREDICATE (("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "polish" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "russian" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "schinese" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "spanish" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_mage~
-
-/////                                                  \\\\\
-///// cheats?                                          \\\\\
-/////                                                  \\\\\
-
-//ACTION_IF MOD_IS_INSTALLED ~CDTWEAKS/SETUP-CDTWEAKS.TP2~ ~1160~ BEGIN // Tweaks anthology, multiple strongholds, no restrictions
-
-  EXTEND_BOTTOM ~baldur.bcs~ ~thecalling/baf/cheat2.baf~
-
-//END
-
-//ACTION_IF MOD_IS_INSTALLED ~CDTWEAKS/SETUP-CDTWEAKS.TP2~ ~1161~ BEGIN // Tweaks anthology, multiple strongholds, keep class restrictions
-
-//  EXTEND_BOTTOM ~baldur.bcs~ ~thecalling/baf/cheat1.baf~
-
-//END
 
 /////                                                  \\\\\
 ///// the mage calling                                 \\\\\
 /////                                                  \\\\\
+
 /*
 
 *CDBracerQuest
@@ -175,9 +171,9 @@ STRING_SET 16380 @111 // add scrying stuff to descript of zircon
 COPY_EXISTING ~%tutu_var%halffg.dlg~ ~override/cdiris.dlg~
               ~%tutu_var%halfgu.dlg~ ~override/cdlargo.dlg~
 
-ACTION_IF GAME_IS ~bgt~ BEGIN OUTER_SPRINT thalan_states "1 35" END ELSE BEGIN OUTER_SPRINT thalan_states "1" END
+ACTION_IF game_is_bgt BEGIN OUTER_SPRINT thalan_states "1 35" END ELSE BEGIN OUTER_SPRINT thalan_states "1" END
               
-ACTION_IF GAME_IS ~bgee eet~ BEGIN // on EEs, have Thalantyr identify the Black Pearl before giving it to player in case Anthology's 'gems require ID is installed'
+ACTION_IF enhanced_edition BEGIN // on EEs, have Thalantyr identify the Black Pearl before giving it to player in case Anthology's 'gems require ID is installed'
 
   OUTER_SPRINT give_pearl ~CreateItem("cdbpearl",1,0,0) SetItemFlags("cdbpearl",IDENTIFIED,TRUE) GiveItem("cdbpearl",LastTalkedToBy(Myself))~
 
@@ -193,10 +189,10 @@ COMPILE EVALUATE_BUFFER ~thecalling/dlg/mage.d~
                         ~thecalling/baf/cdminer1.baf~
               
 // melicamp needed for quests, so make sure he always survives anti-chickenator
-ACTION_IF GAME_IS ~bgee eet~ BEGIN // ees move the cutscene to the dialogue, so
+ACTION_IF enhanced_edition BEGIN // ees move the cutscene to the dialogue, so
 
   OUTER_SET cd_journal1 = 27256
-  ACTION_IF GAME_IS ~eet~ BEGIN OUTER_SET cd_journal1 += 200000 END // bg strings in eet are +200000
+  ACTION_IF game_is_eet BEGIN OUTER_SET cd_journal1 += 200000 END // bg strings in eet are +200000
   OUTER_SET cd_journal2 = cd_journal1 + 1
   OUTER_SET cd_journal3 = cd_journal1 + 2
   
@@ -346,13 +342,633 @@ COPY ~thecalling/cre/cdgrace.cre~ ~override~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
-///// Expanded gnoll stronghold                        \\\\\
+///// Fighter - Expanded Gnoll Stronghold              \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-//BEGIN @10000 DESIGNATED 10 DEPRECATED @3
-//LABEL ~cd_the_calling_expanded_gnoll_stronghold~
+BEGIN @10000 DESIGNATED 10
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
+LABEL ~cd_the_calling_fighter~
+
+/* CDGnollQuest
+
+1 - spoken with Captain Stilind, agreed to help
+2 - killed the thre gnolls and reported back to Stilind
+3 - Stilind turns off the spawn points and moves deeper into the fortress
+4 - stilind asks party to get supplies from nashkel
+5 - party gives supplies to stilind, cutscene
+6 - custscene ends, reinforcements have arrived
+7 - post-cutscene dialogue complete
+8 - asked to clear out ghost
+9 - reported defeat of ghost to stilind, quest complete
+*/
+
+/////                                                  \\\\\
+///// preamble                                         \\\\\
+/////                                                  \\\\\
+
+DEFINE_PATCH_FUNCTION tutuize_items 
+  INT_VAR item_number = 0
+          item_offset = 0
+          item_length = 0x14
+  BEGIN
+  
+  FOR (index = 0 ; index < item_number ; ++index) BEGIN
+    READ_ASCII (item_offset + (index * item_length)) item
+    PATCH_IF (("%item%" STRING_COMPARE_REGEXP "^[Cc][Dd].+$") AND
+              ("%item%" STRING_COMPARE_REGEXP "^[Rr][Nn][Dd][Tt][Rr][Ee].+$") AND
+              ("%item%" STRING_COMPARE_CASE "helmnoan") AND
+              ("%item%" STRING_COMPARE_CASE "misc07")) BEGIN
+      WRITE_ASCIIE (item_offset + (index * item_length)) ~%tutu_var%%item%~ #8
+    END
+  END
+    
+END
+
+DEFINE_PATCH_MACRO eetize_soundsets BEGIN
+  FOR (snd_off = 0xa4 ; snd_off < 0x231 ; snd_off = snd_off + 0x04) BEGIN
+    READ_LONG snd_off strref 
+    PATCH_IF strref >=0 BEGIN
+      WRITE_LONG snd_off (THIS + 200000)
+    END
+  END    
+END
+
+OUTER_SET opp_palette = 0
+ACTION_IF enhanced_edition OR (MOD_IS_INSTALLED ~1pp.tp2~ 102) OR (MOD_IS_INSTALLED ~1pp.tp2~ 102) BEGIN OUTER_SET opp_palette = 1 END
+						
+ADD_JOURNAL TITLE (@10173) @10174 @10175 @10176 @10177 @10178 @10179 @10180 @10181 @10182 @10183 @10184 @10185 @10186
+
+/////                                                  \\\\\
+///// basic copies                                     \\\\\
+/////                                                  \\\\\
+
+LAF HANDLE_AUDIO STR_VAR audio_path = ~thecalling/audio/10~ oggdec_path = ~thecalling/audio~ sox_path = ~thecalling/audio~ END // ambients, audio
+
+ACTION_IF !enhanced_edition BEGIN
+
+  APPEND ~tooltip.2da~ ~cd51sta 15529 12033 -1
+cd51rew 14034 -1 -1~                           // add tooltip for Staff of Corrosive Thoughts +1, Cloak of the Regent-Warrior
+  COPY ~thecalling/spl/cd51rew.spl~ ~override~ // provides fighter-only 19 CHR for Cloak of the Regent-Warrior
+  COMPILE ~thecalling/baf/cd5104.baf~          // smoke ambients look terrible in original, disable until fixed
+       
+END  
+
+// the %enhanced_edition% is used to grab one-cycle item icons (ee) or 2-cycle (non-EE)
+COPY ~thecalling/bam/cd51amu%enhanced_edition%.bam~ ~override/cd51amu.bam~ // icon, Amulet of Dark Misfortune
+     ~thecalling/bam/cd51arc%enhanced_edition%.bam~ ~override/cd51arc.bam~ // description image, Broken Spirit Arrow +1
+     ~thecalling/bam/cd51ari%enhanced_edition%.bam~ ~override/cd51ari.bam~ // icon, Broken Spirit Arrow +1
+     ~thecalling/bam/cd51bel%enhanced_edition%.bam~ ~override/cd51bel.bam~ // icon, Belt of Omens
+     ~thecalling/bam/cd51cha%enhanced_edition%.bam~ ~override/cd51cha.bam~ // icon, Chain of Primitive Respect +1
+     ~thecalling/bam/cd51clo%enhanced_edition%.bam~ ~override/cd51clo.bam~ // icon, Cloak of Shape Stability
+     ~thecalling/bam/cd51key%enhanced_edition%.bam~ ~override/cd51key.bam~ // icon, Primitive Key
+     ~thecalling/bam/cd51rew%enhanced_edition%.bam~ ~override/cd51rew.bam~ // icon, Cloak of the Regent-Warrior
+     ~thecalling/bam/cd51sec%enhanced_edition%.bam~ ~override/cd51sec.bam~ // icon, Yeenoghu's Burning Flesh
+     ~thecalling/bam/cd51smk.bam~                   ~override~             // ambient animation, smoke
+     ~thecalling/bam/cd51sta%enhanced_edition%.bam~ ~override/cd51sta.bam~ // icon, Staff of Corrosive Thoughts +1
+     ~thecalling/bam/cd51sup%enhanced_edition%.bam~ ~override/cd51sup.bam~ // icon, Medical Supplies
+     ~thecalling/eff/cd51rew%enhanced_edition%.eff~ ~override/cd51rew.eff~ // provides fighter-only 19 CHR for Cloak of the Regent-Warrior
+
+COPY ~thecalling/sto/cd51shop.sto~ ~override~
+  SAY 0x1c @10172
+  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+    LPF tutuize_items INT_VAR item_number = (SHORT_AT 0x76) item_offset = (LONG_AT 0x78) item_length = 0x1c END
+  END  
+
+/////                                                  \\\\\
+///// area work                                        \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/are/art~ ~override~ // bmp, mos, wed
+
+// new areas that connect to the gnoll stronghold need to use the platform-specific resref
+COPY ~thecalling/are/cd5104.are~ ~override~
+     ~thecalling/are/cd5105.are~ ~override~
+     ~thecalling/are/cd5106.are~ ~override~
+     ~thecalling/are/cd5107.are~ ~override~
+     ~thecalling/are/cd5108.are~ ~override~
+     ~thecalling/are/cd5109.are~ ~override~
+  LPF ALTER_AREA_REGION STR_VAR region_name = to_gnoll_exterior destination_area = EVAL ~%GnollStronghold%~ END 
+  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+    LPF tutuize_items INT_VAR item_number = (LONG_AT 0x38) item_offset = (LONG_AT 0x34) END
+  END  
+
+COPY_EXISTING ~cd5104.are~ ~override~
+  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+    LPF ALTER_AREA_REGION STR_VAR region_name = Trap1 region_script = EVAL ~%tutu_var%gtar~ END
+    LPF ALTER_AREA_REGION STR_VAR region_name = Trap2 region_script = EVAL ~%tutu_var%gtar~ END
+    LPF ALTER_AREA_REGION STR_VAR region_name = Trap3 region_script = EVAL ~%tutu_var%gtfb~ END
+    LPF ALTER_AREA_REGION STR_VAR region_name = Trap4 region_script = EVAL ~%tutu_var%gtar~ END
+    LPF ALTER_AREA_CONTAINER STR_VAR container_name = Container002 container_script  = EVAL ~%tutu_var%ctar~ END
+    LPF ALTER_AREA_CONTAINER STR_VAR container_name = Container004 container_script  = EVAL ~%tutu_var%ctlb~ END
+    LPF ALTER_AREA_CONTAINER STR_VAR container_name = Container039 container_script  = EVAL ~%tutu_var%ctar~ END
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name = dog cre_file = EVAL ~%tutu_var%dogwi~ END
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name = spider cre_file = EVAL ~%tutu_var%spidgi~ END  
+  END  
+  
+COPY_EXISTING ~cd5105.are~ ~override~
+  LPF ALTER_AREA_REGION STR_VAR region_name = to_gnoll_exterior2 destination_area = EVAL ~%GnollStronghold%~ END 
+  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name = "Actor 1" cre_file = EVAL ~%tutu_var%gnoll~ END
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name = "Actor 26" cre_file = EVAL ~%tutu_var%flind~ END
+    READ_LONG 0xc0 rest_off
+    FOR (index = 0 ; index < 10 ; ++index) BEGIN 
+      READ_ASCII   (rest_off + 0x48 + (index * 0x04)) mon (7)
+      WRITE_ASCIIE (rest_off + 0x48 + (index * 0x04)) ~_%mon%~ #8 // can do this lazily since the fields are known
+    END
+  END ELSE
+  PATCH_IF game_is_eet BEGIN
+    READ_LONG 0xc0 rest_off
+    FOR (index = 0 ; index < 10 ; ++index) BEGIN 
+      WRITE_LONG (rest_off + 0x20 + (index * 0x04)) THIS + 200000 // update rest spawn strings 
+    END
+  END
+  
+COPY_EXISTING ~cd5106.are~ ~override~
+  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name = "Actor 1" cre_file = EVAL ~%tutu_var%flind~ END
+    LPF ALTER_AREA_REGION STR_VAR region_name = Trap1 region_script = EVAL ~%tutu_var%gtfb~ END
+  END  
+
+COPY ~thecalling/tilesets/ar5100sr.bmp~  ~override/%GnollStronghold%sr.bmp~ // stronghold searchmap; give new entrances a little more walking room
+
+ACTION_IF enhanced_edition BEGIN
+
+  // add new areas to the console menu listing
+  COPY_EXISTING ~bgee.lua~ ~override~
+    SPRINT cd5104_descript @10023 // do it this way so that the entries can also be translated
+    SPRINT cd5105_descript @10026
+    SPRINT cd5106_descript @10162
+    SPRINT cd5107_descript @10163
+    SPRINT cd5108_descript @10164 
+    SPRINT cd5109_descript @10165 
+    REPLACE_TEXTUALLY ~\({"%GnollStronghold_CrawlerCave%",.+},\)~ ~\1
+	{"cd5104", "%cd5104_descript%"},
+	{"cd5105", "%cd5105_descript%"},
+	{"cd5106", "%cd5106_descript%"},
+	{"cd5107", "%cd5107_descript%"},
+	{"cd5108", "%cd5108_descript%"},
+	{"cd5109", "%cd5109_descript%"},~
+  
+  COPY ~thecalling/tilesets/new~            ~override~                       // new area tilesets/pvrz
+       ~thecalling/tilesets/old/ar5100.tis~ ~override/%GnollStronghold%.tis~ // updated gnoll stronghold
+       
+  ACTION_IF game_is_bgee BEGIN OUTER_SPRINT prefix ~a~ END ELSE BEGIN OUTER_SPRINT prefix ~b~ END
+  OUTER_FOR (index = 510000; index < 510022 ; ++index) BEGIN
+    COPY ~thecalling/tilesets/old/a%index%.pvrz~ ~override/%prefix%%index%.pvrz~
+  END  
+  
+END ELSE BEGIN
+
+  INCLUDE ~thecalling/lib/a7_tools.tpa~ // tile2ee
+  LAF HANDLE_TILE2EE INT_VAR quality_v1 = 9 STR_VAR input_path = ~thecalling/tilesets/new~ END // new area tilesets/pvrz
+  
+  COPY ~thecalling/tilesets/ar5100.mos~     ~override/%GnollStronghold%.mos~ // minimap 
+  
+  LAF HANDLE_TILESETS STR_VAR input_path = EVAL ~thecalling/tiz/%tutorbgt%~ END
+
+END
+
+COPY_EXISTING ~%GnollStronghold%.are~ ~override~ // adding entrances to main gnoll stronghold map
+  //DUNGEON
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 2977
+    fj_box_top = 2261
+    fj_box_right = 3059
+    fj_box_bottom = 2378
+    fj_cursor_idx = 42
+    fj_flags = 516 // no_NPCs = 512, party_required = save = 4
+    fj_alt_x = 3053
+    fj_alt_y = 2390
+    fj_loc_x = 3053
+    fj_loc_y = 2390
+    fj_vertex_0 = 2977 + (2378 << 16)
+    fj_vertex_1 = 2977 + (2321 << 16)
+    fj_vertex_2 = 2997 + (2301 << 16)
+    fj_vertex_3 = 3006 + (2291 << 16)
+    fj_vertex_4 = 3010 + (2266 << 16)
+    fj_vertex_5 = 3015 + (2261 << 16)
+    fj_vertex_6 = 3037 + (2313 << 16)
+    fj_vertex_7 = 3052 + (2333 << 16)
+    fj_vertex_8 = 3059 + (2342 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_GnollUnd
+    fj_destination_area = CD5104
+    fj_destination_name = En
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 3053
+    fj_loc_y = 2390
+    fj_orientation = 14 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+  STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD5104E
+  END
+  //MAIN - archway entrance
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 2211
+    fj_box_top = 1652
+    fj_box_right = 2315
+    fj_box_bottom = 1794
+    fj_cursor_idx = 42
+    fj_flags = 516 // no_NPCs = 512, party_required = save = 4
+    fj_alt_x = 2235
+    fj_alt_y = 1799
+    fj_loc_x = 2235
+    fj_loc_y = 1799
+    fj_vertex_0 = 2211 + (1745 << 16)
+    fj_vertex_1 = 2211 + (1669 << 16)
+    fj_vertex_2 = 2230 + (1652 << 16)
+    fj_vertex_3 = 2250 + (1652 << 16)
+    fj_vertex_4 = 2281 + (1667 << 16)
+    fj_vertex_5 = 2301 + (1688 << 16)
+    fj_vertex_6 = 2315 + (1716 << 16)
+    fj_vertex_7 = 2314 + (1776 << 16)
+    fj_vertex_8 = 2309 + (1794 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_GnollMain
+    fj_destination_area = CD5105
+    fj_destination_name = en_arch
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 2235
+    fj_loc_y = 1799
+    fj_orientation = 2 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+  STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD5105E_arch
+  END
+  //MAIN - back entrance
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 2103
+    fj_box_top = 1352
+    fj_box_right = 2253
+    fj_box_bottom = 1459
+    fj_cursor_idx = 42
+    fj_flags = 516 // no_NPCs = 512, party_required = save = 4
+    fj_alt_x = 2213
+    fj_alt_y = 1362
+    fj_loc_x = 2213
+    fj_loc_y = 1362
+    fj_vertex_0 = 2143 + (1352 << 16)
+    fj_vertex_1 = 2103 + (1413 << 16)
+    fj_vertex_2 = 2197 + (1459 << 16)
+    fj_vertex_3 = 2253 + (1403 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_GnollMain2
+    fj_destination_area = CD5105
+    fj_destination_name = En1
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 2258
+    fj_loc_y = 1312
+    fj_orientation = 10 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+  STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD5105E
+  END
+  //MINI
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 1870
+    fj_box_top = 660
+    fj_box_right = 1920
+    fj_box_bottom = 768
+    fj_cursor_idx = 42
+    fj_flags = 516 // no_NPCs = 512, party_required = save = 4
+    fj_alt_x = 1858
+    fj_alt_y = 802
+    fj_loc_x = 1858
+    fj_loc_y = 802
+    fj_vertex_0 = 1870 + (745 << 16)
+    fj_vertex_1 = 1883 + (732 << 16)
+    fj_vertex_2 = 1910 + (681 << 16)
+    fj_vertex_3 = 1914 + (660 << 16)
+    fj_vertex_4 = 1917 + (679 << 16)
+    fj_vertex_5 = 1920 + (768 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_GnollMini
+    fj_destination_area = CD5107
+    fj_destination_name = En
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 1858
+    fj_loc_y = 802
+    fj_orientation = 2 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+  STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD5107E
+  END
+  // upper area, left to 5108
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 1655
+    fj_box_top = 1119
+    fj_box_right = 1767
+    fj_box_bottom = 1283
+    fj_cursor_idx = 42
+    fj_flags = 516 // no_NPCs = 512, party_required = save = 4
+    fj_alt_x = 1718
+    fj_alt_y = 1141
+    fj_loc_x = 1718
+    fj_loc_y = 1141
+    fj_vertex_0 = 1655 + (1119 << 16)
+    fj_vertex_1 = 1655 + (1224 << 16)
+    fj_vertex_2 = 1767 + (1283 << 16)
+    fj_vertex_3 = 1767 + (1129 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_5108
+    fj_destination_area = CD5108
+    fj_destination_name = En
+    fj_reg_script = cdgnsen1
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 1733
+    fj_loc_y = 1092
+    fj_orientation = 8 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+  STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD5108E
+  END
+  // upper area, right to 5109
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 2696
+    fj_box_top = 1470
+    fj_box_right = 2877
+    fj_box_bottom = 1579
+    fj_cursor_idx = 42
+    fj_flags = 516 // no_NPCs = 512, party_required = save = 4
+    fj_alt_x = 2800
+    fj_alt_y = 1504
+    fj_loc_x = 2800
+    fj_loc_y = 1504
+    fj_vertex_0 = 2758 + (1470 << 16)
+    fj_vertex_1 = 2696 + (1579 << 16)
+    fj_vertex_2 = 2815 + (1566 << 16)
+    fj_vertex_3 = 2877 + (1527 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_5108
+    fj_destination_area = CD5109
+    fj_destination_name = En
+    fj_reg_script = cdgnsen2
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 2837
+    fj_loc_y = 1470
+    fj_orientation = 9 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+  STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD5109E
+  END
+  PATCH_IF game_is_bgt OR MOD_IS_INSTALLED ~cdtweaks.tp2~ ~1110~ BEGIN // BGT has map notes, Tutu gets them via Tweaks
+    ADD_MAP_NOTE #3053  #2390 ~gray~   #193 // Cave
+    ADD_MAP_NOTE #1858   #802 ~gray~ @10017 // Nook
+    ADD_MAP_NOTE #2235  #1799 ~red~  @10020 // Archway
+    ADD_MAP_NOTE #2258  #1312 ~red~  #61443 // stairs down
+    ADD_MAP_NOTE #1733  #1092 ~red~  #61443 // stairs down
+    ADD_MAP_NOTE #2837  #1470 ~red~  #61443 // stairs down
+  END  
+
+/////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/cre/cd51ch.cre~ ~override~
+  SAY NAME1 @10005
+  SAY NAME2 @10005
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~  
+  PATCH_IF !opp_palette BEGIN // if using color only available with 1pp/EE
+    WRITE_BYTE 0x2e 46
+  END  
+
+COPY ~thecalling/cre/cd51gho.cre~ ~override~
+  SAY NAME1 @10010
+  SAY NAME2 @10010
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~  
+
+COPY ~thecalling/cre/cd51go.cre~ ~override~
+  SAY NAME1 @10006
+  SAY NAME2 @10006
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~  
+
+COPY ~thecalling/cre/cd51gs.cre~ ~override~
+  SAY NAME1 @10003
+  SAY NAME2 @10003
+  PATCH_IF !enhanced_edition BEGIN // no shaman, so delete shaman-only spells and give generic druid AI script
+    WRITE_BYTE 0x273 11 // class: druid
+    LPF DELETE_EFFECT INT_VAR match_opcode = 251 END
+    REMOVE_MEMORIZED_SPELL sppr150 sppr250 sppr350
+    REMOVE_KNOWN_SPELL     sppr150 sppr250 sppr350  
+    WRITE_ASCII 0x268 ~druid8b~   
+    PATCH_IF !opp_palette BEGIN // if using color only available with 1pp/EE
+      WRITE_BYTE 0x31 58
+    END                   	   
+  END  
+
+COPY ~thecalling/cre/cd51gw.cre~ ~override~
+  SAY NAME1 @10002
+  SAY NAME2 @10002
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~  
+
+COPY ~thecalling/cre/cd51gz.cre~ ~override~
+  SAY NAME1 @10004
+  SAY NAME2 @10004
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~  
+
+COPY ~thecalling/cre/cd51qm.cre~ ~override~
+  SAY NAME1 @10007
+  SAY NAME2 @10007
+  WRITE_ASCIIE 0x258 ~%tutu_var%shout~  
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~  
+
+COPY ~thecalling/cre/cd51sol1.cre~ ~override~
+     ~thecalling/cre/cd51sol2.cre~ ~override~
+  SAY NAME1 @10008
+  SAY NAME2 @10008
+  WRITE_ASCIIE 0x258 ~%tutu_var%shout~  
+  WRITE_ASCIIE 0x268 ~%tutu_scripts%eeenemy~  
+
+COPY ~thecalling/cre/cd51sol3.cre~ ~override~
+  SAY NAME1 @10009
+  SAY NAME2 @10009
+  WRITE_ASCIIE 0x258 ~%tutu_var%shout~  
+  WRITE_ASCIIE 0x268 ~%tutu_scripts%eeenemy~   
+
+COPY_EXISTING ~cd51sol1.cre~ ~override/cd51shop.cre~
+  SAY NAME1 @10172
+  SAY NAME2 @10172
+  WRITE_ASCII 0x280 cd51shop // dv
+  WRITE_ASCII 0x2cc cd51shop // dlg
+  
+ACTION_IF tutu_gen BEGIN // adjust tutu item names
+
+  COPY_EXISTING ~cd51ch.cre~   ~override~
+                ~cd51gho.cre~  ~override~
+                ~cd51go.cre~   ~override~
+                ~cd51gs.cre~   ~override~
+                ~cd51gw.cre~   ~override~
+                ~cd51gz.cre~   ~override~
+                ~cd51qm.cre~   ~override~  
+                ~cd51sol1.cre~ ~override~
+                ~cd51sol2.cre~ ~override~
+                ~cd51sol3.cre~ ~override~   
+    LPF tutuize_items INT_VAR item_number = (LONG_AT 0x2c0) item_offset = (LONG_AT 0x2bc) END
+    BUT_ONLY
+    
+  ACTION_IF !FILE_EXISTS_IN_GAME ~_halb07.itm~ BEGIN  
+    COPY_EXISTING ~halb07.itm~ ~override/_halb07.itm~    
+  END
+
+END
+  
+ACTION_IF game_is_eet BEGIN // adjust strings for EET soundsets
+
+  COPY_EXISTING ~cd51ch.cre~   ~override~
+                ~cd51gho.cre~  ~override~
+                ~cd51go.cre~   ~override~
+                ~cd51gs.cre~   ~override~
+                ~cd51gw.cre~   ~override~
+                ~cd51gz.cre~   ~override~
+                ~cd51qm.cre~   ~override~  
+                ~cd51sol1.cre~ ~override~
+                ~cd51sol2.cre~ ~override~
+                ~cd51sol3.cre~ ~override~   
+    LPM eetize_soundsets
+    BUT_ONLY
+
+END
+
+/////                                                  \\\\\
+///// scripts & dialogue                               \\\\\
+/////                                                  \\\\\
+
+COMPILE ~thecalling/baf/cd51qm.baf~
+        ~thecalling/baf/cd51ch.baf~
+        ~thecalling/baf/cd51go.baf~
+        ~thecalling/baf/cd51gs.baf~
+        ~thecalling/baf/cd5107.baf~
+COMPILE ~thecalling/baf/cdgnsen1.baf~ 
+        ~thecalling/baf/cdgnsen2.baf~ 
+        ~thecalling/baf/cd51alt.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~%GnollStronghold_BCS%.bcs~ ~thecalling/baf/ar5100.baf~         EVALUATE_BUFFER
+EXTEND_TOP    ~%tutu_var%xvart.bcs~       ~thecalling/baf/gnolldestroyer.baf~ EVALUATE_BUFFER // destroys leftover gnolls/xvarts at end of quest
+EXTEND_TOP    ~%tutu_var%gnoll.bcs~       ~thecalling/baf/gnolldestroyer.baf~ EVALUATE_BUFFER
+EXTEND_TOP    ~%tutu_var%gnollf.bcs~      ~thecalling/baf/gnolldestroyer.baf~ EVALUATE_BUFFER
+EXTEND_TOP    ~%tutu_var%gnollfb.bcs~     ~thecalling/baf/gnolldestroyer.baf~ EVALUATE_BUFFER
+
+COMPILE ~thecalling/dlg/cd51gs.d~
+COMPILE ~thecalling/dlg/cd51qm.d~ EVALUATE_BUFFER
+COMPILE ~thecalling/dlg/cd51ch.d~
+COMPILE ~thecalling/dlg/cd51go.d~
+COMPILE ~thecalling/dlg/cd51sol.d~
+COMPILE ~thecalling/dlg/cd51sol3.d~
+COMPILE ~thecalling/dlg/cd51shop.d~
+COMPILE ~thecalling/dlg/nalin.d~ EVALUATE_BUFFER
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/itm/cd51amu.itm~ ~override~
+  SAY NAME1 #6913
+  SAY NAME2 @10021
+  SAY DESC @10022
+
+COPY ~thecalling/itm/cd51ari.itm~ ~override~
+  SAY NAME1 #6328
+  SAY NAME2 @10024
+  SAY DESC @10025
+  PATCH_IF !enhanced_edition BEGIN
+    LPF DELETE_EFFECT INT_VAR match_opcode = 319 END
+  END  
+
+COPY ~thecalling/itm/cd51bel.itm~ ~override~
+  SAY NAME1 #12704
+  SAY NAME2 @10012
+  SAY DESC @10013
+
+COPY ~thecalling/itm/cd51boo.itm~ ~override~
+  SAY NAME1 @10031
+  SAY NAME2 @10031
+  SAY DESC @10032
+
+COPY ~thecalling/itm/cd51cha.itm~ ~override~
+  SAY NAME1 #214
+  SAY NAME2 @10015
+  SAY DESC @10016
+  PATCH_IF !opp_palette BEGIN // if using color only available with 1pp/EE
+    LPF ALTER_EFFECT INT_VAR match_opcode = 7 match_parameter2 = 4 parameter1 = 52 END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 7 match_parameter2 = 5 parameter1 = 53 END
+  END                   	   
+
+COPY ~thecalling/itm/cd51clo.itm~ ~override~
+  SAY NAME1 #12004
+  SAY NAME2 @10018
+  SAY DESC @10019
+
+COPY ~thecalling/itm/cd51key.itm~ ~override~
+  SAY NAME1 @10038
+  SAY NAME2 @10038
+  SAY DESC @10039
+
+COPY ~thecalling/itm/cd51rew%enhanced_edition%.itm~ ~override/cd51rew.itm~
+  SAY NAME1 #12004
+  SAY NAME2 @10029
+  PATCH_IF enhanced_edition BEGIN
+    SAY DESC @10030
+  END ELSE BEGIN  
+    SAY DESC @10031
+  END  
+
+COPY ~thecalling/itm/cd51sec.itm~ ~override~
+  SAY NAME1 @10035
+  SAY NAME2 @10036
+  SAY DESC @10037
+
+// staff adds +10% dmaage to acid on EE; casts melf's acid arrow 1/day on non-EE
+COPY ~thecalling/itm/cd51sta%enhanced_edition%.itm~ ~override/cd51sta.itm~
+  SAY NAME1 #6351
+  SAY NAME2 @10011
+  PATCH_IF enhanced_edition BEGIN
+    SAY DESC @10028
+  END ELSE BEGIN 
+    SAY DESC @10027
+    PATCH_IF MOD_IS_INSTALLED ~1pp.tp2~ 207 BEGIN // wizard quarterstaves
+      WRITE_ASCII 0x22 ~q3~ #2
+    END  
+  END  
+
+COPY ~thecalling/itm/cd51sup.itm~ ~override~
+  SAY NAME1 @10033
+  SAY NAME2 @10033
+  SAY DESC @10034
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// unlimited callings                               \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @50000 DESIGNATED 50
+REQUIRE_PREDICATE ((MOD_IS_INSTALLED ~thecalling.tp2~ 10) OR
+                   (MOD_IS_INSTALLED ~thecalling.tp2~ 20)) @6 // skip if no callings installed
+LABEL ~cd_the_calling_cheats~
+
+EXTEND_BOTTOM ~baldur.bcs~ ~thecalling/baf/cheat2.baf~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -363,7 +979,13 @@ COPY ~thecalling/cre/cdgrace.cre~ ~override~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 BEGIN @20000 DESIGNATED 20
-REQUIRE_PREDICATE FILE_EXISTS ~thecalling/languages/%LANGUAGE%/werewolf.tra~ @5 // skip if translation doesn't exist
+REQUIRE_PREDICATE (("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "german" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "polish" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "russian" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "schinese" = 0) OR 
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "spanish" = 0)) @5 // skip if translation doesn't exist
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~stratagems/setup-stratagems.tp2~ ~7060~ @1 // skip if already installed by scs
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @2 // totsc required
 LABEL ~cd_the_calling_peaceful_kaishas_resolution~
@@ -386,9 +1008,9 @@ COMPILE EVALUATE_BUFFER ~thecalling/dlg/werewolf.d~
                         ~thecalling/baf/dw#kcut2.baf~
                         ~thecalling/baf/dw#kcut3.baf~
 						
-ADD_JOURNAL EXISTING TITLE (#31414) @21614 @21648 @21637 @21638 USING ~%tra_location%/%LANGUAGE%/werewolf.tra~	
+ADD_JOURNAL EXISTING TITLE (#31414) @21614 @21648 @21637 @21638 
 
-ACTION_IF GAME_IS ~bgt~ BEGIN // bgt doesn't assign kaishas to kaish2
+ACTION_IF game_is_bgt BEGIN // bgt doesn't assign kaishas to kaish2
 
   COPY_EXISTING ~kaish2.cre~ ~override~
     WRITE_ASCII 0x250 ~kaisha~ #8
@@ -420,7 +1042,7 @@ BEGIN @40000 DESIGNATED 40
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~CDTWEAKS/SETUP-CDTWEAKS.TP2~ ~1090~ @1 // skip if already installed by tweaks anthology
 LABEL ~cd_the_calling_exotic_items~
 
-ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN // BGEE, eet
+ACTION_IF enhanced_edition THEN BEGIN // BGEE, eet
   
   // since adding tsu-o-shi to krumm overwrites his club +1, find new home for it
   COPY_EXISTING ~caldo.cre~ ~override~ // move club +1 to krumm's companion

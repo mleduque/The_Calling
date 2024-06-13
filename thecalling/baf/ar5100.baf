@@ -1,0 +1,80 @@
+IF
+  Global("CDSpawnFighterQuest","%GnollStronghold%",0)
+  OR(2)
+    Class(Player1,FIGHTER)
+    Global("CDMultistronghold","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CDSpawnFighterQuest","%GnollStronghold%",1)
+    CreateCreature("CD51QM",[4950.2700],9)
+    Continue()
+END
+
+IF
+  Global("CDSpawnFighterWatchdog","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDSpawnFighterWatchdog","%GnollStronghold%",1)
+    CreateCreature("CD51GO",[2600.600],0)
+    Continue()
+END
+
+IF
+  Dead("CD51GS") // shaman
+  Dead("CD51CH") // chieftain
+  Dead("CD51GO") // watcher
+  Global("cdjournal3dead","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cdjournal3dead","%GnollStronghold%",1)
+    EraseJournalEntry(@10176)
+    EraseJournalEntry(@10177)
+    EraseJournalEntry(@10178)
+    AddJournalEntry(@10179,QUEST)
+END
+
+IF
+  Dead("CD51GS") // shaman
+  OR(2)
+    !Dead("CD51CH") // chieftain
+    !Dead("CD51GO") // watcher
+  Global("cdjournal_cd51gs","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cdjournal_cd51gs","%GnollStronghold%",1)
+    AddJournalEntry(@10177,QUEST)
+END
+
+IF
+  Dead("CD51CH") // chieftain
+  OR(2)
+    !Dead("CD51GS") // shaman
+    !Dead("CD51GO") // watcher
+  Global("cdjournal_cd51ch","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cdjournal_cd51ch","%GnollStronghold%",1)
+    AddJournalEntry(@10176,QUEST)
+END
+
+IF
+  Dead("CD51GO") // watcher
+  OR(2)
+    !Dead("CD51GS") // shaman
+    !Dead("CD51CH") // chieftain
+  Global("cdjournal_cd51go","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cdjournal_cd51go","%GnollStronghold%",1)
+    AddJournalEntry(@10178,QUEST)
+END
+
+IF
+  Dead("CD51gho") // ghost
+  Global("cdjournal_cd51gho","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cdjournal_cd51gho","%GnollStronghold%",1)
+    EraseJournalEntry(@10184)
+    AddJournalEntry(@10185,QUEST)
+END

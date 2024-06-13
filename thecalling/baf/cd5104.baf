@@ -1,0 +1,9 @@
+IF
+	Global("cd_orig_ambients","CD5104",0)
+THEN
+	RESPONSE #100
+	  SetGlobal("cd_orig_ambients","CD5104",1)
+		AmbientActivate("smoke1",FALSE)
+		AmbientActivate("smoke2",FALSE)
+		AmbientActivate("smoke3",FALSE)
+END

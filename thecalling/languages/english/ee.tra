@@ -82,6 +82,122 @@ Weight: 1~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
+///// expanded gnoll stronghold                        \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@10013 = ~This unusual belt was created for an assassin named Mudbone. He was specialized in killing priests, especially those that were considered obstacles to those who had very little respect to people of faith. The belt looks well made. It must have been made using high quality materials.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +2%
+
+Combat abilities:
+– Damage vs. Clerics: +2
+
+Weight: 2~
+@10016 = ~There is something really raw and primitive about this chain mail, but you can sense some magical energy from its links. It should be able to protect its user in battle and the magic may prove to be helpful while in the wilderness. However, the armor has a strange scent that reminds you of dog's fur.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class vs. Animals: +2
+– Charisma: -1
+
+Armor Class: 4 (2 vs. slashing, 6 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 20~
+@10019 = ~This cloak was made of enchanted fabric that may prove to be quite useful when fighting enemies like basilisks. It should protect its user from their deadly gaze.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Petrification/Polymorph: +4
+
+Weight: 3~
+@10022 = ~This amulet was cursed with some dark magic. Whoever wears it, is going to suffer from bad luck and when on the road or during an adventure... luck may prove to be a matter of life and death.
+
+STATISTICS:
+
+Equipped abilities:
+– Luck: -1
+– May only be removed with a Remove Curse spell
+
+Weight: 1~
+@10025 = ~This arrow looks broken, but even when you hold one half of it, the other half levitates right next to it. Even though it's not really powerful, it may be useful in situation when an adventurer runs out of normal arrows.
+
+STATISTICS:
+
+Combat abilities: 
+– Strikes as a +1 weapon
+– Returns to the wielder when shot
+
+Damage: 1 (missile)
+Launcher: Bow
+
+Weight: 0~
+@10028 = ~This staff was previously used by a Gnoll Shaman from the Gnoll Stronghold on the Sword Coast.
+
+It is hard to say who created it. It feels quite raw and while it's power isn't the most powerful one, there are certainly situations when it may be used. It is believed to hold power able to make any acid deadlier.
+
+STATISTICS:
+
+Combat abilities: 
+– Acid Damage bonus: +10%
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@10030 = ~This purple cloak has quite some majestic aura it is believed to have been created for a king, but... the legend does not specify which one. It is meant not only to protect the one that uses it, but also make those around them believe their every word and worship them.
+
+You were given this cloak as a token of trust and gratitude for securing the Gnoll Stronghold.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– Saving Throws: +2
+– Sets Charisma to 19 (fighters only)
+
+Weight: 3~
+@10032 = ~This book describes rituals, some to tame the natural energy, and some to please Yeenoghu, the Beast of Butchery. There is one especially morbid, describing the burning of human skulls.
+
+STATISTICS:
+
+Weight: 2~
+@10034 = ~This bag is filled with medical supplies.
+
+STATISTICS:
+
+Weight: 15~
+@10037 = ~This burning meat is actually Yeenoghu's burning flesh. Those that decide to consume it may gain special blessing of the Prince of Gnolls, but it comes with a price.
+
+STATISTICS:
+
+Special: If consumed it lowers Charisma by 1, but provides +2 Damage vs. Good creatures. The bonus is permanent.
+
+Weight: 2~
+@10039 = ~You found this primitive key at the Gnoll Stronghold. It must open something at that location.
+
+STATISTICS:
+
+Weight: 1~
+// here for the em dash
+@10103 = ~There is mining town nearby. Nashkel is its name. There is a temple there and I would like you to go there and bring me some medical supplies. The priest was informed that we may need some help, if I'm correct. A pity we haven't talked to him before I lost my friends, maybe if we had those—no. It wouldn't prevent that tragedy. I'm sorry, they're still on my mind.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
 ///// Exotic Item Pack                                 \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

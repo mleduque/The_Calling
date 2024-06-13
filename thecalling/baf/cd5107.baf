@@ -1,0 +1,8 @@
+IF
+  Global("CDGnollQuest","GLOBAL",8)
+  Global("CDGnollQuestGhost","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("CD51GHO",[350.450],8)
+    SetGlobal("CDGnollQuestGhost","GLOBAL",1)
+END

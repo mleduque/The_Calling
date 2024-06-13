@@ -1,0 +1,14 @@
+IF
+  OR(7)
+    AreaCheck("%GnollStronghold%")
+    AreaCheck("CD5104")
+    AreaCheck("CD5105")
+    AreaCheck("CD5106")
+    AreaCheck("CD5107")
+    AreaCheck("CD5108")
+    AreaCheck("CD5109")
+  GlobalGT("CDGnollQuest","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

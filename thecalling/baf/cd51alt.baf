@@ -1,0 +1,32 @@
+IF
+  Contains("%tutu_var%MISC50","CD51ALT")
+  !Global("CD51SkullSecret","GLOBAL",10)
+THEN
+  RESPONSE #100
+    DestroyItem("%tutu_var%MISC50")
+    CreateItem("%tutu_var%MISC07",100,0,0)
+    AddexperienceParty(100)
+    PlaySound("CD51ALT")
+    CreateVisualEffect("spfirimp",[1325.1165])
+    IncrementGlobal("CD51SkullSecret","GLOBAL",1)
+END
+
+IF
+  GlobalGT("CD51SkullSecret","GLOBAL",9)
+  Global("CD51SkullSecretSpecial","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    Wait(1)
+    ScreenShake([50.50],3)
+    PlaySound("CD51ALT")
+    CreateVisualEffect("spfirimp",[1325.1165])
+    Wait(1)
+    CreateVisualEffect("spfirimp",[1325.1165])
+    Wait(1)
+    CreateVisualEffect("spfirimp",[1325.1165])
+    Wait(1)
+    CreateItem("CD51SEC",1,0,0)
+    SetGlobal("CD51SkullSecretSpecial","GLOBAL",1)
+    EndCutSceneMode()
+END
