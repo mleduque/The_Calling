@@ -36,8 +36,8 @@ ALWAYS
       INCLUDE ~thecalling/lib/tob2soa.tpa~    
 
       // convert strings from UTF-8 for originals  
-      ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu 0_ee 10_ee _ee 20_ee 30_ee 40_ee END // strings exclusively for the installer and EE, respectively
-      ACTION_DEFINE_ARRAY cdreload BEGIN END // actual content strings
+      ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu ee END // strings exclusively for the installer and EE, respectively
+      ACTION_DEFINE_ARRAY cdreload BEGIN game END // actual content strings
       LAF HANDLE_CHARSETS INT_VAR from_utf8 = 1 infer_charsets = 1 
                           STR_VAR default_language = ~english~ tra_path = ~thecalling/languages~ out_path = ~weidu_external/thecalling/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
 
