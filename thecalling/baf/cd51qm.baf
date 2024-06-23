@@ -42,13 +42,19 @@ THEN
 END
 
 IF
-    Global("CDGnollQuest","GLOBAL",5)
+  Global("CDGnollQuest","GLOBAL",5)
 THEN
   RESPONSE #100
     StartCutSceneMode()
     SmallWait(2)
     FadeToColor([30.0],0)
     Wait(2)
+    ActionOverride("cd51ded1",DestroySelf())
+    ActionOverride("cd51ded2",DestroySelf())
+    ActionOverride("cd51ded3",DestroySelf())
+    ActionOverride("cd51ded4",DestroySelf())
+    ActionOverride("cd51ded5",DestroySelf())
+    ActionOverride("cd51ded6",DestroySelf())
     CreateCreature("CD51SOL3",[1380.1150],0)
     CreateCreature("CD51SOL1",[700.1370],1)
     CreateCreature("CD51SOL2",[800.1430],1)

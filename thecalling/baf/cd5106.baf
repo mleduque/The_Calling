@@ -1,0 +1,69 @@
+IF
+  Global("cd_spawns","MYAREA",1) // hardest
+  Difficulty(HARDEST)
+THEN
+  RESPONSE #100
+    SetGlobal("cd_spawn_ambush","MYAREA",3)
+    SetGlobalTimer("cd_spawn_ambush_timer","MYAREA",3)
+    CreateCreature("%tutu_var%gnoll_a",[586.370],0)
+    CreateCreature("%tutu_var%gnoll_a",[663.384],0)
+    CreateCreature("%tutu_var%gnoll_a",[255.676],12)
+    CreateCreature("%tutu_var%gnoll_a",[265.756],12)
+    SetGlobal("cd_spawns","MYAREA",2)
+END
+
+IF
+  Global("cd_spawns","MYAREA",1)
+  Difficulty(HARD)
+THEN
+  RESPONSE #100
+    SetGlobal("cd_spawn_ambush","MYAREA",1)
+    SetGlobalTimer("cd_spawn_ambush_timer","MYAREA",6)
+    CreateCreature("%tutu_var%gnoll_a",[586.370],0)
+    CreateCreature("%tutu_var%gnoll_a",[663.384],0)
+    CreateCreature("%tutu_var%gnoll_a",[255.676],12)
+    CreateCreature("%tutu_var%gnoll_a",[265.756],12)
+    SetGlobal("cd_spawns","MYAREA",2)
+END
+
+IF
+  Global("cd_spawns","MYAREA",1)
+  Difficulty(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("cd_spawn_ambush","MYAREA",1)
+    SetGlobalTimer("cd_spawn_ambush_timer","MYAREA",6)
+    CreateCreature("%tutu_var%gnoll_a",[586.370],0)
+    CreateCreature("%tutu_var%gnoll_a",[663.384],0)
+    SetGlobal("cd_spawns","MYAREA",2)
+END
+
+IF
+  Global("cd_spawns","MYAREA",1)
+  Difficulty(EASY)
+THEN
+  RESPONSE #100
+    SetGlobal("cd_spawn_ambush","MYAREA",0)
+    CreateCreature("%tutu_var%gnoll_a",[586.370],0)
+    CreateCreature("%tutu_var%gnoll_a",[663.384],0)
+    SetGlobal("cd_spawns","MYAREA",2)
+END
+
+IF
+  Global("cd_spawns","MYAREA",1)
+  Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    SetGlobal("cd_spawn_ambush","MYAREA",0)
+    SetGlobal("cd_spawn_timer2","MYAREA",6)
+END
+
+IF
+  GlobalGT("cd_spawn_ambush","MYAREA",0)
+  GlobalTimerExpired("cd_spawn_ambush_timer","MYAREA")
+THEN 
+  RESPONSE #100
+    CreateCreature("%tutu_var%gnoll_a",[836.962],7)
+    IncrementGlobal("cd_spawn_ambush","MYAREA",-1)
+    SetGlobalTimer("cd_spawn_ambush_timer","MYAREA",3)
+END

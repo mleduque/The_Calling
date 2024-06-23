@@ -1,0 +1,74 @@
+IF
+  AreaCheckObject("CD4102",Player1)
+  Global("CDShamanCalling","GLOBAL",5)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    CreateVisualEffectObject("SPCLOUD1",Player1)
+    CreateVisualEffectObject("SPCLOUD1",Player2)
+    CreateVisualEffectObject("SPCLOUD1",Player3)
+    CreateVisualEffectObject("SPCLOUD1",Player4)
+    CreateVisualEffectObject("SPCLOUD1",Player5)
+    CreateVisualEffectObject("SPCLOUD1",Player6)
+    Wait(1)
+    DisplayStringHead(Player1,@60018)
+    Wait(4)
+    EndCutSceneMode()
+    SetGlobal("CDShamanCalling","GLOBAL",6)
+    ActionOverride("CD41HEA",StartDialogueNoSet(Player1))
+END
+
+IF
+  AreaCheckObject("CD4102",Player1)
+  Global("CDShamanCalling","GLOBAL",14)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SmallWait(2)
+    CreateCreature("CD41SHA",[140.340],0)
+    CreateCreature("CD41SHA",[300.340],0)
+    CreateCreature("CD41SHA",[270.170],0)
+    CreateCreature("CD41SHA",[530.330],0)
+    CreateCreature("CD41SHA",[710.280],0)
+    CreateCreature("CD41SHA",[600.320],0)
+    CreateVisualEffect("SPSDIMPA",[140.340])
+    CreateVisualEffect("SPSDIMPA",[300.340])
+    CreateVisualEffect("SPSDIMPA",[270.170])
+    CreateVisualEffect("SPSDIMPA",[530.330])
+    CreateVisualEffect("SPSDIMPA",[710.280])
+    CreateVisualEffect("SPSDIMPA",[600.320])
+    TriggerActivation("Leave",FALSE)
+    AmbientActivate("Animation1",FALSE)
+    Wait(2)
+    ActionOverride("CD41HEA",Enemy())
+    SetGlobal("CDShamanCalling","GLOBAL",15)
+    EndCutSceneMode()
+END
+
+IF
+  Global("CDShamanCalling","GLOBAL",15)
+  NumDead("CD41SHA",6)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    Wait(1)
+    ChangeEnemyAlly("CD41HEA",NEUTRAL)
+    Wait(1)
+    SetGlobal("CDShamanCalling","GLOBAL",16)
+    EndCutSceneMode()
+    ActionOverride("CD41HEA",StartDialogueNoSet(Player1))
+END
+
+IF
+  GlobalGT("CDShamanCalling","GLOBAL",16)
+  Global("CDLetMeLeave","CD4102",0)
+THEN
+  RESPONSE #100
+    TriggerActivation("Leave",TRUE)
+    AmbientActivate("Animation1",TRUE)
+    ActionOverride("Container1",CreateItem("CD41BOW",0,0,0))
+    AddXPObject(Player1,750)  
+    AddexperienceParty(3000)
+    SetGlobal("CDLetMeLeave","CD4102",1)
+END

@@ -1,0 +1,25 @@
+
+
+IF
+  !AreaCheck("%ArchaeologicalSite%") //archeological site exterior 
+  !AreaCheck("%ArchaeologicalSite_Tomb%") //archeological site interior
+  !AreaCheck("ZN4102") //archeological site interior 2 MotSC
+  !AreaCheck("ZN4103") //archeological site interior 3 MotSC
+  Global("CDShamanCalling","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CDShamanCallingTime","GLOBAL",TWO_DAYS)
+    SetGlobal("CDShamanCalling","GLOBAL",2)
+END
+
+IF
+  !AreaCheck("%ArchaeologicalSite%") //archeological site exterior 
+  !AreaCheck("%ArchaeologicalSite_Tomb%") //archeological site interior
+  !AreaCheck("ZN4102") //archeological site interior 2 MotSC
+  !AreaCheck("ZN4103") //archeological site interior 3 MotSC
+  GlobalTimerExpired("CDShamanCallingTime","GLOBAL")
+  Global("CDShamanCalling","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("CDShamanCalling","GLOBAL",3)
+END

@@ -6,7 +6,13 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("CDSpawnFighterQuest","%GnollStronghold%",1)
-    CreateCreature("CD51QM",[4950.2700],9)
+    CreateCreature("cd51qm",[4950.2700],9)
+    CreateCreature("cd51ded1",[2175.1788],9)
+    CreateCreature("cd51ded2",[2209.1867],7)
+    CreateCreature("cd51ded3",[2257.1843],6)
+    CreateCreature("cd51ded4",[2302.2181],12)
+    CreateCreature("cd51ded5",[1868.1602],5)
+    CreateCreature("cd51ded6",[1992.1634],9)
     Continue()
 END
 

@@ -3,5 +3,6 @@ IF
   NumTimesTalkedTo(0)
 THEN
   RESPONSE #100
+    SetGlobal("cd_spawns","MYAREA",1)
     StartDialogueNoSet([PC])
 END

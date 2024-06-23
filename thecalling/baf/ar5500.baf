@@ -1,0 +1,18 @@
+IF
+  Global("CDShamanCalling","GLOBAL",11)
+  Global("CDShamanHerb","MYAREA",0)
+THEN
+  RESPONSE #100
+    ContainerEnable("cd_sham",TRUE) 
+    SetGlobal("CDShamanHerb","MYAREA",1)
+END
+
+IF
+  Global("CDShamanHerb","MYAREA",1)
+  PartyHasItem("CD41HER")
+THEN
+  RESPONSE #100
+    AddJournalEntry(@60154,QUEST) 
+    EraseJournalEntry(@60153)
+    SetGlobal("CDShamanHerb","MYAREA",2)
+END

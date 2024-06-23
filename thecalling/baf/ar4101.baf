@@ -1,0 +1,65 @@
+IF
+  OR(2)
+    Class(Player1,SHAMAN)
+    Global("CDMultistronghold","GLOBAL",1)
+  AreaCheckObject("%ArchaeologicalSite_Tomb%",Player1)
+  Global("CDShamanCalling","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDShamanCalling","GLOBAL",1)
+END
+
+IF
+  AreaCheckObject("%ArchaeologicalSite_Tomb%",Player1)
+  Global("CDShamanCalling","GLOBAL",4)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    Wait(1)
+    TriggerActivation("CD_41TOSHAM",TRUE)
+    AmbientActivate("CD41IN",TRUE)
+    DisplayStringHead(Player1,@60019)
+    Wait(5)
+    DisplayStringHead(Player1,@60020)
+    Wait(3)
+    EndCutSceneMode()
+    SetGlobal("CDShamanCalling","GLOBAL",5)
+END
+
+IF
+  Contains("CD41FIG","Container1")
+  Global("CDShamanCalling","GLOBAL",9)
+THEN
+  RESPONSE #100
+    ActionOverride("Container1",DestroyItem("CD41FIG"))
+    CreateVisualEffect("spfirepi",[1140.562])
+    SetGlobal("CDShamanCalling","GLOBAL",10)
+END
+
+IF
+  Contains("CD41HER","Container1")
+  Global("CDShamanCalling","GLOBAL",12)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SmallWait(2)
+    ActionOverride("Container1",DestroyItem("CD41HER"))
+    CreateVisualEffect("spfirepi",[1140.562])
+    Wait(1)
+    CreateCreature("CD41COR",[1300.600],0)
+    CreateVisualEffectObject("SPCLOUD1","CD41COR")
+    CreateVisualEffectObject("SPFLESHS","CD41COR")
+    SetGlobal("CDShamanCalling","GLOBAL",13)
+    EndCutSceneMode()
+END
+
+IF
+  Dead("CD41COR")
+  Global("CD41COR_journal","MYAREA",0)
+THEN
+  RESPONSE #100
+    AddJournalEntry(@60157,QUEST) 
+    EraseJournalEntry(@60154)
+    SetGlobal("CD41COR_journal","MYAREA",1)
+END
+

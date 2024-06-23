@@ -13,6 +13,9 @@
     @4 = ~DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.~
     @5 = ~This component is not available in your language yet.~
     @6 = ~No Callings installed~
+    @7 = ~This component requires the Enhanced Edition~
+    @8 = ~Calling Quests~
+    @9 = ~Additional Content~
 
   @100 = ~The Calling: Mage - The Cursed Bracers~
   @101 = ~Would you like to install cheats?
@@ -30,3 +33,7 @@
 @40000 = ~Exotic Item Pack~
 
 @50000 = ~Make All Calling Quests Open to All Classes~
+
+@60000 = ~The Calling: Shaman - The Dream~
+@60001 = ~Use normal text~
+@60002 = ~Use color in dialogue text~

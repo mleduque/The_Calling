@@ -539,7 +539,7 @@ Weight: 2~
 @10063 = ~Be careful, adventurers. This is a dangerous place... I... I lost most of my people to monsters that occupy nearby stronghold. You look like a good warrior, <PRO_RACE>, but these creatures here are fierce!~
 @10064 = ~What happened to those people you speak of? Are they dead?~
 @10065 = ~They must have been weak if they died because of some crude creatures.~
-@10066 = ~They were good men and women... We came here to claim this place. It should belong to Amnian army, not to these creatures. We were sent here from Athkatla, to investigate the place and see if a group of twenty may quietly eliminate the gnolls and turn this into an operation point. But we were noticed.~
+@10066 = ~They were good men and women... We came here to claim this place. It should belong to Amnian army, not to these creatures. We were sent here from Athkatla, to investigate the place and see if a small group may quietly eliminate the gnolls and turn this into an operation point.~
 @10067 = ~We fell into a trap. They threw boulders on us, others were killed with their halberds and blades.~
 @10068 = ~Minsc is not afraid of those creatures. They're evil and evil will always have its butt properly kicked, eventually! Most likely by Minsc and Boo. *squeak*~
 @10069 = ~Well, of course the unprepared will always fail. (That is why one always needs a proper plan. And some buffoons that may be used as cannon fodder.)~
@@ -686,6 +686,33 @@ Captain Stilind's ghost is no more. I should report my success.~
 @10186 = ~Securing the Gnoll Stronghold
 
 The Gnoll Stronghold is now a stronghold of Amn, thanks to my efforts. I've been well rewarded for my work by Captain Stilind.~
+@10187 = ~Halberd of the Chimera~
+@10188 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has a series of runes along its handle, allowing the wielder to imbue strikes with their choice of additional electrical, cold, or fire damage. It will occasionally release a burst of all three elements on a single strike. 
+
+STATISTICS:
+
+Combat Abilities:
+   1% chance per hit target will take an additional 3 points each of cold, electrical, and fire damage
+
+THAC0:  +1 bonus
+Damage:  1D10 + 1
+Damage type:  piercing
+Special:  +1 cold, electrical, or fire damage (wielder's choice)
+Weight: 14
+Speed Factor: 8
+Proficiency Type: Halberd
+Type:  2-handed
+Requires: 13 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+@10189 = ~Electricity~
+@10190 = ~Cold~
+@10191 = ~Fire~
+@10192 = ~Tensions are rising with Baldur's Gate, and this stronghold commands a good section of the coast. We were going to proceed to the Nashkel Mines after finishing here. But we were noticed.~
+@10193 = ~It may be a formidable foe and you may not be up to tthe task at the moment. We can place some simple wards to keep the ghost contained until you're ready.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -847,3 +874,13 @@ Beast Master~
 @40020 = ~Intelligence Modification~
 @40021 = ~Strength Modification~
 @40022 = ~Gullykin Temple~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// shaman - Dreamheart                              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+// since this component is ee-only, I've put all strings in ee.tra

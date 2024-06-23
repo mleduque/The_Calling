@@ -194,6 +194,23 @@ STATISTICS:
 Weight: 1~
 // here for the em dash
 @10103 = ~There is mining town nearby. Nashkel is its name. There is a temple there and I would like you to go there and bring me some medical supplies. The priest was informed that we may need some help, if I'm correct. A pity we haven't talked to him before I lost my friends, maybe if we had those—no. It wouldn't prevent that tragedy. I'm sorry, they're still on my mind.~
+@10188 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has a series of runes along its handle, allowing the wielder to imbue strikes with their choice of additional electrical, cold, or fire damage. It will occasionally release a burst of all three elements on a single strike. 
+
+STATISTICS:
+
+Combat abilities:
+– 1% chance per hit target will take an additional 3 points each of cold, electrical, and fire damage
+
+THAC0: +1
+Damage: 1d10+1, +1 cold, electrical, or fire damage (wielder's choice)
+Damage type: Slashing or piercing, whichever is better
+Speed Factor: 8
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 14~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -264,3 +281,223 @@ Requires:
 
 Weight:  4
 ~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// shaman - Dreamheart                              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@60003 = ~Vampiric Wolf - Pack Leader~
+@60004 = ~Zombie-Wolf~
+@60005 = ~Manifestation of Corruption~
+@60006 = ~Fear of Stasis~
+@60007 = ~Ring-flies~
+@60008 = ~Head of the Vampiric Wolf~
+@60009 = ~This is a head of a Vampiric Wolf that lead a pack of undead wolves. The pack defiled the cave that, as you have found out, is a place of great spiritual power.
+
+It may be used as a proof that you dealt with the pack.
+
+STATISTICS:
+
+Weight: 3~
+@60010 = ~Heart Figurine~
+@60011 = ~This figurine isn't mush bigger than a pebble and looks like a strange little heart. It's quite warm to the touch. When you hold it, it almost feels as if it was beating. It's hard to say if it's just your imagination, or your own pulse, or something else, but it's surely an intriguing sensation.
+
+STATISTICS:
+
+Weight: 1~
+@60012 = ~Soulheart Herb~
+@60013 = ~This plant has luminescent blueish leaves. The herb itself also has a sweet scent that reminds you of grapes.
+
+STATISTICS:
+
+Weight: 1~
+//@60014 = ~~
+@60015 = ~Fate Spindle +2~
+@60016 = ~This shortbow was once used by a powerful shaman from the Sword Coast: Zaznya. If the tales are to be believed, Zaznya was a skilled archer, protected by an army of ghosts. She would protect places of power from those that cared little about their past... and their future. Some say that some of the ghosts would reach the string of the bow with her and help guide her arrows with great precision.
+
+STATISTICS:
+
+Equipped abilities:
+- May cast two additional 1st level spells per day (shaman only)
+- Electric Resistance: +10%
+
+THAC0: +2
+Damage: +2
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2~
+@60017 = ~Archaeological Site, interior tomb (shaman)~ // descript of area for console area listing
+@60018 = ~(You have entered a strange dreamlike realm. And you are not alone.)~
+@60019 = ~(What was once a bonfire has now became a vortex of swirling embers and ashes. There is something inviting about it.)~
+@60020 = ~(Will you dare to step into it, shaman?)~
+@60021 = ~I can see you heard my calling. Welcome, shaman.~
+@60022 = ~Wow. That's... a strange place. Wait—are we dreaming? And is that a floating heart?~
+@60023 = ~Agh. I feel you got us into some pointless digression. Know that I do not like what I see, <CHARNAME>.~
+@60024 = ~Is this a dream, <CHARNAME>? Art we dreaming? It dost feel like a strange dream, I must admit to thee, leader.~
+@60025 = ~Hmm? Vibrant vortexes...? Vexing visions? What is this? What sort of vaguely valid voyage is that?~
+@60026 = ~I am glad you heard me. That the ember of my own dream reached you and led you back here. Worry not, as I mean you no harm.~
+@60027 = ~Where am I? Who are you?~
+@60028 = ~That's all very good, but I care little about your motivations. I demand answers. What sort of wicked place is this, hmm?~
+@60029 = ~Ah. It's you. Are you here because you changed your mind? Do you want to help me?~
+@60030 = ~I'm not sure I understand what you are and what you want from me. You weren't really clear with your explanations.~
+@60031 = ~No. I think I'll just go now.~
+@60032 = ~I assumed you would like it here. You've seen this place. Well, the dull incarnation of it. One that was used by Kozah. One that was investigated by the archaeologists, those crude excavators.~
+@60033 = ~What they knew of this place was true. But they didn't know that before they found this site, or even before Kozah and his people stepped into this cave, it was already alive. And that I, the Dreamheart, have been beating in here for quite a while.~
+@60034 = ~I may need more information than that. What are you?~
+@60035 = ~Nothing you say makes any sense, creature. It's quite annoying and I have little patience for riddles.~
+@60036 = ~I shall try again: I am the Dreamheart. An entity that was born by hopes and powers of this old place and nurtured by all the men, women, animals, and creatures that stepped into this cave. I fed on their hopes. And as their minds and hearts and souls become brighter, infected with new ideas, as they painted on the walls, ate their food, danced, I was becoming more and more and more vivid.~
+@60037 = ~This is a place of great power. When this world was far less advanced, they used to call this place the Grotto of Slumbergold. A place of spirits and earth. A place where people such as yourself would come and where they would meditate. Find answers. Inspiration. Hope. Fun. And recently, it has been corrupted.~
+@60038 = ~Are you speaking of the excavation? I don't think those people tried to harm this place.~
+@60039 = ~I'm not sure I understand what you're talking of, but it sounds as if something really serious happened.~
+@60040 = ~To the point, creature.~
+@60041 = ~Those people? No. What penetrated the true core of this place was something darker.~
+@60042 = ~After the diggers were gone and they left the entrance unsealed, corrupted things entered the cave. While they never managed to reach the true core of the place, the true Slumbergold, they managed to defile the chambers uncovered by the archaeologists.~
+@60043 = ~Those creatures were animals, or rather their carcasses, touched by dark fingers of undeath. A pack of undead wolves that stained the bonfire, the walls, the ground with their vile saliva, their stench, their aura.~
+@60044 = ~Undead wolves? Those poor creatures must have lost a battle against another undead thing. Such monsters shouldn't roam the wilderness. We should put an end to their misery, <CHARNAME>.~
+@60045 = ~I pity those that may encounter a such pack of creatures.~
+@60046 = ~This cannot be ignored. And that is why I need you.~
+@60047 = ~What for? They're gone, aren't they?~
+@60048 = ~Look, I do not have time for this. I'll just go. There are more serious matters that need my attention.~
+@60049 = ~They're not here, but they're not gone.~
+@60050 = ~I can sense them nearby. And I fear they may return. And that should never happen.~
+@60051 = ~These walls are a home of golden dreams. Of memories. As I told you before, people came here for answers. To find peace. To mourn. Others came for different kinds of rituals. Those of fertility. They lay on the altars as their explored their pleasures, their flesh and pleasures. And I never minded that. Pleasure can be just as strong as fear and hope, when given a proper chance.~
+@60052 = ~These creatures not only brought darkness but weakened centuries of memories. Uncountable moments that enriched the lives of others... and myself.~
+@60053 = ~...and they may still return. They know this place now. They must have felt its power. My powers. And that of all those memories engraved in these walls. We cannot risk that they will return here again. Cause more damage.~
+@60054 = ~That is why I want you to find them, and slay them. It's what you do, no? I can tell you're no stranger to such fights. And you're also a shaman. Like those that came here before.~
+@60055 = ~I'll help you. I wouldn't want these creatures to corrupt this place further.~
+@60056 = ~I doubt you can actually tell what I've seen or what I went through. But fine. I suppose I can help you.~
+@60057 = ~I don't have time for this. Lure some other fool, but I won't be your dog or a servant.~
+@60058 = ~Wonderful! They are still here, somewhere close. Find them. The pack wasn't huge, they were five of them... and they all deserve to be put to rest.~
+@60059 = ~Please, return to me when they're all slain.~
+@60060 = ~That's... disappointing. Return to me, though, if you change your mind.~
+@60061 = ~Have you found those creatures? Are they dead?~
+@60062 = ~The pack won't cause you any more problems, nor they will continue to corrupt this place. Here's the head of the pack leader as a proof.~
+@60063 = ~Not yet. Goodbye.~
+@60064 = ~So? Have you changed your mind? Would you like to keep helping me?~
+@60065 = ~Just tell me what you need. Perhaps I'll be able to help you after all.~
+@60066 = ~No, not really.~
+@60067 = ~Ah! Well, I suppose this may be seen as an icon of victory. Thank you. You did well, shaman.~
+@60068 = ~I was wondering how powerful and resourceful you can be. You aren't like those that only ponder about the universe, but someone that can change the reality. And make some of the dreams come true. Even if some of them can be quite... bloody.~
+@60069 = ~When you stepped into my little golden world, I felt there is something special about you. And I can see I wasn't wrong. I cannot pinpoint what part of you is this, but... there is certainly something about you that make you quite interesting.~
+@60070 = ~Thank you. I suppose.~
+@60071 = ~Of course I am special. I was born with a gift of spiritual strength. Well, not just spiritual.~
+@60072 = ~You are welcome.~
+@60073 = ~And you certainly aren't modest. But I do not mind that.~
+@60074 = ~You do intrigue me. Your spirit, your flesh, your blood and sweat—they all reflect signs of experience and strong will. That makes me wonder... Yes, I could still use your help.~
+@60075 = ~I have a proposal. Continue helping me. There is still something you could do for me. If you do, I will share something with you. A weapon left by another shaman. Something you could use in the upcoming battles.~
+@60076 = ~And if I'd rather avoid such battles?~
+@60077 = ~I can help you. I find this place interesting and worth protection.~
+@60078 = ~I can help you. It looks like there may be people that want me dead. I could use any resources I can get.~
+@60079 = ~I'm not interested. Sorry, but I wasted enough time on those wolves. I need to go.~
+@60080 = ~Haha! Well, I am sorry to say that, but I'm afraid that some battles and some of your enemies care little about what you'd prefer. And wielding a weapon doesn't mean you have to kill with it, does it?~
+@60081 = ~Well, I suppose I can at least listen to what you need.~
+@60082 = ~I don't think I have any more time to waste on you. I'm sorry, but I need to go.~
+@60083 = ~I'm happy to hear it.~
+@60084 = ~Those creatures you killed: their vile presence had an effect on this place, as I already told you. But the stain can still be erased, if a proper ritual is performed.~
+@60085 = ~Here. Take this figurine and place it on where the followers of Kozah used to place their idol, on the altar, where the memory of Kozah took control over those poor diggers. It will link myself with the mundane incarnation of the grotto, the outer shell of the true Slumbergold. Once it is done, return to me, as this is not the only thing I will need you to do.~
+@60086 = ~I'll do as you ask.~
+@60087 = ~I don't have time for this.~
+@60088 = ~I'll await your return, then.~
+@60089 = ~A pity. But you know where to find me if you change your mind.~
+@60090 = ~Take the heart figurine I gave you to where the followers of Kozah paced their idol. I'll wait for you here.~
+@60091 = ~I can feel you placed the figurine on the altar. Thank you, you did well. Thanks to you, the corruption will be contained and won't spread. It's still there, but locked. Imagine a spiritual flask that won't let it grow or spread to other parts of the rocky flesh that builds the grotto.~
+@60092 = ~Now, we will need a special herb to extract the corruption from the grotto: the Soulheart Herb. The problem is that this is a rare plant.~
+@60093 = ~You would most likely think it grows in the forest, but no. It's usually found on the hillside, in rocky regions. So while I know it's not an easy task, if you want to help me, then you'll need to find this plant.~
+@60094 = ~You're right, that's not very... specific. Where on Nine Hells am I suppose to find this herb?~
+@60095 = ~I can't promise you that I'll find it, but I'll keep my eyes open.~
+@60096 = ~How *very* specific. Humph! Well, it will be a miracle if I find it.~
+@60097 = ~This place is my flesh and my whole world. I do not know where exactly you will find it. If I were you, however, I would look near the rocky regions. Perhaps go east, further from the salty breeze and see if you'll find some where the mountains rule the land.~
+@60098 = ~I do believe that you may succeed. You look like a lucky <PRO_RACE>.~
+@60099 = ~Find the Soulheart Herb, please. Look where mountains rise and reach for the skies above.~
+@60100 = ~I can sense the sweet scent of the Soulheart Herb! You found it. Oh, this is quite exciting!~
+@60101 = ~Now, take it to the altar on which you placed the figurine and place this herb on it too. I will focus my power and use it to extract the undeath we locked with the figurine. Remember, though, as this means the corruption will be sucked out of these walls and you will need to face it. Please, do not die when that happens.~
+@60102 = ~Go and place the herb on the altar. The same place on which you placed the heart figurine and where you were once attacked by the diggers, corrupted by the anger of Kozah.~
+@60103 = ~I can sense the Manifestation of Corruption isn't dead. Kill it!~
+@60104 = ~You are truly a wonderful thing, shaman. Mmm. You truly are a wonderful feed.~
+@60105 = ~Wait—what do you mean?~
+@60106 = ~Mmm. I have a bad feeling about all of this.~
+@60107 = ~You helped me greatly, but... the fact that none of this is exactly a challenge for you makes me feel bored again.~
+@60108 = ~Why the shift of tone? Speak!~
+@60109 = ~I don't know what you're talking about. Help me understand what's going on.~
+@60110 = ~I told you. I am fed by experience. By hope. By dreams. But also fears. Thrills. Pleasure. And many other sensations. When those diggers woke me, I felt hungry. Thus I tried to contact you. I sensed you back then, as you killed among the diggers. You felt... stronger. And I found you interesting.~
+@60111 = ~These tasks of yours weren't only about the purification. That too, but—I was hungry for sensation. I was...~
+@60112 = ~...bored. But you are like a fine refreshment. But now, after yet another victory of yours, I feel that there is a need for change. I want more than what I've seen. I am sorry, but we all need to eat something, and that's just how I satiate myself.~
+@60113 = ~So was it all a trick?~
+@60114 = ~Spirits can be really tricky. Prepare yourself, I feel where this is all going, <CHARNAME>.~
+@60115 = ~What on all spirits dost it mean? <CHARNAME>, be careful. I feel a change in the air.~
+@60116 = ~It looks like we were toyed with.~
+@60117 = ~Boo thinks this heart sounds different now. *squeak*~
+@60118 = ~What is it then? A trap? Xsa nindol k'lar!~
+@60119 = ~When I am bored, the dreams become dull and I start to seek more sensations. And I want more of that from you. I want more and more and more and...~
+@60120 = ~...I just need it. I am sorry, that's nothing personal, but I am still so hungry.~
+@60121 = ~This is enough. I am immortal. And you are strong. And you defeated those little things I created. I... respect you. I suppose I shouldn't torture someone that tried to help me. The little rush helped me and I will try to control the urge to feast.~
+@60122 = ~I hope you will forgive me.~
+@60123 = ~I'll try.~
+@60124 = ~You just tried to kill me!~
+@60125 = ~Gods, what are you? You're worse than Kozah!~
+@60126 = ~Thank you. You are very understanding.~
+@60127 = ~And for that I apologize. And I must admit you aren't easy to munch on.~
+@60128 = ~Actually, I feasted on dreams of Kozah, so... But I'm not him. And I should have remembered that before I tried to kill you.~
+@60129 = ~As you may have noticed, you cannot kill me, so let's just... forget about this. I will let you go. You tried to help me for quite a while now. I do appreciate it. And I promised you something. You will find it on the altar, in this incarnation of the Slumbergold.~
+@60130 = ~I hope you will find peace and satiate your hunger, one day. I won't see it though, as I am done.~
+@60131 = ~Your hunger must be truly great if you attacked me. But I suppose it's quite normal. You probably slept for many years and woke up... hungry.~
+@60132 = ~That's true. I do feast of stories and promises and fantasies. When I first woke up, I sensed one of those diggers outside. He was reading something... a book. And it made me realize how empty I feel. How much I want to fill my body with something. Anything. Fear. Hope. Faith. Visions of rage, and celebration, and sex, and intrigues! Like in that book. A pity the man is dead and his things were taken by some thugs. Because I wonder how that book ended.~
+@60133 = ~I know it may sound silly, but what If I brought you the book? Do you remember the title?~
+@60134 = ~I care little about what you want and how you feel. I'm done. I'll take my reward and leave.~
+@60135 = ~You'd do that for me? That would be something... new.~
+@60136 = ~I think it was a story of the... Dead Three. I would love to read it. I never owned a book of my own.~
+@60137 = ~I would be grateful if you brought me that book.~
+@60138 = ~Of course. Let me tell you something, shaman. I believe there is a part of you that is made for great things. Keep that in mind as you will walk the path of your own story.~
+@60139 = ~And I do apologize for all the hostility.~
+@60140 = ~Believe me or not, but it's good to see you alive.~
+@60141 = ~Right. Sorry, but I need to go.~
+@60142 = ~I have the book you mentioned. Here. I'll leave it on this rock.~
+@60143 = ~You... you truly brought me a book? You are full of surprises, shaman.~
+@60144 = ~I already told you you may take the bow, but let me share some of my experience with you. I will let you see glimpses of what I once saw...~
+@60145 = ~And let me tell you, that I think there is part of you, that... can surprise you just as you surprised me today. You are made for great things. Remember that.~
+@60146 = ~Your usual dreams, for some reason, become something else. A vision of a cave filled with unusual paintings. They feel alive and somewhat enchanting. You're not sure how is it possible, but they echo in your mind, heart and soul, and then... they turn into a voice. One that lures you back to a place you've seen some time ago. The archaeological site. It's hard to say if it's all some kind of trick your mind is trying to play on you or something else. The dream becomes more and more vivid. The images become words. The words become a voice and it's quite different to anything you've ever heard before. And it repeats but a one phrase over and over again: "step into the ash and dream what once was dreamt... and lost."~
+@60147 = ~Dreamheart~
+@60148 = ~Dreamheart
+
+The cave is free of corruption and the Dreamheart has a new book to consume. The matter has been settled, and the spirit rests content in its cave.~ 
+@60149 = ~Dreamheart
+
+I have had a prophetic dream involving a fantastical version of the cave in the archaelogical dig site. I feel compelled to return and investigate.~ 
+@60150 = ~Dreamheart
+
+I met Dreamheart, a spirit living in the cave. It wished to bend me to a task of which I wanted no part.~ 
+@60151 = ~Dreamheart
+
+I met Dreamheart, a spirit living in the cave, who has tasked me with helping to cleanse the taint of the cave. I must hunt down a nearby pack of undead wolves.~ 
+@60152 = ~Dreamheart
+
+The wolves have been defeated, and I have the pack leader's head as proof. I should return to speak with Dreamheart.~ 
+@60153 = ~Dreamheart
+
+Dreamheart has asked me to find a special Soulheart Herb. He could not give specifics as to where it grows, but did suggest I should look in mountainous regions, possibly to the east of here.~ 
+@60154 = ~Dreamheart
+
+I have found Soulheart Herb. Now I can return to speak with Dreamheart and finally scour the corruption from the cave.~ 
+@60155 = ~Dreamheart
+
+Dreamheart's taska are endless. The wolf pack is already defeated, and the latest was to place a figurine on the altar. I refused.~ 
+@60156 = ~Dreamheart
+
+With the wolf pack defeated, Dreamheart asked me to place a figurine on the altar.~ 
+@60157 = ~Dreamheart
+
+I have defeated the corruption that manifested after I added Soulheart Herb on the altar. I should return and speak with the spirit.~ 
+@60158 = ~Dreamheart
+
+The cave is free of corruption. Dreamheart wished to experience more of the living, and decided to do so in a test of battle. The matter has been settled, and the spirit rests easy and content in its cave.~ 
+@60159 = ~Dreamheart
+
+The cave is free of corruption. Dreamheart wished to experience more of the living, and decided to do so in a test of battle. We have carried the battle, and the spirit has expressed interest in a book about The Dead Three.~

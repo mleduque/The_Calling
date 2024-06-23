@@ -1,0 +1,244 @@
+/* CDShamanCalling
+
+ 1 - visited the tomb in the archaelogical dig
+ 2 - left the archaelogical dig area, two-day timer set
+ 3 - timer expired, still outside of tomb area
+ 4 - have dream
+ 5 - player returns to tomb, new area entrance opens
+ 6 - in new area, cutscene, cd41hea speaks
+ 7 - given mission to slay wolf pack, spawn pack
+ 8 - asked to place figurine on altar, refused
+ 9 - asked to place figurine on altar, accepted
+10 - placed figurine
+11 - given mission to find herb
+12 - returned with herb, spoken to Heart
+13 - placed herb, manifestation of corruption spawned
+14 - spoken to heart about defated manifestation, heel turn
+15 - spawn fear of stasis in ensuing cutscene
+16 - statis dead, prompt heart dialogue
+17 - pc agrees to get book for heart (can be missed)
+30 - quest fully complete, either by returning book to Heart or missing the option in 16 dialogue
+*/
+
+/////                                                  \\\\\
+///// copies, preamble                                 \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/bam/cd41bow.bam~  ~override~
+     ~thecalling/bam/cd41fig.bam~  ~override~
+     ~thecalling/bam/cd41hea.bam~  ~override~
+     ~thecalling/bam/cd41her.bam~  ~override~
+     ~thecalling/bam/cd41in.bam~   ~override~     
+     ~thecalling/bam/cd41out.bam~  ~override~
+     ~thecalling/bam/cd41spr1.bam~ ~override~
+     ~thecalling/bam/cd41spr2.bam~ ~override~
+     ~thecalling/bam/cd41wol.bam~  ~override~
+     ~thecalling/eff/cd41bowe.eff~ ~override~
+
+ACTION_IF game_is_eet BEGIN
+  COPY ~thecalling/mos/cd41sha_eet.mos~                ~override/cd41sha.mos~
+END ELSE BEGIN
+  COPY ~thecalling/mos/cd41sha%game_includes_sod%.mos~ ~override/cd41sha.mos~
+END
+
+COPY ~thecalling/2da/cd41sha.2da~  ~override~
+  REPLACE ~1001~ @60146
+						
+ADD_JOURNAL TITLE (@60147) @60148 @60149 @60150 @60151 @60152 @60153 @60154 @60155 @60156 @60157 @60158 @60159
+
+/////                                                  \\\\\
+///// area work                                        \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/are/20~ ~override~ // bmp, mos, wed
+
+// new areas that connect to the gnoll stronghold need to use the platform-specific resref
+COPY ~thecalling/are/cd4102.are~ ~override~
+  LPF ALTER_AREA_REGION STR_VAR region_name = leave destination_area = EVAL ~%ArchaeologicalSite_Tomb%~ END 
+
+// add new areas to the console menu listing
+COPY_EXISTING ~bgee.lua~ ~override~
+  SPRINT cd4102_descript @60017 // do it this way so that the entries can also be translated
+  REPLACE_TEXTUALLY ~\({"%ArchaeologicalSite_Tomb%",.+},\)~ ~\1
+  {"cd5104", "%cd4102_descript%"},~
+  
+COPY ~thecalling/tilesets/20~ ~override~ // new area tilesets/pvrz
+
+COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to main gnoll stronghold map
+  LPF fj_are_structure INT_VAR
+    fj_type = 2 // travel
+    fj_box_left = 330
+    fj_box_top = 252
+    fj_box_right = 385
+    fj_box_bottom = 294
+    fj_cursor_idx = 20
+    fj_flags = (BIT8 + BIT10) // deactivated, use activation point
+    fj_alt_x = 358
+    fj_alt_y = 230
+    fj_loc_x = 358
+    fj_loc_y = 230
+    fj_vertex_0 = 358 + (252 << 16)
+    fj_vertex_1 = 340 + (257 << 16)
+    fj_vertex_2 = 330 + (269 << 16)
+    fj_vertex_3 = 333 + (282 << 16)
+    fj_vertex_4 = 344 + (291 << 16)
+    fj_vertex_5 = 361 + (294 << 16)
+    fj_vertex_6 = 372 + (293 << 16)
+    fj_vertex_7 = 380 + (286 << 16)
+    fj_vertex_8 = 385 + (275 << 16)
+    fj_vertex_9 = 385 + (265 << 16)
+    fj_vertex_10 = 377 + (258 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = CD_41TOSHAM
+    fj_destination_area = CD4102
+    fj_destination_name = En
+  END
+  LPF fj_are_structure INT_VAR
+    fj_loc_x = 313
+    fj_loc_y = 234
+    fj_orientation = 10 // facing direction (0-15 where 0=south, 4=west, 8=north, 12=east)*;
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name = CD_EN
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 356
+    fj_loc_y       = 275
+    fj_flags       = (BIT6 + BIT8 + BIT12) // not covered by wall, draw as background, don't remove in combat
+    STR_VAR
+    fj_structure_type = animation
+    fj_name           = CD41IN
+    fj_bam_resref     = ~CD41IN~
+  END
+
+COPY_EXISTING ~%GibberlingMountains%.are~ ~override~ // Mountains
+  LPF fj_are_structure INT_VAR
+    fj_type = 8 //nonvisible
+    fj_box_left = 4728
+    fj_box_top = 371
+    fj_box_right = 4771
+    fj_box_bottom = 386
+    fj_loc_x = 4747
+    fj_loc_y = 412
+    fj_flags = 32
+    fj_vertex_0 = 4736 + (371 << 16)
+    fj_vertex_1 = 4728 + (386 << 16)
+    fj_vertex_2 = 4771 + (377 << 16)
+    STR_VAR
+    fj_structure_type = container
+    fj_name = cd_sham
+  END
+  LPF fj_are_structure INT_VAR
+    fj_con_itm_idx    = SHORT_AT 0x74 - 1 // a new container will be last in the file
+    fj_flags          = 1 // identified
+    STR_VAR
+    fj_name           = cd41her
+    fj_structure_type = itm
+  END
+
+/////                                                  \\\\\
+///// scripts & dialogue                               \\\\\
+/////                                                  \\\\\
+
+COMPILE ~thecalling/baf/cd4102.baf~
+
+EXTEND_BOTTOM ~baldur.bcs~                        ~thecalling/baf/baldur.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~player1d.bcs~                      ~thecalling/baf/player1d.baf~ 
+EXTEND_BOTTOM ~%ArchaeologicalSite_BCS%.bcs~      ~thecalling/baf/ar4100.baf~
+EXTEND_BOTTOM ~%ArchaeologicalSite_Tomb_BCS%.bcs~ ~thecalling/baf/ar4101.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%GibberlingMountains_BCS%.bcs~     ~thecalling/baf/ar5500.baf~ 
+
+COMPILE ~thecalling/dlg/cd41hea.d~ EVALUATE_BUFFER
+
+/////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/cre/cd41hea.cre~ ~override~
+  SAY NAME1 @60147
+  SAY NAME2 @60147
+
+COPY ~thecalling/cre/cd41wol1.cre~ ~override~
+  SAY NAME1 @60003
+  SAY NAME2 @60003
+
+COPY ~thecalling/cre/cd41wol2.cre~ ~override~
+  SAY NAME1 @60004
+  SAY NAME2 @60004
+
+COPY ~thecalling/cre/cd41cor.cre~ ~override~
+  SAY NAME1 @60005
+  SAY NAME2 @60005
+
+COPY ~thecalling/cre/cd41sha.cre~ ~override~
+  SAY NAME1 @60006
+  SAY NAME2 @60006
+  
+ACTION_IF game_is_eet BEGIN // adjust strings for EET soundsets
+
+  COPY_EXISTING ~cd41hea.cre~  ~override~
+                ~cd41wol1.cre~ ~override~
+                ~cd41wol2.cre~ ~override~
+                ~cd41cor.cre~  ~override~
+                ~cd41sha.cre~  ~override~
+    LPM eetize_soundsets
+    BUT_ONLY
+
+END
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/itm/cd41bow.itm~ ~override~
+  SAY NAME1 #6864
+  SAY NAME2 @60015
+  SAY DESC @60016
+
+COPY ~thecalling/itm/cd41fig.itm~ ~override~
+  SAY NAME1 @60010
+  SAY NAME2 @60010
+  SAY DESC @60011
+
+COPY ~thecalling/itm/cd41her.itm~ ~override~
+  SAY NAME1 @60012
+  SAY NAME2 @60012
+  SAY DESC @60013
+
+COPY ~thecalling/itm/cd41wol.itm~ ~override~
+  SAY NAME1 @60008
+  SAY NAME2 @60008
+  SAY DESC @60009
+
+COPY ~thecalling/itm/cd41wol2.itm~ ~override~
+  SAY NAME1 @60007
+  SAY NAME2 @60007
+
+/////                                                  \\\\\
+///// color text                                       \\\\\
+/////                                                  \\\\\
+
+// add in the asterisks/color this way so that we don't need two sets of strings in the tra files
+ACTION_CLEAR_ARRAY cd41hea_states
+COPY_EXISTING ~cd41hea.dlg~ ~override~
+  READ_LONG 0x08 state_num
+  READ_LONG 0x0c state_off
+  FOR (index = 0 ; index < state_num ; ++index) BEGIN
+    READ_LONG (state_off + (index * 0x10)) strref
+    DEFINE_ASSOCIATIVE_ARRAY cd41hea_states BEGIN ~%strref%~ => 0 END
+  END
+  BUT_ONLY
+
+ACTION_PHP_EACH cd41hea_states AS strref => foo BEGIN
+
+  ACTION_GET_STRREF strref string
+  
+  OUTER_INNER_PATCH_SAVE string ~%string%~ BEGIN
+    REPLACE_TEXTUALLY ~^.+$~ ~%text_pre%%string%%text_post%~
+  END
+  
+  STRING_SET_EVALUATE ~%strref%~ ~%string%~
+  
+END

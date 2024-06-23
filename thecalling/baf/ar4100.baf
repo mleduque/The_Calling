@@ -1,0 +1,24 @@
+IF
+  Global("CDShamanCalling","GLOBAL",7)
+  Global("CDShamanWolves","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDShamanWolves","MYAREA",1)
+    CreateCreature("CD41WOL1",[1700.1830],9)
+    CreateCreature("CD41WOL2",[1670.1835],5)
+    CreateCreature("CD41WOL2",[1720.1855],8)
+    CreateCreature("CD41WOL2",[1740.1800],9)
+    CreateCreature("CD41WOL2",[1750.1820],1)
+    Continue()
+END
+
+IF 
+  Global("CDShamanWolves","MYAREA",1)
+  PartyHasItem("CD41WOL")
+THEN
+  RESPONSE #100
+    SetGlobal("CDShamanWolves","MYAREA",2)
+    AddJournalEntry(@60152,QUEST) 
+    EraseJournalEntry(@60151)
+END
+    

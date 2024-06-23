@@ -1,0 +1,19 @@
+IF
+	Global("CDShamanCalling","GLOBAL",3)
+THEN
+	RESPONSE #100
+    CutSceneId(Player1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    Rest()
+    ActionOverride(Player2,Rest())
+    ActionOverride(Player3,Rest())
+    ActionOverride(Player4,Rest())
+    ActionOverride(Player5,Rest())
+    ActionOverride(Player6,Rest())
+    TextScreen("cd41sha")
+    AddJournalEntry(@60149,QUEST)
+    SetGlobal("CDShamanCalling","GLOBAL",4)
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+END
