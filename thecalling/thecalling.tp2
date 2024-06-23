@@ -404,6 +404,9 @@ COPY ~thecalling/bam/cd51amu%enhanced_edition%.bam~ ~override/cd51amu.bam~ // ic
      ~thecalling/bam/cd51sec%enhanced_edition%.bam~ ~override/cd51sec.bam~ // icon, Yeenoghu's Burning Flesh
      ~thecalling/bam/cd51smk.bam~                   ~override~             // ambient animation, smoke
      ~thecalling/bam/cd51hal.bam~                   ~override~             // chimera's halberd icon
+     ~thecalling/bam/cd51halc.bam~                  ~override~             // chimera's halberd cold mode
+     ~thecalling/bam/cd51hale.bam~                  ~override~             // chimera's halberd electric mode
+     ~thecalling/bam/cd51half.bam~                  ~override~             // chimera's halberd fire mode
      ~thecalling/bam/cd51sta%enhanced_edition%.bam~ ~override/cd51sta.bam~ // icon, Staff of Corrosive Thoughts +1
      ~thecalling/bam/cd51sup%enhanced_edition%.bam~ ~override/cd51sup.bam~ // icon, Medical Supplies
      ~thecalling/eff/cd51rew%enhanced_edition%.eff~ ~override/cd51rew.eff~ // provides fighter-only 19 CHR for Cloak of the Regent-Warrior
