@@ -49,7 +49,7 @@ ALWAYS
 
 END
 
-VERSION ~v6_WIP_test_build_06132024~
+VERSION ~v6_WIP_test_build_06222024~
 README ~thecalling/readme-thecalling-%LANGUAGE%.html~ ~thecalling/readme-thecalling.html~
 AUTO_TRA ~%tra_location%/%s~
 
