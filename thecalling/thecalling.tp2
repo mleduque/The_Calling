@@ -17,6 +17,12 @@ ALWAYS
   
     INCLUDE ~thecalling/lib/cd_functions.tpa~ // functions for mod
 
+    // covers STATE_INVISIBLE, STATE_IMPROVEDINVISIBILITY
+    APPEND ~state.ids~ ~0x00400010 STATE_NOT_TARGETABLE~ UNLESS ~^0x00400010[ %TAB]+STATE_NOT_TARGETABLE[ %TAB%%LNL%%MNL%%WNL%]~
+
+    // covers STATE_CONFUSED STATE_FEEBLEMINDED STATE_CHARMED STATE_HELPLESS STATE_SLEEPING STATE_PANIC STATE_STUNNED
+    APPEND ~state.ids~ ~0x8010202D STATE_DISABLED~ UNLESS ~^0x8010202D[ %TAB]+STATE_DISABLED[ %TAB%%LNL%%MNL%%WNL%]~
+
     // covers STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH
     APPEND ~state.ids~ ~0x00000FC0 STATE_REALLY_DEAD~ UNLESS ~^0x00000FC0[ %TAB]+STATE_REALLY_DEAD[ %TAB%%LNL%%MNL%%WNL%]~
     
@@ -867,8 +873,24 @@ COMPILE ~thecalling/dlg/nalin.d~ EVALUATE_BUFFER
 
 ACTION_IF enhanced_edition BEGIN // on EEs, add some shaman-specific combat scripting 
   EXTEND_BOTTOM ~cd51gs.bcs~ ~thecalling/baf/cd51gs_shaman.baf~
+  OUTER_SPRINT aof_check ~!CheckSpellState(Myself,ARMOR_OF_FAITH) !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)~
+  OUTER_SPRINT charm_check 
+  ~!CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE) 
+  !CheckSpellState(LastSeenBy(Myself),BARBARIAN_RAGE)	
+  !CheckSpellState(LastSeenBy(Myself),BERSERKER_RAGE)	
+  !CheckSpellState(LastSeenBy(Myself),MINSC_BERSERK)	
+  !CheckSpellState(LastSeenBy(Myself),POTION_OF_CLARITY) 
+	!CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+	!CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	!CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)~
+END ELSE BEGIN
+  OUTER_SPRINT aof_check ~CheckStat(Myself,0,RESISTCRUSHING)~
+  OUTER_SPRINT charm_check ~!StateCheck(LastSeenBy(Myself),STATE_BERSERK)~
 END
-EXTEND_BOTTOM ~cd51gs.bcs~ ~thecalling/baf/cd51gs_generic.baf~ // add some generic divine casting
+EXTEND_BOTTOM ~cd51gs.bcs~ ~thecalling/baf/cd51gs_generic.baf~ EVALUATE_BUFFER // add some generic divine casting
 
 /////                                                  \\\\\
 ///// items                                            \\\\\

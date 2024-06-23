@@ -13,9 +13,8 @@ IF
 	!GlobalTimerNotExpired("BD_Cast","LOCALS")
 	HaveSpell(CLERIC_ARMOR_OF_FAITH)  // SPPR111.SPL (Armor of Faith)
 	Range(NearestEnemyOf(Myself),4)
-	!CheckSpellState(Myself,ARMOR_OF_FAITH)
+	%aof_check%
 	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
-	!CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
 	!StateCheck(Myself,STATE_SILENCED)
 THEN
 	RESPONSE #100
@@ -28,24 +27,14 @@ IF
 	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (Charm Person or Mammal)
 	CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
 	!StateCheck(Myself,STATE_SILENCED)
-	!CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
 	See([GOODCUTOFF])
 	!Class(LastSeenBy(Myself),MONK)
 	!Race(LastSeenBy(Myself),ELF)
-	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
-	!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+	!StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE) // STATE_NOT_TARGETABLE
+	!StateCheck(LastSeenBy(Myself),STATE_DISABLED) // STATE_DISABLED
 	CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
 	CheckStatGT(LastSeenBy(Myself),3,SAVEVSSPELL)
-	!CheckSpellState(LastSeenBy(Myself),BARBARIAN_RAGE)
-	!CheckSpellState(LastSeenBy(Myself),BERSERKER_RAGE)
-	!CheckSpellState(LastSeenBy(Myself),MINSC_BERSERK)
-	!CheckSpellState(LastSeenBy(Myself),POTION_OF_CLARITY)
-	!CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
-	!CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
-	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
-	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
-	!CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
-	!CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+	%charm_check%
 	!CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
 	!HasItemEquiped("MISC73",LastSeenBy(Myself))  // The Horn of Kazgaroth
 	!HasItemEquiped("HELM06",LastSeenBy(Myself))  // Helm of Charm Protection
