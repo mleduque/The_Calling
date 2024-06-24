@@ -71,7 +71,7 @@ EXIT
 
 //2nd TALK
 
-CHAIN IF ~Global("CDShamanCalling","GLOBAL",7)~ THEN CD41HEA 02.00
+CHAIN IF ~Global("CDShamanCalling","GLOBAL",7) Global("CDShamanCallingSeed","GLOBAL",0)~ THEN CD41HEA 02.00
 @60061
 END
 IF~PartyHasItem("CD41WOL")~THEN REPLY @60062 DO ~TakePartyItem("CD41WOL") DestroyItem("CD41WOL")~ EXTERN CD41HEA 02.01
@@ -83,13 +83,67 @@ END
 IF~~THEN REPLY @60065 EXTERN CD41HEA 02.06
 IF~~THEN REPLY @60066 EXIT 
 
-CHAIN CD41HEA 02.01
-@60067
-==CD41HEA @60068
-==CD41HEA @60069
+
+
+
+
+
+
+CHAIN CD41HEA 02.01  // hijacked here to insert seed quest
+@60067 = @60168
 END
-IF~~THEN REPLY @60070 EXTERN CD41HEA 02.02
-IF~~THEN REPLY @60071 EXTERN CD41HEA 02.03
+IF~~THEN REPLY @60169 EXTERN CD41HEA XX.0N1
+IF~~THEN REPLY @60170 EXTERN CD41HEA XX.0N2
+IF~~THEN REPLY @60171 EXTERN CD41HEA XX.0N4
+
+CHAIN CD41HEA XX.0N1
+@60172
+EXTERN CD41HEA XX.0N3
+
+CHAIN CD41HEA XX.0N2
+@60173
+EXTERN CD41HEA XX.0N3
+
+CHAIN CD41HEA XX.0N3
+@60174 = @60175 = @60176
+DO ~SetGlobal("CDShamanCallingSeed","GLOBAL",2) GiveItemCreate("cd41see",Player1,0,0,0) GiveItemCreate("cd41bemp",Player1,0,0,0)
+AddJournalEntry(@60189,QUEST) EraseJournalEntry(@60152) EraseJournalEntry(@60188)~ EXIT
+
+CHAIN CD41HEA XX.0N4
+@60177
+DO ~SetGlobal("CDShamanCallingSeed","GLOBAL",1) AddJournalEntry(@60188,QUEST) EraseJournalEntry(@60152)~ EXIT
+
+CHAIN IF ~Global("CDShamanCalling","GLOBAL",7) Global("CDShamanCallingSeed","GLOBAL",1)~ THEN CD41HEA cam_seed_refused
+@60179
+END
+IF~~THEN REPLY @60180 EXIT
+IF~~THEN REPLY @60181 EXTERN CD41HEA XX.0N2
+
+CHAIN IF ~Global("CDShamanCalling","GLOBAL",7) Global("CDShamanCallingSeed","GLOBAL",2)~ THEN CD41HEA cam_seed_ongoing
+@60182
+END
+IF~~THEN REPLY @60183 EXTERN CD41HEA cam_seed_ongoing_farewell
+IF~~THEN REPLY @60184 EXTERN CD41HEA cam_seed_ongoing_hint
+
+CHAIN IF ~~ THEN CD41HEA cam_seed_ongoing_hint
+@60186 = @60187
+EXTERN cd41hea cam_seed_ongoing_farewell
+
+CHAIN IF ~~ THEN CD41HEA cam_seed_ongoing_farewell
+@60185
+END
+
+
+
+
+
+
+// continuation to original quest
+CHAIN IF ~Global("CDShamanCalling","GLOBAL",7) Global("CDShamanCallingSeed","GLOBAL",3)~ THEN CD41HEA cam_restart
+@60178 = @60068 = @60069
+END
+IF~~THEN REPLY @60070 DO ~TakePartyItem("cd41bemp") DestroyItem("cd41bemp") TakePartyItem("cd41bful") DestroyItem("cd41bful")~ EXTERN CD41HEA 02.02
+IF~~THEN REPLY @60071 DO ~TakePartyItem("cd41bemp") DestroyItem("cd41bemp") TakePartyItem("cd41bful") DestroyItem("cd41bful")~ EXTERN CD41HEA 02.03
 
 CHAIN CD41HEA 02.02
 @60072
@@ -124,11 +178,11 @@ IF~~THEN REPLY @60087 EXTERN CD41HEA 02.07
 
 CHAIN CD41HEA 02.08
 @60088
-DO ~GiveItemCreate("CD41FIG",Player1,1,1,0) SetGlobal("CDShamanCalling","GLOBAL",9) AddJournalEntry(@60156,QUEST) EraseJournalEntry(@60152) EraseJournalEntry(@60155)~ EXIT
+DO ~GiveItemCreate("CD41FIG",Player1,1,1,0) SetGlobal("CDShamanCalling","GLOBAL",9) AddJournalEntry(@60156,QUEST) EraseJournalEntry(@60191) EraseJournalEntry(@60155)~ EXIT
 
 CHAIN CD41HEA 02.07
 @60089
-DO ~SetGlobal("CDShamanCalling","GLOBAL",8) AddJournalEntry(@60155,QUEST) EraseJournalEntry(@60152)~ EXIT
+DO ~SetGlobal("CDShamanCalling","GLOBAL",8) AddJournalEntry(@60155,QUEST) EraseJournalEntry(@60191)~ EXIT
 
 //3rd Talk
 

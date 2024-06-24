@@ -1,0 +1,13 @@
+IF
+  IsOverMe(Player%index%)
+  HasItem("cd41bemp",Player%index%)
+  CombatCounter(0)
+  !StateCheck(Player%index%,CD_STATE_NOTVALID)
+  !Global("CDShamanCallingSeed","GLOBAL",3)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Player%index%,@60166)
+    ActionOverride(Player%index%,TransformItem("cd41bemp","cd41bful"))
+    AddJournalEntry(@60190,QUEST) 
+    EraseJournalEntry(@60189)
+END

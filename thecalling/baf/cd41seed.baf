@@ -1,0 +1,21 @@
+IF
+  IsOverMe(Player%index%)
+  HasItem("cd41bful",Player%index%)
+  PartyHasItem("cd41see")
+  CombatCounter(0)
+  !StateCheck(Player%index%,CD_STATE_NOTVALID)
+  Global("CDShamanCallingSeed","GLOBAL",2)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    TakePartyItem("cd41see")
+    DestroyItem("cd41see")
+    DisplayStringHead(Player%index%,@60167)
+    ActionOverride(Player%index%,TransformItem("cd41bful","cd41bemp"))
+		CreateVisualEffect("spresuri",[3165.1326])   
+    SetGlobal("CDShamanCallingSeed","GLOBAL",3)  
+    AddJournalEntry(@60191,QUEST) 
+    EraseJournalEntry(@60190)  
+    Wait(3)
+    EndCutSceneMode() 
+END

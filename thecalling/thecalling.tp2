@@ -994,7 +994,6 @@ COPY ~thecalling/itm/cd51sup.itm~ ~override~
 
 BEGIN @60001 DESIGNATED 60 // dialogue from the Heart of Dream *appears like this*
 SUBCOMPONENT @60000 
-DEPRECATED ~Nothing to see here, move along~
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @7 // shaman not available on originals
 REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
@@ -1010,7 +1009,6 @@ INCLUDE ~thecalling/lib/shaman.tpa~
 
 BEGIN @60002 DESIGNATED 61 // dialogue from the Heart of Dream is gold-colored
 SUBCOMPONENT @60000 
-DEPRECATED ~Nothing to see here, move along~
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @7 // shaman not available on originals
 REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist

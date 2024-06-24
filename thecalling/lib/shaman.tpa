@@ -7,6 +7,10 @@
  5 - player returns to tomb, new area entrance opens
  6 - in new area, cutscene, cd41hea speaks
  7 - given mission to slay wolf pack, spawn pack
+   == interlude: CDShamanCallingSeed
+   1 - wolf pack slain, asked to plant seed, refused
+   2 - wolf pack slain, asked to plant seed, accepted
+   3 - seed planted and watered
  8 - asked to place figurine on altar, refused
  9 - asked to place figurine on altar, accepted
 10 - placed figurine
@@ -24,12 +28,16 @@
 ///// copies, preamble                                 \\\\\
 /////                                                  \\\\\
 
-COPY ~thecalling/bam/cd41bow.bam~  ~override~
+COPY ~thecalling/bam/cd41bemp.bam~ ~override~
+     ~thecalling/bam/cd41bfc.bam~  ~override~
+     ~thecalling/bam/cd41bful.bam~ ~override~
+     ~thecalling/bam/cd41bow.bam~  ~override~
      ~thecalling/bam/cd41fig.bam~  ~override~
      ~thecalling/bam/cd41hea.bam~  ~override~
      ~thecalling/bam/cd41her.bam~  ~override~
      ~thecalling/bam/cd41in.bam~   ~override~     
-     ~thecalling/bam/cd41out.bam~  ~override~
+     ~thecalling/bam/cd41out.bam~  ~override~   
+     ~thecalling/bam/cd41see.bam~  ~override~
      ~thecalling/bam/cd41spr1.bam~ ~override~
      ~thecalling/bam/cd41spr2.bam~ ~override~
      ~thecalling/bam/cd41wol.bam~  ~override~
@@ -44,7 +52,7 @@ END
 COPY ~thecalling/2da/cd41sha.2da~  ~override~
   REPLACE ~1001~ @60146
 						
-ADD_JOURNAL TITLE (@60147) @60148 @60149 @60150 @60151 @60152 @60153 @60154 @60155 @60156 @60157 @60158 @60159
+ADD_JOURNAL TITLE (@60147) @60148 @60149 @60150 @60151 @60152 @60153 @60154 @60155 @60156 @60157 @60158 @60159 @60188 @60189 @60190 @60191
 
 /////                                                  \\\\\
 ///// area work                                        \\\\\
@@ -60,11 +68,34 @@ COPY ~thecalling/are/cd4102.are~ ~override~
 COPY_EXISTING ~bgee.lua~ ~override~
   SPRINT cd4102_descript @60017 // do it this way so that the entries can also be translated
   REPLACE_TEXTUALLY ~\({"%ArchaeologicalSite_Tomb%",.+},\)~ ~\1
-  {"cd5104", "%cd4102_descript%"},~
+  {"cd4102", "%cd4102_descript%"},~
   
 COPY ~thecalling/tilesets/20~ ~override~ // new area tilesets/pvrz
 
-COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to main gnoll stronghold map
+COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~ // adding script region to exterior dig site (ar4200)
+  LPF fj_are_structure INT_VAR
+    fj_type = 0 // prox trigger
+    fj_box_left = 2902
+    fj_box_top = 1187
+    fj_box_right = 3261
+    fj_box_bottom = 1508
+    fj_flags = BIT1 // trap resets
+    fj_trap_active = 1
+    fj_alt_x = 1774
+    fj_alt_y = 2527
+    fj_loc_x = 1774
+    fj_loc_y = 2527
+    fj_vertex_0 = 3050 + (1187 << 16)
+    fj_vertex_1 = 3261 + (1412 << 16)
+    fj_vertex_2 = 3098 + (1508 << 16)
+    fj_vertex_3 = 2902 + (1293 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = cd_plant_seed
+    fj_reg_script = cd41seed
+  END
+
+COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to dreamheart's cave
   LPF fj_are_structure INT_VAR
     fj_type = 2 // travel
     fj_box_left = 330
@@ -138,6 +169,36 @@ COPY_EXISTING ~%GibberlingMountains%.are~ ~override~ // Mountains
     fj_structure_type = itm
   END
 
+COPY_EXISTING ~%DryadFalls%.are~ ~override~ // adding script region to dryad falls
+  LPF fj_are_structure INT_VAR
+    fj_type = 0 // prox trigger
+    fj_box_left = 1648
+    fj_box_top = 2491
+    fj_box_right = 1899
+    fj_box_bottom = 2743
+    fj_flags = BIT1 // trap resets
+    fj_trap_active = 1
+    fj_alt_x = 1774
+    fj_alt_y = 2527
+    fj_loc_x = 1774
+    fj_loc_y = 2527
+    fj_vertex_0 = 1796 + (2491 << 16)
+    fj_vertex_1 = 1899 + (2531 << 16)
+    fj_vertex_2 = 1853 + (2566 << 16)
+    fj_vertex_3 = 1869 + (2663 << 16)
+    fj_vertex_4 = 1863 + (2743 << 16)
+    fj_vertex_5 = 1715 + (2732 << 16)
+    fj_vertex_6 = 1683 + (2637 << 16)
+    fj_vertex_7 = 1658 + (2587 << 16)
+    fj_vertex_8 = 1648 + (2555 << 16)
+    fj_vertex_9 = 1677 + (2521 << 16)
+    fj_vertex_10 = 1738 + (2492 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = cd_fill_water
+    fj_reg_script = cd41watr
+  END
+
 /////                                                  \\\\\
 ///// scripts & dialogue                               \\\\\
 /////                                                  \\\\\
@@ -151,6 +212,11 @@ EXTEND_BOTTOM ~%ArchaeologicalSite_Tomb_BCS%.bcs~ ~thecalling/baf/ar4101.baf~ EV
 EXTEND_BOTTOM ~%GibberlingMountains_BCS%.bcs~     ~thecalling/baf/ar5500.baf~ 
 
 COMPILE ~thecalling/dlg/cd41hea.d~ EVALUATE_BUFFER
+
+OUTER_FOR (index = 1 ; index < 7 ; ++index) BEGIN
+  EXTEND_BOTTOM ~cd41seed.bcs~ ~thecalling/baf/cd41seed.baf~ EVALUATE_BUFFER
+  EXTEND_BOTTOM ~cd41watr.bcs~ ~thecalling/baf/cd41watr.baf~ EVALUATE_BUFFER
+END
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
@@ -192,6 +258,20 @@ END
 ///// items                                            \\\\\
 /////                                                  \\\\\
 
+COPY ~thecalling/itm/cd41bemp.itm~ ~override~
+  SAY 0x08 @60160
+  SAY 0x0c @60160
+  SAY 0x50 @60161
+  SAY 0x54 @60161
+
+COPY ~thecalling/itm/cd41bemp.itm~ ~override/cd41bful.itm~
+  SAY 0x08 @60162
+  SAY 0x0c @60162
+  SAY 0x50 @60163
+  SAY 0x54 @60163
+  WRITE_ASCII 0x3a ~cd41bful~
+  WRITE_LONG 0x4c 25
+
 COPY ~thecalling/itm/cd41bow.itm~ ~override~
   SAY NAME1 #6864
   SAY NAME2 @60015
@@ -206,6 +286,12 @@ COPY ~thecalling/itm/cd41her.itm~ ~override~
   SAY NAME1 @60012
   SAY NAME2 @60012
   SAY DESC @60013
+
+COPY ~thecalling/itm/cd41see.itm~ ~override~
+  SAY 0x08 @60164
+  SAY 0x0c @60164
+  SAY 0x50 @60165
+  SAY 0x54 @60165
 
 COPY ~thecalling/itm/cd41wol.itm~ ~override~
   SAY NAME1 @60008

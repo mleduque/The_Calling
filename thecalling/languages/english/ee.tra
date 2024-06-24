@@ -488,10 +488,10 @@ Dreamheart has asked me to find a special Soulheart Herb. He could not give spec
 I have found Soulheart Herb. Now I can return to speak with Dreamheart and finally scour the corruption from the cave.~ 
 @60155 = ~Dreamheart
 
-Dreamheart's taska are endless. The wolf pack is already defeated, and the latest was to place a figurine on the altar. I refused.~ 
+Dreamheart's taska are endless. I created the guardian, and the latest request was to place a figurine on the altar. I refused.~ 
 @60156 = ~Dreamheart
 
-With the wolf pack defeated, Dreamheart asked me to place a figurine on the altar.~ 
+With the guardian is in place, Dreamheart asked me to place a figurine on the altar.~ 
 @60157 = ~Dreamheart
 
 I have defeated the corruption that manifested after I added Soulheart Herb on the altar. I should return and speak with the spirit.~ 
@@ -501,3 +501,55 @@ The cave is free of corruption. Dreamheart wished to experience more of the livi
 @60159 = ~Dreamheart
 
 The cave is free of corruption. Dreamheart wished to experience more of the living, and decided to do so in a test of battle. We have carried the battle, and the spirit has expressed interest in a book about The Dead Three.~
+@60160 = ~Earthenware Vessel~
+@60161 = ~This simple terracotta vessel is coated with an even, clear glaze. It is currently empty. 
+
+STATISTICS:
+
+Weight: 5~
+@60162 = ~Filled Earthenware Vessel~
+@60163 = ~This simple terracotta vessel is coated with an even, clear glaze. You have filled it with water from the waterfall.
+
+STATISTICS:
+
+Weight: 25~
+@60164 = ~Guardian Seed~
+@60165 = ~This special seed has been entrusted to you by Dreamheart. You have been asked to place it in the ground outside of Dreamhart's cave.
+
+STATISTICS:
+
+Weight: 0~
+@60166 = ~You fill the Earthenware Vessel with water from the falls.~
+@60167 = ~You find a soft spot of exposed earth and plant the seed. You also water it using the Earthenware Vessel.~
+@60168 = ~You are truly good at making this place function well, shaman... So, while those vile wolves are dead, and the cave has been purified from the corruption, we should also make sure no creatures like them will bother our beautiful sanctuary. That is why I would like to create a guardian for me.~
+@60169 = ~Guardian?~
+@60170 = ~Eh, of course there is more to do. It almost feels as if you wanted to keep me here.~
+@60171 = ~I am done working for you. No. This is taking too much of my precious time.~
+@60172 = ~Yes. A guardian.~
+@60173 = ~I mostly want to keep this place safe and in perfect condition, shaman. That is exactly what it deserves. What we deserve.~
+@60174 = ~Here. I have a special seed here. I want you to place it in front of the entrance, where you first met the diggers. There is a perfect spot for it, between the entrance, and the old entrance that isn't really... functional right now.~
+@60175 = ~Then, water it. You will need the freshest water possible. There is a vessel somewhere... ah! Here! There is a place where you can get such water. There is a waterfall nearby. Place the a bowl under it, let it be filled, and then pour the water over the seed and let the wonders happen!~
+@60176 = ~You did wonderful work with your other tasks, please, do not resign just yet. We are almost done.~
+@60177 = ~We are almost there. Please, think it over. Perhaps take a deep breath of fresh air and return to me. We shouldn't end our collaboration just yet, shaman. It would be such a pity...~
+@60178 = ~I can already feel the roots of the guardian seeking their way deeper into the soft earth. Thank you, shaman.~
+@60179 = ~Welcome back, shaman. Have you reconsidered making me a guardian?~
+@60180 = ~No, I have not.~
+@60181 = ~I suppose I can hear you out.~
+@60182 = ~Welcome back, shaman. Have you found the waterfall?~
+@60183 = ~Not yet, but I will return afer I have.~
+@60184 = ~I am having trouble finding it.~
+@60185 = ~I await your return.~
+@60186 = ~Seek southeast and you will find it. A dryad and her tree are nearby.~
+@60187 = ~Simply gather water from the top of the waterfall.~
+@60188 = ~Dreamheart
+
+The wolf pack is already defeated, but like a puppet on a string Dreamheart wishes me to dance. Dreamheart will have to wait.~ 
+@60189 = ~Dreamheart
+
+With the wolf pack defeated, Dreamheart asked me to create a guardian outside the cave. I have a seed, but I need to fill the Earthenware Vessel with water from a waterfall to the southeast.~ 
+@60190 = ~Dreamheart
+
+I have found the waterfall and filled the Earthenware Vessel with clear spring water. I should return to the dig site.~ 
+@60191 = ~Dreamheart
+
+The seed has been planted and watered. I should return to Dreamheart.~ 
