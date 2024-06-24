@@ -1,0 +1,31 @@
+IF
+  Global("CDMonkCalling","GLOBAL",8)
+  Global("CDMonkCallingTroll","%ValleyoftheTombs%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCallingTroll","%ValleyoftheTombs%",1)
+    CreateCreature("CD23TRO",[2800.630],13)
+END
+
+IF
+  !PartyHasItem("cd23fr1")
+  PartyHasItem("cd23fr2")
+  Global("CDMonkCallingTroll","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    EraseJournalEntry(@70207) 
+    AddJournalEntry(@70209,QUEST)
+    SetGlobal("CDMonkCallingTroll","%ValleyoftheTombs%",2)
+END
+
+IF
+  PartyHasItem("cd23fr1")
+  PartyHasItem("cd23fr2")
+  Global("CDMonkCallingTroll","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    EraseJournalEntry(@70207) 
+    EraseJournalEntry(@70208) 
+    AddJournalEntry(@70210,QUEST)
+    SetGlobal("CDMonkCallingTroll","%ValleyoftheTombs%",2)
+END

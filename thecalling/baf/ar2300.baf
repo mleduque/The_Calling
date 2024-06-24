@@ -1,0 +1,19 @@
+IF
+  Global("CDMonkCalling","GLOBAL",0)
+  GlobalGT("CHAPTER","GLOBAL",2)
+  OR(2)
+    Class(Player1,MONK)
+    Global("CDMultistronghold","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCalling","GLOBAL",1)
+    CreateCreature("CD23MON",[1800.2400],1)
+END
+
+IF
+  Global("CDMonkCalling","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCalling","GLOBAL",7)
+    CreateCreature("CD23MON",[4000.2530],1)
+END

@@ -1,0 +1,28 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ClearAllActions()
+    StartCutSceneMode() 
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("CD23MON",DestroySelf())
+    SmallWait(1)
+    LeaveAreaLUA("%Temple%","",[900.1700],11)
+    ActionOverride(Player2,LeaveAreaLUA("%Temple%","",[800.1650],13))
+    ActionOverride(Player3,LeaveAreaLUA("%Temple%","",[800.1700],12))
+    ActionOverride(Player4,LeaveAreaLUA("%Temple%","",[800.1750],12))
+    ActionOverride(Player5,LeaveAreaLUA("%Temple%","",[750.1700],11))
+    ActionOverride(Player6,LeaveAreaLUA("%Temple%","",[750.1750],10))
+    SmallWait(1)
+    CreateCreature("CD23MON",[1100.1700],4)
+    GiveItemCreate("CD23KAT","CD23MON",1,1,0)
+    ActionOverride("CD23MON",EquipItem("CD23KAT"))
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(3) 
+    SetGlobal("CDMonkCalling","GLOBAL",13) 
+    EndCutSceneMode() 
+    ActionOverride("CD23MON",StartDialogueNoSet(Player1))
+END

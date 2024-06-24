@@ -884,3 +884,312 @@ Beast Master~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 // since this component is ee-only, I've put all strings in ee.tra
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Monk - Restoring Saiai no Hito                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@70001 = ~Inoshishi~
+@70002 = ~Vaxffee the Greedy~
+@70003 = ~Scavenger Tymothy~
+@70004 = ~Moaning Troll~
+@70005 = ~Blade Amulet~
+@70006 = ~This amulet would normally be hidden in a hilt of a katana, right under the leather tidings. This specific amulet looks really old.~
+@70007 = ~Sword Hilt~
+@70008 = ~This looks like a hilt of a broken katana. It may be part of the Saiai no Hito, a Kozakuran sword of formidable reputation, made by Ne Kurosuna with another monk, Shiroume Yakuchi, in mind. 
+
+Perhaps it can still be fixed... once its blade is found.~
+@70009 = ~Sword Blade~
+@70010 = ~This looks like a blade of a broken katana. It may be part of the Saiai no Hito, a Kozakuran sword of formidable reputation, made by Ne Kurosuna with another monk, Shiroume Yakuchi, in mind. 
+
+Perhaps it can still be fixed... once its hilt is found.~
+@70011 = ~Kin no Kemono~
+@70012 = ~These bracers were created in Kozakura. They are warm to the touch and while quite light, they feel quire durable. Enchanted by a powerful priestess named Ume after the sweetest of Kozakuran fruits, they may help in keeping the mind clear and in balance, even when anger tries to take control over the monk. They may also help the one that wears these bracers during the fight by guiding their strikes.
+
+STATISTICS:
+
+Melee THAC0: +2
+Protection from Berserk
+Weight: 1
+Usable By:
+ Monks~
+@70013 = ~Saiai no Hito +1~
+@70014 = ~This sword is known as Saiai no Hito. It was created by Ne Kurosuna, a former member of Saku Monastery. He was one of the original members of the monastery and he trained there for years. He was known for his keen mind and graceful techniques. He was also quite strong, probably one of the strongest monks among other members of the Saku Monastery while he was still there.
+
+In the tenth year of his work, he started to develop romantic feelings for Shiroume Yakuchi, another monk from the same Monastery. While he could be called a master of discipline, body and strategy, he wasn't ready for this, as Ne lost his previous beloved to bandits that killed killed him. He never expected to develop such feelings again, and surely not to someone from the same monastery. That made him feel uneasy, torn between past love and the newly found one. He wasn't sure if he should ever tell Shiroume about his feelings. What if the man could never return these feelings? Would that change their friendship? And would that be a betrayal of his former loved one?
+
+After few months, he decided that if he is to understand these feelings and decide what to do, he needed to leave the Monastery and ponder, pray for answers and enlightenment in solitude. As he liked to meditate through work, he started creating swords. Eventually, that lead him to the creation of this sword: Saiai no Hito. It was supposed to be a gift to Shiroume as Ne decided that peace can only be achieved by honesty. He hoped that... perhaps Master Yakuchi would understand, give them a chance or at least help them remain friends. Ne decided that would be a betrayal to his former love. He still respected his past. He still remembered it.
+
+Saiai no Hito was supposed to be a symbol of love, companionship and enlightenment. However, Ne Kurosuna was killed on his way to the Monastery. The blade was then lost and it's hard to say how it... or rather its parts ended up on the Sword Coast, but it is there, where the blade was reforged and restored to its former glory.
+
+The magic held by this sword was to help those that wield it, providing a great advantage in battle. If tales are to be believed it was also supposed to protect the heart of the monk from ever being crushed or broken.
+
+STATISTICS:
+
+Equipped abilities:
+- Protection from Petrification
+- Crushing damage resistance: +10% (monk only)
+
+Combat abilities:
+- Strikes as +2 weapon
+
+THAC0: +1 bonus
+Damage:  1D10 +1
+Special:  +1 Fire damage
+Damage type:  slashing
+Weight:  5
+Speed Factor: 3
+Proficiency Type: Katana
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage~
+@70015 = ~Inoshishi's Mane~
+@70016 = ~This ring is known as Inoshishi's Mane. Those familiar with the Kozakuran language know that Inoshishi means "wild boar".
+
+STATISTICS:
+
+Armor Class Bonus:  +1 vs. crushing weapons~
+@70017 = ~Adventurer! It's good to see someone like myself here: one that knows the way of discipline. I am Inoshishi. Inoshishi of Dojyu. A member of the Saku Monastery.~
+@70018 = ~One like yourself?~
+@70019 = ~How do you know we have anything in common, Inoshishi?~
+@70020 = ~Pleased to meet you, Inoshishi.~
+@70021 = ~One that knows the strength that comes from balance and discipline. I've been following the path of unarmed combat for quite a while, as well as the control over my muscles and power. I do not know if we share all the same traits, but there are signs that you know the discipline I am speaking of.~
+@70022 = ~Likewise. And the fact that you seem to know what sort of discipline I speak of makes my heart grow fonder. Learning it, practicing unarmed combat and keeping my mind keep and calm is an important part of my life.~
+@70023 = ~I came here from the far lands of Kara-Tur. Kozakura, to be more precise. I came here with a mission, but I must admit that I feel quite lost. This... Sword Coast is quite different than where I come from, so the work that brought me here takes more time than I have anticipated.~
+@70024 = ~What kind of work brought you here, Inoshishi? What is this mission you're speaking of?~
+@70025 = ~Look, I care little about you and your mission. I am quite busy myself. Be so kind and get out of my way.~
+@70026 = ~I came here in search of a powerful blade. A katana known as Saiai no Hito. It was forged by one of the first, original members of our monastery, a man named Ne Kurosuna. If our documents are accurate, he resigned from his position and left our brotherhood. Some say it was when he fell in love with another brother, Shiroume Yakuchi. We know that their relationship made Ne feel uneasy, as he lost his beloved before to a group of bandits...~
+@70027 = ~From what we understand, he wanted to meditate on his past, present and future. We believe he felt unprepared for the feelings that returned to him and he felt as if he was betraying the memory of his long lost love. We found his journal and learned he felt torn between different loves and different paths.~
+@70028 = ~This feeling must have made him feel quite conflicted, considering it made him leave the monastery.~
+@70029 = ~Hah! It's good to know men can also confuse themselves with their ideas and feelings and it's not always us who are left confused! Humph!~
+@70030 = ~Ah, both heart and fear can take us to the strangest of places, doesn't it? Heh.~
+@70031 = ~I c-can sympathize with him and the need t-to understand what's going on inside you. Especially when s-such feelings are involved and we have t-to d-decide what to do about them. If we want t-to confess them.~
+@70032 = ~Sometimes it's quite easy to lose one's way when passion is involved. That is why it's always best to keep in mind what exactly you want. And how much you really need it, of course.~
+@70033 = ~His meditation was often through work. He built a forge and became a swordmaker. He Some say he wanted to imprint his questions, doubts and hopes in the swords he made. That lead him to the creation of Saiai no Hito, the blade I told you about.~
+@70034 = ~You must be wondering why I'm telling you all of this.~
+@70035 = ~I believe you have a reason to share this story with me.~
+@70036 = ~Indeed, I'm wondering where are you getting with this... somewhat boring story.~
+@70037 = ~Look. I care little about this blade, your story and why you're here. Go and bother someone else, will you? I need to go.~
+@70038 = ~You see, this story was lost for quite a long time and we somehow... pondered what to do about the story of brother Ne. We decided that we should find the blade and place it among the artifacts of our monastery, among other symbols of dedication. It deserves to be there. It should be there. Brother Ne dedicated himself to understanding his hopes, his love.~
+@70039 = ~The problem is that he is now long gone. And so is his forge. What's more, we found out that someone eventually stole the blade, one that was to become a gift to the one he loved. We tried to trace its story, find out where it might be. We found out it left Kozakura, Kara-Tur and was brought here, to the Sword Coast.~
+@70040 = ~Quite a journey that must have been. I somewhat understand how many troubles it might have involved.~
+@70041 = ~But... Kozakura is sooo far away! It is, isn't it? Not sure how ANYONE could have went that far. Unless they knew how to open some portal, maybe? That would be WAY more comfortable. Well, they must have known how to open one; that's the only way it would make any sense!~
+@70042 = ~So much talking! And it's not even about Tiax! Make it short, just say what you need and let us decline him the help he needs!~
+@70043 = ~*sigh* Is he really going to ask us for help finding this blade? It feels like something quite impossible to do.~
+@70044 = ~This is my mission. To find the blade and travel with it back to Saku Monastery.~
+@70045 = ~That sounds like a difficult mission.~
+@70046 = ~Hah! Good luck with that! It sounds like something impossible to do!~
+@70047 = ~Do what you must, it does not concern me. Actually, I already spent too much time on you and your stories. I need to go. Goodbye.~
+@70048 = ~It is. But I do believe I can succeed in restoring this blade.~
+@70049 = ~It may sound like something impossible to do, but I believe I may succeed if I remain vigilant and mindful.~
+@70050 = ~But... now that I think of it, it doesn't mean I need to do it on my own. Would you like to help me with my mission? I promise to provide you with a reward for this. For your aid.~
+@70051 = ~Ah, "reward". That's the key word I've been waiting for.~
+@70052 = ~Just think about this. Perhaps we could both benefit from this?~
+@70053 = ~It sounds like an important mission. As you said, we share some similar traits and leaving you without any help would feel wrong. Tell me what to do. What do you need from me?~
+@70054 = ~I care little about you, your gold, your traditions and some stupid blade. Sorry, but you're on your own. Besides, I really need to go. Goodbye.~
+@70055 = ~Oh, thank you! Thank you so much!~
+@70056 = ~You see, I came to the Friendly Arm Inn for a reason. Not long ago, I was attacked by a woman, a thug. She took some of my belongings. I need to renew some of my supplies. I also heard there is a temple here, one dedicated to wisdom. I thought I would see if the one that's working there may be of help.~
+@70057 = ~Now, that we are to join forces, I think we should talk to that person together. So let's meet in the temple and see if it's going to help us learn more about where we should be looking for the katana.~
+@70058 = ~I'll wait for you in the temple. Please, join me there.~
+@70059 = ~I see. You are one of the selfish ones. Fine. I will trouble you no more.~
+@70060 = ~Ah, you're here! Good. Let's see if we can find out anything about the whereabouts of the swords.~
+@70061 = ~Well, with some like minds mayhap we can get a hint. 'Tis clearly of great importance for our new friend.~
+@70062 = ~Let's keep optimistic. What's lost, can always be found! Or... most of the times, at least!~
+@70063 = ~Wisdom! Ah, it's always best to dig it directly from the skull! But I see no skulls to dig. A pity, that could be nice. Nicer than this. Ha!~
+@70064 = ~Hmm, this blade must be really important for him, no? I gave up after three days when ya misplaced my book back two years ago! Anyway, let's see if we'll find out anything useful, right?~
+@70065 = ~Excuse me, priestess. I'm in need your guidance.~
+@70066 = ~Guidance, hmm? Tell me more, young man, and who knows, perhaps I will offer you an honest word or two.~
+@70067 = ~I came here in search of an old sword, Saiai no Hito. Sadly, to no avail. The Sword Coast isn't a small place and I may need some help. I have another pair of eyes with me, but we would need to know the direction in which we should look. I hoped that perhaps someone from the Temple of Wisdom could help us find that crucial detail.~
+@70068 = ~Looking at you, you must have travelled quite a bit already, no, boy?~
+@70069 = ~Let Gellana help you a bit. I will require two hundred gold pieces and something that would help link me with that sword you're seeking. Do you have anything like that?~
+@70070 = ~I...~
+@70071 = ~Do you?~
+@70072 = ~Don't tell me you've got nothing that would help...~
+@70073 = ~I mentioned that I've been robbed. I had an amulet that my brothers and sisters believe was once part of the sword, in its hilt. But that amulet was one of the things that were taken from me.~
+@70074 = ~I am sorry, but I'll need that part to cast the spell for you, boy.~
+@70075 = ~I... I understand. But maybe that's not too late. Perhaps that thug can still be found. I still have some gold, my friend, I can pay for the spell, so it's just a matter of finding the person that attacked me.~
+@70076 = ~But that's also what I'd call "the hard part", Inoshishi.~
+@70077 = ~Well... we can try to find her, but I don't know if we're going to succeed...~
+@70078 = ~This is ridiculous. You know what? You're on your own. Go and look for that woman yourself. I resign.~
+@70079 = ~You are clearly more experienced in this. Could you try to get that amulet? Please.~
+@70080 = ~I'll try.~
+@70081 = ~Argh... Fine...~
+@70082 = ~No. I don't have time for this.~
+@70083 = ~You know what? I think I made a mistake. You are on your own. Goodbye.~
+@70084 = ~Thank you, my friend.~
+@70085 = ~I was robbed on the way here from the town south from it. I think they call it... Beregost...?~
+@70086 = ~Perhaps it's her usual "hunting ground". Perhaps she's still somewhere there?~
+@70087 = ~Please, check that for me, and let me know what you find.~
+@70088 = ~I thought you'd really help me, but it looks like I was wrong.~
+@70089 = ~Well, well, well! Who do we have here! People usually take the path below and I really like to observe them. You know, sometimes when their bags are too heavy, I can help them by taking some of that "burden", hahaha!~
+@70090 = ~You must be the one that attacked Inoshishi.~
+@70091 = ~What a coincidence! I just love taking things others have stolen. You look like that sort of thief.~
+@70092 = ~The foreigner? He was an easy prey.~
+@70093 = ~I usually attack from above, but it doesn't mean I cannot defend myself without that advantage.~
+@70094 = ~Come. Show me what you've got!~
+@70095 = ~Have you managed to retrieve the amulet?~
+@70096 = ~Yes. Here it is.~
+@70097 = ~I'm working on this.~
+@70098 = ~You found her?! That's amazing! Thank you so much!~
+@70099 = ~Now we've got everything we needed and Madam Gellana should be able to help us. Am I correct?~
+@70100 = ~I think so. Ah, it's been a while since anyone called me "madam", haha! Come here now. Show me this amulet.~
+@70101 = ~Of course, here it is.~
+@70102 = ~And? Have you found anything Madam Gellana?~
+@70103 = ~I... I think I've got something, but it's quite unusual! It looks like this sword of yours was broken into two parts.~
+@70104 = ~What?! How?!~
+@70105 = ~Well, that's the sort of question I cannot help you with.~
+@70106 = ~But do you know where these parts are? Where should we look for them?~
+@70107 = ~I've seen something, yes. Short glimpses or sensations of... places.~
+@70108 = ~One of them was some sort of tower. With a light. It might have been a lighthouse. I heard water, but also some voices. It's hard to know if they were ghosts, or... maybe just people.~
+@70109 = ~And the second one?~
+@70110 = ~The second one was quite different. The other one was held by some... meaty sack. I think it might have been swallowed by some monster. I am unsure how it's possible, but even though... it's inside, the creature is still alive. It must be a monster that can heal itself, or resist even internal cuts.~
+@70111 = ~The creature was in some rocky area. There were rocks. Sands. I felt everything was quite dry. But that's the all I know.~
+@70112 = ~I am unsure if that's enough, but that's all I saw, boy.~
+@70113 = ~It's more than we had. Thank you.~
+@70114 = ~You're welcome.~
+@70115 = ~Come, my friend. Let's talk outside.~
+@70116 = ~Well, it could be better. And it could have been worse.~
+@70117 = ~I think you're more familiar with the Sword Coast, so all I can ask you to do is to keep your eyes open. I don't know how many lighthouses are there, but I presume more than one. And the creature she mentioned... in a dry rocky area. That's not very specific but maybe you've seen such a place?~
+@70118 = ~I'll study the map, ask around. Meanwhile, when you are around places that match these descriptions, please, investigate them. That's all I ask.~
+@70119 = ~Of course. I'm not leaving you now. I'll let you know if I find these sword parts.~
+@70120 = ~I am done helping you. Sorry, but you're on your own. Goodbye.~
+@70121 = ~Thank you! I'm truly grateful!~
+@70122 = ~I thought you'd help me, but... never mind. I will trouble you no more!~
+@70123 = ~Have you found what we are looking for?~
+@70124 = ~I found the hilt of the sword!~
+@70125 = ~I found the blade of the sword!~
+@70126 = ~No, not yet.~
+@70127 = ~I'm so glad! Let me take a look at it...~
+@70128 = ~Really?! Are you for real? Let me take a look at it...~
+@70129 = ~Yes! That's part of Saiai no Hito!~
+@70130 = ~We still need the other part, but we're on the right path.~
+@70131 = ~Let me know if you find the second part of the sword.~
+@70132 = ~Yes! That's part of Saiai no Hito! The blade!~
+@70133 = ~I'm so glad you found this part. But that's not the end of our treasure hunting.~
+@70134 = ~Let me know if you find the second part of the sword, the hilt.~
+@70135 = ~Oh, glorious day! It looks like we have both parts of the sword!~
+@70136 = ~Now, we need to fix it! It must be made whole again. And I know exactly who to ask.~
+@70137 = ~When I was in Beregost, I talked to the blacksmith out there. He's very skilled and I believe he may be able to fix this sword.~
+@70138 = ~We should meet there. I presume you may need to rest first, but when you're done and ready, meet me at his forge, in the town. Please, don't make me wait too long for you, though.~
+@70139 = ~...ah, that could be worth something...~
+@70140 = ~Wait! Who are you? You want to take my treasures!~
+@70141 = ~I'm just looking for a sword part, I was told it may be near some lighthouse, so I thought I'd check if it's here.~
+@70142 = ~Yes, that is exactly why I'm here.~
+@70143 = ~It's mine! It's all mine!~
+@70144 = ~Hmm, it looks like the blacksmith isn't here. Let's return to him during his working hours.~
+@70145 = ~It's good to see you friend! Now, we have both parts of the sword and we're here and... I'll do the talking, I hope you don't mind.~
+@70146 = ~Excuse me, master blacksmith. I'd like to ask you a question.~
+@70147 = ~Sure, what you need?~
+@70148 = ~I have this katana here. One that has been shattered, from the looks of it, and I was hoping that maybe you could fix it.~
+@70149 = ~Let's see what you've got here...~
+@70150 = ~Hmm, it looks like it broke, yes, and... it's not a new sword, but it sure does look good. Someone must 'ave put a lot of work to make it.~
+@70151 = ~Do you think it can be fixed?~
+@70152 = ~Hmm, maybe. But katanas are quite different to what I usually make, one needs to be really careful to keep them perfect.~
+@70153 = ~You look like someone that could succeed in this task.~
+@70154 = ~Hah! Maybe! But that's going to take me a moment. Plus, it won't be cheap. 1,200 gold pieces. I'd normally take more, but it looks like this blade's important for you. It will take me four days to fix it.~
+@70155 = ~I have 1,000...~
+@70156 = ~It's 1,200, sorry. There are problems with iron as well as th' prices aren't getting lower in general. People want their blades to be fine and sharp and tha' takes time.~
+@70157 = ~Here. The 200 gold pieces you need.~
+@70158 = ~Sorry, but I'm not spending my gold on this, Inoshishi.~
+@70159 = ~Sorry, I'd help you, Inoshishi, but I don't have that much gold..~
+@70160 = ~Thank you, my friend. You are truly the best help I could get.~
+@70161 = ~Right. Return t' me in four days. It should be ready by then.~
+@70162 = ~Thank you, of course. I'll wait for you, <CHARNAME>, so you could come and see the blade in it's restored glory. Four days, and my mission will be over.~
+@70163 = ~I... I'll give you my signet.~
+@70164 = ~Thanks. Sorry, but I too have expenses.~
+@70165 = ~I understand.~
+@70166 = ~Right. Return t' me in four days. Your blade should be fixed by then.~
+@70167 = ~Thank you. I'll wait for you, <CHARNAME>, so you could come and see the blade in its restored glory. Four days, and my mission will be over.~
+@70168 = ~Hmm, it looks like our friend isn't here right now. Let's meet him once during his work hours.~
+@70169 = ~You're here! Master blacksmith, have you managed to fix the blade we brought you?~
+@70170 = ~It wasn't an easy task, but aye, it's 'ere.~
+@70171 = ~Just look at this! Such an amazing work! You did well!~
+@70172 = ~Hah! That's the only way I do things. I mean. I want them in a good shape.~
+@70173 = ~It's amazing! Thank you!~
+@70174 = ~Come, my friend! Let's leave and I'll let you see the blade in some natural light.~
+@70175 = ~Just look at this blade. Oh, it's magnificent! And it wouldn't be possible if it wasn't for your help.~
+@70176 = ~Saiai no Hito is part of our history, just as Ne Kurosuna. His story, though tragic in a way, can also inspire others. He truly found his love and even though... he died before he could stand face to face with Shiroume and find out if he feels the same, he can still be remembered for his dedication and the path of understanding his feelings.~
+@70177 = ~Thank you. Now you're also part of this story. And I suppose it's also the moment to reward you.~
+@70178 = ~I have magic bracers for you, but... you also helped me pay for reparing the sword, so I've decided to also give you my signet. It's not powerful, but perhaps it will be of use for you.~
+@70179 = ~I have magic bracers for you. They are quite powerful and perhaps they will help you on your adventures.~
+@70180 = ~You were a great help on this mission so let me also say this once again: thank you.~
+@70181 = ~I am truly grateful for this. Take the blade to your monastery and let the story of Ne Kurosuna live forever.~
+@70182 = ~I understand this sword is part of your monastery's past, but I'm going to need it if I'm to succeed on my own mission. Gorion, the man that took care of me is dead. But I'm not going to join him and I know there are people who are going to try to destroy me.~
+@70183 = ~I am sorry, but there was a different reason I was helping you. I'm going to take this sword. Even if I have to kill you.~
+@70184 = ~That's the plan.~
+@70185 = ~Thank you for everything. I'll never forget what you did and how you helped me, <PRO_BROTHERSISTER>.~
+@70186 = ~I... what? I... I'm sorry, but I cannot just give you this sword.~
+@70187 = ~Ne was a man of passion. Of hope. And I need hope right now. I promise I will use this sword with respect. I will use it the way Shiroume Yakuchi would. This is a matter of life and death, so... please. Let this sword be the symbol not just love, but also hope.~
+@70188 = ~I understand. And I suppose you're right I just cannot take it like that. Please, take it to your monastery. Let the story of Ne Kurosuna live forever.~
+@70189 = ~I am sorry, but I need this katana. I'm going to take this sword. Even if I have to kill you.~
+@70190 = ~I... Gods, this is for real, isn't it? You really need that sword to survive this? I don't know why, but when I look at you, I feel... I feel that what you're saying is truth.~
+@70191 = ~Take it. I will lie to my brothers and sisters, but I want you to use it well. Make its story live. Make the story of Ne Kurosuna live with you, through your stories, through this sword.~
+@70192 = ~Please, promise me that.~
+@70193 = ~I promise.~
+@70194 = ~I think I'll just kill you and get the sword from your dead body.~
+@70195 = ~...~
+@70196 = ~Here. But never break this promise. And never let this sword break again.~
+@70197 = ~You... you're joking, right? Hah! You almost got me.~
+@70198 = ~Of course I'm joking. Please, take it to your monastery. Let the story of Ne Kurosuna live forever.~
+@70199 = ~I'm not joking. I need this blade. I think I'll just kill you and get the sword from your dead body.~
+@70200 = ~I'm sorry, but I cannot let that happen!~
+@70201 = ~Restoring Saiai no Hito~
+@70202 = ~Restoring Saiai no Hito
+
+I was accosted by some ragged foreigner at the Friendly Arms Inn and promptly told him to be off.~
+@70203 = ~Restoring Saiai no Hito
+
+I have agreed to help Inoshishi, a traveller to the sword coast, who is looking to recover Saiai no Hito, a blade of some import to his order.~
+@70204 = ~Restoring Saiai no Hito
+
+Inoshishi was robbed, somewhere between here and Beregost, of an amulet. He's asked us to track down the bandit and return his amulet to him at the Temple of Wisdom.~
+@70205 = ~Restoring Saiai no Hito
+
+I have found Inoshishi's bandit and recovered his amulet. I should return to him at the Temple of Wisdom.~
+@70206 = ~Restoring Saiai no Hito
+
+Inoshishi's tasks were going nowehere fast, and I have better things to do. I have told him so, and now I can turn my time to more productive ends.~
+@70207 = ~Restoring Saiai no Hito
+
+Gallena's divination has revealed that the blade has been broken into two parts. One is near a lighthouse, and the other is in the belly of a beast near a rocky area.~
+@70208 = ~Restoring Saiai no Hito
+
+I have recovered the sword hilt from a scavenger in Ulgoth's Beard. I still need to find the other part, which is in the belly of a beast near a rocky area.~
+@70209 = ~Restoring Saiai no Hito
+
+I have recovered the sword blade from the belly of a troll. I still need to find the other part, which is near a lighthouse.~
+@70210 = ~Restoring Saiai no Hito
+
+I have recovered both parts of the blade. I should return to Inoshishi, who is waiting for me outside of the Temple of Wisdom.~
+@70211 = ~Restoring Saiai no Hito
+
+I have recovered both parts of the blade and given them to Inoshishi. He has gone ahead to Beregost, where he'll be waiting at the Thunderhammer Smithy.~
+@70212 = ~Restoring Saiai no Hito
+
+I met Inoshishi but the Smithy was closed. I'll return when it's open.~
+@70213 = ~Restoring Saiai no Hito
+
+Taerom has taken the commission to reforge Saiai no Hito, though Inoshishi had to throw in his signet ring to pay for it. I should return in four days when it's ready.~
+@70214 = ~Restoring Saiai no Hito
+
+Taerom has taken the commission to reforge Saiai no Hito, though we had to help pay for it. I should return in four days when it's ready.~
+@70215 = ~Restoring Saiai no Hito
+
+I went to meet Inoshishi to see the reforged blade, but the Smithy was closed. I'll return when it's open.~
+@70216 = ~Restoring Saiai no Hito
+
+I have helped Inoshishi restore Saiai no Hito to its former glory. He has rewarded me for my help, and has left for home.~
+@70217 = ~Restoring Saiai no Hito
+
+I have helped Inoshishi restore Saiai no Hito to its former glory. I convinced him that we had need of the blade to restore peace to the Sword Coast, and have promised we will return the blade one day.~
+@70218 = ~Restoring Saiai no Hito
+
+I have helped Inoshishi restore Saiai no Hito to its former glory. He tried to repay me with paltry trinkets, but I demanded the blade itself.~
+@70219 = ~And he always helped his other brothers. He then fell in love with one of ours and while I do not understand how it must have felt, to be torn between old and newly felt love, and the questions if his feelings would be returned, I read the documents and I know he was an honest and a strong man and he should be remembered, just as his love should be with him.~

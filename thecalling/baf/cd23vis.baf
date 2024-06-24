@@ -1,0 +1,26 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ClearAllActions()
+    StartCutSceneMode() 
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([300.300],INSTANT)
+    ActionOverride("GELLAN",JumpToPoint([400.300]))
+    FadeFromColor([20.0],0)
+    TakePartyItem("CD23AMU") 
+    Wait(1) 
+    CreateVisualEffectObject("SPCLOUD1","GELLAN") 
+    Wait(1) 
+    CreateVisualEffectObject("SPFLESHS","GELLAN") 
+    Wait(1) 
+    CreateVisualEffectObject("SPFLESHS","GELLAN") 
+    Wait(1) 
+    CreateVisualEffectObject("SPFLESHS","GELLAN") 
+    Wait(4) 
+    SetGlobal("CDMonkCalling","GLOBAL",5) 
+    EndCutSceneMode() 
+    ActionOverride("CD23MON",StartDialogueNoSet(Player1))
+END

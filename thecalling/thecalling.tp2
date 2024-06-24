@@ -55,7 +55,7 @@ ALWAYS
 
 END
 
-VERSION ~v6_WIP_test_build_06222024~
+VERSION ~v6_WIP_test_build_06242024~
 README ~thecalling/readme-thecalling-%LANGUAGE%.html~ ~thecalling/readme-thecalling.html~
 AUTO_TRA ~%tra_location%/%s~
 
@@ -1017,6 +1017,178 @@ LABEL ~cd_the_calling_shaman_golden_text~
 OUTER_SPRINT text_pre  ~^0xFF00DFFF~
 OUTER_SPRINT text_post ~^-~
 INCLUDE ~thecalling/lib/shaman.tpa~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Monk - Restoring Saiai no Hito                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @70000 DESIGNATED 70
+GROUP @8
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
+LABEL ~cd_the_calling_monk~
+
+/* CDMonkCalling
+-1 - told Inoshishi to beat it, end of quest
+1 - spawned Inoshishi
+2 - agreed to help
+3 - Inoshishi spawns at the Temple of Wisdom
+4 - agreed to track bandit
+5 - party returned amulet, gallena does some divination
+6 - divination done, have post-talk with ino
+7 - ino moves back outside
+8 - asked to find both parts of blade
+9 - returned both parts to ino
+10 - spawned ino at taerom's
+11 - taerom's started work, ino leaves
+    CDMonkCallingPaid or CDMonkCallingNotPaid set to 1
+    CDMonkCallingBladeTime timer set for 4 days
+12 - spawn ino if timer expired
+13 - taerom forging cutscene complete, prompt final dialogue
+14 - ino rewards player, rides off into the sunset with the sword
+15 - player convinces ino to also give him the sword, quest ends
+16 - ino rewards player, player demands sword and kills ino for it
+*/
+
+/////                                                  \\\\\
+///// copies, preamble                                 \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/bam/cd23amu.bam~ ~override~
+     ~thecalling/bam/cd23bra.bam~ ~override~
+     ~thecalling/bam/cd23fr1.bam~ ~override~
+     ~thecalling/bam/cd23fr2.bam~ ~override~
+     ~thecalling/bam/cd23kat.bam~ ~override~
+     ~thecalling/bam/cd23rin.bam~ ~override~
+     ~thecalling/eff/cd23kat.eff~ ~override~
+						
+ADD_JOURNAL TITLE (@70201) @70202 @70203 @70204 @70205 @70206 @70207 @70208 @70209 @70210 @70211 @70212 @70213 @70214 @70215 @70216 @70217 @70218
+
+/////                                                  \\\\\
+///// scripts & dialogue                               \\\\\
+/////                                                  \\\\\
+
+COMPILE ~thecalling/baf/cd23mon.baf~
+COMPILE ~thecalling/baf/cd23rog.baf~
+COMPILE ~thecalling/baf/cd23vis.baf~
+COMPILE ~thecalling/baf/cd23fin.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~%UlgothsBeard_BCS%.bcs~                  ~thecalling/baf/ar1000.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%FriendlyArmInn_BCS%.bcs~                ~thecalling/baf/ar2300.baf~
+EXTEND_BOTTOM ~%FriendlyArmInn_TempleofWisdom_BCS%.bcs~ ~thecalling/baf/ar2304.baf~
+EXTEND_BOTTOM ~%CoastWay_BCS%.bcs~                      ~thecalling/baf/ar2800.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%Beregost_ThunderhammerSmithy_BCS%.bcs~  ~thecalling/baf/ar3301.baf~
+EXTEND_BOTTOM ~%ValleyoftheTombs_BCS%.bcs~              ~thecalling/baf/ar5000.baf~ EVALUATE_BUFFER
+
+COMPILE ~thecalling/dlg/cd23mon.d~ EVALUATE_BUFFER
+
+/////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+
+COPY_EXISTING ~%tutu_var%gellan.cre~ ~override~
+  WRITE_ASCII DEATHVAR ~gellan~ #32
+
+COPY ~thecalling/cre/cd23mon.cre~ ~override~
+  SAY NAME1 @70001
+  SAY NAME2 @70001
+
+COPY ~thecalling/cre/cd23rog.cre~ ~override~
+  SAY NAME1 @70002
+  SAY NAME2 @70002
+
+COPY ~thecalling/cre/cd23ban.cre~ ~override~
+  SAY NAME1 @70003
+  SAY NAME2 @70003
+  PATCH_IF !FILE_EXISTS_IN_GAME ~compb05.itm~ BEGIN // no 1pp cosmetic item
+    LPF DELETE_CRE_ITEM STR_VAR item_to_delete = bow06 END
+    LPF DELETE_CRE_ITEM STR_VAR item_to_delete = compb05 END
+    ADD_CRE_ITEM ~bow06~ #0 #0 #0 ~none~ ~weapon2~ EQUIP 
+  END          
+
+COPY ~thecalling/cre/cd23tro.cre~ ~override~
+  SAY NAME1 @70004
+  SAY NAME2 @70004
+  PATCH_IF !game_includes_sod BEGIN // assigned scripts only present in sod
+    WRITE_ASCII 0x268 ~wtasight~ #8
+  END  
+  
+ACTION_IF !enhanced_edition BEGIN // have to do old troll-revive on originals
+
+  COPY_EXISTING ~cd23tro.cre~ ~override~
+    WRITE_ASCII 0x248 ~cd23tro~ #32
+    WRITE_ASCII 0x268 ~wtatroll~ #8
+
+  COPY ~thecalling/spl/cd23trod.spl~ ~override~ // spell to transform back to living troll
+  COMPILE ~thecalling/baf/cd23tro.baf~          //scripting to transform to 'dead' troll
+          ~thecalling/baf/cd23trod.baf~         // scripting to revive
+  COPY ~thecalling/cre/cd23trod.cre~ ~override~ // 'dead' troll
+    SAY NAME1 @70004
+    SAY NAME2 @70004
+  
+END 
+  
+ACTION_IF tutu_gen BEGIN
+
+  COPY_EXISTING ~cd23mon.cre~ ~override~
+                ~cd23rog.cre~ ~override~
+                ~cd23ban.cre~ ~override~
+                //~cd23tro.cre~ ~override~ // uses exclusively bg2 items
+    LPF tutuize_items INT_VAR item_number = (LONG_AT 0x2c0) item_offset = (LONG_AT 0x2bc) END
+
+END    
+  
+ACTION_IF game_is_eet BEGIN // adjust strings for EET soundsets
+
+  COPY_EXISTING ~cd23mon.cre~ ~override~
+                ~cd23rog.cre~ ~override~
+                ~cd23ban.cre~ ~override~
+                //~cd23tro.cre~ ~override~ // uses default animation sounds
+    LPM eetize_soundsets
+    BUT_ONLY
+
+END                
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/itm/cd23amu.itm~ ~override~
+  SAY NAME1 @70005
+  SAY NAME2 @70005
+  SAY DESC @70006
+
+COPY ~thecalling/itm/cd23fr1.itm~ ~override~
+  SAY NAME1 @70007
+  SAY NAME2 @70007
+  SAY DESC @70008
+
+COPY ~thecalling/itm/cd23fr2.itm~ ~override~
+  SAY NAME1 @70009
+  SAY NAME2 @70009
+  SAY DESC @70010
+
+COPY ~thecalling/itm/cd23bra.itm~ ~override~
+  SAY NAME1 #6341
+  SAY NAME2 @70011
+  SAY DESC @70012
+
+COPY ~thecalling/itm/cd23kat.itm~ ~override~
+  SAY NAME1 #26711
+  SAY NAME2 @70013
+  SAY DESC @70014
+  PATCH_IF !enhanced_edition BEGIN // oBG2 doesn't have 'enchantment vs.' opcode
+    LPF DELETE_EFFECT INT_VAR check_headers = 0 match_opcode = 344 END
+    WRITE_LONG 0x60 2 // enchantment
+  END
+
+COPY ~thecalling/itm/cd23rin.itm~ ~override~
+  SAY NAME1 #6348
+  SAY NAME2 @70015
+  SAY DESC @70016
     
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -1031,7 +1203,8 @@ GROUP @8
 REQUIRE_PREDICATE ((MOD_IS_INSTALLED ~thecalling.tp2~ 10) OR
                    (MOD_IS_INSTALLED ~thecalling.tp2~ 20) OR
                    (MOD_IS_INSTALLED ~thecalling.tp2~ 60) OR
-                   (MOD_IS_INSTALLED ~thecalling.tp2~ 61)) @6 // skip if no callings installed
+                   (MOD_IS_INSTALLED ~thecalling.tp2~ 61) OR
+                   (MOD_IS_INSTALLED ~thecalling.tp2~ 70)) @6 // skip if no callings installed
 LABEL ~cd_the_calling_cheats~
 
 EXTEND_BOTTOM ~baldur.bcs~ ~thecalling/baf/cheat2.baf~

@@ -488,7 +488,7 @@ Dreamheart has asked me to find a special Soulheart Herb. He could not give spec
 I have found Soulheart Herb. Now I can return to speak with Dreamheart and finally scour the corruption from the cave.~ 
 @60155 = ~Dreamheart
 
-Dreamheart's taska are endless. I created the guardian, and the latest request was to place a figurine on the altar. I refused.~ 
+Dreamheart's tasks are endless. I created the guardian, and the latest request was to place a figurine on the altar. I refused.~ 
 @60156 = ~Dreamheart
 
 With the guardian is in place, Dreamheart asked me to place a figurine on the altar.~ 
@@ -536,7 +536,7 @@ Weight: 0~
 @60180 = ~No, I have not.~
 @60181 = ~I suppose I can hear you out.~
 @60182 = ~Welcome back, shaman. Have you found the waterfall?~
-@60183 = ~Not yet, but I will return afer I have.~
+@60183 = ~Not yet, but I will return after I have.~
 @60184 = ~I am having trouble finding it.~
 @60185 = ~I await your return.~
 @60186 = ~Seek southeast and you will find it. A dryad and her tree are nearby.~
@@ -553,3 +553,82 @@ I have found the waterfall and filled the Earthenware Vessel with clear spring w
 @60191 = ~Dreamheart
 
 The seed has been planted and watered. I should return to Dreamheart.~ 
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Monk - Restoring Saiai no Hito                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@70006 = ~This amulet would normally be hidden in a hilt of a katana, right under the leather tidings. This specific amulet looks really old.
+
+STATISTICS:
+
+Weight: 0~
+
+@70008 = ~This looks like a hilt of a broken katana. It may be part of the Saiai no Hito, a Kozakuran sword of formidable reputation, made by Ne Kurosuna with another monk, Shiroume Yakuchi, in mind. 
+
+Perhaps it can still be fixed... once its blade is found.
+
+STATISTICS:
+
+Weight: 1~
+
+@70010 = ~This looks like a blade of a broken katana. It may be part of the Saiai no Hito, a Kozakuran sword of formidable reputation, made by Ne Kurosuna with another monk, Shiroume Yakuchi, in mind. 
+
+Perhaps it can still be fixed... once its hilt is found.
+
+STATISTICS:
+
+Weight: 2~
+
+@70012 = ~These bracers were created in Kozakura. They are warm to the touch and while quite light, they feel quire durable. Enchanted by a powerful priestess named Ume after the sweetest of Kozakuran fruits, they may help in keeping the mind clear and in balance, even when anger tries to take control over the monk. They may also help the one that wears these bracers during the fight by guiding their strikes.
+
+STATISTICS:
+
+Equipped abilities:
+– Melee THAC0: +2
+– Protection from Berserk
+
+Weight: 1~
+
+@70014 = ~This sword is known as Saiai no Hito. It was created by Ne Kurosuna, a former member of Saku Monastery. He was one of the original members of the monastery and he trained there for years. He was known for his keen mind and graceful techniques. He was also quite strong, probably one of the strongest monks among other members of the Saku Monastery while he was still there.
+
+In the tenth year of his work, he started to develop romantic feelings for Shiroume Yakuchi, another monk from the same Monastery. While he could be called a master of discipline, body and strategy, he wasn't ready for this, as Ne lost his previous beloved to bandits that killed killed him. He never expected to develop such feelings again, and surely not to someone from the same monastery. That made him feel uneasy, torn between past love and the newly found one. He wasn't sure if he should ever tell Shiroume about his feelings. What if the man could never return these feelings? Would that change their friendship? And would that be a betrayal of his former loved one?
+
+After few months, he decided that if he is to understand these feelings and decide what to do, he needed to leave the Monastery and ponder, pray for answers and enlightenment in solitude. As he liked to meditate through work, he started creating swords. Eventually, that lead him to the creation of this sword: Saiai no Hito. It was supposed to be a gift to Shiroume as Ne decided that peace can only be achieved by honesty. He hoped that... perhaps Master Yakuchi would understand, give them a chance or at least help them remain friends. Ne decided that would be a betrayal to his former love. He still respected his past. He still remembered it.
+
+Saiai no Hito was supposed to be a symbol of love, companionship and enlightenment. However, Ne Kurosuna was killed on his way to the Monastery. The blade was then lost and it's hard to say how it... or rather its parts ended up on the Sword Coast, but it is there, where the blade was reforged and restored to its former glory.
+
+The magic held by this sword was to help those that wield it, providing a great advantage in battle. If tales are to be believed it was also supposed to protect the heart of the monk from ever being crushed or broken.
+
+STATISTICS:
+
+Equipped abilities:
+– Protection from Petrification
+– Crushing damage resistance: +10% (monk only)
+
+Combat abilities:
+– Enchantment vs. Evil: +2
+
+THAC0: +1
+Damage: 1d10+1, +1 Fire
+Damage Type: slashing
+Speed Factor: 3
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5~
+
+@70016 = ~This ring is known as Inoshishi's Mane. Those familiar with the Kozakuran language know that Inoshishi means "wild boar".
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class vs. Crushing: +1
+
+Weight: 0~

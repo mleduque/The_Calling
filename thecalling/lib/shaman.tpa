@@ -103,7 +103,7 @@ COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to 
     fj_box_right = 385
     fj_box_bottom = 294
     fj_cursor_idx = 20
-    fj_flags = (BIT8 + BIT10) // deactivated, use activation point
+    fj_flags = (BIT2 + BIT8 + BIT9 + BIT10) // party required, deactivated, impassable by NPC, use activation point
     fj_alt_x = 358
     fj_alt_y = 230
     fj_loc_x = 358

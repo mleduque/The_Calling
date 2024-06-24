@@ -11,10 +11,11 @@ DEFINE_PATCH_FUNCTION tutuize_items
   
   FOR (index = 0 ; index < item_number ; ++index) BEGIN
     READ_ASCII (item_offset + (index * item_length)) item
-    PATCH_IF (("%item%" STRING_COMPARE_REGEXP "^[Cc][Dd].+$") AND
-              ("%item%" STRING_COMPARE_REGEXP "^[Rr][Nn][Dd][Tt][Rr][Ee].+$") AND
-              ("%item%" STRING_COMPARE_CASE "helmnoan") AND
-              ("%item%" STRING_COMPARE_CASE "misc07")) BEGIN
+    PATCH_IF (("%item%" STRING_COMPARE_REGEXP "^[Cc][Dd].+$") AND                 // items from mod
+              ("%item%" STRING_COMPARE_REGEXP "^[Rr][Nn][Dd][Tt][Rr][Ee].+$") AND // random treasures
+              ("%item%" STRING_COMPARE_REGEXP "^[Cc][Oo][Mm][Pp].+$") AND         // 1pp cosmetic items 
+              ("%item%" STRING_COMPARE_CASE "helmnoan") AND                       // special no-animation helmet
+              ("%item%" STRING_COMPARE_CASE "misc07")) BEGIN                      // gold
       WRITE_ASCIIE (item_offset + (index * item_length)) ~%tutu_var%%item%~ #8
     END
   END

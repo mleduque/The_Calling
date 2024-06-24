@@ -1,0 +1,19 @@
+IF
+  Global("CDMonkCalling","GLOBAL",4)
+  Global("CDMonkCallingEnemy0","%CoastWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCallingEnemy0","%CoastWay%",1)
+    CreateCreature("CD23ROG",[2800.2450],2)
+END
+
+IF
+  Global("CDMonkCallingEnemy0","%CoastWay%",1)
+  PartyHasItem("cd23amu")
+THEN 
+  RESPONSE #100
+    EraseJournalEntry(@70204) 
+    AddJournalEntry(@70205,QUEST)
+    SetGlobal("CDMonkCallingEnemy0","%CoastWay%",1)
+END
+  

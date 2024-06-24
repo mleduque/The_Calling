@@ -1,0 +1,7 @@
+IF
+  Global("CDMonkCalling","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCalling","GLOBAL",3)
+    CreateCreature("CD23MON",[350.300],0)
+END

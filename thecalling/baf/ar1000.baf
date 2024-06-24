@@ -1,0 +1,32 @@
+IF
+  Global("CDMonkCalling","GLOBAL",8)
+  Global("CDMonkCallingPir","%UlgothsBeard%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCallingPir","%UlgothsBeard%",1)
+    CreateCreature("CD23BAN",[730.180],13)
+END
+
+IF
+  PartyHasItem("cd23fr1")
+  !PartyHasItem("cd23fr2")
+  Global("CDMonkCallingPir","%UlgothsBeard%",1)
+THEN
+  RESPONSE #100
+    EraseJournalEntry(@70207) 
+    AddJournalEntry(@70208,QUEST)
+    SetGlobal("CDMonkCallingPir","%UlgothsBeard%",2)
+END
+
+IF
+  PartyHasItem("cd23fr1")
+  PartyHasItem("cd23fr2")
+  Global("CDMonkCallingPir","%UlgothsBeard%",1)
+THEN
+  RESPONSE #100
+    EraseJournalEntry(@70207) 
+    EraseJournalEntry(@70209) 
+    AddJournalEntry(@70210,QUEST)
+    SetGlobal("CDMonkCallingPir","%UlgothsBeard%",2)
+END
+
