@@ -13,7 +13,6 @@ THEN
     CreateCreature("cd51ded4",[2302.2181],12)
     CreateCreature("cd51ded5",[1868.1602],5)
     CreateCreature("cd51ded6",[1992.1634],9)
-    Continue()
 END
 
 IF
@@ -22,7 +21,6 @@ THEN
   RESPONSE #100
     SetGlobal("CDSpawnFighterWatchdog","%GnollStronghold%",1)
     CreateCreature("CD51GO",[2600.600],0)
-    Continue()
 END
 
 IF
@@ -30,6 +28,7 @@ IF
   Dead("CD51CH") // chieftain
   Dead("CD51GO") // watcher
   Global("cdjournal3dead","%GnollStronghold%",0)
+  !Global("CDGnollQuest","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("cdjournal3dead","%GnollStronghold%",1)
@@ -45,6 +44,7 @@ IF
     !Dead("CD51CH") // chieftain
     !Dead("CD51GO") // watcher
   Global("cdjournal_cd51gs","%GnollStronghold%",0)
+  !Global("CDGnollQuest","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("cdjournal_cd51gs","%GnollStronghold%",1)
@@ -57,6 +57,7 @@ IF
     !Dead("CD51GS") // shaman
     !Dead("CD51GO") // watcher
   Global("cdjournal_cd51ch","%GnollStronghold%",0)
+  !Global("CDGnollQuest","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("cdjournal_cd51ch","%GnollStronghold%",1)
@@ -69,6 +70,7 @@ IF
     !Dead("CD51GS") // shaman
     !Dead("CD51CH") // chieftain
   Global("cdjournal_cd51go","%GnollStronghold%",0)
+  !Global("CDGnollQuest","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("cdjournal_cd51go","%GnollStronghold%",1)
@@ -78,6 +80,7 @@ END
 IF
   Dead("CD51gho") // ghost
   Global("cdjournal_cd51gho","%GnollStronghold%",0)
+  !Global("CDGnollQuest","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("cdjournal_cd51gho","%GnollStronghold%",1)
