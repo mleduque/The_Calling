@@ -204,6 +204,7 @@ COPY_EXISTING ~%DryadFalls%.are~ ~override~ // adding script region to dryad fal
 /////                                                  \\\\\
 
 COMPILE ~thecalling/baf/cd4102.baf~
+        ~thecalling/baf/cd41guar.baf~
 
 EXTEND_BOTTOM ~baldur.bcs~                        ~thecalling/baf/baldur.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~player1d.bcs~                      ~thecalling/baf/player1d.baf~ 
@@ -221,6 +222,13 @@ END
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
 /////                                                  \\\\\
+
+COPY ~thecalling/cre/cd41guar.cre~ ~override~
+  SAY NAME1 @60192
+  SAY NAME2 @60192
+  WRITE_ASCIIE 0x250 ~%tutu_scriptr%eddeath~
+  WRITE_ASCIIE 0x258 ~%tutu_scripts%eeenemy~
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%tasight~
 
 COPY ~thecalling/cre/cd41hea.cre~ ~override~
   SAY NAME1 @60147
@@ -244,7 +252,8 @@ COPY ~thecalling/cre/cd41sha.cre~ ~override~
   
 ACTION_IF game_is_eet BEGIN // adjust strings for EET soundsets
 
-  COPY_EXISTING ~cd41hea.cre~  ~override~
+  COPY_EXISTING ~cd41guar.cre~ ~override~
+                ~cd41hea.cre~  ~override~
                 ~cd41wol1.cre~ ~override~
                 ~cd41wol2.cre~ ~override~
                 ~cd41cor.cre~  ~override~

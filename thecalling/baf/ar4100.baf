@@ -21,4 +21,47 @@ THEN
     AddJournalEntry(@60152,QUEST) 
     EraseJournalEntry(@60151)
 END
+
+IF 
+  Dead("cd41guar")
+  GlobalTimerExpired("cd41guardian_respawn","MYAREA")
+  Global("cd41guardian_cycle","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SPRITE_IS_DEADcd41guar","GLOBAL",0)    
+		CreateVisualEffect("spresuri",[3165.1326]) 
+    CreateCreature("cd41guar",[3165.1326],3)
+    SetGlobal("cd41guardian_cycle","MYAREA",0)
+END
+
+IF 
+  Dead("cd41guar")
+  !GlobalTimerNotExpired("cd41guardian_respawn","MYAREA")
+  Global("cd41guardian_cycle","MYAREA",0)
+THEN
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",300)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",600)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",900)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",1200)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",1500)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",1800)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",2100)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+  RESPONSE #10
+    SetGlobalTimer("cd41guardian_respawn","MYAREA",2400)
+    SetGlobal("cd41guardian_cycle","MYAREA",1)
+END    
     

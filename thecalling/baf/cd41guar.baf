@@ -1,0 +1,9 @@
+IF
+  ActionListEmpty()
+  CombatCounter(0)
+  !Range("cd_plant_seed",20)
+THEN
+  RESPONSE #100
+    MoveToObject("cd_plant_seed")
+    Face(2)
+END

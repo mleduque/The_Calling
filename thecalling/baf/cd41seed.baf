@@ -13,6 +13,7 @@ THEN
     DisplayStringHead(Player%index%,@60167)
     ActionOverride(Player%index%,TransformItem("cd41bful","cd41bemp"))
 		CreateVisualEffect("spresuri",[3165.1326])   
+    CreateCreature("cd41guar",[3165.1326],3)
     SetGlobal("CDShamanCallingSeed","GLOBAL",3)  
     AddJournalEntry(@60191,QUEST) 
     EraseJournalEntry(@60190)  
