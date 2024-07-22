@@ -286,7 +286,7 @@ CHAIN CD23MON 08.02
 ==CD23MON @70165
 ==%tutu_var%taerom @70166
 ==CD23MON @70167
-DO ~SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingNotPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
+DO ~DestroyItem("cd23rin") SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingNotPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
 EraseJournalEntry(@70211) EraseJournalEntry(@70212)  AddJournalEntry(@70213,QUEST) EscapeArea()~ EXIT
 
 //Talk 9 (Almost Fixed)
