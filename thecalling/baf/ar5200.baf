@@ -1,0 +1,19 @@
+IF
+  PartyHasItem("cd41bemp")
+  Global("cd41_water_active","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cd41_water_active","MYAREA",1)
+    TriggerActivation("cd_fill_water",TRUE)
+    TriggerActivation("cd_fill_water_info",TRUE)
+END
+
+IF
+  !PartyHasItem("cd41bemp")
+  !Global("cd41_water_active","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("cd41_water_active","MYAREA",0)
+    TriggerActivation("cd_fill_water",FALSE)
+    TriggerActivation("cd_fill_water_info",FALSE)
+END

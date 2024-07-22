@@ -169,14 +169,14 @@ COPY_EXISTING ~%GibberlingMountains%.are~ ~override~ // Mountains
     fj_structure_type = itm
   END
 
-COPY_EXISTING ~%DryadFalls%.are~ ~override~ // adding script region to dryad falls
+COPY_EXISTING ~%DryadFalls%.are~ ~override~ // adding script region to dryad falls (ar5200)
   LPF fj_are_structure INT_VAR
     fj_type = 0 // prox trigger
     fj_box_left = 1648
     fj_box_top = 2491
     fj_box_right = 1899
     fj_box_bottom = 2743
-    fj_flags = BIT1 // trap resets
+    fj_flags = (BIT1 + BIT8) // trap resets, deactivated
     fj_trap_active = 1
     fj_alt_x = 1774
     fj_alt_y = 2527
@@ -198,6 +198,34 @@ COPY_EXISTING ~%DryadFalls%.are~ ~override~ // adding script region to dryad fal
     fj_name = cd_fill_water
     fj_reg_script = cd41watr
   END
+  LPF fj_are_structure INT_VAR
+    fj_type = 1 // info point
+    fj_cursor_idx = 22
+    fj_box_left = 1648
+    fj_box_top = 2491
+    fj_box_right = 1899
+    fj_box_bottom = 2743
+    fj_flags = BIT8 // deactivated
+    fj_info_point_strref = RESOLVE_STR_REF(@60193)
+    fj_alt_x = 1774
+    fj_alt_y = 2527
+    fj_loc_x = 1774
+    fj_loc_y = 2527
+    fj_vertex_0 = 1796 + (2491 << 16)
+    fj_vertex_1 = 1899 + (2531 << 16)
+    fj_vertex_2 = 1853 + (2566 << 16)
+    fj_vertex_3 = 1869 + (2663 << 16)
+    fj_vertex_4 = 1863 + (2743 << 16)
+    fj_vertex_5 = 1715 + (2732 << 16)
+    fj_vertex_6 = 1683 + (2637 << 16)
+    fj_vertex_7 = 1658 + (2587 << 16)
+    fj_vertex_8 = 1648 + (2555 << 16)
+    fj_vertex_9 = 1677 + (2521 << 16)
+    fj_vertex_10 = 1738 + (2492 << 16)
+  STR_VAR
+    fj_structure_type = region
+    fj_name = cd_fill_water_info
+  END
 
 /////                                                  \\\\\
 ///// scripts & dialogue                               \\\\\
@@ -210,6 +238,7 @@ EXTEND_BOTTOM ~baldur.bcs~                        ~thecalling/baf/baldur.baf~ EV
 EXTEND_BOTTOM ~player1d.bcs~                      ~thecalling/baf/player1d.baf~ 
 EXTEND_BOTTOM ~%ArchaeologicalSite_BCS%.bcs~      ~thecalling/baf/ar4100.baf~
 EXTEND_BOTTOM ~%ArchaeologicalSite_Tomb_BCS%.bcs~ ~thecalling/baf/ar4101.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%DryadFalls_BCS%.bcs~              ~thecalling/baf/ar5200.baf~ 
 EXTEND_BOTTOM ~%GibberlingMountains_BCS%.bcs~     ~thecalling/baf/ar5500.baf~ 
 
 COMPILE ~thecalling/dlg/cd41hea.d~ EVALUATE_BUFFER
