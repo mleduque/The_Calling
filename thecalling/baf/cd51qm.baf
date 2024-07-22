@@ -11,6 +11,7 @@ IF
 THEN
   RESPONSE #100
     StartCutSceneMode()
+    CutSceneId("cd51qm")
     SmallWait(2)
     FadeToColor([30.0],0)
     Wait(2)
@@ -34,7 +35,7 @@ THEN
     SetRestEncounterProbabilityDay(0)
     SetRestEncounterProbabilityNight(0)
     SetGlobal("CDGnollQuest","GLOBAL",3)
-    JumpToPoint([1300.1200])
+    JumpToPoint([1300.1199])
     MoveToPoint([1300.1200])
     Wait(1)
     FadeFromColor([30.0],0)
