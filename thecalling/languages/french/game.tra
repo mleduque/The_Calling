@@ -391,6 +391,318 @@ PARAMÈTRES :
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
+@10000 = ~Extension de la Forteresse Gnoll~
+@10001 = ~Argh, je vous ai vu venir... Maintenant je vais vous voir tomber ! Arg ! Auu !~
+@10002 = ~Gnoll-gringalet~
+@10003 = ~Chaman Sirkhr~
+@10004 = ~Gnoll desséché~
+@10005 = ~Cheffe Hvalanya~
+@10006 = ~Guetteur Purkht~
+@10007 = ~Capitaine Stilind~
+@10008 = ~Soldat amnien~
+@10009 = ~Éclaireur amnien Manlytoe~
+@10010 = ~Kalvranalan~
+@10011 = ~Bâton des pensées corrosives +1~
+@10012 = ~Ceinture des présages~
+@10013 = ~Cette ceinture inhabituelle a été fabriquée pour un assassin du nom de Mudbone. Il se spécialisait dans l'assassinat de prêtes, plus particulièrement de ceux qui étaient vus comme des obstacles par les gens sans considérations pour les gens de foi. La ceinture semble de bonne facture. Elle a probablement été confectionnée avec des matériaux de grande qualité.
+
+PARAMÈTRES :
+
+Dégâts contre les clercs : +2
+Résistance à la magie : +2 %
+
+Poids : 2~
+@10015 = ~Cotte de mailles du respect primitif +1~
+@10016 = ~Cette cotte de mailles a quelque chose de brut et primitif, mais vous pouvez percevoir une énergie magique en provenance de ses mailles. Elle devrait pouvoir protéger son porteur au combat et la magie pourrait être utile dans la nature. Par contre, l'armure émet une odeur étrange qui rappelle celle de la fourrure d'un chien.
+
+PARAMÈTRES :
+
+Capacité quand elle est portée : Classe d'armure contre les animaux +2
+Capacité de combat : Charisme -1
+Classe d'Armure : 4
+Poids : 20
+Force requise : 8
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@10017 = ~Nook~
+@10018 = ~Manteau de forme stable~
+@10019 = ~Ce manteau est fait de tissu enchanté qui pourrait s'avérer utile dans les combats contre des ennemis semblables au basilic. Il semble capable de protéger son porteur contre leur regard mortel.
+
+PARAMÈTRES :
+
+Capacités spéciales : jets de sauvegarde la métamorphose +4~
+@10020 = ~Porche voûté~
+@10021 = ~Amulette de sombre malchance~
+@10022 = ~Cette amulette a été maudite par quelque magie ténébreuse. Quiconque la porte verra sa chance s'amoindrir et, sur la route ou à l'aventure, la chance peut être la différence entre la vie et la mort.
+
+PARAMÈTRES :
+
+Chance : réduite de 1
+Spécial : ne peut être retiré qu'à l'aide d'un sort de délivrance de la malédiction~
+@10023 = ~Temple de la Bête de la boucherie~
+@10024 = ~Flèche d'esprit brisée +1~
+@10025 = ~Cette flèche a l'air brisée mais même si vous n'en tenez qu'un morceau, l'autre moitié lévite juste à côté du reste. Même si elle n'est pas très puissante, elle peut être utile au moment où l'aventurier se voit à court de flèches ordinaires.
+
+PARAMÈTRES :
+
+Revient dans la main du lanceur
+
+Spécial : frappe comme une arme +1
+Dégâts : 1 (projectile)
+Arme à distance : Arc
+Poids : 0
+Non utilisable par :
+ Clerc
+ Druide
+ Mage~
+@10026 = ~Intérieur de la Forteresse des gnolls~
+/*
+The staff of Corrosive Thoughts uses @10011 as its name. on EE, this staff uses @10028 as its descript 
+and boosts acid damage +10%. Since this can't be done on the original engine, there it has the ability 
+to cast Melf's Acid Arrow once per day and uses @10027
+*/
+@10027 = ~Ce bâton était auparavant utilisé par un chaman gnoll de la forteresse des gnolls de la Côte des épées.
+
+Il est difficile de dire qui l'a créé. Il semble assez rustique et,  même s'il n'est pas des plus puissants, il y a certainement des situations dans lesquelles il sera utile.
+
+PARAMÈTRES :
+
+Capacités spéciales  Peut lancer Flèche acide de Melf une fois par jour
+TAC0 : +1
+Dégâts : 1d6+1 (contondants)
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : arme à deux mains
+Nécessite : 5 en Force~
+@10028 = ~~ // see ee.tra
+@10029 = ~Manteau du guerrier régent~
+@10030 = ~This purple cloak has quite a majestic aura and it is believed to have been created for a king, but... the legend does not specify which one. It is meant not only to protect the one that uses it, but also make those around them believe their every word and worship them.
+
+You were given this cloak as a token of trust and gratitude for securing the Gnoll Stronghold.
+
+PARAMÈTRES :
+
+Classe d'Armure : bonus de +2
+Jets de sauvegarde : bonus de +2
+Charisme :  passe à 19 (guerriers seulement)
+Poids :  3~
+@10031 = ~Livre de rituels des gnolls~
+@10032 = ~Ce livre décrit des rituels, certains pour contrôler l'énergie naturelle, d'autres pour satisfaire Yeenoghu, la Bête de la boucherie. L'un d'entre eux, particulièrement morbide, décrit la crémation de crânes humains.~
+@10033 = ~Matériel médical~
+@10034 = ~Ce sac est rempli de matériel médical.~
+@10035 = ~Viande~
+@10036 = ~Chair enflammée de Yeenoghu~
+@10037 = ~Cette viande en flammes est en réalité la chair brûlante de Yeenoghu. Ceux qui décident de la consommer pourront obtenir la bénédiction du Prince des gnolls, mais il y aura uen contrepartie.
+
+PARAMÈTRES :
+
+Spécial : si consommé, réduit le Charisme de 1 point mais accorde un bonus de 2 points de dégâts contre les adversaires d'alignement bon. Le bonus est permanent.
+
+Poids : 2~
+@10038 = ~Clef primitive~
+@10039 = ~Vous avez trouvé cette clé primitive dans la forteresse des gnolls. Elle devrait ouvrir quelque chose à cet endroit.~
+@10040 = ~On m'a donné pour consigne de vous dire que « l'espoir parcourt les rues d'Athkatla ».~
+@10041 = ~Ah, des aventuriers intrépides sont à nos portes ! Heaum veille sur tous les Royaumes et ses serviteurs sont à votre service. Le Justicier se tient prêt à soulager vos maux et, ainsi, à détourner le regard inébranlable du Grand-Guide... en échange d'un don raisonnable, s'entend. Juste pour marquer notre bonne volonté mutuelle, vous comprenez.~
+@10042 = ~Quel genre de services fournissez-vous ?~
+@10043 = ~Je n'ai besoin de rien de ce que vous pouvez m'offrir pour le moment. Au revoir.~
+@10044 = ~Hmm ? Je comprends pourquoi vous me dites cela. Vous êtes venu chercher les fournitures médicales que l'on m'a demandé de préparer pour les cas d'urgence, c'est bien ça ?~ ~Hmm ? Je comprends pourquoi vous me dites cela. Vous êtes venue chercher les fournitures médicales que l'on m'a demandé de préparer pour les cas d'urgence, c'est bien ça ?~
+@10045 = ~Oui.~
+@10046 = ~Alors qu'est ce que vous en dites ?~
+@10047 = ~Mon devoir n'est pas de vous mettre en doute mais de vous donner ce qui était prévu. Prenez ce coffre et remettez-le à qui en a besoin.~
+@10048 = ~Sachez que Heaum veille sur vous.~
+@10049 = ~Arr ! Nous... avons des invités... Grr ! Stupides choses ! Vous, pas savoir ? Pas déranger Cheffe Hvalanya !~
+@10050 = ~Non, je ne crois pas que quelqu'un ait évoqué la question jusqu'ici. Mais ils étaient tous trop occupés à être morts.~
+@10051 = ~Je suis navré, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~ ~Je suis navrée, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~
+@10052 = ~Ah ah ah ! Vous êtes une drôle de petite chose ! Moi et mes garçons,on va vous montrer. On n'aboie pas après Cheffe Hvalanya en espérant repartir entier ! Auuu !~
+@10053 = ~Je vous salue, ami.~ ~Je vous salue, amie.~
+@10054 = ~Vous ! Argh, votre espèce ne laisse jamais les gnolls tranquilles... ! Les vieux méchants, détestés par les gnolls forts, même par le chef.~
+@10055 = ~Qui êtes vous ?~
+@10056 = ~Oh oh ! En voilà une collection ! Impressionnant pour quelqu'un de votre espèce.~
+@10057 = ~Vous posez la question maintenant ? Après vous tuer vieux ou blesser gnolls ? Argh !~
+@10058 = ~C'est à moi... !~
+@10059 = ~Les vieux gnolls ont droit au respect et nous... pris cet endroit. Et cette salle, où vieux prêtre vivait. Lui mort. Endroit à nous.~
+@10060 = ~Beaucoup autres gnolls traitent nous vieux gnolls et faibles gnolls comme chiens malades ! Moquent ! Pissent dessus ! Mais même si nous vivent sous leur foyer, nous connaître notre valeur... Notre force !~
+@10061 = ~Nous louer Yeenoghu ! Et nous tuer. Et nous manger. Même si devoir manger les nôtres... Mais vous...~
+@10062 = ~Vous sûrement tellement plus savoureux... Nous festoyons aujourd'hui~
+@10063 = ~Soyez prudents, aventuriers. Cet endroit est dangereux. J'ai... j'ai perdu la plupart de mes gens, tués par les monstres qui occupent la forteresse près d'ici. Vous avez l'être d'un bon combattant, <PRO_RACE>, mais ces créatures sont féroces !~ ~Soyez prudents, aventuriers. Cet endroit est dangereux. J'ai... j'ai perdu la plupart de mes gens à cause des monstres qui occupent la forteresse près d'ici. Vous avez l'être d'une bonne combattante, <PRO_RACE>, mais ces créatures sont féroces !~
+@10064 = ~Qu'est-il arrivé à ces gens dont vous parlez ? Sont-ils morts ?~
+@10065 = ~S'ils ont été tués par des créatures aussi frustres, ils devaient être faibles.~
+@10066 = ~C'étaient de braves gens, hommes et femmes... Nous sommes venu pour prendre cet endroit. Il devrait être entre les mains de l'armée d'Amn, pas dans celles de ces créatures. Nous avons été envoyés d'Athkatla pour reconnaître les lieux et déterminer si un petit groupe serait en mesure d'éliminer discrètement les gnolls et de faire de cet endroit un centre d'opérations.~
+@10067 = ~Nous sommes tombés dans une embuscade.  Ils nous ont fait tomber des rochers dessus et d'autres ont été victimes de leurs hallebardes ou de leurs lames.~
+@10068 = ~Minsc n'a pas peur de ces créatures. Ce sont des suppôts du mal et le derrière du mal finit toujours convenablement botté.  is not afraid of those creatures. They're evil and evil will always have its butt properly kicked, eventually! Par Minsc et Bouh, assurément. *squeak*~
+@10069 = ~Bien sûr, ceux qui sont mal préparés échoueront immanquablement. (C'est pour ça qu'il faut toujours un plan bien mûri. Et quelques bouffons sous la main pour servir de chair à canon).~
+@10070 = ~P_pauvres gens. Je ne peux qu'à peine imaginer à quel point ce doit ête pénible de perdre des amis fidèles...~
+@10071 = ~Je suis le seul survivant, mais... Vous avez l'air fort. Peut-être que vous pourriez survivre.~ ~Je suis le seul survivant, mais... Vous avez l'air forte. Peut-être que vous pourriez survivre.~
+@10072 = ~Nous pouvons peut-être faire quelque chose. Nous sommes déjà ici, peut-être que nous pouvons vous aider à venger vos soldats.~
+@10073 = ~Oh... ! Je vous plains. Je ne sais pas, vous devriez peut-être rentrer chez vous et quelque soi le dieu que vous serviez, le remercier pour avoir épargné votre misérable vie. Excusez-moi, j'ai d'autres choses à faire.~
+@10074 = ~Vous souhaitez m'aider ? Ce... serait vraiment formidable.~
+@10075 = ~J'ai découvert qu'il y avait deux groupes ici. Les gnolls les plus faibles, les plus âgés et ceux qui ont été blessés et ont perdu de leur utilité. Ils sont menés pas un chaman.~
+@10076 = ~Mais d'un autre côté, il y a un autre groupe avec les gnolls les plus jeunes et les plus forts. Ils sont dirigés par leur chef, un gnoll femelle, qu'ils nomment « Cheffe Hvalanya ». Elle est plutôt cruelle, apparemment. Du moins c'est ce qui ressort de la façon dont ils parlent d'elle.~
+@10077 = ~On doit mettre les deux hors d'état de nuire si l'on veut prendre cette forteresse. Mais il y a aussi un troisième individu à neutraliser...~
+@10078 = ~Un troisième ?~
+@10079 = ~Quel est ce troisième ? Parlez !~
+@10080 = ~Le troisième n'est pas vraiment un leader, mais plutôt un genre de... guetteur. Il est le plus souvent dans l'une des tours, mais je ne sais pas vraiment laquelle.~
+@10081 = ~Hm, c'est quand même peut-être une bonne idée de s'en débarrasser aussi. Donc deux meneurs et un guetteur.~
+@10082 = ~C'est tout ? ils seront tous morts en moins de temps qu'il ne vous faut pour dire « Tout le monde dans mon escouade est mort ».~
+@10083 = ~Exactement.~
+@10084 = ~Vraiment ? Leur mort est une tragédie. Ne la tournez pa sen ridicule.~
+@10085 = ~Si vous tuez ces trois gnolls, les autres devraient fuir ou se cacher. Ils ne seront plus un danger sans leurs membres les plus importants de leur meute, ou leur clan ou je ne sais quoi !~
+@10086 = ~Vous êtes sûr que c'est dans vos cordes ? Vous avez l'air forts mais je me sens obligé de m'en assurer. Ils y en a un paquet là-dedans.~
+@10087 = ~Il n'y a aucun souci, je sais ce que je fais.~
+@10088 = ~Nous ne le saurons pas tant que je n'aurai pas essayé.~
+@10089 = ~Si je détermine qu'ils sont trop nombreux, je m’enfuirai.~
+@10090 = ~Très bien. Si vous pensez que vous pouvez leur tenir tête et que vous parvenez à tuer leurs trois meneurs, s'il vous plaît, revenez me le dire, que je sache que les vies de mes compagnons n'ont pas été gâchées en vain.~
+@10091 = ~Vous êtes bien cruel. Peut-être qu'avec le temps vous viendrez à la conclusion que... que cet endroit doit être reprise à ces créatures. Dans ce cas, revenez me voir.~ ~Vous êtes bien cruelle. Peut-être qu'avec le temps vous viendrez à la conclusion que... que cet endroit doit être reprise à ces créatures. Dans ce cas, revenez me voir.~
+@10092 = ~Encore vous ? Êtes-vous venus vous moquer de moi et de mes compagnons tués ?~
+@10093 = ~Voulez-vous me rappeler ce qui et arrivé à vos camarades ?~
+@10094 = ~Je me soucie peu de vous ou d'eux. Au revoir.~
+@10095 = ~Ah ! Vous êtes de retour. Avez-vous réglé les cas des meneurs gnolls et du guetteur ?~
+@10096 = ~Oui, c'est fait. Ils sont tous morts. Apparemment la plupart des gnolls ont décampé, mais il peut en rester ça et là. Sans leurs chefs ils ne devraient pas poser de difficulté.~
+@10097 = ~Je suis toujours en train de m'en charger.~
+@10098 = ~Vous... vous l'avez fait ! Come je voudrais que mes compagnons soient présents pour entendre la nouvelle. Mais je veux croire qu'ils ont participé à cette victoire. Maintenant, le travail n'est pas terminé, il reste encore beaucoup à faire.~
+@10099 = ~Retrouvons-nous plus loin dans la forteresse, en haut de l'escalier. Là-bas, nous pourrons poursuivre notre tâche. Enfin,si vous êtes intéressé. Mais je peux vous assurer que vous ne perdrez pas votre temps, mon ami guerrier~ ~Retrouvons-nous plus loin dans la forteresse. Là-bas, nous pourrons poursuivre notre tâche. Enfin,si vous êtes intéressée  Mais je peux vous assurer que vous ne perdrez pas votre temps, mon amie guerrière~
+@10100 = ~Tout me semble convenable... J'ai pu envoyer une signal depuis la tour, comme j'avais convenu avec les éclaireurs au sud d'ici. Je pense qu'ils vont m'envoyer quelques hommes en renfort, mais je voudrait pas que les choses se gâtent.~
+@10101 = ~Et je présume que vous souhaitez que je fasse en sorte que les choses ne se gâtent pas ? Dites-moi comment je peux faire.~
+@10102 = ~Désolé, mais je n'ai pas le temps de vous aider.~ ~Désolée, mais je n'ai pas le temps de vous aider.~
+@10103 = ~Il y a cette ville minière à côté d'ici, Nashkel. Là bas, il y a un temple, et j'aimerais que vous y alliez et que vous me rameniez du matériel médical. Le prêtre a dû être informé que nous pourrions avoir besoin d'aide, si je ne me trompe pas. Dommage que nous ne soyons pas allés lui parler avant que je perde mes camarades. Peut-être que si j'avais eu ces... Non, ça n'aurait pas permis d'éviter cette tragédie. Désolé, je ne peux pas m'empêcher de penser à eux.~
+@10104 = ~Et c'est le moment où jamais d'avoir ces fournitures ous la main. La forteresse a été prise, mais on ne sait jamais. Il y peut-être encore beaucoup plus de ces créatures qui rôdent dans ces montagnes. Alors en attendant que les renforts arrivent, vous pourriez peut-être aller à Nashkel et demander le matériel au prêtre.~
+@10105 = ~Et le prêtre me croira si je lui dit que vous m'envoyez ?~
+@10106 = ~Ça me parait simple. Je sais déjà où Nashkel se trouve.~
+@10107 = ~Non, désolé. Je n'ai pas le temps. En fait, il faut que j'y aille. Au revoir.~ ~Non, désolée. Je n'ai pas le temps. En fait, il faut que j'y aille. Au revoir.~
+@10108 = ~Vous aurez juste à dire  « l'espoir parcourt les rues d'Athkatla ». Il comprendra que vous venez pour les fournitures.~
+@10109 = ~Ça me semble facile.~
+@10110 = ~Ça me semble facile. Vous ne pouvez pas le faire vous-même ?~
+@10111 = ~Ça m'a l'air ennuyeux... Je n'ai pas le temps. Au revoir.~
+@10112 = ~Ça l'est.~
+@10113 = ~Je dois attendre l'arrivée des renforts. Et puis quelqu'un dois rester ici.~
+@10114 = ~Le plus difficile sera peut-être bien de rejoindre Nashkel, mais si vous connaissez déjà la route, ça sera plus facile pour vous. Plus facile que pour moi tout seul.~
+@10115 = ~S'il vous plaît, faites ça pour moi. j'ai vraiment besoin d'un coup de main.~
+@10116 = ~Quand vous aurez les fournitures, revenez ici. Je réfléchirai à votre récompense quand la situation sera complètement sous contrôle.~
+@10117 = ~Vous êtes de retour. Vous avez le matériel ?~
+@10118 = ~Les fournitures sont juste là.~
+@10119 = ~Je m'en occupe. Je vous préviendrai quand je les aurai.~
+@10120 = ~Splendide ! Juste au bon moment ! Voyez ! les renforts sont arrivé !~
+@10121 = ~Manlytoe ! Je suis là !~
+@10122 = ~Content de te revoir en vie, Stilind ! Où sont les autres ?~
+@10123 = ~Ils sont...~
+@10124 = ~...~
+@10125 = ~Je suis navré, Stilind, vraiment. Est-ce que Mandar en faisait partie ? Vous étiez inséparables tous les deux.~
+@10126 = ~Oui. Il... Il est mort lui aussi...~
+@10127 = ~par les dieux, sa famille va être anéantie.~
+@10128 = ~J'irai leur annoncer. À mon retour. Une fois que notre mission sera terminée.~
+@10129 = ~pour le moment... concentrons-nous sur le présent. S'il te plaît.~
+@10130 = ~Oui, bien sûr. Quelle est la situation ?~
+@10131 = ~La forteresse est sécurisée. J'ai reçu l'aide de ce brave guerrier.~ ~La forteresse est sécurisée. J'ai reçu l'aide de cette brave guerrière.~
+@10132 = ~Eh bien... ravi d'avoir pu aider.~ ~Eh bien... ravie d'avoir pu aider.~
+@10133 = ~Je l'ai fait pour la récompense, que ce soit clair.~
+@10134 = ~Vous devez être plutôt robuste, alors. Bon travail.~
+@10135 = ~Je vois. C'est... bon à savoir.~
+@10136 = ~Ça n'a pas dû être facile, avec toutes ces créatures en face.~
+@10137 = ~Effectivement... Au cas où la situation s'aggraverait, notre ami ici présent est allé chercher les fournitures médicales. Celles préparées à Nashkel.~ ~Effectivement... Au cas où la situation s'aggraverait, notre amie ici présente est allée chercher les fournitures médicales. Celles préparées à Nashkel.~
+@10138 = ~Bonne idée. Espérons seulement que nous n'en aurons pas besoin.~
+@10139 = ~Tu as raison.~
+@10140 = ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quand vous serez prêt.~ ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quand vous serez prête.~
+@10141 = ~Vous nous avez été d'une aide inestimable, ami, mais je voudrais vous demander encore un service.~ ~Vous nous avez été d'une aide inestimable, amie, mais je voudrais vous demander encore un service.~
+@10142 = ~Que voulez-vous ?~
+@10143 = ~Désolé, mais je n'ai pas de temps pour ça. Je ferais mieux de m'en aller~~Désolée, mais je n'ai pas de temps pour ça. Je ferais mieux de m'en aller~
+@10144 = ~Vous voyez, pendant que vous étiez parti pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~ ~Vous voyez, pendant que vous étiez partie pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~
+@10145 = ~Je ne sais pas si, parmi ces hommes et femmes, il y en a qui ont de l'expérience contre les fantômes, alors j'espérais que vous pourriez le vaincre pour nous. je vous promets que c'est vraiment la dernière que je vous demanderai. Et quand ce sera fait, je vous donnerai quelque chose.~
+@10146 = ~Vous nous avez tellement aidés, ça me semblerait juste.~
+@10147 = ~Donc, un fantôme vous disiez...~
+@10148 = ~Non, je vous ai assez aidés, il faut que je parte. Au revoir.~
+@10149 = ~Oui. Aidez-nous, s'il vous plaît. Je promets que ce que je vous offrirai vaut le coup.~
+@10150 = ~Alors, ami, avez-vous pu tuer le fantôme dont je vous ai parlé ?~ ~Alors, amie, avez-vous pu tuer le fantôme dont je vous ai parlé ?~
+@10151 = ~Oui. Il ne vous ennuiera plus.~
+@10152 = ~Non, pas encore. Au revoir.~
+@10153 = ~Par les dieux ! Vous êtes un des plus puissants guerriers que j'ai pu connaître.~ ~Par les dieux ! Vous êtes une des plus puissantes guerrières que j'ai pu connaître.~
+@10154 = ~Grâce à vous, cette mission n'a pas été un échec. Nous pourrons utiliser cette forteresse pour rendre les voyages entre Nashkel et Athkatla plus sûrs.~
+@10155 = ~Comme promis, j'ai une récompense pour vous. Un manteau spécial qui vous protégera. j'espère qu'il vous sera utile. En supplément, voici un peu de monnaie. Six cent pièces d'or. Je suis conscient que c'est peu mais... c'est tout ce que je peux offrir.~
+@10156 = ~Merci pour tout ce que vous avez fait pour nous. Je peux vous assurer que votre nom sera un symbole du guerrier sans peur pour nous tous ici.~ ~Merci pour tout ce que vous avez fait pour nous. Je peux vous assurer que votre nom sera un symbole de la guerrière sans peur pour nous tous ici.~
+@10157 = ~Je suis toujours heureux de vous revoir, mon ami.~ ~Je suis toujours heureux de vous revoir, mon amie.~
+@10158 = ~Je suppose que je devrais nettoyer mon épée plus tard.~
+@10159 = ~Par les dieux, j'espère que nous ne mourrons pas ici.~
+@10160 = ~Je vais faire quelques pompes avant d'aller me coucher.~
+@10161 = ~Le chemin pour venir ici était dangereux, mais je pense vraiment que ce qu'on fait ici est positif.~
+@10162 = ~Intérieur de la Forteresse des gnolls - Niveau 2~
+@10163 = ~Forteresse des gnolls - Pièce angoissante~
+@10164 = ~Forteresse des gnolls - Entrepôt ouest~
+@10165 = ~Forteresse des gnolls - Entrepôt est~
+@10166 = ~Eh bien, l'endroit n'est pas dans la meilleure condition, mais je suis sûr qu'en y mettant les moyens ça peut s'arranger. Les murs peuvent être réparés. Ça demandera pas mal d'or mais... ce n'est pas hors de portée. J'ai amené un peu de marchandises avec moi, si jamais vous aviez besoin d'armes ou de potions.~
+@10167 = ~Content de vous revoir.~
+@10168 = ~S'il vous manque quelque chose, je peux vous montrer ce que j'ai avec moi.~
+@10169 = ~Montre-moi votre marchandise.~
+@10170 = ~Je pense que j'ai tout ce qu'il me faut. Au revoir.~
+@10171 = ~Portez-vous bien.~
+@10172 = ~Quartier-maître~
+@10173 = ~Prendre la forteresse des gnolls~
+@10174 = ~Prendre la forteresse des gnolls
+
+J'ai rencontré le capitaine Stilind à l'entrée de la forteresse des gnolls. Il voulait que je l'aide à faire quelque chose d'inepte et j'ai refusé.~
+@10175 = ~Prendre la forteresse des gnolls
+
+J'ai rencontré le capitaine Stilind à l'entrée de la forteresse des gnolls. C'est le dernier survivant d'une escouade envoyée d'Athkatla pour prendre la forteresse aux gnolls. Il a demandé que je l'aide en tuant leur meneuse, la cheffe Hvalanya, ainsi qu'un Chaman dans un groupe dissident. Il faut aussi éliminer un gnoll qui fait le guet dans une des tours.~
+@10176 = ~Prendre la forteresse des gnolls
+
+Nous avons vaincu la meneuse des gnolls, la Cheffe Hvalanya.~
+@10177 = ~Prendre la forteresse des gnolls
+
+Le Chaman Sirkhr, le chef de la faction gnoll rivale, a été vaincu dans un ancien temple sous la forteresse.~
+@10178 = ~Prendre la forteresse des gnolls
+
+Le gnoll qui fait le guet dans les tours, Purkht, a été tué.~
+@10179 = ~Prendre la forteresse des gnolls
+
+J'ai vaincu les trois gnolls comme demandé pat le capitaine Stilind. Je devrais aller l'en informer à l'entrée de la forteresse.~
+@10180 = ~Prendre la forteresse des gnolls
+
+Le capitaine Stilind est certain que les gnolls sont se disperser maintenant que leurs meneurs ont été éliminés. Il m'a demandé de le rejoindre dans la forteresse.~
+@10181 = ~Prendre la forteresse des gnolls
+
+Stilind m'a demandé de récupérer des fournitures médicales pendant qu'il attend l'arrivée des renforts d'Athkatla. Je dois aller au temple de Heaum à Nashkel et je dois dire au prêtre que « l'espoir parcourt les rues d'Athkatla ».~
+@10182 = ~Prendre la forteresse des gnolls
+
+Je devrais retourner voir le capitaine Stilind à la forteresse des gnolls pour lui amener les fournitures médicales obtenues auprès de Nalin.~
+@10183 = ~Prendre la forteresse des gnolls
+
+Avec les fournitures médicales à sa disposition et les renforts à ses côtés, le capitaine Stilind est assurément aux commandes de la forteresse des gnolls. Il souhaite me consulter encore une fois pour une autre tâche.~
+@10184 = ~Prendre la forteresse des gnolls
+
+Le capitaine Stilind m'a demandé d'enquêter sur un fantôme qui hante une crevasse dans un mur au niveau suivant.~
+@10185 = ~Prendre la forteresse des gnolls
+
+Le fantôme qui ennuyait le capitaine Stilind est éliminé. Je devrais rendre compte de mon succès.~
+@10186 = ~Prendre la forteresse des gnolls
+
+Grâce à mes efforts, la forteresse des gnolls est désormais une forteresse d'Amn. Le capitaine Stilind a récompensé mon action.~
+@10187 = ~Hallebarde de la Chimère~
+@10188 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has a series of runes along its handle, allowing the wielder to imbue strikes with their choice of additional electrical, cold, or fire damage. It will occasionally release a burst of all three elements on a single strike. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+   1 % de chance à chaque coup que la cible subisse 3 points de dégâts supplémentaires de froid, d'électricité et de feu
+
+TAC0 : +1
+Dégâts :  1D10 + 1 (perforant)
+Spécial :  +1 point de froid, d'électricité ou de feu (au choix du porteur)
+Poids : 14
+Facteur de vitesse : 8
+Type de compétence : hallebarde
+Type : arme à deux mains
+Nécessite :13 en Force
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@10189 = ~Électricité~
+@10190 = ~Froid~
+@10191 = ~Feu~
+@10192 = ~Des tensions se font sentir avec les Portes de Baldur et cette forteresse contrôle un bon tronçon de la Côte. Nous devions continuer jusqu'aux mines de Nashkel après en avoir fini avec endroit, mais on nous a repérés.~
+@10193 = ~Il est possible que ce soit un ennemi coriace et que vous ne soyez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyez prêt.~ ~Il est possible que ce soit un ennemi coriace et que vous ne soyez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyez prête.~
+
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
@@ -572,118 +884,323 @@ Inutilisable par :
 @40021 = ~Modification de la force~
 @40022 = ~Temple de Gullykin~
 
-/*
-@40023 = ~Pierre ionique~
-@40024 = ~Cette petite pierre flotte autour de la tête de son possesseur quand on la place dans son inventaire. Ces pierres évidemment magiques ont des propriétés différentes en fonction de leur couleur.~
-@40025 = ~Le katana est une épée légèrement courbée à simple tranchant, dont la lame se termine en pointe. C'est probablement une des meilleures épées jamais conçues. Les étapes de sa fabrication constituent un procédé long et secret qui est considéré plus comme un art que comme une technique. Cette lame représente un aspect important de la culture de Kara-Tur. C'est faire insulte à un samouraï et provoquer sa colère que d'utiliser ou même de toucher son katana. Il est très rare pour un gaïjin, un étranger, de posséder une telle lame. Cela implique que le gaïjin soit l'ami estimé d'un personnage important, ou bien qu'il ait assassiné un samouraï.
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// shaman - Dreamheart                              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-PARAMÈTRES :
+// since this component is ee-only, I've put all strings in ee.tra
 
-Dégâts : 1D10
-Type de dégât : tranchant
-Poids : 6
-Facteur de vitesse : 4
-Type de compétence : Katana
-Type : arme à 1 main
-Force nécessaire : 6~
-@40026 = ~Katana +2, Tsu-O-Shi
-Tsu-O-Shi, aussi connue sous le nom de la Lame convoitée, fut forgée dans la nation de Wa il y a plus de cinq siècles, par le forgeron Murakaken Shinji, dont le talent était si réputé qu'on disait qu'il était capable de réveiller l'esprit même du métal. Tsu-O-Shi est passée entre les mains de différents héritiers de la famille Kasune (famille tout à fait ordinaire sinon), jusqu'à ce que le puissant daimyo et bien connu pour son amour des épées, Fushima Takagi, la vit. Takagi devint obsédé par cette lame et fit plusieurs tentatives frustrantes pour l'acquérir. Finalement, il engagea un groupe de ninja pour voler la lame pour lui, vengeant ses pertes en brûlant le quartier général de la famille Kasune. Lorsque le ninja présenta la lame à son employeur, elle fut utilisée pour les découper en morceaux, permettant ainsi de retirer définitivement tout lien entre Tagaki et les légitimes propriétaires de l'épée. Tagaki cacha l'épée, la sortant souvent de sa cachette pour admirer sa beauté et sa perfection. Le jour où Tagaki mourut, son esprit refusa de quitter Toril et de laisser l'épée derrière, donc il resta avec Tsu-O-Shi, faisant part intégrante avec elle. Depuis ce jour, toute personne qui utilise Tsu-O-Shi doit faire attention à l'esprit de Fushima Tagaki, qui boit l'essence vitale de ceux qui touchent à l'arme, pour que son âme reste sur Toril avec l'objet de son désir. En résultat, cette lame maudite peut absorber l'énergie de son porteur à chaque fois qu'elle est utilisée.
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Monk - Restoring Saiai no Hito                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-PARAMÈTRES :
+@70001 = ~Inoshishi~
+@70002 = ~Vaxffee le cupide~
+@70003 = ~Tymothy le fouilleur de poubelles~
+@70004 = ~Troll gémissant~
+@70005 = ~Amulette de lame~
+@70006 = ~Cette amulette serait normalement cachée dans la garde d'un katana, en-dessous de la couverture en cuir. Cette amulette-ci semble vraiment ancienne.~
+@70007 = ~Poignée d'épée~
+@70008 = ~Ceci ressemble à la poignée d'un katana brisé. Il est possible qu'elle soit un morceau de Saiai no Hito, une épée originaire de Kozakura de grande renommée, fabriquée par Ne Kurosuna, avec un autre moine, Shiroume Yakuchi, à l'esprit.
 
-TAC0 : +2
-Dégâts : 1D10 + 2
-Type de dégâts : tranchant
-Poids : 4
-Facteur de vitesse : 2
-Type de compétence : Katana
-Type : arme à 1 main
-Force nécessaire : 6
-Possibilité d'absorber de manière permanente les points de vie ou les caractéristiques de son porteur lorsqu'elle est utilisée.~
+Peut-être qu'il peut être réparé... une fois la lame retrouvée.~
+@70009 = ~Lame d'épée~
+@70010 = ~Ceci ressemble à la lame d'un katana brisé.Il est possible qu'elle soit un morceau de Saiai no Hito, une épée originaire de Kozakura de grande renommée, fabriquée par Ne Kurosuna, avec un autre moine, Shiroume Yakuchi, à l'esprit.
+
+Peut-être qu'il peut être réparé... une fois la poignée retrouvée.~
+@70011 = ~Kin no Kemono~
+@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère essaie de s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
+
+PARAMÈTRE :
+
+TAC0 au corps à corps : +2
+Protection contre la rage/furie
+poids : 1
+Utilisable par :
+ Moine~
+
+@70013 = ~Saiai no Hito +1~
+@70014 = ~Cette épée est nommée Saiai no Hito. Elle é été créée par Ne Kurosuna, un ancien membre de Monastère de Saku. C'était un des membres d'origine du monastères et s'y est entraîné pendant des années. Il y était connu pour son esprit affûté et ses techniques pleines de grâce. Il était aussi fort, probablement l'un des moines les plus forts du monastère de Saku lorsqu'il y vivait encore.
+
+Lors de sa dixième année de travail, il s'est mis à développer des sentiments romantiques envers Shiroume Yakuchi, un autre moine du même monastère. Alors qu'il était considéré comme un maître de la discipline, du corps et de la stratégie, il n'était pas prêt à ça. Ne avait perdu son ancien bien-aimé, tué par des bandits  Il n'aurait pas imaginé ressentir à nouveau de tels sentiments, et sûrement pas pour quelqu'un du même monastère. Il en est résulté un sentiment de malaise, déchiré entre son ancien amour et celui qu'il venait de trouver. Il n'était pas sûr s'il devait faire part à Shiroume de ses sentiments. Que faire s'il ne pouvait répondre à ses sentiments ? Leur amitié s'en verrait-elle changée ? Serait-ce une trahison de son ancien bien-aimé ?
+
+Au bout de quelques mois, il décida que pour comprendre ses sentiments et faire un choix, il devait quitter le monastère, réfléchir et prier pour une réponse et l'illumination dans la solitude. Comme il aimait méditer au travers de son ouvrage, il se mis à créer des épées. Finalement, ceci mena à la création de cette épée, Saiai no Hito. Elle était pensée comme un cadeau pour Shiroume, Ne ayant décidé que la paix ne pouvait ête trouvée que dans l'honnêteté. Il espérait que, peut-être, Maître Yakuchi comprendrait, lui laisserait une chance, ou au moins qu'ils resteraient amis. Ne avait décidé que ce serait une trahison de son ancien histoire d'amour. Il la respectait toujours et la gardait en mémoire.
+
+Saiai no Hito devait être un symbole d'amour, de camaraderie et d'éveil spirituel. Mais Ne Kurosuna fut tué lors de son voyage de retour vers le monastère. La lame fut perdue et il est difficile de dire comment les fragments de l'épée sont parvenus sur la Côte des Épées. mais c'est ici que l'épée fut reforgée et ramenée à son ancienne gloire.
+
+La magie contenue dans cette épée devait aider son porteur et lui apporter l'avantage au combat. Si les histoires disent vrai, elle protégeait aussi le cœur du moine contre ce qui pouvait le briser.
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+- Protection contre la pétrification
+- Résistance aux dégâts contondants +10 % (moines seulement)
+
+Capacité de combat :
+– Enchantement : +2
 
 
-@109001 = ~Carquois d'abondance~
-@109002 = ~Les origines de ce carquois ont été oubliées depuis longtemps, mais on peut supposer sans trop de risques qu'il existe un lien entre lui et l'étrange pénurie de fabricants de flèches au cours du Temps des Troubles.
-PARAMETRES :
-Quantité illimitée de flèches~
-@109003 = ~Etui d'abondance~
-@109004 = ~L'histoire de cet étui magique s'est perdue dans le brouillard du passé, mais elle doit sans aucun doute être liée à l'inexplicable pénurie de fabricants de carreaux au cours du Temps des Troubles.
-PARAMETRES :
-Quantité illimitée de carreaux~
-@109005 = ~Sac d'abondance~
-@109006 = ~Cette petite poche de tissu est vide, mais cela ne l'empêche pas de rayonner d'une puissane aura magique.
-PARAMETRES :
-Quantité illimité de billes.~
-@109007 = ~Pierre ionique violette~
-@109008 = ~Pierre ionique violette
-Cette pierre ionique, de couleur violette, autorise son porteur à voir dans l'obscurité.
-PARAMETRES :
-Spécial : le porteur est doté du don d'infravision sur 36 mètres.
-Poids: 2~
-@109009 = ~Pierre ionique blanche scintillante~
-@109010 = ~Pierre ionique blanche scintillante
-Cette pierre ionique est froide au toucher et rayonne d'énergie.
-PARAMETRES :
-Bonus: +10% de résistance au froid
-Poids: 2~
-@109011 = ~Katana~
-@109012 = ~Katana
-Le katana est une épée légèrement courbée à simple tranchant, dont la lame se termine en pointe. C'est probablement une des meilleures épées jamais conçues. Les étapes de sa fabrication constituent un procédé long et secret qui est considéré plus comme un art que comme une technique. Cette lame représente un aspect important de la culture de Kara-Tur. C'est faire insulte à un samouraï et provoquer sa colère que d'utiliser ou même de toucher son katana. Il est très rare pour un gaïjin, un étranger, de posséder une telle lame. Cela implique que le gaïjin soit l'ami estimé d'un personnage important, ou bien qu'il ait assassiné un samouraï.
-PARAMETRES :
-Dégâts : 1D10
-Type de dégât : tranchant
-Poids : 6
-Facteur de vitesse : 4
-Type de compétence : Katana
-Type : arme à 1 main
-Force nécessaire : 6
-Inutilisable par :
+TAC0: +1
+Dégâts : 1d10+1 (tranchant) +1 Feu
+Poids : 5
+Facteur de vitesse : 3
+Type de compétence : katana
+Type : arme à une main
+Nécessite : 6 en Force
+Non utilisable par :
  Druide
  Clerc
- Mage
- Belluaire~
-@109013 = ~Katana +2, Tsu-O-Shi~
-@109014 = ~Katana +2, Tsu-O-Shi
-Tsu-O-Shi, aussi connue sous le nom de la Lame Convoitée, fut forgée dans la nation de Wa il y a plus de cinq siècles, par le forgeron Murakaken Shinji, dont le talent était si réputé que la rumeur disait qu'il était capable de réveiller l'esprit même du métal. Tsu-O-Shi est passé entre les mains de différents héritiers de la famille Kasune (famille tout à fait ordinaire sinon), jusqu'à ce que le puissant daimyo et bien connu pour son amour des épées, Fushima Takagi, la vit. Takagi devint obsédé par cette lame et fit plusieurs tentatives frustrantes pour l'acquérir. Finalement, il engagea un groupe de ninja pour voler la lame pour lui, vengeant ses pertes en brûlant le quartier général de la famille Kasune. Lorsque le ninja présenta la lame à son employeur, elle fut utilisée pour les découper en morceaux, permettant ainsi de retirer définitivement tout lien entre Tagaki et les légitimes propriétaires de l'épée. Tagaki cacha l'épée, la sortant souvent de sa cachette pour admirer sa beauté et sa perfection. Le jour où Tagaki mourut, son esprit refusa de quitter Toril et de laisser l'épée derrière, donc il resta avec Tsu-O-Shi, faisant part intégrante avec elle. Depuis ce jour, toute personne qui utilise Tsu-O-Shi doit faire attention à l'esprit de Fushima Tagaki, qui boit l'essence vitale de ceux qui touchent à l'arme, pour que son âme reste sur Toril avec l'objet de son désir. En résultat, cette lame maudite peut absorber l'énergie de son porteur à chaque fois qu'elle est utilisée.
-PARAMETRES :
-TAC0 : +2
-Dégâts : 1D10 + 2
-Type de dégâts : tranchant
-Poids : 4
-Facteur de vitesse : 2
-Type de compétence : Katana
-Type : arme à 1 main
-Force nécessaire : 6
-Possibilité d'absorber de manière permanente les points de vie ou les caractéristiques de son porteur lorsqu'elle est utilisée.
-Inutilisable par :
-Druide
-Clerc
-Mage
-Belluaire~
+ Mage~
+@70015 = ~Crinière de l'Inoshishi~
+@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la langue de Kozakura savent que « Inoshishi » signifie « sanglier ».
 
-@109024 = ~Cette petite pierre flotte autour de la tête de son possesseur quand on la place dans son inventaire. Ces pierres évidemment magiques ont des propriétés différentes en fonction de leur couleur.~
-@109025 = ~Katana
-Le katana est une épée légèrement courbée à simple tranchant, dont la lame se termine en pointe. C'est probablement une des meilleures épées jamais conçues. Les étapes de sa fabrication constituent un procédé long et secret qui est considéré plus comme un art que comme une technique. Cette lame représente un aspect important de la culture de Kara-Tur. C'est faire insulte à un samouraï et provoquer sa colère que d'utiliser ou même de toucher son katana. Il est très rare pour un gaïjin, un étranger, de posséder une telle lame. Cela implique que le gaïjin soit l'ami estimé d'un personnage important, ou bien qu'il ait assassiné un samouraï.
-PARAMETRES :
-Dégâts : 1D10
-Type de dégât : tranchant
-Poids : 6
-Facteur de vitesse : 4
-Type de compétence : Katana
-Type : arme à 1 main
-Force nécessaire : 6
-~
-@109026 = ~Katana +2, Tsu-O-Shi
-Tsu-O-Shi, aussi connue sous le nom de la Lame Convoitée, fut forgée dans la nation de Wa il y a plus de cinq siècles, par le forgeron Murakaken Shinji, dont le talent était si réputé que la rumeur disait qu'il était capable de réveiller l'esprit même du métal. Tsu-O-Shi est passé entre les mains de différents héritiers de la famille Kasune (famille tout à fait ordinaire sinon), jusqu'à ce que le puissant daimyo et bien connu pour son amour des épées, Fushima Takagi, la vit. Takagi devint obsédé par cette lame et fit plusieurs tentatives frustrantes pour l'acquérir. Finalement, il engagea un groupe de ninja pour voler la lame pour lui, vengeant ses pertes en brûlant le quartier général de la famille Kasune. Lorsque le ninja présenta la lame à son employeur, elle fut utilisée pour les découper en morceaux, permettant ainsi de retirer définitivement tout lien entre Tagaki et les légitimes propriétaires de l'épée. Tagaki cacha l'épée, la sortant souvent de sa cachette pour admirer sa beauté et sa perfection. Le jour où Tagaki mourut, son esprit refusa de quitter Toril et de laisser l'épée derrière, donc il resta avec Tsu-O-Shi, faisant part intégrante avec elle. Depuis ce jour, toute personne qui utilise Tsu-O-Shi doit faire attention à l'esprit de Fushima Tagaki, qui boit l'essence vitale de ceux qui touchent à l'arme, pour que son âme reste sur Toril avec l'objet de son désir. En résultat, cette lame maudite peut absorber l'énergie de son porteur à chaque fois qu'elle est utilisée.
-PARAMETRES :
-TAC0 : +2
-Dégâts : 1D10 + 2
-Type de dégâts : tranchant
-Poids : 4
-Facteur de vitesse : 2
-Type de compétence : Katana
-Type : arme à 1 main
-Force nécessaire : 6
-Possibilité d'absorber de manière permanente les points de vie ou les caractéristiques de son porteur lorsqu'elle est utilisée.
-~
-*/
+PARAMÈTRE :
+
+Classe d'armure : +1 contre les armes contondantes.~
+@70017 = ~Aventurier ! Cela fait plaisir de rencontrer quelqu'un comme moi ici, quelqu'un qui connait la voie de la discipline. Je ne nomme Inoshishi. Inoshishi de Dojyu, membre du monastère de Saku.~
+@70018 = ~Quelqu'un comme vous ?~
+@70019 = ~Pourquoi pensez-vous que nous avons quoi que ce soit en commun, Inoshishi ?~
+@70020 = ~Enchanté de faire votre connaissance, Inoshishi.~ ~Enchantée de faire votre connaissance, Inoshishi.~
+@70021 = ~Quelqu'un qui connait la force obtenue dans l'équilibre et la discipline. Je suis le chemin du combat à mains nues depuis un bon bout de temps, et aussi celui du contrôle sur mes muscles et ma puissance. Je ne sais pas si nous avons d'autres points communs, mais je perçois des signes qui me disent que vous savez de quel genre de discipline je parle.~
+@70022 = ~Moi aussi. Et le fait que vous sachiez de quel genre de discipline je parle me ravi d'autant plus. Son apprentissage, l'entraînement au combat à mains nues et conserver un esprit calme constituent une part importante de mon existence.~
+@70023 = ~Je viens des terres lointaines de Kara-Tur. De Kozakura, pour être précis. Je suis venu pour une mission, mais je dois reconnaître que je suis désemparé. Cette... Côte des Épées est très différente de l'endroit d'où je viens, et la tâche pour laquelle je suis venu prend plus de temps que ce que j'avais prévu.~
+@70024 = ~Quel genre de tâche vous a amené ici, Inoshishi ? De quelle mission parlez-vous ?~
+@70025 = ~Écoutez, je me soucie peu de vous ou de votre mission. Je suis moi-même très occupé. Soyez gentil et écartez-vous de ma route.~ ~Écoutez, je me soucie peu de vous ou de votre mission. Je suis moi-même très occupée. Soyez gentil et écartez-vous de ma route.~
+@70026 = ~Je suis à la recherche d'une puissante lame, un katana connu sous le nom de Saiai no Hito. Elle a été forgée par l'un des tous premiers membres de notre monastère, un homme nommé Ne Kurosuna. Si nos documents sont exacts, il a renoncé à sa situation et quitté notre confrérie. D'après certains, c'est arrivé quand il est tombé amoureux d'un autre frère, Shiroume Yakuchi. D'après ce que nous savons, cette relation a mis Ne mal à l'aise parce qu'il avait perdu son bien-aimé à cause d'un groupe de bandits...~
+@70027 = ~D'après nos informations, il voulait méditer sur son passé, son présent et son avenir. Nous pensons qu'il n'était pas prêt pour les sentiments qu'il ressentait à nouveau et qu'il avait l'impression de trahir la mémoire de son  amour perdu. Nous avons retrouvé son journal et avons appris qu'il se sentait déchiré entre plusieurs amours et plusieurs voies.~
+@70028 = ~Ces sentiments ont dû le déchirer pour qu'il quitte le monastère.~
+@70029 = ~Ah ! Qu'il est bon de savoir que les hommes aussi peuvent s'embrouiller dans leurs idées et leurs sentiments, et que nous ne sommes pas les seules à être désorientées ! Hein !~
+@70030 = ~Ah, le cœur aussi bien que la peur peuvent nous amener à d'étranges extrémités, n'est-ce pas ?~
+@70031 = ~J-je compatis avec son b-besoin de comprendre ce qui se p-passe dans sa p-propre tête. Surtout q-quand ç-ça concerne de tels sentiments et que l'on d-doit décider quoi faire. Si l'on v-veut en faire l'aveu.~
+@70032 = ~Il est parfois facile de se perdre soi-même dans le désir. C'est pour ça qu'il faut toujours garder en tête ce que l'on veut. Et aussi à quel point on en a vraiment besoin, bien sûr.~
+@70033 = ~Il menait souvent ses méditations au travers de son travail. Il a construit une forge et s'est lancé dans la fabrication d'épées. Certains pensaient qu'il voulait marquer les épées qu'il forgeait avec ses interrogations, ses doutes et ses espoirs. Ceci l'a mené à la création de Saiai no Hito, la lame que j'ai mentionné.~
+@70034 = ~Vous vous demandez probablement pourquoi je vous raconte tout ça.~
+@70035 = ~Je suis certain que vous avez vous raison pour nous raconter cette histoire.~ ~Je suis certaine que vous avez vous raison pour nous raconter cette histoire.~
+@70036 = ~En effet, je suis curieux de savoir ou nous mène cette histoire... plutôt ennuyeuse.~ ~En effet, je suis curieuse de savoir ou nous mène cette histoire... plutôt ennuyeuse.~
+@70037 = ~Écoutez, votre histoire, votre épée, pourquoi vous êtes là, ça ne m'intéresse pas. Allez barber quelqu'un d'autre, je dois y aller.~
+@70038 = ~Vous voyez, cette histoire a été oubliée pendant une période assez longue et nous... avons longuement réfléchi à ce que nous devions faire de l'histoire du frère Ne. Nous avons conclu que nous devions retrouver la lame pour la conserver avec les artefacts de notre monastère,parmi les autres symboles de notre engagement. Elle y a sa place, elle doit y trouver sa place. Frère Ne s'est consacré à la compréhension de ses espoirs et de son amour.~
+@70039 = ~Hélas, il nous a quitté il y a bien longtemps, et sa forge n'existe plus. Pour compliquer encore les choses, nous avons découvert que quelqu'un avait volé la lame, qui devait être un cadeau pour un être aimé. Nous avons essayé de suivre sa trace et nous savons qu'elle avait quitté Kozakura, puis Kara-Tur, et qu'elle avait été emmenée ici, sur la Côte des Épées.~
+@70040 = ~Quel périple ! J'entrevois les soucis que ça a dû causer.~
+@70041 = ~Mais... Kozakura, c'est tellement loin ! C'est bien loin, non  ? J'ai du mal à imaginer comment quelqu'un aurait pu aller aussi loin. À moins de savoir ouvrir un portail, peut-être ? Ça serait bien plus confortable. Il devait savoir comment en ouvrir un, sinon cette histoire n'aurait aucun sens.~
+@70042 = ~Tous ces mots ! Et aucun qui parle de Tiax ! Faites plus court, dites-nous seulement de quoi vous avez besoin, que nous puissions refuser toute aide !~
+@70043 = ~*soupire* Il va vraiment nous demander de l'aider à trouver cette épée ? Cela me semble complètement impossible.~
+@70044 = ~C'est l'objet de ma mission, trouver l'épée et retourner avec elle au monastère de Saku.~
+@70045 = ~Cette mission paraît bien difficile.~
+@70046 = ~Ah ! Bon courage avec ça ! Ça m'a l'air impossible à mener à bien !~
+@70047 = ~Faites comme bon vous semble, cela ne me regarde pas. En fait, j'ai déjà passé trop de temps à écouter votre histoire, je dois partir. Au revoir.~
+@70048 = ~C'est le cas. Mais je crois que je peux restaurer cette épée.~
+@70049 = ~Cette mission peut sembler impossible, mais je pense pouvoir la mener à bien si je reste vigilant et attentif.~
+@70050 = ~Mais... maintenant que j'y pense, rien ne m'oblige à tout faire tout seul. Accepteriez-vous de m'apporter votre aide ? Je vous promets de vous récompenser.~
+@70051 = ~Ah, "récompenser". C'est exactement le mot que j'attendais.~
+@70052 = ~Réfléchissez-y bien. Nous pourrions tous deux tirer profit d'un accord,non ?~
+@70053 = ~Cette mission semble importante. Comme vous disiez, nous partageons des points communs et vous laisser sans soutien me semble injuste. Dites-moi comment je peux vous aider.~
+@70054 = ~Je me soucie peut de vous, de votre histoire, vos tradition et de votre stupide épée. Désolé, mais vous devrez vous débrouiller seul. Je dois y aller. Au revoir.~ ~Je me soucie peut de vous, de votre histoire, vos tradition et de votre stupide épée. Désolée, mais vous devrez vous débrouiller seul. Je dois y aller. Au revoir.~
+@70055 = ~Oh, merci ! Je vous suis reconnaissant !~
+@70056 = ~Vous voyez, c'st pour une bonne raison que je suis venu à l'auberge du Brasamical J'ai récemment été attaqué par un voyou, une femme. Elle m'a dépouillé de tous mes biens. Je dois remplacer toutes mes provisions. J'ai aussi entendu dire qu'il y avait un temple ici dédié à la sagesse. J'espérais obtenir de l'aide du maître des lieux.~
+@70057 = ~Comme nous allons joindre nos force, je pense que nous devrions aller ensemble parler à cette personne. Rejoignons-nous dans le temple pour voir si cela peut nous aider à décider où chercher le katana.~
+@70059 = ~Je vois, vous faites partie des égoïstes. Très bien, je ne vous ennuierai plus.~
+@70060 = ~Ah, vous voilà ! Parfait, allons voir si nous pouvons découvrir quelque chose qui nous aidera à localiser l'épée.~
+@70061 = ~Entre gens qui partagent un même état d'esprit, trouver une piste semble concevable. Notre nouvel ami y accorde assurément beaucoup d'importance.~
+@70062 = ~Soyons optimistes. Ce qui est perdu peut toujours être retrouvé ! Enfin... la plupart du temps !~
+@70063 = ~Sagesse! Ah, elles est toujours plus savoureuse extraite directement du crâne ! Mais je ne vois aucun crâne à percer, dommage. Ça serait mieux que tout ça !~
+@70064 = ~Il doit vraiment accorder beaucoup d'importance à cette épée, alors ? Quand tu as égaré mon livre il y a deux ans, j'ai laissé tomber au bout de trois jours ! En tout cas, allons voir si on peut trouver quelque chose d'utile.~
+@70065 = ~Pardonnez-moi,prêtresse, j'ai besoin de vos conseils.~
+@70066 = ~De mes conseils ? Dites-m'en plus, jeune homme. Sait-on jamais, je pourrais vous offrir un mot ou deux, en toute bonne foi.~
+@70067 = ~Je suis à la recherche d'une ancienne épée, Saiai no Hito. Malheureusement sans succès. la Côte des Épée est vaste et j'aurais besoin d'aide. J'ai bien quelqu'un qui me prête son aide pour chercher, mais nous aurions besoin de savoir où porter nos regards. J'espérais qu'un membre du temple de la sagesse serait en mesure de nous fournir ce point de départ.~
+@70068 = ~En vous regardant, je me dis que vous avez dû parcourir un bon bout de chemin, nest-ce pas, mon garçon ?~
+@70069 = ~Acceptez que Gellana vous aide un peu. Il me faudra deux cents pièces d'or et quelque chose qui me relie à l'épée que vous recherchez. Avez-vous quelque chose qui s'y prête ?~
+@70070 = ~Je...~
+@70071 = ~Alors ?~
+@70072 = ~Ne me dites pas que vous n'avez rien qui convienne...~
+@70073 = ~J'ai déjà indiqué que j'avais été dévalisé. J'avais une amulette qui, selon mes frères et sœurs, faisait partie de la poignée de l'épée. Cette amulette est un des objets qui m'ont été volés.~
+@70074 = ~Cela me chagrine, mais j'en aurai besoin pour lancer le sort, mon garçon.~
+@70075 = ~Je... Je comprends. Mais il n'est peut-être pas trop tard. Peut-être que l'on pourra encore trouver cette crapule. J'ai encore un peu d'or, mon ami, je peux payer pour le sort. Il faut juste trouver la personne qui m'a attaqué.~ ~Je... Je comprends. Mais il n'est peut-être pas trop tard. Peut-être que l'on pourra encore trouver cette crapule. J'ai encore un peu d'or, mon amie, je peux payer pour le sort. Il faut juste trouver la personne qui m'a attaqué.~
+@70076 = ~Mais c'est bien là ce que je nommerais la « partie difficile », Inoshishi.~
+@70077 = ~Et bien... nous pouvons essayer de la rattraper, mais je ne sais pas si nous réussirons...~
+@70078 = ~Tout cela est ridicule. Vous savez quoi ? Débrouillez-vous sans moi. Allez retrouver cette femme tout seul. Je laisse tomber.~
+@70079 = ~Vous êtes clairement plus expérimenté dans ce genre de d'activité. S'il vous plaît, pouvez-vous récupérer cette amulette ?~
+@70080 = ~Je vais essayer.~
+@70081 = ~Ah... D'accord...~
+@70082 = ~Non. Je n'ai pas le temps.~
+@70083 = ~Vous savez quoi ? Je crois que j'ai fait une erreur. Débrouillez-vous sans moi. Au revoir.~
+@70084 = ~Merci, mon ami.~~Merci, mon amie.~
+@70085 = ~J'ai été attaqué en venant ici depuis la ville plus au sud. Je crois qu'elle s'appelait... Bérégost...?~
+@70086 = ~C'est peut-être son territoire ? Elle est peut-être toujours quelque part dans les parages ?~
+@70087 = ~S'il vous plaît, allez vérifier et revenez me dire ce que vous aurez trouvé.~
+@70088 = ~Je croyais que vous m'aideriez, mais on dirait que je me suis trompé.~
+@70089 = ~Hé là ! Voyons qui vient par là ! D'habitude, les gens prennent le chemin plus bas, et je me fais un plaisir de les observer. Vous voyez, parfois, leurs sacs sont trop lourds et je peux les aider en les débarrassant du « superflu », Ah ah ah !~
+@70090 = ~Vous devez être celle qui a attaqué Inoshishi.~
+@70091 = ~Mais quelle coincidence ! J'adore faire main basse sur ce que d'autres ont volé. Et vous me paraissez être ce genre de voleuse.~
+@70092 = ~L'étranger ? Une proie facile.~
+@70093 = ~J'ai l'habitude d'attaquer en plongeant d'en haut, mais je suis capable de me défendre même sans cet avantage.~
+@70094 = ~Allez, venez, montrez-moi de quoi vous êtes capable !~
+@70095 = ~Êtes-vous parvenu à récupérer l'amulette ?~
+@70096 = ~Oui. La voilà.~
+@70097 = ~J'y travaille.~
+@70098 = ~Vous l'avez trouvée ? C'est incroyable ! Merci beaucoup !~
+@70099 = ~Maintenant, nous avons tout ce qu'il nous faut et Madame Gellana devrait pouvoir nous aider. Je ne me trompe pas ?~
+@70100 = ~Je pense que oui. Ah, cela fait un moment que personne ne m'avait appelée « Madame »", Ah ah ! Venez plus près et montrez-moi cette amulette.~
+@70101 = ~Bien sûr, la voilà.~
+@70102 = ~Alors ? Avez-vous découvert quelque chose, Madame Gellana ?~
+@70103 = ~Je... Je crois que j'ai vu quelque chose mais c'est très inhabituel. On dirait que votre épée a été brisée en deux parties.~
+@70104 = ~Quoi ? Comment ça ?~
+@70105 = ~Et bien, je ne suis pas en mesure de répondre à ce genre de questions.~
+@70106 = ~Mais savez-vous au moins où se trouvent ces fragments ? Où devons-nous les chercher ?~
+@70107 = ~J'ai bien vu quelque chose. De brefs aperçus... de lieux.~
+@70108 = ~Dans l'une, il y avait une tour, avec de la lumière. Peut-être un phare. J'ai entendu de l'eau, mais aussi des voix. Impossible de dire si c'étaient des fantôme ou... simplement des gens.~
+@70109 = ~Et pour le second ?~
+@70110 = ~Pour le second, c'était très différent. Il était entouré d'une... poche de viande. Je pense qu'il a pu être avalé par un monstre. Je ne sais pas comment ce serait possible, mais même s'il est... à l'intérieur de la créature, elle est toujours vivante. Elle doit être capable de se soigner ou de résister aux blessures internes.~
+@70111 = ~La créature se trouvait dans un environnement rocailleux. Il y avait des rochers, du sable. L'endroit semblait aride, mais c'est tout ce que j'ai pu en tirer.~
+@70112 = ~Je ne sais pas si ce sera suffisant, mais c'est tout ce que j'ai vu, jeune homme.~
+@70113 = ~C'est déjà mieux que ce que nous savions avant. Merci.~
+@70114 = ~Je vous en prie.~
+@70115 = ~Venez, ami.Allons discuter dehors.~
+@70116 = ~Bien, J'aurais espéré mieux. Et ça aurait pu être pire.~
+@70117 = ~Je pense que vous êtes plus familier que moi avec la Côte des Épées. Le mieux que je puisse suggérer,c'est de garder un œil ouvert. Je ne sais pas combien il y a de phares, mais il y en a probablement plusieurs. Et la créature qu'elle a évoquée... dans une zone rocheuse et aride. Ce n'est pas très précis mais peut-être avez-vous déjà visité des endroits qui correspondent ?~
+@70118 = ~Je vais étudier la carte, me renseigner auprès des gens. Pendant ce temps, quand vous trouvez des endroits qui correspondent aux descriptions, explorez-les, c'est tout ce que je vous demande.~
+@70119 = ~Compris. Je ne vais pas vous laisser tomber maintenant. Je vous tiendrai au courant si je trouve ces fragments d'épée.~
+@70120 = ~Je ne vous aiderai pas plus. Désolé, vous devrez vous débrouiller seul. Au revoir.~ ~Je ne vous aiderai pas plus. Désolée, vous devrez vous débrouiller seul. Au revoir.~
+@70121 = ~Merci ! Vous m'êtes d'un grand secours !~
+@70122 = ~Je pensais que vous m'aideriez mais... Bon, je ne vous ennuierai plus !~
+@70123 = ~Avez-vous trouvé ce que vous étiez parti chercher ?~ ~Avez-vous trouvé ce que vous étiez partie chercher ?~
+@70124 = ~J'ai trouvé la poignée de l'épée !~
+@70125 = ~J'ai trouvé la lame de l'épée !~
+@70126 = ~Non, pas encore.~
+@70127 = ~Merveilleux ! Montrez-la moi...~
+@70128 = ~Vraiment ? J'ai du mal à y croire ! Laissez-moi voir...~
+@70129 = ~Oui ! C'est bien une partie de Saiai no Hito !~
+@70130 = ~Nous devons encore trouver l'autre fragment, mais nous progressons.~
+@70131 = ~Prévenez-moi si vous trouver l'autre morceau de l'épée.~
+@70132 = ~Oui ! C'est bien la lame de Saiai no Hito !~
+@70133 = ~Je suis terriblement heureux que vous ayez trouvé cette partie, mais notre chasse au trésor n'est pas finie.~
+@70134 = ~Prévenez-moi si vous trouvez l'autre partie, la poignée.~
+@70135 = ~Oh, quel jour miraculeux ! Nous avons les deux parties de l'épée !~
+@70136 = ~Maintenant, nous devons la réparer. Elle doit retrouver son état d'origine et je sais qui peut aider.~
+@70137 = ~Quand j'étais à Bérégost, j'ai discuté avec le forgeron de la ville. Il est compétent et je pense qu'il peut réparer l'épée.~
+@70138 = ~Rejoignons-nous là-bas. Je suppose que vous avez besoin de vous reposer mais, quand vous êtes prêts, retrouvez-moi à sa forge, dans la ville. Ne me faites pas attendre trop longtemps, s'il vous plait.~
+@70139 = ~Ah ! Ceci pourrait avoir de la valeur...~
+@70140 = ~Halte ! Qui êtes-vous ? Vous essayez de prendre mes trésors !~
+@70141 = ~Je cherche seulement un fragment d'épée. On m'a dit qu'il devait être à proximité d'un phare, alors je vérifie s'il est ici.~
+@70142 = ~Oui, c'est bien pour ça que je suis ici.~
+@70143 = ~Il m'appartient ! Tout ici m'appartient !~
+@70144 = ~On dirait que le forgeron n'est pas ici. Essayons plutôt pendant les horaires de travail.~
+@70145 = ~Je suis content de vous revoir, mon ami ! Nous avons les deux morceaux de l'épée, nous somme ici et... Je vais mener la discussion, j'espère que ça ne vous dérange pas.~ ~Je suis content de vous revoir, mon amie ! Nous avons les deux morceaux de l'épée, nous somme ici et... Je vais mener la discussion, j'espère que ça ne vous dérange pas.~
+@70146 = ~Pardonnez-moi, maître forgeron, je voudrais vous poser une question.~
+@70147 = ~Ouais, vous désirez ?~
+@70148 = ~J'ai ce katana, vous voyez. Il a été brisé, visiblement. J'espérais que vous pourriez le réparer.~
+@70149 = ~Laissez-moi jeter un œil...~
+@70150 = ~On dirait bien qu'il a été casse, pour sûr, et... Alors, cette épée n'est pas toute neuve, mais ça me semble être de la bonne qualité. Quelqu'un y a vraiment consacré beaucoup de travail.~
+@70151 = ~Vous pensez qu'elle peut être réparée ?~
+@70152 = ~Possible. Mais les katanas et ce que je forge d'habitude sont vraiment différents. Il faut être très consciencieux pour conserver leur perfection.~
+@70153 = ~Vous semblez capable de réussir.~
+@70154 = ~Ah ! Peut-ête ! Mais ça va me prendre du temps. Et ça ne va pas être donné non plus, 2 200 pièces d'or. Normalement je demanderais plus que ça, mais vous avez l'air d'accorder de l'importance à cette épée. Il me faudra quatre jours pour la réparer.~
+@70155 = ~J'ai 1,000 pièces...~
+@70156 = ~Il me faut 1 200 pièces d'or, désolé. Il y a ces problèmes avec le fer et de toute façon les prix ne vont pas en diminuant en général. Les gens veulent leurs lames belles et tranchantes et ça demande du temps.~
+@70157 = ~Tenez, les 200 pièces d'or qui vous manquent.~
+@70158 = ~Désolé mais je ne vais pas dépenser mon or pour ça, Inoshishi.~ ~Désolée mais je ne vais pas dépenser mon or pour ça, Inoshishi.~
+@70159 = ~Désolé, je vous aiderais bien, Inoshishi, mais je n'ai pas cette somme à disposition...~ ~Désolée, je vous aiderais bien, Inoshishi, mais je n'ai pas cette somme à disposition...~
+@70160 = ~Merci beaucoup, mon ami. Vous m'offrez vraiment toute l'aide dont je pourrais rêver.~ ~Merci beaucoup, mon amie. Vous m'offrez vraiment toute l'aide dont je pourrais rêver.~
+@70161 = ~Très bien. Revenez me voir dans quatre jours, l'épée devrait être prête.~
+@70162 = ~Merci. Je vous attendrai, <CHARNAME>, pour que vous puissiez admirer l'épée dans toute sa gloire originelle. Plus que quatre jour et ma mission sera achevée.~
+@70163 = ~Je... Je peux vous donner moa chevalière.~
+@70164 = ~Merci. Je suis navré mais j'ai mes frais.~
+@70165 = ~Je comprends.~
+@70166 = ~Très bien. Revenez me voir dans quatre jours, l'épée devrait être prête.~
+@70167 = ~Merci. Je vous attendrai, <CHARNAME>, pour que vous puissiez admirer l'épée dans toute sa gloire originelle. Plus que quatre jour et ma mission sera achevée.~
+@70168 = ~On dirait notre ami n'est pas ici. Rendons-lui plutôt visite pendant ses horaires de travail.~
+@70169 = ~Vous voilà ! Maître forgeron, avez-vous pu réparer l'épée que nous vous avons amenée ?~
+@70170 = ~Ça n'a pas été sans mal, mais oui, c'est fait.~
+@70171 = ~Admirez-moi ça ! Quel travail splendide !~
+@70172 = ~Ah ! Je ne saurais pas faire autrement. Je les veux en bonne état.~
+@70173 = ~C'est incroyable ! Merci !~
+@70174 = ~Venez, mon ami ! Allons dehors, je vais vous montrer l'épée dans la lumière naturelle.~ ~Venez, mon amie ! Allons dehors, je vais vous montrer l'épée dans la lumière naturelle.~
+@70175 = ~Regarde cette lame. Elle est magnifique ! Et rien de tout cela n'aurait été possible sans votre aide.~
+@70176 = ~Saiai no Hito fait partie de notre histoire, tout comme Ne Kurosuna. Son histoire, même tragique, peut inspirer les autres. Il a réellement trouvé son amour et même si... s'il est mort avant de pouvoir confronter Shiroume et découvrir s'il ressentait la même chose, il reste mémorable pour son dévouement et pour son chemin pour la compréhension de ses sentiments.~
+@70177 = ~Merci, vous faites maintenant partie de cette histoire. Et je crois que le moment est venu de vous récompenser.~
+@70178 = ~J'ai des bracelets magiques pour vous mais... vous m'avez aussi aidé en payant pour la réparation de l'épée, alors je veux aussi vous donner ma chevalière. Elle n'est pas très puissante mais peut-être vous sera-t-elle utile.~
+@70179 = ~J'ai des bracelets magiques pour vous. Il sont puissants et pourraient se montrer utile lors de vos aventures.~
+@70180 = ~Vous m'avez été d'un grand secours pour ma mission, alors je vais vous le redire encore une fois : merci.~
+@70181 = ~Je vous suis reconnaissant pour cela. Ramenez l'épée à votre monastère, que l'histoire de Ne Kurosuna puisse vivre à jamais.~
+@70182 = ~Je suis conscient que cette épée fait partie du patrimoine de votre monastère, mais je vais en avoir besoin pour réussir ma propre mission. Gorion, l'homme qui m'a élevé, est mort. Mais je n'ai pas l'intention de le rejoindre et je sais qu'il y a des gens qui veulent me détruire.~ ~Je suis consciente que cette épée fait partie du patrimoine de votre monastère, mais je vais en avoir besoin pour réussir ma propre mission. Gorion, l'homme qui m'a élevé, est mort. Mais je n'ai pas l'intention de le rejoindre et je sais qu'il y a des gens qui veulent me détruire.~
+@70183 = ~Je suis désolé mais, si je vous ai aidé, c'est pour une tout autre raison. Je vais prendre cette épée, même si pour cela je dois vous tuer~ ~Je suis désolée mais, si je vous ai aidé, c'est pour une tout autre raison. Je vais prendre cette épée, même si pour cela je dois vous tuer~
+@70184 = ~C'est ce qui est prévu.~
+@70185 = ~Merci pour tout. Je n'oublierai jamais ce que vous avez fait pour m'aider, mon frère.~ ~Merci pour tout. Je n'oublierai jamais ce que vous avez fait pour m'aider, ma sœur.~
+@70186 = ~Je... quoi ? Je... pardon, mais je ne peux pas vous donner cette épée.~
+@70187 = ~Ne était un homme de passion et d'espoir. Et en ce moment, j'ai besoin d'espoir. Je vous promets d'user de cette épée avec le plus grand respect. Je l'utiliserai de la même façon que Shiroume Yakuchi aurait pu le faire. C'est une question de vie ou de mort, alors... s'il vous plaît. Faites que cette épée soit non seulement un symbole d'amour, mais aussi d'espoir.~
+@70188 = ~Je comprends. Et vous avez probablement raison. Je ne peux pas simplement m'en emparer comme ça. Ramenez l'épée à votre monastère, que l'histoire de Ne Kurosuna puisse vivre à jamais.~
+@70189 = ~Je suis désolé mais j'ai besoin de ce katana. Je vais prendre cette épée, même si pour cela je dois vous tuer.~ ~Je suis désolée mais j'ai besoin de ce katana. Je vais prendre cette épée, même si pour cela je dois vous tuer.~
+@70190 = ~Je... Dieux, vous ne plaisantez pas, n'est-ce pas ? Vous avez réellement besoin de cette épée pour survivre ? Je ne sais pas pourquoi mais, en vous regardant, j'ai la sensation... que vous dites la vérité.~
+@70191 = ~Prenez-la. J'inventerai une histoire pour mes frères et sœurs, mais je veux que vous l'utilisiez convenablement. Faites vivre sa légende. Faites que la légende de Ne Kurosuna vive à travers vous et vos propres légendes, par cette épée.~
+@70192 = ~Promettez-le, s'il vous plaît.~
+@70193 = ~Je vous le promets.~
+@70194 = ~Je pense que je vais simplement vous tuer et récupérer l'épée sur votre cadavre.~
+@70195 = ~...~
+@70196 = ~Tenez. Mais ne rompez jamais cette promesse. Et ne laissez jamais cette lame se rompre à nouveau.~
+@70197 = ~Vous... plaisantez, j'espère ? Ah ah ! J'y ai presque cru.~
+@70198 = ~Bien sûr que je plaisante. Ramenez l'épée à votre monastère, que l'histoire de Ne Kurosuna puisse vivre à jamais.~
+@70199 = ~Je ne plaisante pas. J'ai besoin de cette épée. Je pense que  je vais simplement vous tuer et récupérer l'épée sur votre cadavre.~
+@70200 = ~Je suis navré mais je ne peux pas vous laisser faire !~
+@70201 = ~Réparation de Saiai no Hito~
+@70202 = ~Réparation de Saiai no Hito
+
+Un étranger en haillons m'a accosté à l'auberge de Brasamical. Je l'ai rapidement fait déguerpir.
+I was accosted by some ragged foreigner at the Friendly Arms Inn and promptly told him to be off.~
+@70203 = ~Réparation de Saiai no Hito
+
+J'ai accepté d'aider Inoshishi, qui a voyagé jusqu'à la Côte des Épées à la recherche de Saiai no Hito, une épée importante pour son ordre.~
+@70204 = ~Réparation de Saiai no Hito
+
+Inoshishi a été détroussé quelque part entre ici et Bérégost. Il nous a demandé de retrouver le brigand et de lui ramener son amulette au Temple de la sagesse.~
+@70205 = ~Réparation de Saiai no Hito
+
+J'ai retrouvé le bandit qui a détroussé Inoshishi et récupéré son amulette. Je devrais la lui rapporter au Temple de la sagesse.~
+@70206 = ~Réparation de Saiai no Hito
+
+Les tâches d'Inoshishi n'avançaient à rien et j'ai bien mieux à faire. Je le lui ai dit et maintenant je peux me concentrer sur des sujets plus pertinents.~
+@70207 = ~Réparation de Saiai no Hito
+
+La divination de Gallena a révélé que la lame avait été brisée en deux morceaux. L'une est à proximité d'un phrase et l'autre dans l'estomac d'une bête dans une zone rocailleuse.~
+@70208 = ~Réparation de Saiai no Hito
+
+J'ai récupéré la poignée de l'épée sur un fouilleur de poubelles à la Barbe d'Ulgoth. Je dois encore trouver l'autre partie qui se trouve dans l'estomac d'une bête près d'uen zone rocailleuse.~
+@70209 = ~Réparation de Saiai no Hito
+
+J'ai récupéré la lame de l'épée dans l'estomac d'un troll. Je dois encore trouver l'autre partie qu ise trouve à proximité d'un phare.~
+@70210 = ~Réparation de Saiai no Hito
+
+J'ai récupéré les deux fragments de l'épée. Je devrais retourner voir Inoshishi, qui m'attend à l'extérieur du Temple de la sagesse.~
+@70211 = ~Réparation de Saiai no Hito
+
+J'ai récupéré les deux fragments de l'épée.et les ai donnés à Inoshishi. Il est partir devant nous vers Bérégost, où il nous attendra à la Forge de Grondemarteau.~
+@70212 = ~Réparation de Saiai no Hito
+
+J'ai retrouvé Inoshishi mais la forge était fermée. J'y retournerai quand elle sera ouverte.~
+@70213 = ~Réparation de Saiai no Hito
+
+Taërom a accepté la demande de réparation de Saiai no Hito, mais Inoshishi a dû sacrifier sa chevalière pour payer la commande. Je devrais retourner à la forge après quatre jours, quand le travail sera fini.~
+@70214 = ~Réparation de Saiai no Hito
+
+Taërom a accepté la demande de réparation de Saiai no Hito, mais nous avons dû aider à payer.Je devrais retourner à la forge après quatre jours, quand le travail sera fini.~
+@70215 = ~Réparation de Saiai no Hito
+
+Je suis allé retrouver Inoshishi pour voir la lame reforgée, mais la forge était fermée. Je reviendrai quand elle sera ouverte.~ ~Réparation de Saiai no Hito
+
+Je suis allée retrouver Inoshishi pour voir la lame reforgée, mais la forge était fermée. Je reviendrai quand elle sera ouverte.~
+@70216 = ~Réparation de Saiai no Hito
+
+J'ai aidé Inoshishi à rendre son ancienne gloire à Saiai no Hito. Il m'a récompensé pour mon aide et s'est mis en chemin pour retourner chez lui~
+@70217 = ~Réparation de Saiai no Hito
+
+J'ai aidé Inoshishi à rendre son ancienne gloire à Saiai no Hito. Je l'ai convaincu que j'avais besoin de l'épée pour ramener la paix sur la Côte des Épées et lui ai promis de la lui rendre un jour.~
+@70218 = ~Réparation de Saiai no Hito
+
+J'ai aidé Inoshishi à rendre son ancienne gloire à Saiai no Hito. Il a essayé de me payer avec des babioles ridicules mais j'ai exigé l'épée elle-même.~
+@70219 = ~Et il venait toujours en aide à ses autres frères. Il est alors tombé amoureux de l'un es nôtres et, même si je ne comprends pas ce qu'il a pu ressentir, partagé entre ancien et nouvel amour, ou l'incertitude, ne pas savoir si ses sentiments étaient partagés, j'ai lu les documents et je sais que c'était un homme honnête et fort et qu'il ne faillait pas l'oublier.~
