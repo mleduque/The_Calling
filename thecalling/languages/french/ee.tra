@@ -82,6 +82,135 @@ Poids : 1~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
+///// expanded gnoll stronghold                        \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@10013 = ~Cette ceinture inhabituelle a été fabriquée pour un assassin du nom de Mudbone. Il se spécialisait dans l'assassinat de prêtes, plus particulièrement de ceux qui étaient vus comme des obstacles par les gens sans considérations pour les gens de foi. La ceinture semble de bonne facture. Elle a probablement été confectionnée avec des matériaux de grande qualité.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Résistance à la magie : +2 %
+
+Capacités de combat :
+– Dégâts contre les clercs : +2
+
+Poids : 2~
+@10016 = ~Cette cotte de mailles a quelque chose de brut et primitif, mais vous pouvez percevoir une énergie magique en provenance de ses mailles. Elle devrait pouvoir protéger son porteur au combat et la magie pourrait être utile dans la nature. Par contre, l'armure émet une odeur étrange qui rappelle celle de la fourrure d'un chien.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Classe d'armure contre les animaux : +2
+– Charisme : -1
+
+Classe d'armure : 4 (2 contre les armes tranchantes, 6 contre les armes contondantes)
+Nécessite : 8 en Force
+
+Poids : 20~
+@10019 = ~Ce manteau est fait de tissu enchanté qui pourrait s'avérer utile dans les combats contre des ennemis semblables au basilic. Il semble capable de protéger son porteur contre leur regard mortel.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– jets de sauvegarde la pétrification/métamorphose : +4
+
+Poids : 3~
+@10022 = ~Cette amulette a été maudite par quelque magie ténébreuse. Quiconque la porte verra sa chance s'amoindrir et, sur la route ou à l'aventure, la chance peut être la différence entre la vie et la mort.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Chance : -1
+– ne peut être ôtée qu'à l'aide d'un sort de Délivrance de la malédiction
+
+Poids : 1~
+@10025 = ~Cette flèche a l'air brisée mais même si vous n'en tenez qu'un morceau, l'autre moitié lévite juste à côté du reste. Même si elle n'est pas très puissante, elle peut être utile au moment où l'aventurier se voit à court de flèches ordinaires.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– frappe comme une arme +1
+– revient dans la main du lanceur
+
+Dégâts : 1 (projectile)
+Arme à distance : Arc
+
+Poids : 0~
+@10028 = ~Ce bâton était auparavant utilisé par un chaman gnoll de la forteresse des gnolls de la Côte des épées.
+
+Il est difficile de dire qui l'a créé. Il semble assez rustique et,  même s'il n'est pas des plus puissants, il y a certainement des situations dans lesquelles il sera utile. Il est suggéré que son pouvoir lui permet de rendre tout acide plus mortel.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– Bonus de dégâts d'acide : +10 %
+
+TAC0 : +1
+Dégâts : 1d6+1 (contondants)
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : arme à deux mains
+Nécessite : 5 en Force
+
+Poids : 4~
+@10030 = ~Une aura majestueuse rayonne de ce manteau de couleur violette. On pense qu'il a été créé pour un roi mais... la légende ne dit pas lequel. Non seulement il protège la personne qui le porte, mais ceux qui l'entourent seront aussi plus prompt à croire leurs paroles et à les admirer.
+
+Ce manteau vous a été offert en gage de confiance et de gratitude pour la prise de la forteresse des gnolls.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Classe d'armure : +2
+– Jets de sauvegarde : +2
+– Le charisma du porteur passe à 19 (guerriers seulement)
+
+Poids : 3~
+@10032 = ~Ce livre décrit des rituels, certains pour contrôler l'énergie naturelle, d'autres pour satisfaire Yeenoghu, la Bête de la boucherie. L'un d'entre eux, particulièrement morbide, décrit la crémation de crânes humains.
+
+PARAMÈTRES :
+
+Poids : 2~
+@10034 = ~Ce sac est rempli de matériel médical.
+
+PARAMÈTRES :
+
+Poids : 15~
+@10037 = ~Cette viande en flammes est en réalité la chair brûlante de Yeenoghu. Ceux qui décident de la consommer pourront obtenir la bénédiction du Prince des gnolls, mais il y aura uen contrepartie.
+
+PARAMÈTRES :
+
+Spécial : si consommé, réduit le Charisme de 1 point mais accorde un bonus de 2 points de dégâts contre les adversaires d'alignement bon. Le bonus est permanent.
+
+Poids : 2~
+@10039 = ~Vous avez trouvé cette clé primitive dans la forteresse des gnolls. Elle devrait ouvrir quelque chose à cet endroit.
+
+PARAMÈTRES :
+
+Poids : 1~
+// here for the em dash
+@10103 = ~Il y a cette ville minière à côté d'ici, Nashkel. Là bas, il y a un temple, et j'aimerais que vous y alliez et que vous me rameniez du matériel médical. Le prêtre a dû être informé que nous pourrions avoir besoin d'aide, si je ne me trompe pas. Dommage que nous ne soyons pas allés lui parler avant que je perde mes camarades. Peut-être que si j'avais eu ces... Non, ça n'aurait pas permis d'éviter cette tragédie. Désolé, je ne peux pas m'empêcher de penser à eux.~
+@10188 = ~LComme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. Sa hampe est gravée d'une série de runes qui permettent au porteur de renforcer ses coups avec, au choix, des dégâts d'électricité, de froid ou de feu. De temps en temps, elle délivrera une salve des trois éléments sur un seul coup.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– 1 % de chance à chaque coup que la cible subisse 3 points de dégâts supplémentaires de froid, d'électricité et de feu
+
+TAC0 : +1
+Dégâts : 1d10+1, +1 point de froid, d'électricité ou de feu (au choix du porteur)
+Type de dégâts : tranchants ou perforants
+Facteur de vitesse : 8
+Type de compétence : hallebarde
+Type : arme à deux mains
+Nécessite :13 en Force
+
+Poids : 14~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
 ///// Exotic Item Pack                                 \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
