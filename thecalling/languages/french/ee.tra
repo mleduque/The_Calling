@@ -82,6 +82,135 @@ Poids : 1~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
+///// expanded gnoll stronghold                        \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@10013 = ~Cette ceinture inhabituelle a été fabriquée pour un assassin du nom de Mudbone. Il se spécialisait dans l'assassinat de prêtes, plus particulièrement de ceux qui étaient vus comme des obstacles par les gens sans considérations pour les gens de foi. La ceinture semble de bonne facture. Elle a probablement été confectionnée avec des matériaux de grande qualité.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Résistance à la magie : +2 %
+
+Capacités de combat :
+– Dégâts contre les clercs : +2
+
+Poids : 2~
+@10016 = ~Cette cotte de mailles a quelque chose de brut et primitif, mais vous pouvez percevoir une énergie magique en provenance de ses mailles. Elle devrait pouvoir protéger son porteur au combat et la magie pourrait être utile dans la nature. Par contre, l'armure émet une odeur étrange qui rappelle celle de la fourrure d'un chien.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Classe d'armure contre les animaux : +2
+– Charisme : -1
+
+Classe d'armure : 4 (2 contre les armes tranchantes, 6 contre les armes contondantes)
+Nécessite : 8 en Force
+
+Poids : 20~
+@10019 = ~Ce manteau est fait de tissu enchanté qui pourrait s'avérer utile dans les combats contre des ennemis semblables au basilic. Il semble capable de protéger son porteur contre leur regard mortel.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– jets de sauvegarde la pétrification/métamorphose : +4
+
+Poids : 3~
+@10022 = ~Cette amulette a été maudite par quelque magie ténébreuse. Quiconque la porte verra sa chance s'amoindrir et, sur la route ou à l'aventure, la chance peut être la différence entre la vie et la mort.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Chance : -1
+– ne peut être ôtée qu'à l'aide d'un sort de Délivrance de la malédiction
+
+Poids : 1~
+@10025 = ~Cette flèche a l'air brisée mais même si vous n'en tenez qu'un morceau, l'autre moitié lévite juste à côté du reste. Même si elle n'est pas très puissante, elle peut être utile au moment où l'aventurier se voit à court de flèches ordinaires.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– frappe comme une arme +1
+– revient dans la main du lanceur
+
+Dégâts : 1 (projectile)
+Arme à distance : Arc
+
+Poids : 0~
+@10028 = ~Ce bâton était auparavant utilisé par un chaman gnoll de la forteresse des gnolls de la Côte des épées.
+
+Il est difficile de dire qui l'a créé. Il semble assez rustique et,  même s'il n'est pas des plus puissants, il y a certainement des situations dans lesquelles il sera utile. Il est suggéré que son pouvoir lui permet de rendre tout acide plus mortel.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– Bonus de dégâts d'acide : +10 %
+
+TAC0 : +1
+Dégâts : 1d6+1 (contondants)
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : arme à deux mains
+Nécessite : 5 en Force
+
+Poids : 4~
+@10030 = ~Une aura majestueuse rayonne de ce manteau de couleur violette. On pense qu'il a été créé pour un roi mais... la légende ne dit pas lequel. Non seulement il protège la personne qui le porte, mais ceux qui l'entourent seront aussi plus prompt à croire leurs paroles et à les admirer.
+
+Ce manteau vous a été offert en gage de confiance et de gratitude pour la prise de la forteresse des gnolls.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Classe d'armure : +2
+– Jets de sauvegarde : +2
+– Le charisma du porteur passe à 19 (guerriers seulement)
+
+Poids : 3~
+@10032 = ~Ce livre décrit des rituels, certains pour contrôler l'énergie naturelle, d'autres pour satisfaire Yeenoghu, la Bête de la boucherie. L'un d'entre eux, particulièrement morbide, décrit la crémation de crânes humains.
+
+PARAMÈTRES :
+
+Poids : 2~
+@10034 = ~Ce sac est rempli de matériel médical.
+
+PARAMÈTRES :
+
+Poids : 15~
+@10037 = ~Cette viande en flammes est en réalité la chair brûlante de Yeenoghu. Ceux qui décident de la consommer pourront obtenir la bénédiction du Prince des gnolls, mais il y aura uen contrepartie.
+
+PARAMÈTRES :
+
+Spécial : si consommé, réduit le Charisme de 1 point mais accorde un bonus de 2 points de dégâts contre les adversaires d'alignement bon. Le bonus est permanent.
+
+Poids : 2~
+@10039 = ~Vous avez trouvé cette clé primitive dans la forteresse des gnolls. Elle devrait ouvrir quelque chose à cet endroit.
+
+PARAMÈTRES :
+
+Poids : 1~
+// here for the em dash
+@10103 = ~Il y a cette ville minière à côté d'ici, Nashkel. Là bas, il y a un temple, et j'aimerais que vous y alliez et que vous me rameniez du matériel médical. Le prêtre a dû être informé que nous pourrions avoir besoin d'aide, si je ne me trompe pas. Dommage que nous ne soyons pas allés lui parler avant que je perde mes camarades. Peut-être que si j'avais eu ces... Non, ça n'aurait pas permis d'éviter cette tragédie. Désolé, je ne peux pas m'empêcher de penser à eux.~
+@10188 = ~Comme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. Sa hampe est gravée d'une série de runes qui permettent au porteur de renforcer ses coups avec, au choix, des dégâts d'électricité, de froid ou de feu. De temps en temps, elle délivrera une salve des trois éléments sur un seul coup.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– 1 % de chance à chaque coup que la cible subisse 3 points de dégâts supplémentaires de froid, d'électricité et de feu
+
+TAC0 : +1
+Dégâts : 1d10+1, +1 point de froid, d'électricité ou de feu (au choix du porteur)
+Type de dégâts : tranchants ou perforants
+Facteur de vitesse : 8
+Type de compétence : hallebarde
+Type : arme à deux mains
+Nécessite :13 en Force
+
+Poids : 14~
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
 ///// Exotic Item Pack                                 \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -145,3 +274,361 @@ Type : arme à une main
 Force nécessaire : 6
 
 Poids: 4~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// shaman - Dreamheart                              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@60003 = ~Loup vampirique - Chef de la meute~
+@60004 = ~Loup zombie~
+@60005 = ~Manifestation de la corruption~
+@60006 = ~Peur de la stagnation~
+@60007 = ~Ring-flies~ //TODO
+@60008 = ~Tête du loup vampirique~
+@60009 = ~Ceci est la tête d'un loup vampirique qui menait une meute de loups morts-vivants. La meute a souillé la grotte qui, comme vous l'avez découvert, est un lieu de grand pouvoir spirituel.
+
+Elle peut servir à prouver que vous vous êtes chargé de la meute.
+
+PARAMÈTRES :
+
+Poids : 3~ ~Ceci est la tête d'un loup vampirique qui menait une meute de loups morts-vivants. La meute a souillé la grotte qui, comme vous l'avez découvert, est un lieu de grand pouvoir spirituel.
+
+Elle peut servir à prouver que vous vous êtes chargée de la meute.
+
+PARAMÈTRES :
+
+Poids : 3~
+@60010 = ~Figurine en forme de cœur~
+@60011 = ~Cette figurine n'est pas plus grosse qu'un caillou et a la forme d'un petit cœur étrange. Elle est chaude au toucher et, quand vous la tenez, vous sentez comme un battement. Il est difficile de savoir si c'est votre imagination, si vous sentez votre propre cœur, ou si c'est tout autre chose encore, mais de toute façon c'est une sensation singulière.
+
+PARAMÈTRES :
+
+Poids : 1~
+@60012 = ~Herbe Cœurâme~
+@60013 = ~Cette plante possède des feuilles luminescentes qui tirent sur le bleu. L'herbe elle-même émet aussi une odeur sucrée qui rappelle le raisin.
+
+PARAMÈTRES :
+
+Poids : 1~
+//@60014 = ~~
+@60015 = ~Fuseau du destin +2~
+@60016 = ~Cet arc court appartenait autrefois à une puissante chamane de la Côte des épées nommée Zaznya. Si l'on en croit les légendes, Zaznya était une archère habile protégée par une armée de fantômes. Elle aurait protégé des lieux de pouvoir contre ceux qui ignoraient leur passé... et leur futur. On raconte que parmi les fantômes, certains saisissaient la corde avec elle et guidaient ses flèches vers la cible.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Peut lancer deux sorts de niveau 1 de plus chaque jour (chaman uniquement)
+- Résistance à l'électricité : +10 %
+
+TAC0 : +2
+Dégâts : +2
+Facteur de vitesse : 4
+Type de compétence : arc court
+Type : arme à deux mains
+Nécessite : 3 en Force
+
+Poids : 2~
+@60017 = ~Site archéologique, tombe intérieure (chaman)~ // descript of area for console area listing
+@60018 = ~(Vous êtes entré dans un royaume étrange et onirique. Et vous n'êtes pas seul.)~ ~(Vous êtes entrée dans un royaume étrange et onirique. Et vous n'êtes pas seule.)~
+@60019 = ~(Ce qui était jusqu'à présent un feu de camp est devenu une spirale de braises et de cendres tourbillonnantes. Une sensation accueillante en émane.)~
+@60020 = ~(Oserez-vous y pénétrer, Chaman ?)~ ~(Oserez-vous y pénétrer, Chamane ?)~
+@60021 = ~Je vois que vous avez répondu à mon appel. Soyez le bienvenu, chaman.~ ~Je vois que vous avez répondu à mon appel. Soyez la bienvenue, chamane.~
+@60022 = ~Oh ! Cet endroit est étrange. Attendez... Sommes-nous en train de rêver ? Et est-ce que c'est un cœur qui flotte ?~
+@60023 = ~Ah... J'ai l'impression que <CHARNAME> nous a encore entraînés dans une divagation sans intérêt. <CHARNAME>, je n'apprécie pas ce que je vois.~
+@60024 = ~Est-ce un rêve, <CHARNAME> ? Rêvons-nous ? Je concède que cela a vraiment l'apparence d'un rêve inhabituel.~
+@60025 = ~Hm ? Des vortex vibrants... ? Des visons vexatoires ? Vraiment, quelle sorte de voyage vaguement valable vivons-nous ?~
+@60026 = ~Je me réjouis que vous m'ayez entendu, que les braises de mes rêves vous aient atteint et vous aient mené ici. Ne soyez pas inquiet, je ne vous veux aucun mal.~~Je me réjouis que vous m'ayez entendu, que les braises de mes rêves vous aient atteinte et vous aient menée ici. Ne soyez pas inquiète, je ne vous veux aucun mal.~
+@60027 = ~Où suis-je ? Et qui êtes vous ?~
+@60028 = ~Tout cela est très bien, mais vos motivations ne me concernent pas. J'exige des réponses. Dans quel genre de lieu maléfique sommes-nous ?~
+@60029 = ~Ah ! vous revoilà. Êtes-vous revenu parce que vous avez changé d'avis ? Acceptez-vous de m'aider ?~ ~Ah ! vous revoilà. Êtes-vous revenue parce que vous avez changé d'avis ? Acceptez-vous de m'aider ?~
+@60030 = ~Je ne suis pas certain de comprendre ce que vous êtes ni ce que vous voulez de moi. Vos explications n'étaient pas vraiment claires.~ ~Je ne suis pas certaine de comprendre ce que vous êtes ni ce que vous voulez de moi. Vos explications n'étaient pas vraiment claires.~
+@60031 = ~Non. Je pense que je vais m'en aller tout de suite.~
+@60032 = ~J'imaginais que vous apprécieriez cet endroit. Vous l'avez vu. Ou plutôt, vous en avez vu l'incarnation terne. Celle qui a été utilisée par Kozah. Celle qui a été explorée par les archéologues, ces fouilleurs grossiers.~
+@60033 = ~Ce qu'ils savaient de ce lieu était vrai. Mais ce qu'ils ne savaient pas, c'est qu'avant qu'ils ne découvrent ce site, et même avant que Kozah et les siens ne prennent possession de la grotte, elle était déjà vivante. Et que moi, le Cœur-de-Rêve, occupais déjà les lieux depuis un certain temps déjà.~
+@60034 = ~J'aurais besoin de plus d'information que ça.Qu'êtes-vous ?~
+@60035 = ~Rien de ce que vous dites n'a le moindre sens. C'est ennuyeux et je tolère mal les énigmes.~
+@60036 = ~Je vais essayer encore d'expliquer. Je suis le Cœur-de-Rêve, une entité née des espoirs et du pouvoir de ce lieu ancien et nourrie par tous les hommes, femmes, animaux et créatures qui ont visité cette grotte. Je me suis nourri de leurs espoirs. Et alors que leur esprit, et leur cœur, et leur âme devenait lumineuse, infectée par de nouvelles idées, alors qu'ils peignaient sur les murs, mangeaient, dansaient, je devenais plus vivant et encore, et encore.~
+@60037 = ~Cet endroit possède un grand pouvoir. Alors que ce monde était encore bien moins avancé, on l'appelait la Grotte de l'or ensommeillé. Un domaine pour les esprits et la terre, où les gens tels que vous venaient, où ils méditaient, trouvaient des réponses, de l'inspiration, de l'espoir, du divertissement. Et, récemment, cet endroit a été corrompu.~
+@60038 = ~Vous parlez du chantier d'excavation ? Je ne pense pas que ces gens veuillent du mal à cet endroit.~
+@60039 = ~Je ne suis pas sûr de comprendre tout ce que vous dites, mais on dirait que quelque chose de grave s'est produit~ ~Je ne suis pas sûre de comprendre tout ce que vous dites, mais on dirait que quelque chose de grave s'est produit~
+@60040 = ~Venez-en au fait, créature.~
+@60041 = ~Ces gens-là ? Non. Ce qui a envahi le cœur de ce lieu est plus sombre.~
+@60042 = ~Une fois que les excavateurs sont partis et ont laissé l'entrée ouverte, des choses corrompues sont entrée dans la grotte. Même si elles n'ont jamais atteint le cœur réel du lieu, le vrai Or ensommeillé, elles ont pu souiller les salles découvertes par les archéologues.~
+@60043 = ~Ces créatures étaient des animaux, ou plutôt leurs carcasses, touchées par la non-vie. Une meute de loups morts-vivants a terni le feu de camp, les murs et le sol avec leur salive dégoûtante, leurs odeurs nauséabondes et leur présence.~
+@60044 = ~Des loups morts-vivants ? Ces pauvres créatures ont du être défaits par quelque autre mort-vivant. De tels monstre ne devraient pas vagabonder dans la nature. <CHARNAME>, nous devons mettre fin à leur souffrance.~
+@60045 = ~Je plains quiconque serait confronté à ce genre de meute.~
+@60046 = ~On ne peut laisser les choses ainsi, et c'est pourquoi j'ai besoin de vous.~
+@60047 = ~Pourquoi faire ? Il sont partis, n'est-ce pas ?~
+@60048 = ~Écoutez, je n'ai pas le de temps à consacrer à ce problème. Je vais m'en aller, il y a d'autres problèmes plus importants auxquels je dois consacrer toute mon attention.~
+@60049 = ~Ils ne sont pas ici, mais ils ne sont pas partis pour de bon.~
+@60050 = ~Je les sens tout proche. Et j'ai peur qu'ils reviennent. Cela ne doit pas arriver.~
+@60051 = ~Ces parois forment un foyer pour les rêves dorés. Pour les souvenirs. Comme je vous l'ai dit, des gens venaient ici pour trouver des réponses. Pour trouver la paix, pour faire leur deuil. D'autres venaient pour d'autres formes de rituels de fertilité. Ils s'étendaient sur l'autel et exploraient leurs chair et leurs plaisirs. Peu m'importait, Le plaisir peut être aussi puissant que la peur ou l'espoir.~
+@60052 = ~Non seulement ces créature ont amené les ténèbres avec elles, mais elles ont affaibli des siècles de mémoires, d'innombrables instants qui ont enrichi la vie de gens... et m'ont enrichi.~
+@60053 = ~...et ils peuvent toujours revenir. Maintenant, ils connaissent cet endroit. Ils ont dû ressentir sont pouvoir. Mon pouvoir, et celui de tous les souvenirs gravés dans ces murs. Nous ne pouvons courir le risque qu'ils reviennent ici et causent plus de dégâts.~
+@60054 = ~C'est pourquoi je veux que vous les trouviez et les détruisiez. C'est bien ce que vous faites, n'est-ce pas ? Je vois bien que de tels combats ne vous sont pas étrangers. Et vous êtes un chaman, comme ceux qui sont venus ici autrefois.~ ~C'est pourquoi je veux que vous les trouviez et les détruisiez. C'est bien ce que vous faites, n'est-ce pas ? Je vois bien que de tels combats ne vous sont pas étrangers. Et vous êtes une chamane, comme ceux qui sont venus ici autrefois.~
+@60055 = ~Je vais vous aider. Je ne voudrais pas que ces créatures souillent encore plus cet endroit.~
+@60056 = ~Je doute que vous puissiez réellement savoir ce que j'ai vu ou subi, mais soit, je suppose que je peux vous aider.~
+@60057 = ~Je n'ai pas de temps pour ça. Leurrez un autre pigeon, je ne veux pas être votre chien ou votre serviteur.~
+@60058 = ~Merveilleux ! Ils sont encore à proximité. Trouvez-les. La meute n'était pas nombreuse, ils étaient cinq... et tous méritent de trouver le repos.~
+@60059 = ~S'il vous plaît, revenez quand ils seront tous morts.~
+@60060 = ~C'est décevant... Revenez me voir si vous changez d'avis.~
+@60061 = ~Avez-vous trouvez les créatures ? Sont-elles mortes ?~
+@60062 = ~La meute ne vous posera plus de problèmes, et elles ne souillera plus cet endroit. Pour preuve, voyez ici la tête du chef de la meute.~
+@60063 = ~Pas encore. À plus tard.~
+@60064 = ~Alors ? Avez-vous changé d'avis ? Voulez-vous bien continuer de m'aider ?~
+@60065 = ~Dites-moi de quoi vous avez besoin. Peut-être que je pourrais vous aider, après tout.~
+@60066 = ~Non, pas vraiment.~
+@60067 = ~Ah ! Je suppose que l'on peut la voir comme un symbole de victoire. Merci, chaman, je vous félicite.~ ~Ah ! Je suppose que l'on peut la voir comme un symbole de victoire. Merci, chamane, je vous félicite.~
+@60068 = ~Je m'interrogeais sur votre puissance et vote ingéniosité. Vous ne ressemblez pas à ceux qui ne font que réfléchir sur l'univers, vous pouvez changer la réalité. Et vous pouvez faire de vous rêves une réalité. Même si certains de vos rêves peuvent être... plutôt sanglants.~
+@60069 = ~Quand vous avez pénétré mon petit monde doré, j'ai ressenti quelque chose de spécial en vous, et je vois que je ne m'étais pas trompé. Je ne parviens pas à mettre le doigt dessus, mais il y a quelque chose en vous qui vous rend très intéressant.~ ~Quand vous avez pénétré mon petit monde doré, j'ai ressenti quelque chose de spécial en vous, et je vois que je ne m'étais pas trompé. Je ne parviens pas à mettre le doigt dessus, mais il y a quelque chose en vous qui vous rend très intéressante.~
+@60070 = ~Merci... je suppose.~
+@60071 = ~Bien sûr que je suis spécial. Je suis né avec pour talent la force spirituelle. Et pas seulement spirituelle.~ ~Bien sûr que je suis spécial. Je suis née avec pour talent la force spirituelle. Et pas seulement spirituelle.~
+@60072 = ~Tout le plaisir est pour moi.~
+@60073 = ~Et, sans aucun doute, vous n'êtes pas modeste. Mais ça ne me dérange pas.~
+@60074 = ~Vous attisez ma curiosité. Votre esprit, votre chair, votre sang et votre sueur, tous révèlent une expérience et une forte volonté. C'est pour cela que je m'interroge... Oui, votre aide pourrait encore m'être utile.~
+@60075 = ~J'ai une offre pour vous. Il y a encore quelque chose que vous pouvez faire pour moi. En récompense, vous obtiendrez une arme, laissée par un autre chaman, que vous pourrez utiliser dans vos batailles à venir.~
+@60076 = ~Et si je préférais éviter de telles batailles ?~
+@60077 = ~Je peux vous aider. Cette endroit m'intéresse et mérite d'être protégé.~
+@60078 = ~Je peux vous aider. J'ai l'impression que beaucoup de gens veulent ma mort. Toute ressource sera la bienvenue.~
+@60079 = ~Je ne suis pas intéressé. Désolé, mais j'ai gaspillé assez de temps à chasser ces loups. Je dois partir.~ ~Je ne suis pas intéressée. Désolée, mais j'ai gaspillé assez de temps à chasser ces loups. Je dois partir.~
+@60080 = ~Ah ah ! Je suis désolé d'avoir à vous apporter la nouvelle, mais certaines de ces batailles et certains de ces ennemis feront peu de cas de vos préférences. Et porter une arme ne vous oblige pas à vous en servir pout tuer, n'est-ce pas ?~
+@60081 = ~D'accord, je suppose que je peux écouter ce que vous avez à me demander.~
+@60082 = ~Je n'ai pas plus de temps à perdre avec vous. Pardon, je m'en vais.~
+@60083 = ~Je suis heureux de l'entendre.~
+@60084 = ~Ces créatures que vous avez tuées, leur ignoble présence a eu un effet sur cet endroit. Mais cette souillure peut être effacée en suivant le bon rituel.~
+@60085 = ~Prenez cette figurine et placez-la à l'endroit où les adeptes de Kozah plaçaient leur idole, sur l'autel, là où le souvenir de Kozah a pris contrôle des pauvres gens qui faisaient les fouilles. Elle me reliera à la version ordinaire de la grotte, la coquille extérieure du vrai Or ensommeillé. Une fois que ce sera fait. revenez me voir, il y aura encore autre chose à faire après cela.~
+@60086 = ~Je vais faire ce que vous me demandez.~
+@60087 = ~Je n'ai pas le temps pour ça.~
+@60088 = ~J'attendrai votre retour, alors.~
+@60089 = ~C'est dommage. Vous savez où me trouver si jamais vous changez d'avis.~
+@60090 = ~Amenez la figurine que je vous ai données à l'endroit où les adeptes de Kozah plaçaient leur idole. J'attendrai votre retour ici.~
+@60091 = ~Je sens que vous avez placé la figurine sur l'autel. Je vus remercie. Grâce à vous, la corruption ne s'étendra pas plus loin. Elle est toujours présente mais elle est confinée. Vous pouvez imaginer un flacon spirituel qui l'empêchera de grandir ou de se répandre sur d'autres sections de la chair rocheuse qui constitue la grotte.~
+@60092 = ~Maintenant, il nous faut une herbe spécifique pour extraire la corruption de la grotte, l'herbe cœurâme. Le problème c'est que c'est une plante rare.~
+@60093 = ~On penserait peut-être qu'elle pousse dans la forêt, mais non. On la trouve le plus souvent à flanc de coteau dans les zones rocailleuses. Alors je sais que ce n'est pas une tâche facile mais, si vous voulez m'aider, il vous faut trouver cette plante.~
+@60094 = ~Comme vous le dites, ce n'est pas... très précis. Où, dans les neuf enfers, suis-je supposé trouver cette herbe ?~ ~Comme vous le dites, ce n'est pas... très précis. Où, dans les neuf enfers, suis-je supposée trouver cette herbe ?~
+@60095 = ~Je ne peux pas vous promettre de la trouver, mais je garderai les yeux ouverts.~
+@60096 = ~Voilà qui est précis ! Ah ! Ce serait un miracle que je la trouve.~
+@60097 = ~Cet endroit est ma chair et aussi la totalité de mon univers. Je ne sais pas où exactement vous pouvez la trouver. Si j'étais vous, je chercherais près des régions rocheuses. Essayez peut-être vers l'est, en vous éloignant des brises salées, et voyez si vous en trouvez là où la montagne règne.~
+@60098 = ~Je crois fermement que vous réussirez. Vous me paraissez être un <PRO_RACE> chanceux.~ ~Je crois fermement que vous réussirez. Vous me paraissez être une <PRO_RACE> chanceuse.~
+@60099 = ~Je vous en prie, trouvez l'herbe cœurâme. Cherchez là où les montagnes se dressent vers le ciel.~
+@60100 = ~Je perçois sur vous l'odeur sucrée de l'herbe cœurâme. Vous l'avez trouvée ! Oh que c'est excitant !~
+@60101 = ~Maintenant, placez-la sur l'autel où vous avez mis la figurine. Je concentrerai mon pouvoir et l'utiliserai pour extirper la non-vie que nous avons confinée avec la figurine. Gardez à l'esprit, cependant, que pendant que la corruption sera arrachée aux parois de la grotte, vous devrez l'affronter. S'il vous plait, ne mourrez pas pendant l'événement.~
+@60102 = ~Allez placer l'herbe sur l'autel. Le même que celui sur lequel vous avez placé la figurine, et là où vous avez été attaqués par les excavateurs rendus fous par la colère de Kozah~
+@60103 = ~Je sens que la manifestation de la corruption n'est pas morte. Tuez-la !~
+@60104 = ~Vous êtes vraiment une chose magnifique, chaman. Mmmm ! Un délice.~ ~Vous êtes vraiment une chose magnifique, chamane. Mmmm ! Un délice.~
+@60105 = ~une seconde.. quoi ? Que voulez-vous dire ?~
+@60106 = ~J'ai un mauvais pressentiment...~
+@60107 = ~Vous m'avez été d'une aide précieuse mais... le fait que rien de tout ça n'ai eu l'air d'être un défi pour vous me fait mourir d'ennui.~
+@60108 = ~Pourquoi ce changement de ton ? Expliquez-vous !~
+@60109 = ~Je ne comprends pas ce que vous dites. Aidez-moi à comprendre.~
+@60110 = ~Comme je vous l'ai dit, je me nourris de l'expérience, de l'espoir, des rêves. Mais aussi de la peur, des frissons, du plaisir et de bien d'autres sensations. Quand ces travailleurs m'ont réveillé, j'ai ressenti la faim. J'ai alors essayé de vous contacter. Je vous avais perçu, alors, quand vous tuiez les excavateurs. Vous paraissiez... plus fort. Et vous avez éveillé ma curiosité.~ ~Comme je vous l'ai dit, je me nourris de l'expérience, de l'espoir, des rêves. Mais aussi de la peur, des frissons, du plaisir et de bien d'autres sensations. Quand ces travailleurs m'ont réveillé, j'ai ressenti la faim. J'ai alors essayé de vous contacter. Je vous avais perçue, alors, quand vous tuiez les excavateurs. Vous paraissiez... plus forte. Et vous avez éveillé ma curiosité.~
+@60111 = ~Les tâches qui vont étaient attribuées ne servaient pas seulement à la purification. Un peu, mais, surtout, j'étais affamé de sensations. J'étais...~
+@60112 = ~Je m'ennuyais. Mais vous êtes comme un rafraîchissement.raffiné. Mais, après autant de victoires, je pense qu'il faut du changement. Je veux voir plus de ce que j'ai déjà vu. Je suis navré, mais nous avons tous besoin de nous sustenter. Et c'est comme cela que je me rassasie.~
+@60113 = ~Alors, tout cela n'était qu'une ruse ?~
+@60114 = ~Les esprits peuvent être sournois. Préparez-vous, je crois savoir comment tou ça va tourner, <CHARNAME>.~
+@60115 = ~Par les esprits, quel sens donner à tout cela ? <CHARNAME>, soyez prudent, je sens un changement dans l'atmosphère.~ ~Par les esprits, quel sens donner à tout cela ? <CHARNAME>, soyez prudente, je sens un changement dans l'atmosphère.~
+@60116 = ~Il semblerait qu'on se soit joué de nous.~
+@60117 = ~Boo dit que ce cœur a l'air différent maintenant. *squeak*~
+@60118 = ~Quoi maintenant ? Un piège ? Xsa nindol k'lar!~
+@60119 = ~Qua nd je m'ennui, le rêve devient morne et je commence à désirer d'autres sensations. Je veux plus des sensations que vous m'avez procurées. Plus et plus encore et...~
+@60120 = ~... J'en ai besoin, c'est tout. Je suis désolé, il n'y a rien de personnel, mais j'ai tellement faim.~
+@60121 = ~C'est assez. Je suis immortel et vous êtes fort. Et vous avez détruit ces petites choses que j'ai créées. Je... vous respecte. Je suppose que je ne devrais pas tourmenter quelqu'un qui a accepté de m'aider. Ce moment d'exaltation m'a calmé et je vais essayer de contrôler le désir de me nourrir.~
+@60122 = ~J'espère que vous me pardonnerez~
+@60123 = ~J'essaierai.~
+@60124 = ~Vous dites ça juste après avoir essayé de me tuer !~
+@60125 = ~Par les dieux, vous êtes pire que Kozah !~
+@60126 = ~Je vous remercie d'être aussi compréhensif.~ ~Je vous remercie d'être aussi compréhensive.~
+@60127 = ~Et je vous demande pardon pour cela. Et pour tout dire, je dois admettre qu'il n'est pas facile de se nourrir de vous.~
+@60128 = ~Pour tout dire, je me suis nourri de rêves de Kozah, alors... Oh mais je ne suis pas Kozah et j'aurais dû m'en souvenir avant d'essayer de vous tuer.~
+@60129 = ~Comme vous l'avez probablement remarqué, vous ne pouvez pas me tuer. Oublions donc tout ceci. Je vous laisserai partir. Vous avez fait de votre mieux et pris sur votre temps pour m'aider, ce que j'apprécie. Et je vous avais promis une récompense. Vous la trouverez sur l'autel dans cette incarnation-ci de l'Or ensommeillé.~
+@60130 = ~J'espère qu'un jour vous trouverez la paix et assouvirez votre faim. Je ne verrai pas ce jour, j'en ai fini avec vous.~
+@60131 = ~Vous deviez avoir vraiment faim pour vous attaquer à moi. Mais je suppose que c'est normal. Vous avez dû sommeiller de nombreuses années et vous êtes réveillé... affamé.~
+@60132 = ~C'est bien le cas. Je me repais d'histoires, de promesses et de fantasmes. Quand je me suis réveillé, j'ai perçu un des travailleurs à l'extérieur. Il lisait quelque chose, un livre. À ce moment, je me suis rendu compte à quel point je me sentais vide. Je voulais remplir mon être de quelque chose. De n'importe quoi. De peur, d'espoir, de foi, de visions de rage ou de fête, de sexe.ou de complots. Comme dans ce livre. Vraiment, quel dommage que cet homme soit mort et que ses affaires aient été emportées par des brigands, parce que je me demande comment ce livre se termine.~
+@60133 = ~Je vais peut-ête dire quelqu chose d'idiot, mais je pourrais vous apporter le livre. Vous souvenez-vous du titre ?~
+@60134 = ~Je me désintéresse de ce que vous voulez ou ressentez. J'en ai fini ici, je prends ma récompense et je pars.~
+@60135 = ~Vous feriez ça pour moi ? Ce serait... une nouveauté.~
+@60136 = ~Je crois que c'était l'histoire des... Trois morts. J'adorerais le lire. Je n'ai jamais possédé de livre moi-même.~
+@60137 = ~Si vous m'apportez ce livre, je serai reconnaissant.~
+@60138 = ~Je comprends. Encore une chose, chaman. Je crois qu'il y a une partie de vous qui mène à de grandes choses. Gardez cela à l'esprit pendant que pour suivrez le chemin de votre propre histoire.~ ~Je comprends. Encore une chose, chamane. Je crois qu'il y a une partie de vous qui mène à de grandes choses. Gardez cela à l'esprit pendant que pour suivrez le chemin de votre propre histoire.~
+@60139 = ~Et je présente mes excuses pour toute cette hostilité.~
+@60140 = ~Croyez-moi si vous voulez, mais il est bon de vous revoir en vie.~
+@60141 = ~Désolé, mais je dois y aller.~ ~Désolée, mais je dois y aller.~
+@60142 = ~J'ai le livre dont vous parliez. Regardez, je le laisse sur ce rocker.~
+@60143 = ~Vous... m'avez réellement amené un livre ? Vous ne cessez de me surprendre, chaman.~ ~Vous... m'avez réellement amené un livre ? Vous ne cessez de me surprendre, chamane.~
+@60144 = ~Je vous ai dit que vous pouviez prendre l'arc, mais laissez-moi partager avec vous mon expérience et vous montrer des fragments de ce que j'ai vu autrefois...~
+@60145 = ~Et j'ajoute que je pense qu'il y a des choses en vous... qui pourraient vous surprendre tout autant que vous m'avez surpris aujourd'hui. Vous êtes fait pour de grandes choses, souvenez-vous en.~
+@60146 = ~Vos rêves habituels, pour une raison inexpliquée, se transforment en quelque chose d'autre. Une vision d'une caverne emplie de peintures inhabituelles. Elles vous paraissent vivantes et envoûtantes. Vous ne voyez pas comment cela peut-être possible, mais elles résonnent dans votre esprit, dans votre cœur et votre âme. Puis... elle se transforment en une voix. Une voix qui vous entraîne vers une endroit que vous avez déjà visité il y a quelque temps. Le site archéologique. Difficile de déterminer s'il s'agit d'un tour que vous joue votre esprit ou si c'est autre chose. Le rêve devient de plus en plus précis. Les images deviennent mots, le mots deviennent une voix, différente de tout ce que vous avez pu entendre jusqu'à présent. Cette voix répète une et une seule phrase, encore et encore : « Marche dans la cendre et rêve de ce qui a un jour été rêvé... et perdu »."~
+@60147 = ~Cœur-de-rêve~
+@60148 = ~Cœur-de-rêve
+
+La grotte est libérée de la corruption et le Cœur-de-rêve dispose d'u livre à consommer. Le sujet est réglé et l'esprit réside tranquillement dans sa grotte.~
+@60149 = ~Cœur-de-rêve
+
+J'ai vu dans un rêve prophétique une version fantastique de la grotte sut site de fouilles archéologiques. Je sens comme une force qui me contraint à y retourner et enquêter sur place.~
+@60150 = ~Cœur-de-rêve
+
+J'ai rencontré Cœur-de-rêve, un esprit qui vit dans la grotte. Il a essayé de me soumettre une tâche, mais je ne voulais rien avoir à faire avec lui.~
+@60151 = ~Cœur-de-rêve
+
+J'ai rencontré Cœur-de-rêve, un esprit qui vit dans la grotte. Il m'a demandé de l'aider à débarrasser la grotte de la corruption. Je dois chasser et tuer une meute de loup morts-vivants à proximité.~
+@60152 = ~Cœur-de-rêve
+
+Les loups ont été vaincus et j'ai la tête du chef de la meute pour le prouver. Je devrais retourner en informer Cœur-de-rêve.~
+@60153 = ~Cœur-de-rêve
+
+Cœur-de-rêve m'a demandé de trouver une herbe particulière, l'herbe cœurâme. Ils n''était pas en mesure de m'indiquer où la trouver, mais il m'a suggéré de chercher dans les régions montagneuses, peut-être à l'est d'ici.~
+@60154 = ~Cœur-de-rêve
+
+J'ai trouve de l'herbe cœurâme. Je peux retourner voir Cœur-de-rêve et enfin récurer la caverne de toute corruption.~
+@60155 = ~Cœur-de-rêve
+
+Les tâches de Cœur-de-rêve n'en finissent pas. J'ai créé le gardien, et maintenant il faudrait que je place une figurine sur l'autel. J'ai refusé.~
+@60156 = ~Cœur-de-rêve
+
+Le gardien est maintenant à son poste. Cœur-de-rêve m'a demandé de placer une figurine sur l'autel.~
+@60157 = ~Cœur-de-rêve
+
+J'ai vaincu la corruption qui s'est manifestée quand j'ai ajouté l'herbe cœurâme sur l'autel. Je devrait retourner parler à l'esprit.~
+@60158 = ~Cœur-de-rêve
+
+La grotte des délivrée de la corruption. Cœur-de-rêve a souhaité ressentir plus d'émotions des vivants et a décidé de le faire dans une bataille. La question a été réglée et l'esprit réside dans sa grotte, tranquille et satisfait.~
+@60159 = ~Cœur-de-rêve
+
+La grotte des délivrée de la corruption. Cœur-de-rêve a souhaité ressentir plus d'émotions des vivants et a décidé de le faire dans une bataille. Après la bataille, l'esprit a montré de l'intérêt pour un livre parlant des Trois Morts.~
+@60160 = ~Récipient en poterie~
+@60161 = ~Ce récipient simple en terre cuite est recouvert d'un verni clair uniforme. En ce moment il est vide.
+
+PARAMÈTRES :
+
+Poids : 5~
+@60162 = ~Récipient en poterie plein~
+@60163 = ~Ce récipient simple en terre cuite est recouvert d'un verni clair uniforme. Vous l'avez rempli avec le l'eau à la chute d'eau.
+
+PARAMÈTRES :
+
+Poids : 25~
+@60164 = ~Graine de gardien~
+@60165 = ~Cette graine spéciale vous a été confiée par Cœur-de-rêve. Il vous a demandé de la planter dans le sol à l'extérieur de la grotte de Cœur-de-rêve.
+
+PARAMÈTRES :
+
+Poids : 0~
+@60166 = ~Vous remplissez le récipient en poterie avec de l'eau de la cascade.~
+@60167 = ~Vous trouvez un endroit de terre meuble et y plantez la graine. Vous l'arrosez avec le récipient en poterie.~
+@60168 = ~Vraiment, vous êtes doué pour faire fonctionner cet endroit, chaman. Maintenant que ces loups répugnants sont morts et que la grotte a été purifiée de la corruption, nous devrions fair en sorte qu'aucune autre créature de leur genre ne vienne troubler notre magnifique sanctuaire. Et pour ça, je voudrais que vous me créiez un gardien.~ ~Vraiment, vous êtes douée pour faire fonctionner cet endroit, chamane. Maintenant que ces loups répugnants sont morts et que la grotte a été purifiée de la corruption, nous devrions fair en sorte qu'aucune autre créature de leur genre ne vienne troubler notre magnifique sanctuaire. Et pour ça, je voudrais que vous me créiez un gardien.~
+@60169 = ~Un gardien ?~
+@60170 = ~Et bien évidemment il y a encore d'autre travail. C'est comme si vous vouliez me forcer à rester ici.~
+@60171 = ~J'ai assez travaillé pour vous. Non, tout ceci prend trop de mon précieux temps.~
+@60172 = ~Oui, un gardien.~
+@60173 = ~Mon objectif est surtout de protéger cet endroit et le garder en parfaite condition, chaman. Il le mérite. Nous le méritons.~ ~Mon objectif est surtout de protéger cet endroit et le garder en parfaite condition, chamane. Il le mérite. Nous le méritons.~
+@60174 = ~Tenez, je vous donne une graine spéciale. Je veux que vous la plantiez devant l'entrée, là où vous avez rencontré ceux qui faisaient les fouilles. Vous y trouverez un endroit parfait entre l'entrée et l'ancienne entrée... qui n'est plus vraiment praticable.~
+@60175 = ~Ensuite, arrosez-la. Il faudra utiliser l'eau la plus fraîche possible. Il y avait un récipient quelque part... Ah, le voilà ! Pas loin d'ici, il y a un endroit où vous trouverez de l'eau convenable. Il y a une cascade, placez ce récipient sous a chute d'eau et remplissez-le. Ensuite, versez l'eau sur la graine et laissez le miracle s'accomplir !~
+@60176 = ~Vous avez rempli les autres tâche de façon si brillante. S'il vous plaît, ne vous arrêtez pas en si bon chemin. Nous touchons au but.~
+@60177 = ~Nous avons presque terminé.  Je vous en prie, réfléchissez--y encore. S'il le faut, allez prendre un bol d'air frais avant de revenir en discuter. Ne mettons pas fin tout à suite à notre collaboration, chaman, ce serait vraiment dommage.~ ~Nous avons presque terminé.  Je vous en prie, réfléchissez--y encore. S'il le faut, allez prendre un bol d'air frais avant de revenir en discuter. Ne mettons pas fin tout à suite à notre collaboration, chamane, ce serait vraiment dommage.~
+@60178 = ~Je peux déjà sentir le gardien prendre racine dans le sol meuble. Merci, chaman.~ ~Je peux déjà sentir le gardien prendre racine dans le sol meuble. Merci, chamane.~
+@60179 = ~Vous voilà de retour , chaman. Avez-vous décidé de me créer un gardien ?~ ~Vous voilà de retour , chamane. Avez-vous décidé de me créer un gardien ?~
+@60180 = ~Non, je n'ai pas changé d'avis.~
+@60181 = ~Je suppose que je peux vous écouter.~
+@60182 = ~Vous voilà revenu, chaman. Avez-vous trouvé la cascade ?~ ~Vous voilà revenu, chaman. Avez-vous trouvé la cascade ?~
+@60183 = ~Pas encore, je reviendrai quand je l'aurai trouvée..~
+@60184 = ~Je la cherche mais pour le moment je ne la trouve pas.~
+@60185 = ~J'attendrai votre retour.~
+@60186 = ~Cherchez vers le sud-est et vous la trouverez. Elle est tout près d'une dryade et de son arbres.~
+@60187 = ~Récupérez simplement l'eau depuis le haut de la cascade.~
+@60188 = ~Cœur-de-rêve
+
+La meute de loups a été vaincue mais, tel une marionnette contrôlée par ses fils, Cœur-de-rêve veut encore me faire danser. Cœur-de-rêve devra attendre.~~Cœur-de-rêve
+
+La meute de loups a été vaincue mais, telle une marionnette contrôlée par ses fils, Cœur-de-rêve veut encore me faire danser. Cœur-de-rêve devra attendre.~
+@60189 = ~Cœur-de-rêve
+
+Maintenant que la meute de loups est vaincue, Cœur-de-rêve am'a demandé de créer un gardien à l'extérieur de la grotte. J'ai une graine maid je dois remplir le récipient en poterie avec l'eau d'une cascade qui se trouve au sud-est.~
+@60190 = ~Cœur-de-rêve
+
+J'ai trouvé lé cascade et j'i rempli le récipient en poterie avec de l'eau claire. Je dois retourner au site archéologique.~
+@60191 = ~Cœur-de-rêve
+
+J'ai planté la graine et l'ai arrosée. Je dois retourner voir Cœur-de-rêve.~
+@60192 = ~Gardien de Cœur-de-rêve~
+@60193 = ~Il y a de l'eau pure au sommet de la chute d'eau. Vous devriez aller y remplir le récipient en poterie.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Monk - Restoring Saiai no Hito                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@70006 = ~Cette amulette serait normalement cachée dans la garde d'un katana, en-dessous de la couverture en cuir. Cette amulette-ci semble vraiment ancienne.
+
+PARAMÈTRE :
+
+Poids : 0~
+
+@70008 = ~Ceci ressemble à la poignée d'un katana brisé. Il est possible qu'elle soit un morceau de Saiai no Hito, une épée originaire de Kozakura de grande renommée, fabriquée par Ne Kurosuna, avec un autre moine, Shiroume Yakuchi, à l'esprit.
+
+Peut-être qu'il peut être réparé... une fois la lame retrouvée.
+
+PARAMÈTRE :
+
+Poids : 1~
+
+@70010 = ~Ceci ressemble à la lame d'un katana brisé.Il est possible qu'elle soit un morceau de Saiai no Hito, une épée originaire de Kozakura de grande renommée, fabriquée par Ne Kurosuna, avec un autre moine, Shiroume Yakuchi, à l'esprit.
+
+Peut-être qu'il peut être réparé... une fois la poignée retrouvée.
+
+PARAMÈTRE :
+
+Poids : 2~
+
+@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère essaie de s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+– TAC0 au corps à corps : +2
+– Protection contre la rage/furie
+
+Poids : 1~
+
+@70014 = ~Cette épée est nommée Saiai no Hito. Elle é été créée par Ne Kurosuna, un ancien membre de Monastère de Saku. C'était un des membres d'origine du monastères et s'y est entraîné pendant des années. Il y était connu pour son esprit affûté et ses techniques pleines de grâce. Il était aussi fort, probablement l'un des moines les plus forts du monastère de Saku lorsqu'il y vivait encore.
+
+Lors de sa dixième année de travail, il s'est mis à développer des sentiments romantiques envers Shiroume Yakuchi, un autre moine du même monastère. Alors qu'il était considéré comme un maître de la discipline, du corps et de la stratégie, il n'était pas prêt à ça. Ne avait perdu son ancien bien-aimé, tué par des bandits  Il n'aurait pas imaginé ressentir à nouveau de tels sentiments, et sûrement pas pour quelqu'un du même monastère. Il en est résulté un sentiment de malaise, déchiré entre son ancien amour et celui qu'il venait de trouver. Il n'était pas sûr s'il devait faire part à Shiroume de ses sentiments. Que faire s'il ne pouvait répondre à ses sentiments ? Leur amitié s'en verrait-elle changée ? Serait-ce une trahison de son ancien bien-aimé ?
+
+Au bout de quelques mois, il décida que pour comprendre ses sentiments et faire un choix, il devait quitter le monastère, réfléchir et prier pour une réponse et l'illumination dans la solitude. Comme il aimait méditer au travers de son ouvrage, il se mis à créer des épées. Finalement, ceci mena à la création de cette épée, Saiai no Hito. Elle était pensée comme un cadeau pour Shiroume, Ne ayant décidé que la paix ne pouvait ête trouvée que dans l'honnêteté. Il espérait que, peut-être, Maître Yakuchi comprendrait, lui laisserait une chance, ou au moins qu'ils resteraient amis. Ne avait décidé que ce serait une trahison de son ancien histoire d'amour. Il la respectait toujours et la gardait en mémoire.
+
+Saiai no Hito devait être un symbole d'amour, de camaraderie et d'éveil spirituel. Mais Ne Kurosuna fut tué lors de son voyage de retour vers le monastère. La lame fut perdue et il est difficile de dire comment les fragments de l'épée sont parvenus sur la Côte des Épées. mais c'est ici que l'épée fut reforgée et ramenée à son ancienne gloire.
+
+La magie contenue dans cette épée devait aider son porteur et lui apporter l'avantage au combat. Si les histoires disent vrai, elle protégeait aussi le cœur du moine contre ce qui pouvait le briser.
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+– Protection contre la pétrification
+– Résistance aux dégâts contondants +10 % (moines seulement)
+
+Capacité de combat :
+– Enchantement contre les créatures d'alignement mauvais : +2
+
+TAC0: +1
+Dégâts : 1d10+1 (tranchant) +1 Feu
+Facteur de vitesse : 3
+Type de compétence : katana
+Type : arme à une main
+Nécessite : 6 en Force
+
+Poids : 5~
+
+@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la langue de Kozakura savent que « Inoshishi » signifie « sanglier ».
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+– Classe d'armure : +1 contre les armes contondantes.
+
+Poids : 0~
