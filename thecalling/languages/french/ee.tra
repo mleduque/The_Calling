@@ -274,3 +274,118 @@ Type : arme à une main
 Force nécessaire : 6
 
 Poids: 4~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// shaman - Dreamheart                              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@60003 = ~Loup vampirique - Chef de la meute~
+@60004 = ~Loup zombie~
+@60005 = ~Manifestation de la corruption~
+@60006 = ~Peur de la stagnation~
+@60007 = ~Ring-flies~ //TODO
+@60008 = ~Tête du loup vampirique~
+@60009 = ~Ceci est la tête d'un loup vampirique qui menait une meute de loups morts-vivants. La meute a souillé la grotte qui, comme vous l'avez découvert, est un lieu de grand pouvoir spirituel.
+
+Elle peut servir à prouver que vous vous êtes chargé de la meute.
+
+PARAMÈTRES :
+
+Poids : 3~ ~Ceci est la tête d'un loup vampirique qui menait une meute de loups morts-vivants. La meute a souillé la grotte qui, comme vous l'avez découvert, est un lieu de grand pouvoir spirituel.
+
+Elle peut servir à prouver que vous vous êtes chargée de la meute.
+
+PARAMÈTRES :
+
+Poids : 3~
+@60010 = ~Figurine en forme de cœur~
+@60011 = ~Cette figurine n'est pas plus grosse qu'un caillou et a la forme d'un petit cœur étrange. Elle est chaude au toucher et, quand vous la tenez, vous sentez comme un battement. Il est difficile de savoir si c'est votre imagination, si vous sentez votre propre cœur, ou si c'est tout autre chose encore, mais de toute façon c'est une sensation singulière.
+
+PARAMÈTRES :
+
+Poids : 1~
+@60012 = ~Herbe Cœurâme~
+@60013 = ~Cette plante possède des feuilles luminescentes qui tirent sur le bleu. L'herbe elle-même émet aussi une odeur sucrée qui rappelle le raisin.
+
+PARAMÈTRES :
+
+Poids : 1~
+//@60014 = ~~
+@60015 = ~Fuseau du destin +2~
+@60016 = ~Cet arc court appartenait autrefois à une puissante chamane de la Côte des épées nommée Zaznya. Si l'on en croit les légendes, Zaznya était une archère habile protégée par une armée de fantômes. Elle aurait protégé des lieux de pouvoir contre ceux qui ignoraient leur passé... et leur futur. On raconte que parmi les fantômes, certains saisissaient la corde avec elle et guidaient ses flèches vers la cible.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Peut lancer deux sorts de niveau 1 de plus chaque jour (chaman uniquement)
+- Résistance à l'électricité : +10 %
+
+TAC0 : +2
+Dégâts : +2
+Facteur de vitesse : 4
+Type de compétence : arc court
+Type : arme à deux mains
+Nécessite : 3 en Force
+
+Poids : 2~
+@60017 = ~Site archéologique, tombe intérieure (chaman)~ // descript of area for console area listing
+@60018 = ~(Vous êtes entré dans un royaume étrange et onirique. Et vous n'êtes pas seul.)~ ~(Vous êtes entrée dans un royaume étrange et onirique. Et vous n'êtes pas seule.)~
+@60019 = ~(Ce qui était jusqu'à présent un feu de camp est devenu une spirale de braises et de cendres tourbillonnantes. Une sensation accueillante en émane.)~
+@60020 = ~(Oserez-vous y pénétrer, Chaman ?)~ ~(Oserez-vous y pénétrer, Chamane ?)~
+@60021 = ~Je vois que vous avez répondu à mon appel. Soyez le bienvenu, chaman.~ ~Je vois que vous avez répondu à mon appel. Soyez la bienvenue, chamane.~
+@60022 = ~Oh ! Cet endroit est étrange. Attendez... Sommes-nous en train de rêver ? Et est-ce que c'est un cœur qui flotte ?~
+@60023 = ~Ah... J'ai l'impression que <CHARNAME> nous a encore entraînés dans une divagation sans intérêt. <CHARNAME>, je n'apprécie pas ce que je vois.~
+@60024 = ~Est-ce un rêve, <CHARNAME> ? Rêvons-nous ? Je concède que cela a vraiment l'apparence d'un rêve inhabituel.~
+@60025 = ~Hm ? Des vortex vibrants... ? Des visons vexatoires ? Vraiment, quelle sorte de voyage vaguement valable vivons-nous ?~
+@60026 = ~Je me réjouis que vous m'ayez entendu, que les braises de mes rêves vous aient atteint et vous aient mené ici. Ne soyez pas inquiet, je ne vous veux aucun mal.~~Je me réjouis que vous m'ayez entendu, que les braises de mes rêves vous aient atteinte et vous aient menée ici. Ne soyez pas inquiète, je ne vous veux aucun mal.~
+@60027 = ~Où suis-je ? Et qui êtes vous ?~
+@60028 = ~Tout cela est très bien, mais vos motivations ne me concernent pas. J'exige des réponses. Dans quel genre de lieu maléfique sommes-nous ?~
+@60029 = ~Ah ! vous revoilà. Êtes-vous revenu parce que vous avez changé d'avis ? Acceptez-vous de m'aider ?~ ~Ah ! vous revoilà. Êtes-vous revenue parce que vous avez changé d'avis ? Acceptez-vous de m'aider ?~
+@60030 = ~Je ne suis pas certain de comprendre ce que vous êtes ni ce que vous voulez de moi. Vos explications n'étaient pas vraiment claires.~ ~Je ne suis pas certaine de comprendre ce que vous êtes ni ce que vous voulez de moi. Vos explications n'étaient pas vraiment claires.~
+@60031 = ~Non. Je pense que je vais m'en aller tout de suite.~
+@60032 = ~J'imaginais que vous apprécieriez cet endroit. Vous l'avez vu. Ou plutôt, vous en avez vu l'incarnation terne. Celle qui a été utilisée par Kozah. Celle qui a été explorée par les archéologues, ces fouilleurs grossiers.~
+@60033 = ~Ce qu'ils savaient de ce lieu était vrai. Mais ce qu'ils ne savaient pas, c'est qu'avant qu'ils ne découvrent ce site, et même avant que Kozah et les siens ne prennent possession de la grotte, elle était déjà vivante. Et que moi, le Cœur-de-Rêve, occupais déjà les lieux depuis un certain temps déjà.~
+@60034 = ~J'aurais besoin de plus d'information que ça.Qu'êtes-vous ?~
+@60035 = ~Rien de ce que vous dites n'a le moindre sens. C'est ennuyeux et je tolère mal les énigmes.~
+@60036 = ~Je vais essayer encore d'expliquer. Je suis le Cœur-de-Rêve, une entité née des espoirs et du pouvoir de ce lieu ancien et nourrie par tous les hommes, femmes, animaux et créatures qui ont visité cette grotte. Je me suis nourri de leurs espoirs. Et alors que leur esprit, et leur cœur, et leur âme devenait lumineuse, infectée par de nouvelles idées, alors qu'ils peignaient sur les murs, mangeaient, dansaient, je devenais plus vivant et encore, et encore.~
+@60037 = ~Cet endroit possède un grand pouvoir. Alors que ce monde était encore bien moins avancé, on l'appelait la Grotte de l'or ensommeillé. Un domaine pour les esprits et la terre, où les gens tels que vous venaient, où ils méditaient, trouvaient des réponses, de l'inspiration, de l'espoir, du divertissement. Et, récemment, cet endroit a été corrompu.~
+@60038 = ~Vous parlez du chantier d'excavation ? Je ne pense pas que ces gens veuillent du mal à cet endroit.~
+@60039 = ~Je ne suis pas sûr de comprendre tout ce que vous dites, mais on dirait que quelque chose de grave s'est produit~ ~Je ne suis pas sûre de comprendre tout ce que vous dites, mais on dirait que quelque chose de grave s'est produit~
+@60040 = ~Venez-en au fait, créature.~
+@60041 = ~Ces gens-là ? Non. Ce qui a envahi le cœur de ce lieu est plus sombre.~
+@60042 = ~Une fois que les excavateurs sont partis et ont laissé l'entrée ouverte, des choses corrompues sont entrée dans la grotte. Même si elles n'ont jamais atteint le cœur réel du lieu, le vrai Or ensommeillé, elles ont pu souiller les salles découvertes par les archéologues.~
+@60043 = ~Ces créatures étaient des animaux, ou plutôt leurs carcasses, touchées par la non-vie. Une meute de loups morts-vivants a terni le feu de camp, les murs et le sol avec leur salive dégoûtante, leurs odeurs nauséabondes et leur présence.~
+@60044 = ~Des loups morts-vivants ? Ces pauvres créatures ont du être défaits par quelque autre mort-vivant. De tels monstre ne devraient pas vagabonder dans la nature. <CHARNAME>, nous devons mettre fin à leur souffrance.~
+@60045 = ~Je plains quiconque serait confronté à ce genre de meute.~
+@60046 = ~On ne peut laisser les choses ainsi, et c'est pourquoi j'ai besoin de vous.~
+@60047 = ~Pourquoi faire ? Il sont partis, n'est-ce pas ?~
+@60048 = ~Écoutez, je n'ai pas le de temps à consacrer à ce problème. Je vais m'en aller, il y a d'autres problèmes plus importants auxquels je dois consacrer toute mon attention.~
+@60049 = ~Ils ne sont pas ici, mais ils ne sont pas partis pour de bon.~
+@60050 = ~Je les sens tout proche. Et j'ai peur qu'ils reviennent. Cela ne doit pas arriver.~
+@60051 = ~Ces parois forment un foyer pour les rêves dorés. Pour les souvenirs. Comme je vous l'ai dit, des gens venaient ici pour trouver des réponses. Pour trouver la paix, pour faire leur deuil. D'autres venaient pour d'autres formes de rituels de fertilité. Ils s'étendaient sur l'autel et exploraient leurs chair et leurs plaisirs. Peu m'importait, Le plaisir peut être aussi puissant que la peur ou l'espoir.~
+@60052 = ~Non seulement ces créature ont amené les ténèbres avec elles, mais elles ont affaibli des siècles de mémoires, d'innombrables instants qui ont enrichi la vie de gens... et m'ont enrichi.~
+@60053 = ~...et ils peuvent toujours revenir. Maintenant, ils connaissent cet endroit. Ils ont dû ressentir sont pouvoir. Mon pouvoir, et celui de tous les souvenirs gravés dans ces murs. Nous ne pouvons courir le risque qu'ils reviennent ici et causent plus de dégâts.~
+@60054 = ~C'est pourquoi je veux que vous les trouviez et les détruisiez. C'est bien ce que vous faites, n'est-ce pas ? Je vois bien que de tels combats ne vous sont pas étrangers. Et vous êtes un chaman, comme ceux qui sont venus ici autrefois.~ ~C'est pourquoi je veux que vous les trouviez et les détruisiez. C'est bien ce que vous faites, n'est-ce pas ? Je vois bien que de tels combats ne vous sont pas étrangers. Et vous êtes une chamane, comme ceux qui sont venus ici autrefois.~
+@60055 = ~Je vais vous aider. Je ne voudrais pas que ces créatures souillent encore plus cet endroit.~
+@60056 = ~Je doute que vous puissiez réellement savoir ce que j'ai vu ou subi, mais soit, je suppose que je peux vous aider.~
+@60057 = ~Je n'ai pas de temps pour ça. Leurrez un autre pigeon, je ne veux pas être votre chien ou votre serviteur.~
+@60058 = ~Merveilleux ! Ils sont encore à proximité. Trouvez-les. La meute n'était pas nombreuse, ils étaient cinq... et tous méritent de trouver le repos.~
+@60059 = ~S'il vous plaît, revenez quand ils seront tous morts.~
+@60060 = ~C'est décevant... Revenez me voir si vous changez d'avis.~
+@60061 = ~Avez-vous trouvez les créatures ? Sont-elles mortes ?~
+@60062 = ~La meute ne vous posera plus de problèmes, et elles ne souillera plus cet endroit. Pour preuve, voyez ici la tête du chef de la meute.~
+@60063 = ~Pas encore. À plus tard.~
+@60064 = ~Alors ? Avez-vous changé d'avis ? Voulez-vous bien continuer de m'aider ?~
+@60065 = ~Dites-moi de quoi vous avez besoin. Peut-être que je pourrais vous aider, après tout.~
+@60066 = ~Non, pas vraiment.~
+@60067 = ~Ah ! Je suppose que l'on peut la voir comme un symbole de victoire. Merci, chaman, je vous félicite.~ ~Ah ! Je suppose que l'on peut la voir comme un symbole de victoire. Merci, chamane, je vous félicite.~
+@60068 = ~Je m'interrogeais sur votre puissance et vote ingéniosité. Vous ne ressemblez pas à ceux qui ne font que réfléchir sur l'univers, vous pouvez changer la réalité. Et vous pouvez faire de vous rêves une réalité. Même si certains de vos rêves peuvent être... plutôt sanglants.~
+@60069 = ~Quand vous avez pénétré mon petit monde doré, j'ai ressenti quelque chose de spécial en vous, et je vois que je ne m'étais pas trompé. Je ne parviens pas à mettre le doigt dessus, mais il y a quelque chose en vous qui vous rend très intéressant.~ ~Quand vous avez pénétré mon petit monde doré, j'ai ressenti quelque chose de spécial en vous, et je vois que je ne m'étais pas trompé. Je ne parviens pas à mettre le doigt dessus, mais il y a quelque chose en vous qui vous rend très intéressante.~
+@60070 = ~Merci... je suppose.~
+@60071 = ~Bien sûr que je suis spécial. Je suis né avec pour talent la force spirituelle. Et pas seulement spirituelle.~ ~Bien sûr que je suis spécial. Je suis née avec pour talent la force spirituelle. Et pas seulement spirituelle.~
+@60072 = ~Tout le plaisir est pour moi.~
+@60073 = ~Et, sans aucun doute, vous n'êtes pas modeste. Mais ça ne me dérange pas.~
