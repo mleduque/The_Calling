@@ -4,7 +4,10 @@
 @3 = ~Ce composant n'est pas encore disponible.~
 @4 = ~DLC Merger est necessaire avant que les mods puissent etre installes sur ce jeu. Consultez le fichier readme pour plus d'informations et un lien pour telecharger DLC Merger.~
 @5 = ~Ce composant n'est pas encore disponible dans votre langue.~
-
+@6 = ~Aucun Calling (appel) installe~
+@7 = ~Cecomposant necessite la versionEE (Enhanced Edition)~
+@8 = ~Quetes de Calling (appels)~
+@9 = ~Contenu additionel~
 @100 = ~The Calling (L'appel)~
 @101 = ~Voulez-vous acceder aux composants de triche ?
 
@@ -19,3 +22,11 @@ c) Autoriser plusieurs appels, sans restriction de classe.~
 @30000 = ~Culte de Movanic~
 
 @40000 = ~Pack d'objets exotiques~
+
+@50000 = ~Rendre toutes les quetes de Calling accessibles a toutes les classes~
+
+@60000 = ~The Calling (L'Appel) : Chaman - Le Rêve~
+@60001 = ~Utiliser le texte normale~
+@60002 = ~Utiliser des couleurs dans les dialogues~
+
+@70000 = ~The Calling (L'Appel) : Moine - Restaurer Saiai no Hito~
