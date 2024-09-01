@@ -519,3 +519,39 @@ PARAMÈTRES :
 Poids : 0~
 @60166 = ~Vous remplissez le récipient en poterie avec de l'eau de la cascade.~
 @60167 = ~Vous trouvez un endroit de terre meuble et y plantez la graine. Vous l'arrosez avec le récipient en poterie.~
+@60168 = ~Vraiment, vous êtes doué pour faire fonctionner cet endroit, chaman. Maintenant que ces loups répugnants sont morts et que la grotte a été purifiée de la corruption, nous devrions fair en sorte qu'aucune autre créature de leur genre ne vienne troubler notre magnifique sanctuaire. Et pour ça, je voudrais que vous me créiez un gardien.~ ~Vraiment, vous êtes douée pour faire fonctionner cet endroit, chamane. Maintenant que ces loups répugnants sont morts et que la grotte a été purifiée de la corruption, nous devrions fair en sorte qu'aucune autre créature de leur genre ne vienne troubler notre magnifique sanctuaire. Et pour ça, je voudrais que vous me créiez un gardien.~
+@60169 = ~Un gardien ?~
+@60170 = ~Et bien évidemment il y a encore d'autre travail. C'est comme si vous vouliez me forcer à rester ici.~
+@60171 = ~J'ai assez travaillé pour vous. Non, tout ceci prend trop de mon précieux temps.~
+@60172 = ~Oui, un gardien.~
+@60173 = ~Mon objectif est surtout de protéger cet endroit et le garder en parfaite condition, chaman. Il le mérite. Nous le méritons.~ ~Mon objectif est surtout de protéger cet endroit et le garder en parfaite condition, chamane. Il le mérite. Nous le méritons.~
+@60174 = ~Tenez, je vous donne une graine spéciale. Je veux que vous la plantiez devant l'entrée, là où vous avez rencontré ceux qui faisaient les fouilles. Vous y trouverez un endroit parfait entre l'entrée et l'ancienne entrée... qui n'est plus vraiment praticable.~
+@60175 = ~Ensuite, arrosez-la. Il faudra utiliser l'eau la plus fraîche possible. Il y avait un récipient quelque part... Ah, le voilà ! Pas loin d'ici, il y a un endroit où vous trouverez de l'eau convenable. Il y a une cascade, placez ce récipient sous a chute d'eau et remplissez-le. Ensuite, versez l'eau sur la graine et laissez le miracle s'accomplir !~
+@60176 = ~Vous avez rempli les autres tâche de façon si brillante. S'il vous plaît, ne vous arrêtez pas en si bon chemin. Nous touchons au but.~
+@60177 = ~Nous avons presque terminé.  Je vous en prie, réfléchissez--y encore. S'il le faut, allez prendre un bol d'air frais avant de revenir en discuter. Ne mettons pas fin tout à suite à notre collaboration, chaman, ce serait vraiment dommage.~ ~Nous avons presque terminé.  Je vous en prie, réfléchissez--y encore. S'il le faut, allez prendre un bol d'air frais avant de revenir en discuter. Ne mettons pas fin tout à suite à notre collaboration, chamane, ce serait vraiment dommage.~
+@60178 = ~Je peux déjà sentir le gardien prendre racine dans le sol meuble. Merci, chaman.~ ~Je peux déjà sentir le gardien prendre racine dans le sol meuble. Merci, chamane.~
+@60179 = ~Vous voilà de retour , chaman. Avez-vous décidé de me créer un gardien ?~ ~Vous voilà de retour , chamane. Avez-vous décidé de me créer un gardien ?~
+@60180 = ~Non, je n'ai pas changé d'avis.~
+@60181 = ~Je suppose que je peux vous écouter.~
+@60182 = ~Vous voilà revenu, chaman. Avez-vous trouvé la cascade ?~ ~Vous voilà revenu, chaman. Avez-vous trouvé la cascade ?~
+@60183 = ~Pas encore, je reviendrai quand je l'aurai trouvée..~
+@60184 = ~Je la cherche mais pour le moment je ne la trouve pas.~
+@60185 = ~J'attendrai votre retour.~
+@60186 = ~Cherchez vers le sud-est et vous la trouverez. Elle est tout près d'une dryade et de son arbres.~
+@60187 = ~Récupérez simplement l'eau depuis le haut de la cascade.~
+@60188 = ~Cœur-de-rêve
+
+La meute de loups a été vaincue mais, tel une marionnette contrôlée par ses fils, Cœur-de-rêve veut encore me faire danser. Cœur-de-rêve devra attendre.~~Cœur-de-rêve
+
+La meute de loups a été vaincue mais, telle une marionnette contrôlée par ses fils, Cœur-de-rêve veut encore me faire danser. Cœur-de-rêve devra attendre.~
+@60189 = ~Cœur-de-rêve
+
+Maintenant que la meute de loups est vaincue, Cœur-de-rêve am'a demandé de créer un gardien à l'extérieur de la grotte. J'ai une graine maid je dois remplir le récipient en poterie avec l'eau d'une cascade qui se trouve au sud-est.~
+@60190 = ~Cœur-de-rêve
+
+J'ai trouvé lé cascade et j'i rempli le récipient en poterie avec de l'eau claire. Je dois retourner au site archéologique.~
+@60191 = ~Cœur-de-rêve
+
+J'ai planté la graine et l'ai arrosée. Je dois retourner voir Cœur-de-rêve.~
+@60192 = ~Gardien de Cœur-de-rêve~
+@60193 = ~Il y a de l'eau pure au sommet de la chute d'eau. Vous devriez aller y remplir le récipient en poterie.~
