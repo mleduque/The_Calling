@@ -391,6 +391,119 @@ PARAMÈTRES :
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
+@10000 = ~Extension de la Forteresse Gnoll~
+@10001 = ~Argh, je vous ai vu venir... Maintenant je vais vous voir tomber ! Arg ! Auu !~
+@10002 = ~Gnoll-gringalet~
+@10003 = ~Chaman Sirkhr~
+@10004 = ~Gnoll desséché~
+@10005 = ~Chef Hvalanya~
+@10006 = ~Guetteur Purkht~
+@10007 = ~Capitaine Stilind~
+@10008 = ~Soldat amnien~
+@10009 = ~Éclaireur amnien Manlytoe~
+@10010 = ~Kalvranalan~
+@10011 = ~Bâton des pensées corrisives +1~
+@10012 = ~Ceinture des présages~
+@10013 = ~Cette ceinture inhabituelle a été fabriquée pour un assassin du nom de Mudbone. Il se spécialisait dans l'assassinat de prêtes, plus particulièrement de ceux qui étaient vus comme des obstacles par les gens sans considérations pour les gens de foi. La ceinture semble de bonne facture. Elle a probablement été confectionnée avec des matériaux de grande qualité.
+
+PARAMÈTRES :
+
+Dégâts contre les clercs : +2
+Résistance à la magie : +2 %
+
+Poids : 2~
+@10015 = ~Cotte de mailles du respect primitif +1~
+@10016 = ~Cette cotte de mailles a quelque chose de brut et primitif, mais vous pouvez percevoir une énergie magique en provenance de ses mailles. Elle devrait pouvoir protéger son porteur au combat et la magie pourrait être utile dans la nature. Par contre, l'armure émet une odeur étrange qui rappelle celle de la fourrure d'un chien.
+
+PARAMÈTRES :
+
+Capacité quand elle est portée : Classe d'armure contre les animaux +2
+Capacité de combat : Charisme -1
+Classe d'Armure : 4
+Poids : 20
+Force requise : 8
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@10017 = ~Nook~
+@10018 = ~Manteau de forme stable~
+@10019 = ~Ce manteau est fait de tissu enchanté qui pourrait s'avérer utile dans les combats contre des ennemis semblables au basilic. Il semble capable de protéger son porteur contre leur regard mortel.
+
+PARAMÈTRES :
+
+Capacités spéciales : jets de sauvegarde la métamorphose +4~
+@10020 = ~Porche voûté~
+@10021 = ~Amulette de sombre malchance~
+@10022 = ~Cette amulette a été maudite par quelque magie ténébreuse. Quiconque la porte verra sa chance s'amoindrir et, sur la route ou à l'aventure, la chance peut être la différence entre la vie et la mort.
+
+PARAMÈTRES :
+
+Chance : réduite de 1
+Spécial : ne peut être retiré qu'à l'aide d'un sort de délivrance de la malédiction~
+@10023 = ~Temple de la Bête de la boucherie~
+@10024 = ~Flèche d'esprit brisée +1~
+@10025 = ~Cette flèche a l'air brisée mais même si vous n'en tenez qu'un morceau, l'autre moitié lévite juste à côté du reste. Même si elle n'est pas très puissante, elle peut être utile au moment où l'aventurier se voit à court de flèches ordinaires.
+
+PARAMÈTRES :
+
+Revient dans la main du lanceur
+
+Spécial : frappe comme une arme +1
+Dégâts : 1 (projectile)
+Arme à distance : Arc
+Poids : 0
+Non utilisable par :
+ Clerc
+ Druide
+ Mage~
+@10026 = ~Intérieur de la Forteresse des gnolls~
+/*
+The staff of Corrosive Thoughts uses @10011 as its name. on EE, this staff uses @10028 as its descript 
+and boosts acid damage +10%. Since this can't be done on the original engine, there it has the ability 
+to cast Melf's Acid Arrow once per day and uses @10027
+*/
+@10027 = ~Ce bâton était auparavant utilisé par un chaman gnoll de la forteresse des gnolls de la Côte des épées.
+
+Il est difficile de dire qui l'a créé. Il semble assez rustique et,  même s'il n'est pas des plus puissants, il y a certainement des situations dans lesquelles il sera utile.
+
+PARAMÈTRES :
+
+Capacités speciales  Peut lancer Flèche acide de Melf une foispar jour
+TAC0 : +1
+Dégâts : 1d6+1 (contondants)
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : arme à deux mains
+Nécessite : 5 en Force~
+@10028 = ~~ // see ee.tra
+@10029 = ~Manteau du guerrier régent~
+@10030 = ~This purple cloak has quite a majestic aura and it is believed to have been created for a king, but... the legend does not specify which one. It is meant not only to protect the one that uses it, but also make those around them believe their every word and worship them.
+
+You were given this cloak as a token of trust and gratitude for securing the Gnoll Stronghold.
+
+PARAMÈTRES :
+
+Classe d'Armure : bonus de +2
+Jets de sauvegarde : bonus de +2
+Charisme :  passe à 19 (guerriers seulement)
+Poids :  3~
+@10031 = ~Livre de rituels des gnolls~
+@10032 = ~Ce livre décrit des rituels, certains pour contrôler l'énergie naturelle, d'autres pour satisfaire Yeenoghu, la Bête de la boucherie. L'un d'entre eux, particulièrement morbide, décrit la crémation de crânes humains.~
+@10033 = ~Matériel médical~
+@10034 = ~Ce sac est rempli de matériel médical.~
+@10035 = ~Viande~
+@10036 = ~Chair enflammée de Yeenoghu~
+@10037 = ~Cette viande en flammes est en réalité la chair brûlante de Yeenoghu. Ceux qui décident de la consommer pourront obtenir la bénédiction du Prince des gnolls, mais il y aura uen contrepartie.
+
+PARAMÈTRES :
+
+Spécial : si consommé, réduit le Charisme de 1 point mais accorde un bonus de 2 points de dégâts contre les adversaires d'alignement bon. Le bonus est permanent.
+
+Poids : 2~
+@10038 = ~Clef primitive~
+@10039 = ~Vous avez trouvé cette clé primitive dans la forteresse des gnolls. Elle devrait ouvrir quelque chose à cet endroit.~
+
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
