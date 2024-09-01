@@ -555,3 +555,80 @@ J'ai trouvé lé cascade et j'i rempli le récipient en poterie avec de l'eau cl
 J'ai planté la graine et l'ai arrosée. Je dois retourner voir Cœur-de-rêve.~
 @60192 = ~Gardien de Cœur-de-rêve~
 @60193 = ~Il y a de l'eau pure au sommet de la chute d'eau. Vous devriez aller y remplir le récipient en poterie.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Monk - Restoring Saiai no Hito                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@70006 = ~Cette amulette serait normalement cachée dans la garde d'un katana, en-dessous de la couverture en cuir. Cette amulette-ci semble vraiment ancienne.
+
+PARAMÈTRE :
+
+Poids : 0~
+
+@70008 = ~Ceci ressemble à la poignée d'un katana brisé. Il est possible qu'elle soit un morceau de Saiai no Hito, une épée originaire de Kozakura de grande renommée, fabriquée par Ne Kurosuna, avec un autre moine, Shiroume Yakuchi, à l'esprit.
+
+Peut-être qu'il peut être réparé... une fois la lame retrouvée.
+
+PARAMÈTRE :
+
+Poids : 1~
+
+@70010 = ~Ceci ressemble à la lame d'un katana brisé.Il est possible qu'elle soit un morceau de Saiai no Hito, une épée originaire de Kozakura de grande renommée, fabriquée par Ne Kurosuna, avec un autre moine, Shiroume Yakuchi, à l'esprit.
+
+Peut-être qu'il peut être réparé... une fois la poignée retrouvée.
+
+PARAMÈTRE :
+
+Poids : 2~
+
+@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère esaaiede s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+– TAC0 au corps à corps : +2
+– Protection contre la rage/furie
+
+Poids : 1~
+
+@70014 = ~Cette épée est nommée Saiai no Hito. Elle é été créée par Ne Kurosuna, un ancien membre de Monastère de Saku. C'était un des membres d'origine du monastères et s'y est entraîné pendant des années. Il y était connu pour son esprit affûté et ses techniques pleines de grâce. Il était aussi fort, probablement l'un des moines les plus forts du monastère de Saku lorsqu'il y vivait encore.
+
+Lors de sa dixième année de travail, il s'est mis à développer des sentiments romantiques envers Shiroume Yakuchi, un autre moine du même monastère. Alors qu'il était considéré comme un maître de la discipline, du corps et de la stratégie, il n'était pas prêt à ça. Ne avait perdu son ancien bien-aimé, tué par des bandits  Il n'aurait pas imaginé ressentir à nouveau de tels sentiments, et sûrement pas pour quelqu'un du même monastère. Il en est résulté un sentiment de malaise, déchiré entre son ancien amour et celui qu'il venait de trouver. Il n'était pas sûr s'il devait faire part à Shiroume de ses sentiments. Que faire s'il ne pouvait répondre à ses sentiments ? Leur amitié s'en verrait-elle changée ? Serait-ce une trahison de son ancien bien-aimé ?
+
+Au bout de quelques mois, il décida que pour comprendre ses sentiments et faire un choix, il devait quitter le monastère, réfléchir et prier pour une réponse et l'illumination dans la solitude. Comme il aimait méditer au travers de son ouvrage, il se mis à créer des épées. Finalement, ceci mena à la création de cette épée, Saiai no Hito. Elle était pensée comme un cadeau pour Shiroume, Ne ayant décidé que la paix ne pouvait ête trouvée que dans l'honnêteté. Il espérait que, peut-être, Maître Yakuchi comprendrait, lui laisserait une chance, ou au moins qu'ils resteraient amis. Ne avait décidé que ce serait une trahison de son ancien histoire d'amour. Il la respectait toujours et la gardait en mémoire.
+
+Saiai no Hito devait être un symbole d'amour, de camaraderie et d'éveil spirituel. Mais Ne Kurosuna fut tué lors de son voyage de retour vers le monastère. La lame fut perdue et il est difficile de dire comment les fragments de l'épée sont parvenus sur la Côte des Épées. mais c'est ici que l'épée fut reforgée et ramenée à son ancienne gloire.
+
+La magie contenue dans cette épée devait aider son porteur et lui apporter l'avantage au combat. Si les histoires disent vrai, elle protégeait aussi le cœur du moine contre ce qui pouvait le briser.
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+– Protection contre la pétrification
+– Résistance aux dégâts contondants +10 % (moines seulement)
+
+Capacité de combat :
+– Enchantement contre les créatures d'alignement mauvais : +2
+
+TAC0: +1
+Dégâts : 1d10+1 (tranchant) +1 Feu
+Facteur de vitesse : 3
+Type de compétence : katana
+Type : arme à une main
+Nécessite : 6 en Force
+
+Poids : 5~
+
+@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la lague de Kozakura savent que « Inoshishi » signifie « sanglier ».
+
+PARAMÈTRE :
+
+Capacités d'équipement :
+– Classe d'armure : +1 contre les armes contondantes.
+
+Poids : 0~
