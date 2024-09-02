@@ -503,6 +503,34 @@ Spécial : si consommé, réduit le Charisme de 1 point mais accorde un bonus d
 Poids : 2~
 @10038 = ~Clef primitive~
 @10039 = ~Vous avez trouvé cette clé primitive dans la forteresse des gnolls. Elle devrait ouvrir quelque chose à cet endroit.~
+@10040 = ~On m'a donné pour consigne de vous dire que « l'espoir parcours les rues d'Athkatla ».~
+@10041 = ~Ah, des aventuriers intrépides sont à nos portes ! Heaum veille sur tous les Royaumes et ses serviteurs sont à votre service. Le Justicier se tient prêt à soulager vos maux et, ainsi, à détourner le regard inébranlable du Grand-Guide... en échange d'un don raisonnable, s'entend. Juste pour marquer notre bonne volonté mutuelle, vous comprenez.~
+@10042 = ~Quel genre de services fournissez-vous ?~
+@10043 = ~Je n'ai besoin de rien de ce que vous pouvez m'offir pour le moment. Au revoir.~
+@10044 = ~Hmm ? Je comprends pourquoi vous me dites cela. Vous êtes venu chercher les fournitures médicales que l'on m'a demandé de préparer pour les cas d'urgence, c'est bien ça ?~ ~Hmm ? Je comprends pourquoi vous me dites cela. Vous êtes venue chercher les fournitures médicales que l'on m'a demandé de préparer pour les cas d'urgence, c'est bien ça ?~
+@10045 = ~Oui.~
+@10046 = ~Alors qu'est ce que vous en dites ?~
+@10047 = ~Mon devoir n'est pas de vous mettre en doute mais de vous donner ce qui était prévu. Prenez ce coffre et remettez-le à qui en a besoin.~
+@10048 = ~Sachez que Heaum veille sur vous.~
+@10049 = ~Arr ! Nous... avons des invités... Grr ! Stupides choses ! Vous, pas savoir ? Pas déranger Chef Hvalanya !~
+@10050 = ~Non, je ne crois pas que quelqu'un ait évoqué la question jusqu'ici. Mais ils étaient tous trop occupés à être morts.~
+@10051 = ~Je suis navré, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~ ~Je suis navrée, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~
+@10052 = ~Hahahaha ! Vous êtes une drôle de petite chose ! Moi et mes garçons,on va vous montrer. On n'aboie pasvers Chef Hvalanya en espérant repartir entier ! Auuu !~
+@10053 = ~Je vous salue, ami.~ ~Je vous salue, amie.~
+@10054 = ~Vous ! Argh, votre espèce ne laisse jamais les gnolls tranquilles... ! Les vieux méchants, détestés par les gnolls forts, même par le chef.~
+@10055 = ~Qui êtes vous ?~
+@10056 = ~Oh oh ! En voilà une collection ! Impressionnant pour quelqu'un de votre espèce.~
+@10057 = ~Vous posez la question maintenant ? Après vous tuer vieux ou blesser gnolls ? Argh !~
+@10058 = ~C'est à moi... !~
+@10059 = ~Les vieux gnolls ont droit au respect et nous... pris cet endroit. Et cette salle, où vieux prêtre vivait. Lui mort. Endroit à nous.~
+@10060 = ~Beaucoup autes gnolls traitent nous vieux gnolls et faibles gnolls comme chiens malades ! Moquent ! Pissent dessus ! Mais même si nous vivent sous leur foyer, nous connaître notre valeur... Notre force !~
+@10061 = ~Nous louer Yeenoghu ! Et nous tuer. Et nous manger. Même si devoir manger les nôtres... Mais vous...~
+@10062 = ~Vous sûrement tellement plus savoureux... Nous festoyons aujourd'hui~
+@10063 = ~Soyez prudents, aventuriers. Cet endroit est dangereux. J'ai... j'ai perdu la plupart de mes gens, tués par les monstres qui occupent la forteresse près d'ici. Vous avez l'être d'un bon combattant, <PRO_RACE>, mais ces créatures sont féroces !~ ~Soyez prudents, aventuriers. Cet endroit est dangereux. J'ai... j'ai perdu la plupart de mes gens à cause des monstres qui occupent la forteresse près d'ici. Vous avez l'être d'une bonne combattante, <PRO_RACE>, mais ces créatures sont féroces !~
+@10064 = ~Qu'est-il arrivé à ces gens dont vous parlez ? Sont-ils morts ?~
+@10065 = ~S'ils ont été tués par des créatures aussi frustres, ils devaient être faibles.~
+@10066 = ~C'étaient de braves gens, hommes et femmes... Nous sommes venu pour prendre cet endroit. Il devrait être entre les mains de l'armée d'Amn, not celles de ces créatures. Nous avons été envi=oyés d'Athkatla pour reconnaître les lieux et déterminer si un petit groupe seraiten mesure d'éliminer discrètement les gnolls et de faire de cet endroit un centre d'opérations.~
+@10067 = ~Nous sommes tombés dans une embuscade.  Ils nous ont fait tomber des rochers dessus et d'autres ont été victimes de leurs hallebardes ou de leurs lames.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
