@@ -192,7 +192,7 @@ PARAMÈTRES :
 Poids : 1~
 // here for the em dash
 @10103 = ~Il y a cette ville minière à côté d'ici, Nashkel. Là bas, il y a un temple, et j'aimerais que vous y alliez et que vous me rameniez du matériel médical. Le prêtre a dû être informé que nous pourrions avoir besoin d'aide, si je ne me trompe pas. Dommage que nous ne soyons pas allés lui parler avant que je perde mes camarades. Peut-être que si j'avais eu ces... Non, ça n'aurait pas permis d'éviter cette tragédie. Désolé, je ne peux pas m'empêcher de penser à eux.~
-@10188 = ~LComme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. Sa hampe est gravée d'une série de runes qui permettent au porteur de renforcer ses coups avec, au choix, des dégâts d'électricité, de froid ou de feu. De temps en temps, elle délivrera une salve des trois éléments sur un seul coup.
+@10188 = ~Comme toutes ses pareilles, cette hallebarde se compose d'une hache en forme de couperet montée sur un bâton mesurant en moyenne 1,80 m de long. Sa hampe est gravée d'une série de runes qui permettent au porteur de renforcer ses coups avec, au choix, des dégâts d'électricité, de froid ou de feu. De temps en temps, elle délivrera une salve des trois éléments sur un seul coup.
 
 PARAMÈTRES :
 
