@@ -565,7 +565,7 @@ Poids : 2~
 @10099 = ~Retrouvons-nous plus loin dans la forteresse. Là-bas, nous pourrons poursuivre notre tâche. Enfin,si vous êtes intéressé. Mais je peux vous assurer que vous ne perdrez pas votre temps, mon ami guerrier~ ~Retrouvons-nous plus loin dans la forteresse. Là-bas, nous pourrons poursuivre notre tâche. Enfin,si vous êtes intéressée  Mais je peux vous assurer que vous ne perdrez pas votre temps, mon amie guerrière~
 @10100 = ~Tout me semble convenable... J'ai pu envoyer une signal depuis la tour, comme j'avais convenu avec les éclaireurs au sud d'ici. Je pensequ'ils vont m'envoyer quelques hommes en renfort, mais je voudrait pas que les choses se gâtent.~
 @10101 = ~Et je présume que vous souhaitez que je fasse en sorte que les choses ne se gâtent pas ? Dites-moi comment je peux faire.~
-@10102 = ~Désolé, mais je n'ai pas le temps de vous aider.~
+@10102 = ~Désolé, mais je n'ai pas le temps de vous aider.~ ~Désolée, mais je n'ai pas le temps de vous aider.~
 @10103 = ~Il y a cette ville minière à côté d'ici, Nashkel. Là bas, il y a un temple, et j'aimerais que vous y alliez et que vous me rameniez du matériel médical. Le prêtre a dû être informé que nous pourrions avoir besoin d'aide, si je ne me trompe pas. Dommage que nous ne soyons pas allés lui parler avant que je perde mes camarades. Peut-être que si j'avais eu ces... Non, ça n'aurait pas permis d'éviter cette tragédie. Désolé, je ne peux pas m'empêcher de penser à eux.~
 @10104 = ~Et c'est le moment où jamais d'avoir ces fournitures ous la main. La forteresse a été prise, mais on ne sait jamais. Il y peut-être encore beaucoup plus de ces créatures qui rôdent dans ces montagnes. Alors en attendant que les renforts arrivent, vous pourriez peut-être aller à Nashkel et demander le matériel au prêtre.~
 @10105 = ~Et le prêtre me croira si je lui dit que vous m'envoyez ?~
@@ -597,6 +597,33 @@ Poids : 2~
 @10131 = ~La forteresse est sécurisée. J'ai reçu l'aide de ce brave guerrier.~ ~La forteresse est sécurisée. J'ai reçu l'aide de cette brave guerrière.~
 @10132 = ~Eh bien... ravi d'avoir pu aider.~ ~Eh bien... ravie d'avoir pu aider.~
 @10133 = ~Je l'ai fait pour la récompense, que ce soit clair.~
+@10134 = ~Vous devez être plutôt robuste, alors. Bon travail.~
+@10135 = ~Je vois. C'est... bon àsavoir.~
+@10136 = ~Ça n'a pas du êtr efacile, avec toutes ces créatures en face.~
+@10137 = ~Effectivement... Au cas où la situation s'aggraverait, notre ami ici présent est allé chercher les fournitures médicales. Celles préparées à Nashkel.~ ~Effectivement... Au cas où la situation s'aggraverait, notre amie ici présente est allée chercher les fournitures médicales. Celles préparées à Nashkel.~
+@10138 = ~Bonne idée. Espérons seulement que nous n'en aurons pas besoin.~
+@10139 = ~Tu as raison.~
+@10140 = ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quandvous êtes prêt.~ ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quandvous êtes prête.~
+@10141 = ~Vous nous avez été d'une aide inestimable, ami, mais je voudrais vous demander encore un service.~ ~Vous nous avez été d'une aide inestimable, amie, mais je voudrais vous demander encore un service.~
+@10142 = ~Que voulez-vous ?~
+@10143 = ~Désolé, mais je n'ai pas de temps pour ça. Je derais mieux de m'en aller~~Désolée, mais je n'ai pas de temps pour ça. Je derais mieux de m'en aller~
+@10144 = ~Vous voyez, pendant que vous êtiez parti pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~ ~Vous voyez, pendant que vous êtiez partie pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~
+@10145 = ~Je ne sais pas si, parmi ces hommes et femmes, il y en a qui ont de l'expériencecontr eles fantômes, alors j'espérais que vous pourriez le vaincre pour nous. je vous promets que c'est vraiment la dernière que je vous demanderai. Et quand ce sera fait, je vous donnerai quelque chose.~
+@10146 = ~Vous nous avez tellement aidés, ça me semblerait juste.~
+@10147 = ~Donc, un fantôme vous disiez...~
+@10148 = ~Non, je vous ai assez aidés, il faut que je parte. Au revoir.~
+@10149 = ~Oui. Aidez-nous, s'il vous plaît. Je promets que ce que je vous offrirai vaut le coup.~
+@10150 = ~Alors, ami, avez-vous pu tuer le fantôme dont je vous ai parlé ?~ ~Alors, amie, avez-vous pu tuer le fantôme dont je vous ai parlé ?~
+@10151 = ~Oui. Il ne vous ennuiera plus.~
+@10152 = ~Non, pas encore. Au revoir.~
+@10153 = ~Par les dieux ! Vous êtes un des plus puissants guerriers que j'ai pu connaître.~ ~Par les dieux ! Vous êtes une des plus puissantes guerrières que j'ai pu connaître.~
+@10154 = ~Grâce à vous, cette mission n'a pas été un échec. Nous pourrons utiliser cette forteresse pour rendre les voyages entre Nashkel et Athkatla plus sûrs.~
+@10155 = ~Comme promis, j'ai une récompense pour vous. Un manteau spécial qui vous protégera. j'espère qu'il vous sera utile. En supplément, voici un peu de monnaie. Six cent pièces d'or. Je suis conscient que c'est peu mais... c'est tout ce que je peux offrir.~
+@10156 = ~Merci pour tout ce que vous avez fait pour nous. Je peux vous assurer que votre nom sera un symbole du guerrier sans peur pour nous tous ici.~ ~Merci pour tout ce que vous avez fait pour nous. Je peux vous assurer que votre nom sera un symbole de la guerrière sans peur pour nous tous ici.~
+@10157 = ~Je suis toujours heureux de vous revoir, mon ami.~ ~Je suis toujours heureux de vous revoir, mon amie.~
+@10158 = ~Je suppose que je devrais nettoyer mon épée plus tard.~
+@10159 = ~Par les dieux, j'espère que nous ne mourrons pas ici.~
+@10160 = ~Je vais faire quelques pompes avant d'aller me coucher.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
