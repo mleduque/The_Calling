@@ -396,7 +396,7 @@ PARAMÈTRES :
 @10002 = ~Gnoll-gringalet~
 @10003 = ~Chaman Sirkhr~
 @10004 = ~Gnoll desséché~
-@10005 = ~Chef Hvalanya~
+@10005 = ~Cheffe Hvalanya~
 @10006 = ~Guetteur Purkht~
 @10007 = ~Capitaine Stilind~
 @10008 = ~Soldat amnien~
@@ -512,10 +512,10 @@ Poids : 2~
 @10046 = ~Alors qu'est ce que vous en dites ?~
 @10047 = ~Mon devoir n'est pas de vous mettre en doute mais de vous donner ce qui était prévu. Prenez ce coffre et remettez-le à qui en a besoin.~
 @10048 = ~Sachez que Heaum veille sur vous.~
-@10049 = ~Arr ! Nous... avons des invités... Grr ! Stupides choses ! Vous, pas savoir ? Pas déranger Chef Hvalanya !~
+@10049 = ~Arr ! Nous... avons des invités... Grr ! Stupides choses ! Vous, pas savoir ? Pas déranger Cheffe Hvalanya !~
 @10050 = ~Non, je ne crois pas que quelqu'un ait évoqué la question jusqu'ici. Mais ils étaient tous trop occupés à être morts.~
 @10051 = ~Je suis navré, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~ ~Je suis navrée, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~
-@10052 = ~Hahahaha ! Vous êtes une drôle de petite chose ! Moi et mes garçons,on va vous montrer. On n'aboie pasvers Chef Hvalanya en espérant repartir entier ! Auuu !~
+@10052 = ~Hahahaha ! Vous êtes une drôle de petite chose ! Moi et mes garçons,on va vous montrer. On n'aboie pas après Cheffe Hvalanya en espérant repartir entier ! Auuu !~
 @10053 = ~Je vous salue, ami.~ ~Je vous salue, amie.~
 @10054 = ~Vous ! Argh, votre espèce ne laisse jamais les gnolls tranquilles... ! Les vieux méchants, détestés par les gnolls forts, même par le chef.~
 @10055 = ~Qui êtes vous ?~
@@ -539,7 +539,7 @@ Poids : 2~
 @10073 = ~Oh... ! Je vous plains. Je ne sais pas, vousdevriez peut-être rentrer chez vous et quelque soi le dieu que vous serviez, le remercier pour avoir épargné votre misérable vie. Excusez-moi, j'ai d'autres choses à faire.~
 @10074 = ~Vous souhaitez m'aider ? Ce... serait vraiment formidable.~
 @10075 = ~J'ai découvert qu'il y avait deux groupes ici. Les gnolls les plus faibles, les plus âgés et ceux qui ont été blessés et ont perdu de leur utilité. Ils sont menés pas un chaman.~
-@10076 = ~Mais d'un autre côté, il y a un autre groupe avec les gnolls les plus jeunes et les plus forts. Ils sont dirigés par leur chef, un gnoll femelle, qu'ils nomment « Chef Hvalanya ». Elle est lputôt cruelle, apparemment. Du moins c'est ce qui ressort de la façon dont ils parlent d'elle.~
+@10076 = ~Mais d'un autre côté, il y a un autre groupe avec les gnolls les plus jeunes et les plus forts. Ils sont dirigés par leur chef, un gnoll femelle, qu'ils nomment « Cheffe Hvalanya ». Elle est plutôt cruelle, apparemment. Du moins c'est ce qui ressort de la façon dont ils parlent d'elle.~
 @10077 = ~On doit mettre les deux hors d'état de nuire si l'on veut prendre cette forteresse. Mais il y a aussi un troisième individu à neutraliser...~
 @10078 = ~Un troisième ?~
 @10079 = ~Quel est ce troisième ? Parlez !~
@@ -624,6 +624,58 @@ Poids : 2~
 @10158 = ~Je suppose que je devrais nettoyer mon épée plus tard.~
 @10159 = ~Par les dieux, j'espère que nous ne mourrons pas ici.~
 @10160 = ~Je vais faire quelques pompes avant d'aller me coucher.~
+@10161 = ~Le chemin pour venir ici était dangereux, mais je pense vraiment que ce qu'on fait ici est positif.~
+@10162 = ~Intérieur de la Forteresse des gnolls - Niveau 2~
+@10163 = ~Forteresse des gnolls - Pièce angoissante~
+@10164 = ~Forteresse des gnolls - Entrepôt ouest~
+@10165 = ~Forteresse des gnolls - Entrepôt est~
+@10166 = ~Eh bien, l'endroit n'est pas dans la meileure condition, mais je suis sûr qu'en y mettant les moyens ça peut s'arranger. Les murs peuvent être réparés. Ça demandera pas mal d'or mais... ce n'est pas hors de portée. J'ai amené un peu de marchandises avec moi, si jamais vous aviez besoin d'armes ou de potions.~
+@10167 = ~Content de vous revoir.~
+@10168 = ~S'il vous manque quelqeu chose, je peux vous montrer ce que j'ai avec moi.~
+@10169 = ~Montre-moi votre marchandise.~
+@10170 = ~Je pense que j'ai tout ce qu'il me faut. Au revoir.~
+@10171 = ~Portez-vous bien.~
+@10172 = ~Quartier-maître~
+@10173 = ~Prendre la forteresse des gnolls~
+@10174 = ~Prendre la forteresse des gnolls
+
+J'ai rencontré le captiaine Stilind à l'entrée de la forteresse des gnolls. Il vuolait que je l'aide à faire quelque chose d'inepte et j'ai refusé.~
+@10175 = ~Prendre la forteresse des gnolls
+
+J'ai rencontré le captiaine Stilind à l'entrée de la forteresse des gnolls. C'est le dernier survivant d'une escouade envoyée d'Athkatla pour prendre la forteresse aux gnolls. Il a demandé que je l'aide en tuant leur meneuse, la cheffe Hvalanya, ainsi qu'un Chaman dans un groupe dissident. Il faut aussi éliminer un gnoll qui fait le guet dans une des tours.~
+@10176 = ~Prendre la forteresse des gnolls
+
+Nous avons vaincu la meneuse des gnolls, la Cheffe Hvalanya.~
+@10177 = ~Prendre la forteresse des gnolls
+
+Le Chaman Sirkhr, le chef de la faction gnoll rivale, a été vaincu dans un ancien temple sous la forteresse.~
+@10178 = ~Prendre la forteresse des gnolls
+
+Le gnoll qui fait le guet dans les tours, Purkht, a été tué.~
+@10179 = ~Prendre la forteresse des gnolls
+
+J'ai vaincu les trois gnolls comme demandé pat le capitaine Stilind. Je devrais aller l'en informer à l'entrée de la forterese.~
+@10180 = ~Prendre la forteresse des gnolls
+
+Le captiaine Stilind est certain que les gnolls sont se disperser maintenant que leurs meneurs ont été éliminés. Il m'a demandé de le rejoindre dans la forteresse.~
+@10181 = ~Prendre la forteresse des gnolls
+
+Stilind m'a demandé de récupérer des fournitures médicales pendant qu'il attend l'arrivée des renforts d'Athkatla. Je dois aller au temple de Heaum à Nashkel et je dois dire au prêtre que « l'espoir parcours les rues d'Athkatla ».~
+@10182 = ~Prendre la forteresse des gnolls
+
+Je devrais retourner voir le capitaine Stilind à la forteresse des gnolls pour lui amener les fournitures médicales obtenues auprès de Nalin.~
+@10183 = ~Prendre la forteresse des gnolls
+
+Anec les fournitures médicales à sa disposition et les renforts à ses côtés, le capitaine Stilind est assurément aux commandes de la forteresse des gnolls. Il souhaite me consulter encore une fois pour une autre tâche.~
+@10184 = ~Prendre la forteresse des gnolls
+
+Le capitaine Stilind m'a demandé d'enquêter sur un fantôme qui hante une crevasse dans un mur au niveau suivant.~
+@10185 = ~Prendre la forteresse des gnolls
+
+Le fantôme qui ennuyait le capitaine Stilind est éliminé. Je devrais rendre compte de mon succès.~
+@10186 = ~Prendre la forteresse des gnolls
+
+Grâce à mes efforts, la forteresse des gnolls est désormais une forteresse d'Amn. Le capitaine Stilind a récompensé mon action.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
