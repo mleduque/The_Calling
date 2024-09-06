@@ -676,6 +676,32 @@ Le fantôme qui ennuyait le capitaine Stilind est éliminé. Je devrais rendre c
 @10186 = ~Prendre la forteresse des gnolls
 
 Grâce à mes efforts, la forteresse des gnolls est désormais une forteresse d'Amn. Le capitaine Stilind a récompensé mon action.~
+@10187 = ~Hallebarde de la Chimère~
+@10188 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has a series of runes along its handle, allowing the wielder to imbue strikes with their choice of additional electrical, cold, or fire damage. It will occasionally release a burst of all three elements on a single strike. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+   1 % de chance à chaque coup que la cible subisse 3 points de dégâts supplémentaires de froid, d'électricité et de feu
+
+TAC0 : +1
+Dégâts :  1D10 + 1 (perforant)
+Spécial :  +1 point de froid, d'électricité ou de feu (au choix du porteur)
+Poids : 14
+Facteur de vitesse : 8
+Type de compétence : hallebarde
+Type : arme à deux mains
+Nécessite :13 en Force
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@10189 = ~Èlectricité~
+@10190 = ~Froid~
+@10191 = ~Feu~
+@10192 = ~Des tensions se font sentir avec les Portes de Baldur et cette fortresse contrôle un bon tronçon de la Côte. Nous devions continuer jusqu'aux mines de Nashkel après en avoir fini avec endroit, mais on nous a repérés.~
+@10193 = ~Il est possible que ce soit un ennemi coriace et que vous ne soyiez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyiez prêt.~ ~Il est possible que ce soit un ennemi coriace et que vous ne soyiez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyiez prête.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
