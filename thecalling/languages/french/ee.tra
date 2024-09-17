@@ -444,14 +444,14 @@ Poids : 2~
 @60126 = ~Je vous remercie d'être aussi compréhensif.~ ~Je vous remercie d'être aussi compréhensive.~
 @60127 = ~Et je vous demande pardon pour cela. Et pour tout dire, je dois admettre qu'il n'est pas facile de se nourrir de vous.~
 @60128 = ~Pour tout dire, je me suis nourri de rêves de Kozah, alors... Oh mais je ne suis pas Kozah et j'aurais dû m'en souvenir avant d'essayer de vous tuer.~
-@60129 = ~Comme vous l'avez probablement remarqué, vous ne pouvez pas me tuer. Oublions donc tout ceci. Je vous laisserai partir. Vous avez fait de votre mieux et pris sur votre temps pour m'aider, ce que j'apprécie. Et je vous avais promis une récompense. Vous la trouverez sur l'autel dans cette incarnation-ci de l'Or ensommeillé.~
+@60129 = ~Comme vous l'avez probablement remarqué, vous ne pouvez pas me tuer. Oublions donc tout ceci. Je vous laisserai partir. Vous avez fait de votre mieux et pris sur votre temps pour m'aider, ce que j'apprécie. Et je vous avais promis une récompense. Vous la trouverez sur l'autel dans cette incarnation-ci de l'Or ensommeillé.~
 @60130 = ~J'espère qu'un jour vous trouverez la paix et assouvirez votre faim. Je ne verrai pas ce jour, j'en ai fini avec vous.~
 @60131 = ~Vous deviez avoir vraiment faim pour vous attaquer à moi. Mais je suppose que c'est normal. Vous avez dû sommeiller de nombreuses années et vous êtes réveillé... affamé.~
 @60132 = ~C'est bien le cas. Je me repais d'histoires, de promesses et de fantasmes. Quand je me suis réveillé, j'ai perçu un des travailleurs à l'extérieur. Il lisait quelque chose, un livre. À ce moment, je me suis rendu compte à quel point je me sentais vide. Je voulais remplir mon être de quelque chose. De n'importe quoi. De peur, d'espoir, de foi, de visions de rage ou de fête, de sexe.ou de complots. Comme dans ce livre. Vraiment, quel dommage que cet homme soit mort et que ses affaires aient été emportées par des brigands, parce que je me demande comment ce livre se termine.~
 @60133 = ~Je vais peut-ête dire quelqu chose d'idiot, mais je pourrais vous apporter le livre. Vous souvenez-vous du titre ?~
 @60134 = ~Je me désintéresse de ce que vous voulez ou ressentez. J'en ai fini ici, je prends ma récompense et je pars.~
 @60135 = ~Vous feriez ça pour moi ? Ce serait... une nouveauté.~
-@60136 = ~Je crois que c'était l'histoire des... Trois morts. J'adorerais le lire. Je n'ai jamais ossédé de livre moi-même.~
+@60136 = ~Je crois que c'était l'histoire des... Trois morts. J'adorerais le lire. Je n'ai jamais possédé de livre moi-même.~
 @60137 = ~Si vous m'apportez ce livre, je serai reconnaissant.~
 @60138 = ~Je comprends. Encore une chose, chaman. Je crois qu'il y a une partie de vous qui mène à de grandes choses. Gardez cela à l'esprit pendant que pour suivrez le chemin de votre propre histoire.~ ~Je comprends. Encore une chose, chamane. Je crois qu'il y a une partie de vous qui mène à de grandes choses. Gardez cela à l'esprit pendant que pour suivrez le chemin de votre propre histoire.~
 @60139 = ~Et je présente mes excuses pour toute cette hostilité.~
@@ -586,7 +586,7 @@ PARAMÈTRE :
 
 Poids : 2~
 
-@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère esaaiede s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
+@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère essaie de s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
 
 PARAMÈTRE :
 
@@ -624,7 +624,7 @@ Nécessite : 6 en Force
 
 Poids : 5~
 
-@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la lague de Kozakura savent que « Inoshishi » signifie « sanglier ».
+@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la langue de Kozakura savent que « Inoshishi » signifie « sanglier ».
 
 PARAMÈTRE :
 
