@@ -402,7 +402,7 @@ PARAMÈTRES :
 @10008 = ~Soldat amnien~
 @10009 = ~Éclaireur amnien Manlytoe~
 @10010 = ~Kalvranalan~
-@10011 = ~Bâton des pensées corrisives +1~
+@10011 = ~Bâton des pensées corrosives +1~
 @10012 = ~Ceinture des présages~
 @10013 = ~Cette ceinture inhabituelle a été fabriquée pour un assassin du nom de Mudbone. Il se spécialisait dans l'assassinat de prêtes, plus particulièrement de ceux qui étaient vus comme des obstacles par les gens sans considérations pour les gens de foi. La ceinture semble de bonne facture. Elle a probablement été confectionnée avec des matériaux de grande qualité.
 
@@ -469,7 +469,7 @@ Il est difficile de dire qui l'a créé. Il semble assez rustique et,  même s'i
 
 PARAMÈTRES :
 
-Capacités speciales  Peut lancer Flèche acide de Melf une foispar jour
+Capacités spéciales  Peut lancer Flèche acide de Melf une fois par jour
 TAC0 : +1
 Dégâts : 1d6+1 (contondants)
 Facteur de vitesse : 3
@@ -503,10 +503,10 @@ Spécial : si consommé, réduit le Charisme de 1 point mais accorde un bonus d
 Poids : 2~
 @10038 = ~Clef primitive~
 @10039 = ~Vous avez trouvé cette clé primitive dans la forteresse des gnolls. Elle devrait ouvrir quelque chose à cet endroit.~
-@10040 = ~On m'a donné pour consigne de vous dire que « l'espoir parcours les rues d'Athkatla ».~
+@10040 = ~On m'a donné pour consigne de vous dire que « l'espoir parcourt les rues d'Athkatla ».~
 @10041 = ~Ah, des aventuriers intrépides sont à nos portes ! Heaum veille sur tous les Royaumes et ses serviteurs sont à votre service. Le Justicier se tient prêt à soulager vos maux et, ainsi, à détourner le regard inébranlable du Grand-Guide... en échange d'un don raisonnable, s'entend. Juste pour marquer notre bonne volonté mutuelle, vous comprenez.~
 @10042 = ~Quel genre de services fournissez-vous ?~
-@10043 = ~Je n'ai besoin de rien de ce que vous pouvez m'offir pour le moment. Au revoir.~
+@10043 = ~Je n'ai besoin de rien de ce que vous pouvez m'offrir pour le moment. Au revoir.~
 @10044 = ~Hmm ? Je comprends pourquoi vous me dites cela. Vous êtes venu chercher les fournitures médicales que l'on m'a demandé de préparer pour les cas d'urgence, c'est bien ça ?~ ~Hmm ? Je comprends pourquoi vous me dites cela. Vous êtes venue chercher les fournitures médicales que l'on m'a demandé de préparer pour les cas d'urgence, c'est bien ça ?~
 @10045 = ~Oui.~
 @10046 = ~Alors qu'est ce que vous en dites ?~
@@ -515,7 +515,7 @@ Poids : 2~
 @10049 = ~Arr ! Nous... avons des invités... Grr ! Stupides choses ! Vous, pas savoir ? Pas déranger Cheffe Hvalanya !~
 @10050 = ~Non, je ne crois pas que quelqu'un ait évoqué la question jusqu'ici. Mais ils étaient tous trop occupés à être morts.~
 @10051 = ~Je suis navré, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~ ~Je suis navrée, Hvalanya, mais je ne peux vous laisser attaquer les gens de la côte des épées. Je suis venu pour vous arrêter.~
-@10052 = ~Hahahaha ! Vous êtes une drôle de petite chose ! Moi et mes garçons,on va vous montrer. On n'aboie pas après Cheffe Hvalanya en espérant repartir entier ! Auuu !~
+@10052 = ~Ah ah ah ! Vous êtes une drôle de petite chose ! Moi et mes garçons,on va vous montrer. On n'aboie pas après Cheffe Hvalanya en espérant repartir entier ! Auuu !~
 @10053 = ~Je vous salue, ami.~ ~Je vous salue, amie.~
 @10054 = ~Vous ! Argh, votre espèce ne laisse jamais les gnolls tranquilles... ! Les vieux méchants, détestés par les gnolls forts, même par le chef.~
 @10055 = ~Qui êtes vous ?~
@@ -523,20 +523,20 @@ Poids : 2~
 @10057 = ~Vous posez la question maintenant ? Après vous tuer vieux ou blesser gnolls ? Argh !~
 @10058 = ~C'est à moi... !~
 @10059 = ~Les vieux gnolls ont droit au respect et nous... pris cet endroit. Et cette salle, où vieux prêtre vivait. Lui mort. Endroit à nous.~
-@10060 = ~Beaucoup autes gnolls traitent nous vieux gnolls et faibles gnolls comme chiens malades ! Moquent ! Pissent dessus ! Mais même si nous vivent sous leur foyer, nous connaître notre valeur... Notre force !~
+@10060 = ~Beaucoup autres gnolls traitent nous vieux gnolls et faibles gnolls comme chiens malades ! Moquent ! Pissent dessus ! Mais même si nous vivent sous leur foyer, nous connaître notre valeur... Notre force !~
 @10061 = ~Nous louer Yeenoghu ! Et nous tuer. Et nous manger. Même si devoir manger les nôtres... Mais vous...~
 @10062 = ~Vous sûrement tellement plus savoureux... Nous festoyons aujourd'hui~
 @10063 = ~Soyez prudents, aventuriers. Cet endroit est dangereux. J'ai... j'ai perdu la plupart de mes gens, tués par les monstres qui occupent la forteresse près d'ici. Vous avez l'être d'un bon combattant, <PRO_RACE>, mais ces créatures sont féroces !~ ~Soyez prudents, aventuriers. Cet endroit est dangereux. J'ai... j'ai perdu la plupart de mes gens à cause des monstres qui occupent la forteresse près d'ici. Vous avez l'être d'une bonne combattante, <PRO_RACE>, mais ces créatures sont féroces !~
 @10064 = ~Qu'est-il arrivé à ces gens dont vous parlez ? Sont-ils morts ?~
 @10065 = ~S'ils ont été tués par des créatures aussi frustres, ils devaient être faibles.~
-@10066 = ~C'étaient de braves gens, hommes et femmes... Nous sommes venu pour prendre cet endroit. Il devrait être entre les mains de l'armée d'Amn, not celles de ces créatures. Nous avons été envi=oyés d'Athkatla pour reconnaître les lieux et déterminer si un petit groupe seraiten mesure d'éliminer discrètement les gnolls et de faire de cet endroit un centre d'opérations.~
+@10066 = ~C'étaient de braves gens, hommes et femmes... Nous sommes venu pour prendre cet endroit. Il devrait être entre les mains de l'armée d'Amn, pas dans celles de ces créatures. Nous avons été envoyés d'Athkatla pour reconnaître les lieux et déterminer si un petit groupe serait en mesure d'éliminer discrètement les gnolls et de faire de cet endroit un centre d'opérations.~
 @10067 = ~Nous sommes tombés dans une embuscade.  Ils nous ont fait tomber des rochers dessus et d'autres ont été victimes de leurs hallebardes ou de leurs lames.~
 @10068 = ~Minsc n'a pas peur de ces créatures. Ce sont des suppôts du mal et le derrière du mal finit toujours convenablement botté.  is not afraid of those creatures. They're evil and evil will always have its butt properly kicked, eventually! Par Minsc et Bouh, assurément. *squeak*~
 @10069 = ~Bien sûr, ceux qui sont mal préparés échoueront immanquablement. (C'est pour ça qu'il faut toujours un plan bien mûri. Et quelques bouffons sous la main pour servir de chair à canon).~
 @10070 = ~P_pauvres gens. Je ne peux qu'à peine imaginer à quel point ce doit ête pénible de perdre des amis fidèles...~
 @10071 = ~Je suis le seul survivant, mais... Vous avez l'air fort. Peut-être que vous pourriez survivre.~ ~Je suis le seul survivant, mais... Vous avez l'air forte. Peut-être que vous pourriez survivre.~
 @10072 = ~Nous pouvons peut-être faire quelque chose. Nous sommes déjà ici, peut-être que nous pouvons vous aider à venger vos soldats.~
-@10073 = ~Oh... ! Je vous plains. Je ne sais pas, vousdevriez peut-être rentrer chez vous et quelque soi le dieu que vous serviez, le remercier pour avoir épargné votre misérable vie. Excusez-moi, j'ai d'autres choses à faire.~
+@10073 = ~Oh... ! Je vous plains. Je ne sais pas, vous devriez peut-être rentrer chez vous et quelque soi le dieu que vous serviez, le remercier pour avoir épargné votre misérable vie. Excusez-moi, j'ai d'autres choses à faire.~
 @10074 = ~Vous souhaitez m'aider ? Ce... serait vraiment formidable.~
 @10075 = ~J'ai découvert qu'il y avait deux groupes ici. Les gnolls les plus faibles, les plus âgés et ceux qui ont été blessés et ont perdu de leur utilité. Ils sont menés pas un chaman.~
 @10076 = ~Mais d'un autre côté, il y a un autre groupe avec les gnolls les plus jeunes et les plus forts. Ils sont dirigés par leur chef, un gnoll femelle, qu'ils nomment « Cheffe Hvalanya ». Elle est plutôt cruelle, apparemment. Du moins c'est ce qui ressort de la façon dont ils parlent d'elle.~
@@ -544,16 +544,16 @@ Poids : 2~
 @10078 = ~Un troisième ?~
 @10079 = ~Quel est ce troisième ? Parlez !~
 @10080 = ~Le troisième n'est pas vraiment un leader, mais plutôt un genre de... guetteur. Il est le plus souvent dans l'une des tours, mais je ne sais pas vraiment laquelle.~
-@10081 = ~Hm, c'est quand même peut-êtr eune bonne idée de s'en débarrasser aussi. Donc deux meneurs et un guetteur.~
+@10081 = ~Hm, c'est quand même peut-être une bonne idée de s'en débarrasser aussi. Donc deux meneurs et un guetteur.~
 @10082 = ~C'est tout ? ils seront tous morts en moins de temps qu'il ne vous faut pour dire « Tout le monde dans mon escouade est mort ».~
 @10083 = ~Exactement.~
 @10084 = ~Vraiment ? Leur mort est une tragédie. Ne la tournez pa sen ridicule.~
-@10085 = ~Si vous tuez ces trois gnolls, les autres devraient fuir ou se cacher. Ils ne seront plus undanger sans leurs membres les plus importants de leur meute, ou leur clan ou je ne sais quoi !~
+@10085 = ~Si vous tuez ces trois gnolls, les autres devraient fuir ou se cacher. Ils ne seront plus un danger sans leurs membres les plus importants de leur meute, ou leur clan ou je ne sais quoi !~
 @10086 = ~Vous êtes sûr que c'est dans vos cordes ? Vous avez l'air forts mais je me sens obligé de m'en assurer. Ils y en a un paquet là-dedans.~
 @10087 = ~Il n'y a aucun souci, je sais ce que je fais.~
-@10088 = ~Nous ne le saurons pas tan tque je n'aurai pas essayé.~
-@10089 = ~Si je détermine qu'ils sont trop nombreux, je m'enfuierai.~
-@10090 = ~Très bien. Si vous pensez que vous pouvez leur tenir tête et que vous parvenez à tuer leurs trois meneurs, s'il vous plaît, revenez me le dire, que je sache que les vies de mes compagnong n'ont pas été gâchées en vain.~
+@10088 = ~Nous ne le saurons pas tant que je n'aurai pas essayé.~
+@10089 = ~Si je détermine qu'ils sont trop nombreux, je m’enfuirai.~
+@10090 = ~Très bien. Si vous pensez que vous pouvez leur tenir tête et que vous parvenez à tuer leurs trois meneurs, s'il vous plaît, revenez me le dire, que je sache que les vies de mes compagnons n'ont pas été gâchées en vain.~
 @10091 = ~Vous êtes bien cruel. Peut-être qu'avec le temps vous viendrez à la conclusion que... que cet endroit doit être reprise à ces créatures. Dans ce cas, revenez me voir.~ ~Vous êtes bien cruelle. Peut-être qu'avec le temps vous viendrez à la conclusion que... que cet endroit doit être reprise à ces créatures. Dans ce cas, revenez me voir.~
 @10092 = ~Encore vous ? Êtes-vous venus vous moquer de moi et de mes compagnons tués ?~
 @10093 = ~Voulez-vous me rappeler ce qui et arrivé à vos camarades ?~
@@ -563,7 +563,7 @@ Poids : 2~
 @10097 = ~Je suis toujours en train de m'en charger.~
 @10098 = ~Vous... vous l'avez fait ! Come je voudrais que mes compagnons soient présents pour entendre la nouvelle. Mais je veux croire qu'ils ont participé à cette victoire. Maintenant, le travail n'est pas terminé, il reste encore beaucoup à faire.~
 @10099 = ~Retrouvons-nous plus loin dans la forteresse. Là-bas, nous pourrons poursuivre notre tâche. Enfin,si vous êtes intéressé. Mais je peux vous assurer que vous ne perdrez pas votre temps, mon ami guerrier~ ~Retrouvons-nous plus loin dans la forteresse. Là-bas, nous pourrons poursuivre notre tâche. Enfin,si vous êtes intéressée  Mais je peux vous assurer que vous ne perdrez pas votre temps, mon amie guerrière~
-@10100 = ~Tout me semble convenable... J'ai pu envoyer une signal depuis la tour, comme j'avais convenu avec les éclaireurs au sud d'ici. Je pensequ'ils vont m'envoyer quelques hommes en renfort, mais je voudrait pas que les choses se gâtent.~
+@10100 = ~Tout me semble convenable... J'ai pu envoyer une signal depuis la tour, comme j'avais convenu avec les éclaireurs au sud d'ici. Je pense qu'ils vont m'envoyer quelques hommes en renfort, mais je voudrait pas que les choses se gâtent.~
 @10101 = ~Et je présume que vous souhaitez que je fasse en sorte que les choses ne se gâtent pas ? Dites-moi comment je peux faire.~
 @10102 = ~Désolé, mais je n'ai pas le temps de vous aider.~ ~Désolée, mais je n'ai pas le temps de vous aider.~
 @10103 = ~Il y a cette ville minière à côté d'ici, Nashkel. Là bas, il y a un temple, et j'aimerais que vous y alliez et que vous me rameniez du matériel médical. Le prêtre a dû être informé que nous pourrions avoir besoin d'aide, si je ne me trompe pas. Dommage que nous ne soyons pas allés lui parler avant que je perde mes camarades. Peut-être que si j'avais eu ces... Non, ça n'aurait pas permis d'éviter cette tragédie. Désolé, je ne peux pas m'empêcher de penser à eux.~
@@ -571,13 +571,13 @@ Poids : 2~
 @10105 = ~Et le prêtre me croira si je lui dit que vous m'envoyez ?~
 @10106 = ~Ça me parait simple. Je sais déjà où Nashkel se trouve.~
 @10107 = ~Non, désolé. Je n'ai pas le temps. En fait, il faut que j'y aille. Au revoir.~ ~Non, désolée. Je n'ai pas le temps. En fait, il faut que j'y aille. Au revoir.~
-@10108 = ~Vous aurez juste à dire  « l'espoir parcours les rues d'Athkatla ». Il comprendra que vous venez pour les fournitures.~
+@10108 = ~Vous aurez juste à dire  « l'espoir parcourt les rues d'Athkatla ». Il comprendra que vous venez pour les fournitures.~
 @10109 = ~Ça me semble facile.~
 @10110 = ~Ça me semble facile. Vous ne pouvez pas le faire vous-même ?~
 @10111 = ~Ça m'a l'air ennuyeux... Je n'ai pas le temps. Au revoir.~
 @10112 = ~Ça l'est.~
 @10113 = ~Je dois attendre l'arrivée des renforts. Et puis quelqu'un dois rester ici.~
-@10114 = ~Le plus difficile sera peut-être bien de rejoindre Nashkel, mais si vous connaissez déjà la route, ça sera plsu facile pour vous. Plus facile que pour moi tout seul.~
+@10114 = ~Le plus difficile sera peut-être bien de rejoindre Nashkel, mais si vous connaissez déjà la route, ça sera plus facile pour vous. Plus facile que pour moi tout seul.~
 @10115 = ~S'il vous plaît, faites ça pour moi. j'ai vraiment besoin d'un coup de main.~
 @10116 = ~Quand vous aurez les fournitures, revenez ici. Je réfléchirai à votre récompense quand la situation sera complètement sous contrôle.~
 @10117 = ~Vous êtes de retour. Vous avez le matériel ?~
@@ -588,7 +588,7 @@ Poids : 2~
 @10122 = ~Content de te revoir en vie, Stilind ! Où sont les autres ?~
 @10123 = ~Ils sont...~
 @10124 = ~...~
-@10125 = ~Je suis navré, Stilind, vraiment. Est-ce que Mandar en faisait partie ? Vousétiez inséparables tous les deux.~
+@10125 = ~Je suis navré, Stilind, vraiment. Est-ce que Mandar en faisait partie ? Vous étiez inséparables tous les deux.~
 @10126 = ~Oui. Il... Il est mort lui aussi...~
 @10127 = ~par les dieux, sa famille va être anéantie.~
 @10128 = ~J'irai leur annoncer. À mon retour. Une fois que notre mission sera terminée.~
@@ -598,17 +598,17 @@ Poids : 2~
 @10132 = ~Eh bien... ravi d'avoir pu aider.~ ~Eh bien... ravie d'avoir pu aider.~
 @10133 = ~Je l'ai fait pour la récompense, que ce soit clair.~
 @10134 = ~Vous devez être plutôt robuste, alors. Bon travail.~
-@10135 = ~Je vois. C'est... bon àsavoir.~
-@10136 = ~Ça n'a pas du êtr efacile, avec toutes ces créatures en face.~
+@10135 = ~Je vois. C'est... bon à savoir.~
+@10136 = ~Ça n'a pas dû être facile, avec toutes ces créatures en face.~
 @10137 = ~Effectivement... Au cas où la situation s'aggraverait, notre ami ici présent est allé chercher les fournitures médicales. Celles préparées à Nashkel.~ ~Effectivement... Au cas où la situation s'aggraverait, notre amie ici présente est allée chercher les fournitures médicales. Celles préparées à Nashkel.~
 @10138 = ~Bonne idée. Espérons seulement que nous n'en aurons pas besoin.~
 @10139 = ~Tu as raison.~
-@10140 = ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quandvous êtes prêt.~ ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quandvous êtes prête.~
+@10140 = ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quand vous serez prêt.~ ~Vous et vos compagnons devriez prendre du repos et examiner ces couloirs et ces murs. On ne sait jamais, ça pourrait vous être utile. En attendant, il reste une dernière faveur que je voudrais vous soumettre.Venez me voir quand vous serez prête.~
 @10141 = ~Vous nous avez été d'une aide inestimable, ami, mais je voudrais vous demander encore un service.~ ~Vous nous avez été d'une aide inestimable, amie, mais je voudrais vous demander encore un service.~
 @10142 = ~Que voulez-vous ?~
-@10143 = ~Désolé, mais je n'ai pas de temps pour ça. Je derais mieux de m'en aller~~Désolée, mais je n'ai pas de temps pour ça. Je derais mieux de m'en aller~
-@10144 = ~Vous voyez, pendant que vous êtiez parti pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~ ~Vous voyez, pendant que vous êtiez partie pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~
-@10145 = ~Je ne sais pas si, parmi ces hommes et femmes, il y en a qui ont de l'expériencecontr eles fantômes, alors j'espérais que vous pourriez le vaincre pour nous. je vous promets que c'est vraiment la dernière que je vous demanderai. Et quand ce sera fait, je vous donnerai quelque chose.~
+@10143 = ~Désolé, mais je n'ai pas de temps pour ça. Je ferais mieux de m'en aller~~Désolée, mais je n'ai pas de temps pour ça. Je ferais mieux de m'en aller~
+@10144 = ~Vous voyez, pendant que vous étiez parti pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~ ~Vous voyez, pendant que vous étiez partie pour Nashkel, j'ai trouvé une drôle de créature dans la tour là-bas. Il y a une crevasse dans un mur et... la tour a l'air d'être hantée par une espèce de fantôme bizarre.~
+@10145 = ~Je ne sais pas si, parmi ces hommes et femmes, il y en a qui ont de l'expérience contre les fantômes, alors j'espérais que vous pourriez le vaincre pour nous. je vous promets que c'est vraiment la dernière que je vous demanderai. Et quand ce sera fait, je vous donnerai quelque chose.~
 @10146 = ~Vous nous avez tellement aidés, ça me semblerait juste.~
 @10147 = ~Donc, un fantôme vous disiez...~
 @10148 = ~Non, je vous ai assez aidés, il faut que je parte. Au revoir.~
@@ -629,9 +629,9 @@ Poids : 2~
 @10163 = ~Forteresse des gnolls - Pièce angoissante~
 @10164 = ~Forteresse des gnolls - Entrepôt ouest~
 @10165 = ~Forteresse des gnolls - Entrepôt est~
-@10166 = ~Eh bien, l'endroit n'est pas dans la meileure condition, mais je suis sûr qu'en y mettant les moyens ça peut s'arranger. Les murs peuvent être réparés. Ça demandera pas mal d'or mais... ce n'est pas hors de portée. J'ai amené un peu de marchandises avec moi, si jamais vous aviez besoin d'armes ou de potions.~
+@10166 = ~Eh bien, l'endroit n'est pas dans la meilleure condition, mais je suis sûr qu'en y mettant les moyens ça peut s'arranger. Les murs peuvent être réparés. Ça demandera pas mal d'or mais... ce n'est pas hors de portée. J'ai amené un peu de marchandises avec moi, si jamais vous aviez besoin d'armes ou de potions.~
 @10167 = ~Content de vous revoir.~
-@10168 = ~S'il vous manque quelqeu chose, je peux vous montrer ce que j'ai avec moi.~
+@10168 = ~S'il vous manque quelque chose, je peux vous montrer ce que j'ai avec moi.~
 @10169 = ~Montre-moi votre marchandise.~
 @10170 = ~Je pense que j'ai tout ce qu'il me faut. Au revoir.~
 @10171 = ~Portez-vous bien.~
@@ -639,10 +639,10 @@ Poids : 2~
 @10173 = ~Prendre la forteresse des gnolls~
 @10174 = ~Prendre la forteresse des gnolls
 
-J'ai rencontré le captiaine Stilind à l'entrée de la forteresse des gnolls. Il vuolait que je l'aide à faire quelque chose d'inepte et j'ai refusé.~
+J'ai rencontré le capitaine Stilind à l'entrée de la forteresse des gnolls. Il voulait que je l'aide à faire quelque chose d'inepte et j'ai refusé.~
 @10175 = ~Prendre la forteresse des gnolls
 
-J'ai rencontré le captiaine Stilind à l'entrée de la forteresse des gnolls. C'est le dernier survivant d'une escouade envoyée d'Athkatla pour prendre la forteresse aux gnolls. Il a demandé que je l'aide en tuant leur meneuse, la cheffe Hvalanya, ainsi qu'un Chaman dans un groupe dissident. Il faut aussi éliminer un gnoll qui fait le guet dans une des tours.~
+J'ai rencontré le capitaine Stilind à l'entrée de la forteresse des gnolls. C'est le dernier survivant d'une escouade envoyée d'Athkatla pour prendre la forteresse aux gnolls. Il a demandé que je l'aide en tuant leur meneuse, la cheffe Hvalanya, ainsi qu'un Chaman dans un groupe dissident. Il faut aussi éliminer un gnoll qui fait le guet dans une des tours.~
 @10176 = ~Prendre la forteresse des gnolls
 
 Nous avons vaincu la meneuse des gnolls, la Cheffe Hvalanya.~
@@ -654,19 +654,19 @@ Le Chaman Sirkhr, le chef de la faction gnoll rivale, a été vaincu dans un anc
 Le gnoll qui fait le guet dans les tours, Purkht, a été tué.~
 @10179 = ~Prendre la forteresse des gnolls
 
-J'ai vaincu les trois gnolls comme demandé pat le capitaine Stilind. Je devrais aller l'en informer à l'entrée de la forterese.~
+J'ai vaincu les trois gnolls comme demandé pat le capitaine Stilind. Je devrais aller l'en informer à l'entrée de la forteresse.~
 @10180 = ~Prendre la forteresse des gnolls
 
-Le captiaine Stilind est certain que les gnolls sont se disperser maintenant que leurs meneurs ont été éliminés. Il m'a demandé de le rejoindre dans la forteresse.~
+Le capitaine Stilind est certain que les gnolls sont se disperser maintenant que leurs meneurs ont été éliminés. Il m'a demandé de le rejoindre dans la forteresse.~
 @10181 = ~Prendre la forteresse des gnolls
 
-Stilind m'a demandé de récupérer des fournitures médicales pendant qu'il attend l'arrivée des renforts d'Athkatla. Je dois aller au temple de Heaum à Nashkel et je dois dire au prêtre que « l'espoir parcours les rues d'Athkatla ».~
+Stilind m'a demandé de récupérer des fournitures médicales pendant qu'il attend l'arrivée des renforts d'Athkatla. Je dois aller au temple de Heaum à Nashkel et je dois dire au prêtre que « l'espoir parcourt les rues d'Athkatla ».~
 @10182 = ~Prendre la forteresse des gnolls
 
 Je devrais retourner voir le capitaine Stilind à la forteresse des gnolls pour lui amener les fournitures médicales obtenues auprès de Nalin.~
 @10183 = ~Prendre la forteresse des gnolls
 
-Anec les fournitures médicales à sa disposition et les renforts à ses côtés, le capitaine Stilind est assurément aux commandes de la forteresse des gnolls. Il souhaite me consulter encore une fois pour une autre tâche.~
+Avec les fournitures médicales à sa disposition et les renforts à ses côtés, le capitaine Stilind est assurément aux commandes de la forteresse des gnolls. Il souhaite me consulter encore une fois pour une autre tâche.~
 @10184 = ~Prendre la forteresse des gnolls
 
 Le capitaine Stilind m'a demandé d'enquêter sur un fantôme qui hante une crevasse dans un mur au niveau suivant.~
@@ -697,11 +697,11 @@ Non utilisable par :
  Clerc
  Mage
  Voleur~
-@10189 = ~Èlectricité~
+@10189 = ~Électricité~
 @10190 = ~Froid~
 @10191 = ~Feu~
-@10192 = ~Des tensions se font sentir avec les Portes de Baldur et cette fortresse contrôle un bon tronçon de la Côte. Nous devions continuer jusqu'aux mines de Nashkel après en avoir fini avec endroit, mais on nous a repérés.~
-@10193 = ~Il est possible que ce soit un ennemi coriace et que vous ne soyiez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyiez prêt.~ ~Il est possible que ce soit un ennemi coriace et que vous ne soyiez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyiez prête.~
+@10192 = ~Des tensions se font sentir avec les Portes de Baldur et cette forteresse contrôle un bon tronçon de la Côte. Nous devions continuer jusqu'aux mines de Nashkel après en avoir fini avec endroit, mais on nous a repérés.~
+@10193 = ~Il est possible que ce soit un ennemi coriace et que vous ne soyez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyez prêt.~ ~Il est possible que ce soit un ennemi coriace et que vous ne soyez pas encore en mesure de l'affronter. Nous pouvons placer quelques protections basiques pour retenir le fantôme jusqu'à ce que vous soyez prête.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -904,7 +904,7 @@ Inutilisable par :
 
 @70001 = ~Inoshishi~
 @70002 = ~Vaxffee le cupide~
-@70003 = ~Tymothy le fouilleur de pubelles~
+@70003 = ~Tymothy le fouilleur de poubelles~
 @70004 = ~Troll gémissant~
 @70005 = ~Amulette de lame~
 @70006 = ~Cette amulette serait normalement cachée dans la garde d'un katana, en-dessous de la couverture en cuir. Cette amulette-ci semble vraiment ancienne.~
@@ -917,13 +917,13 @@ Peut-être qu'il peut être réparé... une fois la lame retrouvée.~
 
 Peut-être qu'il peut être réparé... une fois la poignée retrouvée.~
 @70011 = ~Kin no Kemono~
-@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère esaaiede s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
+@70012 = ~Ces bracelets sont originaires de Kozakura. Ils sont chauds au toucher et, malgré leur légèreté, ils semblent robustes. Enchantés par une prêtresse, nommée Ume en références aux fruits les plus sucrés de Kozakura, ils aident à conserver l'esprit clair et stable même quand la colère essaie de s'emparer de l'esprit du moine. Ils soutienne aussi leur porteur pendant le combat en guidant ses coups.
 
 PARAMÈTRE :
 
 TAC0 au corps à corps : +2
 Protection contre la rage/furie
-poides : 1
+poids : 1
 Utilisable par :
  Moine~
 
@@ -960,7 +960,7 @@ Non utilisable par :
  Clerc
  Mage~
 @70015 = ~Crinière de l'Inoshishi~
-@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la lague de Kozakura savent que « Inoshishi » signifie « sanglier ».
+@70016 = ~Cette anneau est connu sous le nom de Crinière de l'Inoshishi. Les gens familiers avec la langue de Kozakura savent que « Inoshishi » signifie « sanglier ».
 
 PARAMÈTRE :
 
@@ -975,7 +975,7 @@ Classe d'armure : +1 contre les armes contondantes.~
 @70024 = ~Quel genre de tâche vous a amené ici, Inoshishi ? De quelle mission parlez-vous ?~
 @70025 = ~Écoutez, je me soucie peu de vous ou de votre mission. Je suis moi-même très occupé. Soyez gentil et écartez-vous de ma route.~ ~Écoutez, je me soucie peu de vous ou de votre mission. Je suis moi-même très occupée. Soyez gentil et écartez-vous de ma route.~
 @70026 = ~Je suis à la recherche d'une puissante lame, un katana connu sous le nom de Saiai no Hito. Elle a été forgée par l'un des tous premiers membres de notre monastère, un homme nommé Ne Kurosuna. Si nos documents sont exacts, il a renoncé à sa situation et quitté notre confrérie. D'après certains, c'est arrivé quand il est tombé amoureux d'un autre frère, Shiroume Yakuchi. D'après ce que nous savons, cette relation a mis Ne mal à l'aise parce qu'il avait perdu son bien-aimé à cause d'un groupe de bandits...~
-@70027 = ~D'après nos informations, il voulait méditer sur son passé, son présent et son avenir. Nous pensons qu'il n'était pas prêt pour les sentiments qu'il ressentait à nouveau et qu'il avait l'impression de trahir la mémoire de son  amour perdu. Nous avons retrouvé son journal et avonsappris qu'il se sentait déchiré entre plusieurs amours et plusieurs voies.~
+@70027 = ~D'après nos informations, il voulait méditer sur son passé, son présent et son avenir. Nous pensons qu'il n'était pas prêt pour les sentiments qu'il ressentait à nouveau et qu'il avait l'impression de trahir la mémoire de son  amour perdu. Nous avons retrouvé son journal et avons appris qu'il se sentait déchiré entre plusieurs amours et plusieurs voies.~
 @70028 = ~Ces sentiments ont dû le déchirer pour qu'il quitte le monastère.~
 @70029 = ~Ah ! Qu'il est bon de savoir que les hommes aussi peuvent s'embrouiller dans leurs idées et leurs sentiments, et que nous ne sommes pas les seules à être désorientées ! Hein !~
 @70030 = ~Ah, le cœur aussi bien que la peur peuvent nous amener à d'étranges extrémités, n'est-ce pas ?~
@@ -986,13 +986,13 @@ Classe d'armure : +1 contre les armes contondantes.~
 @70035 = ~Je suis certain que vous avez vous raison pour nous raconter cette histoire.~ ~Je suis certaine que vous avez vous raison pour nous raconter cette histoire.~
 @70036 = ~En effet, je suis curieux de savoir ou nous mène cette histoire... plutôt ennuyeuse.~ ~En effet, je suis curieuse de savoir ou nous mène cette histoire... plutôt ennuyeuse.~
 @70037 = ~Écoutez, votre histoire, votre épée, pourquoi vous êtes là, ça ne m'intéresse pas. Allez barber quelqu'un d'autre, je dois y aller.~
-@70038 = ~Vous voyez, cette histoire a été oubliée pendant une période assez longue et nous... avons longuement réfléchi à ce que nous devions faire de l'histoire du frère Ne. Nous avons conclu que nous devions retrouver la lame pour la conserver avec les artefacts de notre monastère,parmi les autres symboles de notre engagement. Elle y a sa place, elle doit y trouver sa place. Frère Ne s'est consacré à la comprénhension de ses espoirs et de son amour.~
+@70038 = ~Vous voyez, cette histoire a été oubliée pendant une période assez longue et nous... avons longuement réfléchi à ce que nous devions faire de l'histoire du frère Ne. Nous avons conclu que nous devions retrouver la lame pour la conserver avec les artefacts de notre monastère,parmi les autres symboles de notre engagement. Elle y a sa place, elle doit y trouver sa place. Frère Ne s'est consacré à la compréhension de ses espoirs et de son amour.~
 @70039 = ~Hélas, il nous a quitté il y a bien longtemps, et sa forge n'existe plus. Pour compliquer encore les choses, nous avons découvert que quelqu'un avait volé la lame, qui devait être un cadeau pour un être aimé. Nous avons essayé de suivre sa trace et nous savons qu'elle avait quitté Kozakura, puis Kara-Tur, et qu'elle avait été emmenée ici, sur la Côte des Épées.~
 @70040 = ~Quel périple ! J'entrevois les soucis que ça a dû causer.~
 @70041 = ~Mais... Kozakura, c'est tellement loin ! C'est bien loin, non  ? J'ai du mal à imaginer comment quelqu'un aurait pu aller aussi loin. À moins de savoir ouvrir un portail, peut-être ? Ça serait bien plus confortable. Il devait savoir comment en ouvrir un, sinon cette histoire n'aurait aucun sens.~
-@70042 = ~Tous ces mots ! Et aucun qui parle de Tiax ! Faites plus court, dites-nous seuleemnt de quoi vous avez besoin, que nous puissions refuser toute aide !~
+@70042 = ~Tous ces mots ! Et aucun qui parle de Tiax ! Faites plus court, dites-nous seulement de quoi vous avez besoin, que nous puissions refuser toute aide !~
 @70043 = ~*soupire* Il va vraiment nous demander de l'aider à trouver cette épée ? Cela me semble complètement impossible.~
-@70044 = ~C'est l'objet de ma mission, trouvér l'épée et retourner avec elle au monastère de Saku.~
+@70044 = ~C'est l'objet de ma mission, trouver l'épée et retourner avec elle au monastère de Saku.~
 @70045 = ~Cette mission paraît bien difficile.~
 @70046 = ~Ah ! Bon courage avec ça ! Ça m'a l'air impossible à mener à bien !~
 @70047 = ~Faites comme bon vous semble, cela ne me regarde pas. En fait, j'ai déjà passé trop de temps à écouter votre histoire, je dois partir. Au revoir.~
@@ -1000,13 +1000,13 @@ Classe d'armure : +1 contre les armes contondantes.~
 @70049 = ~Cette mission peut sembler impossible, mais je pense pouvoir la mener à bien si je reste vigilant et attentif.~
 @70050 = ~Mais... maintenant que j'y pense, rien ne m'oblige à tout faire tout seul. Accepteriez-vous de m'apporter votre aide ? Je vous promets de vous récompenser.~
 @70051 = ~Ah, "récompenser". C'est exactement le mot que j'attendais.~
-@70052 = ~éfléchissez-y bien. Nous pourrions tous deux tirer profit d'un accord,non ?~
+@70052 = ~Réfléchissez-y bien. Nous pourrions tous deux tirer profit d'un accord,non ?~
 @70053 = ~Cette mission semble importante. Comme vous disiez, nous partageons des points communs et vous laisser sans soutien me semble injuste. Dites-moi comment je peux vous aider.~
 @70054 = ~Je me soucie peut de vous, de votre histoire, vos tradition et de votre stupide épée. Désolé, mais vous devrez vous débrouiller seul. Je dois y aller. Au revoir.~ ~Je me soucie peut de vous, de votre histoire, vos tradition et de votre stupide épée. Désolée, mais vous devrez vous débrouiller seul. Je dois y aller. Au revoir.~
-@70055 = ~Oh, merci ! Je suis reconnaissant !~
-@70056 = ~Vous voyez, c'st pour une bonne raison que je suis venu à l'ge du Brasamical J'ai récemment été attraqué par un voyou, une femme. Elle m'a dépouillé de tous mes biens. Je dois remplacer toutes mes provisions. J'ai aussi entendu dire qu'il y avait un temple ici dédié à la sagesse. J'espérais obtenir de l'aide du maître des lieux.~
-@70057 = ~Comme nous allons joindre nos force, je pense que nous devrions aller ensemble parler à cette personne. Rejoignons-nous dans le temple pour voir sicela peut nous aider à décider où chercher le katana.~
-@70059 = ~Je vois, vous faites partie des égoistes. Très bien, je ne vous ennuierai plus.~
+@70055 = ~Oh, merci ! Je vous suis reconnaissant !~
+@70056 = ~Vous voyez, c'st pour une bonne raison que je suis venu à l'auberge du Brasamical J'ai récemment été attaqué par un voyou, une femme. Elle m'a dépouillé de tous mes biens. Je dois remplacer toutes mes provisions. J'ai aussi entendu dire qu'il y avait un temple ici dédié à la sagesse. J'espérais obtenir de l'aide du maître des lieux.~
+@70057 = ~Comme nous allons joindre nos force, je pense que nous devrions aller ensemble parler à cette personne. Rejoignons-nous dans le temple pour voir si cela peut nous aider à décider où chercher le katana.~
+@70059 = ~Je vois, vous faites partie des égoïstes. Très bien, je ne vous ennuierai plus.~
 @70060 = ~Ah, vous voilà ! Parfait, allons voir si nous pouvons découvrir quelque chose qui nous aidera à localiser l'épée.~
 @70061 = ~Entre gens qui partagent un même état d'esprit, trouver une piste semble concevable. Notre nouvel ami y accorde assurément beaucoup d'importance.~
 @70062 = ~Soyons optimistes. Ce qui est perdu peut toujours être retrouvé ! Enfin... la plupart du temps !~
@@ -1014,9 +1014,9 @@ Classe d'armure : +1 contre les armes contondantes.~
 @70064 = ~Il doit vraiment accorder beaucoup d'importance à cette épée, alors ? Quand tu as égaré mon livre il y a deux ans, j'ai laissé tomber au bout de trois jours ! En tout cas, allons voir si on peut trouver quelque chose d'utile.~
 @70065 = ~Pardonnez-moi,prêtresse, j'ai besoin de vos conseils.~
 @70066 = ~De mes conseils ? Dites-m'en plus, jeune homme. Sait-on jamais, je pourrais vous offrir un mot ou deux, en toute bonne foi.~
-@70067 = ~Je suis à la recherche d'une ancienne épée, Saiai no Hito. Malheureusement sans susccès. la Côte des Épée est vaste et j'aurais besoin d'aide. J'aibien quelqu'un qui me prête son aide pour chercher, mais nous aurions besoin de savoir où porter nos regards. J'espérais qu'un membre du temple de la sagesse serait en mesure de nous fournir ce point de départ.~
-@70068 = ~En vous regardant, je me dis que voud avez dû parcourir un bon bout de chemin, nest-ce pas, mon garçon ?~
-@70069 = ~Accceptez que Gellana vous aide un peu. Il me faudra deux cents pièces d'or et quelquechose qui me relie à l'épée que vous recherchez. Avez-vous quelque chose qui s'y prête ?~
+@70067 = ~Je suis à la recherche d'une ancienne épée, Saiai no Hito. Malheureusement sans succès. la Côte des Épée est vaste et j'aurais besoin d'aide. J'ai bien quelqu'un qui me prête son aide pour chercher, mais nous aurions besoin de savoir où porter nos regards. J'espérais qu'un membre du temple de la sagesse serait en mesure de nous fournir ce point de départ.~
+@70068 = ~En vous regardant, je me dis que vous avez dû parcourir un bon bout de chemin, nest-ce pas, mon garçon ?~
+@70069 = ~Acceptez que Gellana vous aide un peu. Il me faudra deux cents pièces d'or et quelque chose qui me relie à l'épée que vous recherchez. Avez-vous quelque chose qui s'y prête ?~
 @70070 = ~Je...~
 @70071 = ~Alors ?~
 @70072 = ~Ne me dites pas que vous n'avez rien qui convienne...~
@@ -1026,13 +1026,13 @@ Classe d'armure : +1 contre les armes contondantes.~
 @70076 = ~Mais c'est bien là ce que je nommerais la « partie difficile », Inoshishi.~
 @70077 = ~Et bien... nous pouvons essayer de la rattraper, mais je ne sais pas si nous réussirons...~
 @70078 = ~Tout cela est ridicule. Vous savez quoi ? Débrouillez-vous sans moi. Allez retrouver cette femme tout seul. Je laisse tomber.~
-@70079 = ~Vous êtes clairement plus expérimenté dansce genre de d'activité. S'il vous plaît, pouvez-vous récupérer cette amulette ?~
+@70079 = ~Vous êtes clairement plus expérimenté dans ce genre de d'activité. S'il vous plaît, pouvez-vous récupérer cette amulette ?~
 @70080 = ~Je vais essayer.~
 @70081 = ~Ah... D'accord...~
 @70082 = ~Non. Je n'ai pas le temps.~
 @70083 = ~Vous savez quoi ? Je crois que j'ai fait une erreur. Débrouillez-vous sans moi. Au revoir.~
 @70084 = ~Merci, mon ami.~~Merci, mon amie.~
-@70085 = ~J'ai été attaqué en venant ici depuis la ville plus au sud. Je crois qu'elle s'appelait... Beregost...?~
+@70085 = ~J'ai été attaqué en venant ici depuis la ville plus au sud. Je crois qu'elle s'appelait... Bérégost...?~
 @70086 = ~C'est peut-être son territoire ? Elle est peut-être toujours quelque part dans les parages ?~
 @70087 = ~S'il vous plaît, allez vérifier et revenez me dire ce que vous aurez trouvé.~
 @70088 = ~Je croyais que vous m'aideriez, mais on dirait que je me suis trompé.~
