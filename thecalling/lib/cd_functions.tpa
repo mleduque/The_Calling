@@ -84,3 +84,9 @@ END
 /////                                                  \\\\\
 
 INCLUDE ~thecalling/lib/alter_header.tpa~
+
+/////                                                  \\\\\
+///// ALTER_AREA/CREATURE_ITEM                         \\\\\
+/////                                                  \\\\\
+
+INCLUDE ~thecalling/lib/alter_area-creature_item.tpa~

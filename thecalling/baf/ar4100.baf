@@ -30,7 +30,7 @@ THEN
   RESPONSE #100
     SetGlobal("SPRITE_IS_DEADcd41guar","GLOBAL",0)    
 		CreateVisualEffect("spresuri",[3165.1326]) 
-    CreateCreature("cd41guar",[3165.1326],3)
+    CreateCreature("cd41guar",[3165.1326],2)
     SetGlobal("cd41guardian_cycle","MYAREA",0)
 END
 
