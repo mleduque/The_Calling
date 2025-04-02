@@ -1388,7 +1388,17 @@ EXTEND_BOTTOM ~%CloakwoodMines_L4_BCS%.bcs~           ~thecalling/baf/_ar1803.ba
 EXTEND_BOTTOM ~%Lighthouse_BlackAlaricsCave_BCS%.bcs~ ~thecalling/baf/_ar3601.baf~ // adds Ninja-To +0 to Sirine cave loot
 
 COPY_EXISTING ~%tutu_var%meilum.cre~ ~override~ // adds katana +0 to Meilum by replacing primary weapon
-  REPLACE_CRE_ITEM ~sw1h43~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+//  REPLACE_CRE_ITEM ~sw1h43~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+  LPF ALTER_CREATURE_ITEM 
+    STR_VAR item       = "sw1h43"
+            match_item = EVAL "%tutu_var%sw1h05"
+    RET     meilum_slot = replaced_slot 
+            meilum_item = replaced_item
+  END 
+  
+ACTION_IF meilum_slot < 0 BEGIN // if <0, item was not placed on meilum
+  // plan b for placement
+END
 
 COPY_EXISTING ~%tutu_var%krumm.cre~  ~override~ // adds katana +2 to Krumm by replacing primary weapon
   REPLACE_CRE_ITEM ~cdkat2~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
