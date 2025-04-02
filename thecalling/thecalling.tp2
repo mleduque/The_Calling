@@ -5,15 +5,13 @@ ALWAYS
 
   ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @4 END // Modmerge check
 
-  ACTION_IF NOT VARIABLE_IS_SET tutu_gen THEN BEGIN // just do this part once per install
+  ACTION_IF NOT VARIABLE_IS_SET cd_the_calling_always THEN BEGIN // just do this part once per install
+  
+    OUTER_SET cd_the_calling_always = 1
 
     INCLUDE ~thecalling/lib/game_checks.tpa~
-    
-  END  
 
-  ACTION_IF (!tutu_gen AND !game_is_bgt AND !game_is_bgee AND !game_is_eet) THEN BEGIN FAIL @0 END
-
-  ACTION_IF NOT VARIABLE_IS_SET tutu_var THEN BEGIN // just do this part once per install
+    ACTION_IF (!tutu_gen AND !game_is_bgt AND !game_is_bgee AND !game_is_eet) THEN BEGIN FAIL @0 END
   
     INCLUDE ~thecalling/lib/cd_functions.tpa~ // functions for mod
 
@@ -38,7 +36,7 @@ ALWAYS
       OUTER_SPRINT ~tra_location~ ~thecalling/languages~     
       LOAD_TRA ~thecalling/languages/%LANGUAGE%/ee.tra~      
     
-   END ELSE BEGIN    
+    END ELSE BEGIN    
       
       OUTER_SPRINT ~tra_location~ ~weidu_external/thecalling/languages~      
       INCLUDE ~thecalling/lib/tob2soa.tpa~    
