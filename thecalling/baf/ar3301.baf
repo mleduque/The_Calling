@@ -1,4 +1,5 @@
 IF
+  PartyHasItem("CD23WHE")
   Global("CDMonkCalling","GLOBAL",9)
 THEN
   RESPONSE #100

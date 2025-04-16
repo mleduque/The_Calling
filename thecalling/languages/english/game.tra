@@ -1077,7 +1077,7 @@ Armor Class Bonus:  +1 vs. crushing weapons~
 @70135 = ~Oh, glorious day! It looks like we have both parts of the sword!~
 @70136 = ~Now, we need to fix it! It must be made whole again. And I know exactly who to ask.~
 @70137 = ~When I was in Beregost, I talked to the blacksmith out there. He's very skilled and I believe he may be able to fix this sword.~
-@70138 = ~We should meet there. I presume you may need to rest first, but when you're done and ready, meet me at his forge, in the town. Please, don't make me wait too long for you, though.~
+@70138 = ~Get the Starfell Whetstone and meet me in Beregost. I presume you may need to rest first, but when you're done and ready, meet me at his forge, in the town. Please, don't make me wait too long for you, though.~
 @70139 = ~...ah, that could be worth something...~
 @70140 = ~Wait! Who are you? You want to take my treasures!~
 @70141 = ~I'm just looking for a sword part, I was told it may be near some lighthouse, so I thought I'd check if it's here.~
@@ -1170,7 +1170,7 @@ I have recovered the sword blade from the belly of a troll. I still need to find
 I have recovered both parts of the blade. I should return to Inoshishi, who is waiting for me outside of the Temple of Wisdom.~
 @70211 = ~Restoring Saiai no Hito
 
-I have recovered both parts of the blade and given them to Inoshishi. He has gone ahead to Beregost, where he'll be waiting at the Thunderhammer Smithy.~
+I have recovered both parts of the blade and given them to Inoshishi. He has gone ahead to Beregost, where he'll be waiting at the Thunderhammer Smithy. I need to travel to the Nashkel Carnival and find a Starfell Whetstone.~
 @70212 = ~Restoring Saiai no Hito
 
 I met Inoshishi but the Smithy was closed. I'll return when it's open.~
@@ -1193,3 +1193,25 @@ I have helped Inoshishi restore Saiai no Hito to its former glory. I convinced h
 
 I have helped Inoshishi restore Saiai no Hito to its former glory. He tried to repay me with paltry trinkets, but I demanded the blade itself.~
 @70219 = ~And he always helped his other brothers. He then fell in love with one of ours and while I do not understand how it must have felt, to be torn between old and newly felt love, and the questions if his feelings would be returned, I read the documents and I know he was an honest and a strong man and he should be remembered, just as his love should be with him.~
+@70220 = ~Starfell Whetstone~
+@70221 = ~Starfell Whetstone is an uncommon alchemical compound, known for its startling azure color.
+
+STATISTICS:
+
+Weight: 5~
+@70222 = ~I am looking for something: a starfell whetstone. I heard someone here may have it.~
+@70223 = ~Sorry, but ain't me. Ye may need to look somewhere else.~
+@70224 = ~I've seen it before, but back in Athkatla. Sorry, but I don't have anything like that.~
+@70225 = ~That's a rare thing! Maybe someone around has such whetstone, but that's not me, sorry.~
+@70226 = ~I heard someone here ordered ankheg shells! I've got them right here.~
+@70227 = ~Well, I do 'ave such a whetstone, if ya need it, but I'll need somethin' in exchange for it.~ 
+@70228 = ~Ya see, I heard 'bout these armors from ankhegs. And I thought I'd try to make such armor myself when the carnival is over an' I'm back home. Well, with some help from my trusted blacksmith, Cromwell.~ 
+@70229 = ~Bu' I'll be needin' some material for that. Five ankheg shells. Bring me those an' I'll give ya th' whetstone for them. That's a fair offer, trust me. Starfell ore is really rare!~
+@70230 = ~Ya've really got 'em? Ya surely know how to surprise others. In a good way, of course!~ 
+@70231 = ~'Ere, the whetstone ya need. And I'll be takin' these shells. And... how now I'll need to figure out 'ow on Nine Hells I'm goin' to get them back south.~
+@70232 = ~Thanks for this! Remember I need five of 'em.~
+@70233 = ~I'm sure he'll need a Starfell Whetstone. Wile you've been geting the parts of the sword back, I've asked around, and I believe there's one at the Nashkel Carnival.~
+@70234 = ~I have also acquired this rare Starfell Whetstone for you to use.~
+@70235 = ~Restoring Saiai no Hito
+
+The armor merchant at the Nashkel Carnival has a Starfell Whetstone, but he wants to try his hand at making armor from ankheg shells. He is willing to trade the Whetstone for five shells.~

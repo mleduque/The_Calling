@@ -72,7 +72,7 @@ COPY_EXISTING ~bgee.lua~ ~override~
   
 COPY ~thecalling/tilesets/20~ ~override~ // new area tilesets/pvrz
 
-COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~ // adding script region to exterior dig site (ar4200)
+COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~ // adding script region to exterior dig site (ar4100)
   LPF fj_are_structure INT_VAR
     fj_type = 0 // prox trigger
     fj_box_left = 2902
@@ -95,7 +95,7 @@ COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~ // adding script region to e
     fj_reg_script = cd41seed
   END
 
-COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to dreamheart's cave
+COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to dreamheart's cave ar4101
   LPF fj_are_structure INT_VAR
     fj_type = 2 // travel
     fj_box_left = 330
@@ -144,7 +144,7 @@ COPY_EXISTING ~%ArchaeologicalSite_Tomb%.are~ ~override~ // adding entrances to 
     fj_bam_resref     = ~CD41IN~
   END
 
-COPY_EXISTING ~%GibberlingMountains%.are~ ~override~ // Mountains
+COPY_EXISTING ~%GibberlingMountains%.are~ ~override~ // Mountains (ar5500)
   LPF fj_are_structure INT_VAR
     fj_type = 8 //nonvisible
     fj_box_left = 4728

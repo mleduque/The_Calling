@@ -232,9 +232,10 @@ CHAIN CD23MON 07.0C
 @70135
 ==CD23MON @70136
 ==CD23MON @70137
+==CD23MON @70233
 ==CD23MON @70138
-DO ~TakePartyItem("CD23FR1") DestroyItem("CD23FR1") TakePartyItem("CD23FR2") DestroyItem("CD23FR2") SetGlobal("CDMonkCalling","GLOBAL",9) 
-EraseJournalEntry(@70210) AddJournalEntry(@70211,QUEST) EscapeArea()~ EXIT
+DO ~TakePartyItem("CD23FR1") DestroyItem("CD23FR1") TakePartyItem("CD23FR2") DestroyItem("CD23FR2") SetGlobal("CDMonkCalling","GLOBAL",9)
+SetGlobal("cd_monk_calling_sf","GLOBAL",1) EraseJournalEntry(@70210) AddJournalEntry(@70211,QUEST) EscapeArea()~ EXIT
 
 //BANDIT
 
@@ -265,6 +266,7 @@ CHAIN IF ~Global("CDMonkCalling","GLOBAL",10) See("%tutu_var%taerom")~ THEN CD23
 ==CD23MON @70151
 ==%tutu_var%taerom @70152
 ==CD23MON @70153
+==CD23MON @70234
 ==%tutu_var%taerom @70154
 ==CD23MON @70155
 ==%tutu_var%taerom @70156
@@ -277,8 +279,8 @@ CHAIN CD23MON 08.01
 @70160
 ==%tutu_var%taerom @70161
 ==CD23MON @70162
-DO ~TakePartyGold(200) SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
-EraseJournalEntry(@70211) EraseJournalEntry(@70212)  AddJournalEntry(@70214,QUEST) EscapeArea()~ EXIT
+DO ~TakePartyItem("CD23WHE") DestroyItem("CD23WHE") TakePartyGold(200) SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
+EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70235) AddJournalEntry(@70214,QUEST) EscapeArea()~ EXIT
 
 CHAIN CD23MON 08.02
 @70163
@@ -286,8 +288,8 @@ CHAIN CD23MON 08.02
 ==CD23MON @70165
 ==%tutu_var%taerom @70166
 ==CD23MON @70167
-DO ~DestroyItem("cd23rin") SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingNotPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
-EraseJournalEntry(@70211) EraseJournalEntry(@70212)  AddJournalEntry(@70213,QUEST) EscapeArea()~ EXIT
+DO ~TakePartyItem("CD23WHE") DestroyItem("CD23WHE") DestroyItem("cd23rin") SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingNotPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
+EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70235) AddJournalEntry(@70213,QUEST) EscapeArea()~ EXIT
 
 //Talk 9 (Almost Fixed)
 
@@ -325,7 +327,7 @@ CHAIN CD23MON 10.01
 DO ~AddXPObject(Player1,750) AddexperienceParty(3000) SetGlobal("CDMonkCalling","GLOBAL",14) 
 EraseJournalEntry(@70202) EraseJournalEntry(@70203) EraseJournalEntry(@70204) EraseJournalEntry(@70205) EraseJournalEntry(@70206) EraseJournalEntry(@70207) 
 EraseJournalEntry(@70208) EraseJournalEntry(@70209) EraseJournalEntry(@70210) EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70213) 
-EraseJournalEntry(@70214) EraseJournalEntry(@70215) AddJournalEntry(@70216,QUEST_DONE) EscapeArea()~ EXIT
+EraseJournalEntry(@70214) EraseJournalEntry(@70215) EraseJournalEntry(@70235) AddJournalEntry(@70216,QUEST_DONE) EscapeArea()~ EXIT
 
 CHAIN CD23MON 10.02
 @70186
@@ -348,7 +350,7 @@ CHAIN CD23MON 10.06
 DO ~AddXPObject(Player1,750) AddexperienceParty(3000) GiveItem("CD23KAT",Player1) SetGlobal("CDMonkCalling","GLOBAL",15)  
 EraseJournalEntry(@70202) EraseJournalEntry(@70203) EraseJournalEntry(@70204) EraseJournalEntry(@70205) EraseJournalEntry(@70206) EraseJournalEntry(@70207) 
 EraseJournalEntry(@70208) EraseJournalEntry(@70209) EraseJournalEntry(@70210) EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70213) 
-EraseJournalEntry(@70214) EraseJournalEntry(@70215) AddJournalEntry(@70217,QUEST_DONE) EscapeArea()~ EXIT
+EraseJournalEntry(@70214) EraseJournalEntry(@70215) EraseJournalEntry(@70235) AddJournalEntry(@70217,QUEST_DONE) EscapeArea()~ EXIT
 
 CHAIN CD23MON 10.03
 @70197
@@ -361,6 +363,100 @@ CHAIN CD23MON 10.04
 DO ~AddXPObject(Player1,750) AddexperienceParty(3000) SetGlobal("CDMonkCalling","GLOBAL",16)  
 EraseJournalEntry(@70202) EraseJournalEntry(@70203) EraseJournalEntry(@70204) EraseJournalEntry(@70205) EraseJournalEntry(@70206) EraseJournalEntry(@70207) 
 EraseJournalEntry(@70208) EraseJournalEntry(@70209) EraseJournalEntry(@70210) EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70213) 
-EraseJournalEntry(@70214) EraseJournalEntry(@70215) AddJournalEntry(@70218,QUEST_DONE) Enemy()~ EXIT
+EraseJournalEntry(@70214) EraseJournalEntry(@70215) EraseJournalEntry(@70235) AddJournalEntry(@70218,QUEST_DONE) Enemy()~ EXIT
 
+// starfell ore
+EXTEND_BOTTOM %tutu_var%MERCH4 0
+  IF ~Global("cd_monk_calling_sf","LOCALS",0) Global("cd_monk_calling_sf","GLOBAL",1)~ THEN REPLY @70222 DO ~SetGlobal("cd_monk_calling_sf","LOCALS",1)~ GOTO CD23.MERCH4.0
+END
 
+APPEND %tutu_var%MERCH4
+  IF ~~ THEN BEGIN CD23.MERCH4.0 SAY @70223
+    IF ~~ THEN EXIT
+  END
+END
+
+EXTEND_BOTTOM %tutu_var%MERCH5 0
+  IF ~Global("cd_monk_calling_sf","LOCALS",0) Global("cd_monk_calling_sf","GLOBAL",1)~ REPLY @70222 DO ~SetGlobal("cd_monk_calling_sf","LOCALS",1)~ GOTO CD23.MERCH5.0
+END
+
+APPEND %tutu_var%MERCH5
+  IF ~~ THEN BEGIN CD23.MERCH5.0 SAY @70224
+    IF ~~ THEN EXIT
+  END
+END
+
+EXTEND_BOTTOM %tutu_var%MERCH6 0
+  IF ~Global("cd_monk_calling_sf","LOCALS",0) Global("cd_monk_calling_sf","GLOBAL",1)~ REPLY @70222 DO ~SetGlobal("cd_monk_calling_sf","LOCALS",1)~ GOTO CD23.MERCH6.0
+END
+
+APPEND %tutu_var%MERCH6
+  IF ~~ THEN BEGIN CD23.MERCH6.0 SAY @70225
+    IF ~~ THEN EXIT
+  END
+END
+
+EXTEND_BOTTOM %tutu_var%MERCH2 0
+  IF ~Global("cd_monk_calling_sf","GLOBAL",1)~ REPLY @70222 DO ~SetGlobal("cd_monk_calling_sf","GLOBAL",2) AddJournalEntry(@70235,QUEST)~ GOTO CD23.MERCH2.0
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      Global("cd_monk_ankheg","LOCALS",0) 
+      NumItemsPartyGT("MISC12",4)~ THEN DO ~TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.1
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      Global("cd_monk_ankheg","LOCALS",1) 
+      NumItemsPartyGT("MISC12",3)~ THEN DO ~TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.1
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      Global("cd_monk_ankheg","LOCALS",2) 
+      NumItemsPartyGT("MISC12",2)~ THEN DO ~TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.1
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      Global("cd_monk_ankheg","LOCALS",3) 
+      NumItemsPartyGT("MISC12",1)~ THEN DO ~TakePartyItemNum("MISC12",1) 
+                                            TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.1
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      Global("cd_monk_ankheg","LOCALS",4) 
+      NumItemsPartyGT("MISC12",1)~ THEN DO ~TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.1
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      GlobalLT("cd_monk_ankheg","LOCALS",1) 
+      NumItemsParty("MISC12",4)~ THEN DO ~IncrementGlobal("cd_monk_ankheg","LOCALS",4)
+                                          TakePartyItemNum("MISC12",1) 
+                                          TakePartyItemNum("MISC12",1) 
+                                          TakePartyItemNum("MISC12",1) 
+                                          TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.2
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      GlobalLT("cd_monk_ankheg","LOCALS",2) 
+      NumItemsParty("MISC12",3)~ THEN DO ~IncrementGlobal("cd_monk_ankheg","LOCALS",3)
+                                          TakePartyItemNum("MISC12",1) 
+                                          TakePartyItemNum("MISC12",1) 
+                                          TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.2
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      GlobalLT("cd_monk_ankheg","LOCALS",3) 
+      NumItemsParty("MISC12",2)~ THEN DO ~IncrementGlobal("cd_monk_ankheg","LOCALS",2)
+                                          TakePartyItemNum("MISC12",1) 
+                                          TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.2
+  IF ~Global("cd_monk_calling_sf","GLOBAL",2) 
+      GlobalLT("cd_monk_ankheg","LOCALS",4) 
+      NumItemsParty("MISC12",1)~ THEN DO ~IncrementGlobal("cd_monk_ankheg","LOCALS",1)
+                                          TakePartyItemNum("MISC12",1)~ REPLY @70226 GOTO CD23.MERCH2.2
+END
+
+APPEND %tutu_var%MERCH2
+  IF ~~ THEN BEGIN CD23.MERCH2.0 SAY @70227 = @70228 = @70229
+    IF ~~ THEN EXIT
+  END
+  
+  IF ~~ THEN BEGIN CD23.MERCH2.1 SAY @70230 = @70231 
+    IF ~~ THEN DO ~SetGlobal("cd_monk_ankheg","LOCALS",5) GiveItemCreate("CD23WHE",Player1,1,0,0) SetGlobal("cd_monk_calling_sf","GLOBAL",3)~ EXIT
+  END
+  
+  IF ~~ THEN BEGIN CD23.MERCH2.2 SAY @70232
+    IF ~~ THEN EXIT
+  END
+END

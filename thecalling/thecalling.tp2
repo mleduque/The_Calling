@@ -1058,15 +1058,17 @@ LABEL ~cd_the_calling_monk~
 ///// copies, preamble                                 \\\\\
 /////                                                  \\\\\
 
-COPY ~thecalling/bam/cd23amu.bam~ ~override~
-     ~thecalling/bam/cd23bra.bam~ ~override~
-     ~thecalling/bam/cd23fr1.bam~ ~override~
-     ~thecalling/bam/cd23fr2.bam~ ~override~
-     ~thecalling/bam/cd23kat.bam~ ~override~
-     ~thecalling/bam/cd23rin.bam~ ~override~
-     ~thecalling/eff/cd23kat.eff~ ~override~
+COPY ~thecalling/bam/cd23amu.bam~  ~override~
+     ~thecalling/bam/cd23bra.bam~  ~override~
+     ~thecalling/bam/cd23fr1.bam~  ~override~
+     ~thecalling/bam/cd23fr2.bam~  ~override~
+     ~thecalling/bam/cd23kat.bam~  ~override~
+     ~thecalling/bam/cd23rin.bam~  ~override~
+     ~thecalling/bam/cd23whec.bam~ ~override~
+     ~thecalling/bam/cd23whei.bam~ ~override~
+     ~thecalling/eff/cd23kat.eff~  ~override~
 						
-ADD_JOURNAL TITLE (@70201) @70202 @70203 @70204 @70205 @70206 @70207 @70208 @70209 @70210 @70211 @70212 @70213 @70214 @70215 @70216 @70217 @70218
+ADD_JOURNAL TITLE (@70201) @70202 @70203 @70204 @70205 @70206 @70207 @70208 @70209 @70210 @70211 @70212 @70213 @70214 @70215 @70216 @70217 @70218 @70235
 
 /////                                                  \\\\\
 ///// scripts & dialogue                               \\\\\
@@ -1189,7 +1191,13 @@ COPY ~thecalling/itm/cd23kat.itm~ ~override~
 COPY ~thecalling/itm/cd23rin.itm~ ~override~
   SAY NAME1 #6348
   SAY NAME2 @70015
-  SAY DESC @70016              
+  SAY DESC @70016       
+
+COPY ~thecalling/itm/cd23whe.itm~ ~override~
+  SAY NAME1 #70220
+  SAY NAME2 @70220
+  SAY 0x50 @70221   
+  SAY 0x54 @70221              
 
 /////                                                  \\\\\
 ///// eefp compat                                      \\\\\
