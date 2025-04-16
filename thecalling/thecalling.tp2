@@ -1066,7 +1066,6 @@ COPY ~thecalling/bam/cd23amu.bam~  ~override~
      ~thecalling/bam/cd23rin.bam~  ~override~
      ~thecalling/bam/cd23whec.bam~ ~override~
      ~thecalling/bam/cd23whei.bam~ ~override~
-     ~thecalling/eff/cd23kat.eff~  ~override~
 						
 ADD_JOURNAL TITLE (@70201) @70202 @70203 @70204 @70205 @70206 @70207 @70208 @70209 @70210 @70211 @70212 @70213 @70214 @70215 @70216 @70217 @70218 @70235
 
@@ -1178,15 +1177,28 @@ COPY ~thecalling/itm/cd23bra.itm~ ~override~
   SAY NAME1 #6341
   SAY NAME2 @70011
   SAY DESC @70012
+  
+ACTION_IF enhanced_edition BEGIN 
 
-COPY ~thecalling/itm/cd23kat.itm~ ~override~
-  SAY NAME1 #26711
-  SAY NAME2 @70013
-  SAY DESC @70014
-  PATCH_IF !enhanced_edition BEGIN // oBG2 doesn't have 'enchantment vs.' opcode
-    LPF DELETE_EFFECT INT_VAR check_headers = 0 match_opcode = 344 END
-    WRITE_LONG 0x60 2 // enchantment
-  END
+  COPY ~thecalling/itm/cd23kat.itm~ ~override~
+    SAY NAME1 #26711
+    SAY NAME2 @70013
+    SAY DESC @70014
+    
+  COPY ~thecalling/eff/cd23kat.eff~  ~override~
+       ~thecalling/eff/cd23kat2.eff~ ~override~
+
+END ELSE BEGIN
+
+  COPY ~thecalling/itm/cd23kat_orig.itm~ ~override/cd23kat.itm~
+    SAY NAME1 #26711
+    SAY NAME2 @70013
+    SAY DESC @70014
+    
+  COPY ~thecalling/eff/cd23kat_orig.eff~ ~override/cd23kat.eff~
+       ~thecalling/spl/cd23kat.spl~      ~override~
+
+END
 
 COPY ~thecalling/itm/cd23rin.itm~ ~override~
   SAY NAME1 #6348
@@ -1206,11 +1218,7 @@ COPY ~thecalling/itm/cd23whe.itm~ ~override~
 ACTION_IF cd_eefp_installed BEGIN 
 
   COPY_EXISTING ~cd23bra.itm~ ~override~
-    LPF ALTER_EFFECT INT_VAR match_opcode = 4 opcode = 146 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~#cureber~ END   
-  
-  COPY_EXISTING ~cd23kat.itm~ ~override~
-    LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 134 opcode = 328  // clone immunity to petrify into set spell state
-      parameter2 = IDS_OF_SYMBOL (~splstate~ ~PETRIFY_IMMUNITY~) special = 1 STR_VAR insert = first END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 4 opcode = 146 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~#cureber~ END 
 
 END 
 

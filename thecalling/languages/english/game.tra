@@ -917,7 +917,7 @@ Protection from Berserk
 Weight: 1
 Usable By:
  Monks~
-@70013 = ~Saiai no Hito +1~
+@70013 = ~Saiai no Hito~
 @70014 = ~This sword is known as Saiai no Hito. It was created by Ne Kurosuna, a former member of Saku Monastery. He was one of the original members of the monastery and he trained there for years. He was known for his keen mind and graceful techniques. He was also quite strong, probably one of the strongest monks among other members of the Saku Monastery while he was still there.
 
 In the tenth year of his work, he started to develop romantic feelings for Shiroume Yakuchi, another monk from the same Monastery. While he could be called a master of discipline, body and strategy, he wasn't ready for this, as Ne lost his previous beloved to bandits that killed killed him. He never expected to develop such feelings again, and surely not to someone from the same monastery. That made him feel uneasy, torn between past love and the newly found one. He wasn't sure if he should ever tell Shiroume about his feelings. What if the man could never return these feelings? Would that change their friendship? And would that be a betrayal of his former loved one?
@@ -930,12 +930,11 @@ The magic held by this sword was to help those that wield it, providing a great 
 
 STATISTICS:
 
-Equipped abilities:
-- Protection from Petrification
-- Crushing damage resistance: +10% (monk only)
+Charge ability:
+– Once per day, if activated and held by a monk, the character will gain +1 attack per round as well as +10% crushing resistance for the next 3 turns.
 
 Combat abilities:
-- Strikes as +2 weapon
+– Strikes as a +3 weapon
 
 THAC0: +1 bonus
 Damage:  1D10 +1
