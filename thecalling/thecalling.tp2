@@ -421,7 +421,7 @@ COPY ~thecalling/bam/cd51amu%enhanced_edition%.bam~ ~override/cd51amu.bam~ // ic
 COPY ~thecalling/sto/cd51shop.sto~ ~override~
   SAY 0x1c @10172
   PATCH_IF tutu_gen BEGIN // adjust tutu resource names
-    LPF tutuize_items INT_VAR item_number = (SHORT_AT 0x76) item_offset = (LONG_AT 0x78) item_length = 0x1c END
+    LPF tutuize_items INT_VAR item_number = (LONG_AT 0x34) item_offset = (LONG_AT 0x38) item_length = 0x1c END
   END  
 
 /////                                                  \\\\\
@@ -439,7 +439,7 @@ COPY ~thecalling/are/cd5104.are~ ~override~
      ~thecalling/are/cd5109.are~ ~override~
   LPF ALTER_AREA_REGION STR_VAR region_name = to_gnoll_exterior destination_area = EVAL ~%GnollStronghold%~ END 
   PATCH_IF tutu_gen BEGIN // adjust tutu resource names
-    LPF tutuize_items INT_VAR item_number = (LONG_AT 0x38) item_offset = (LONG_AT 0x34) END
+    LPF tutuize_items INT_VAR item_number = (SHORT_AT 0x76) item_offset = (LONG_AT 0x78) END
   END  
 
 COPY_EXISTING ~cd5104.are~ ~override~
@@ -1223,6 +1223,167 @@ ACTION_IF cd_eefp_installed BEGIN
     LPF ALTER_EFFECT INT_VAR match_opcode = 4 opcode = 146 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~#cureber~ END 
 
 END 
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Thief - Expanded Narlen Stuff                    \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @80000 DESIGNATED 80
+GROUP @8
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
+LABEL ~cd_the_calling_thief~
+
+/////                                                  \\\\\
+///// copies, preamble                                 \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/bam/cd09amu.bam~ ~override~
+     ~thecalling/bam/cd09clu.bam~ ~override~
+     ~thecalling/bam/cd09dag.bam~ ~override~
+     ~thecalling/bam/cd09pc.bam~  ~override~
+     ~thecalling/bam/cd09rin.bam~ ~override~
+
+LAF HANDLE_AUDIO STR_VAR audio_path = ~thecalling/audio/80~ oggdec_path = ~thecalling/audio~ sox_path = ~thecalling/audio~ END // ambients, audio
+						
+//ADD_JOURNAL TITLE (@70201) @70202 @70203 @70204 @70205 @70206 @70207 @70208 @70209 @70210 @70211 @70212 @70213 @70214 @70215 @70216 @70217 @70218 @70235
+
+/////                                                  \\\\\
+///// area stuff                                       \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/are/80~ ~override~ // bmp, mos, wed
+
+// new areas that connect to the gnoll stronghold need to use the platform-specific resref
+COPY ~thecalling/are/cd0902.are~ ~override~
+  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+    LPF tutuize_items INT_VAR item_number = (SHORT_AT 0x76) item_offset = (LONG_AT 0x78) END
+  END  
+
+ACTION_IF enhanced_edition BEGIN
+
+  // add new areas to the console menu listing
+  COPY_EXISTING ~bgee.lua~ ~override~
+    SPRINT cd0902_descript @10023 // do it this way so that the entries can also be translated
+    REPLACE_TEXTUALLY ~\({"%WyrmsCrossingTenyasHouse%",.+},\)~ ~\1
+	{"cd5104", "%cd0902_descript%"},~
+  
+  COPY ~thecalling/tilesets/80~            ~override~                       // new area tilesets/pvrz
+  
+END ELSE BEGIN
+
+  INCLUDE ~thecalling/lib/a7_tools.tpa~ // tile2ee
+  LAF HANDLE_TILE2EE INT_VAR quality_v1 = 9 STR_VAR input_path = ~thecalling/tilesets/80~ END // new area tilesets/pvrz
+
+END
+
+/////                                                  \\\\\
+///// scripts & dialogue                               \\\\\
+/////                                                  \\\\\
+
+COMPILE ~thecalling/baf/cd09cs1.baf~
+COMPILE ~thecalling/baf/cd09cs2.baf~ EVALUATE_BUFFER
+COMPILE ~thecalling/baf/cd09hag.baf~
+COMPILE ~thecalling/baf/cd09spc.baf~
+COMPILE ~thecalling/baf/cd09th2.baf~
+COMPILE ~thecalling/baf/cd09thi.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~%BaldursGate_Undercellars_BCS%.bcs~ ~thecalling/baf/ar0112.baf~
+EXTEND_BOTTOM ~%EBaldursGate_BCS%.bcs~             ~thecalling/baf/ar0800.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%WyrmsCrossing_BCS%.bcs~            ~thecalling/baf/ar0900.baf~
+EXTEND_BOTTOM ~%tutu_var%narlen.bcs~               ~thecalling/baf/narlen.baf~ EVALUATE_BUFFER
+
+COMPILE ~thecalling/dlg/cd09thi.d~
+COMPILE ~thecalling/dlg/cd09th2.d~
+
+/////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/cre/cd09thi.cre~ ~override~
+  SAY NAME1 @80001
+  SAY NAME2 @80001
+
+COPY ~thecalling/cre/cd09hag.cre~ ~override~
+  SAY NAME1 @80002
+  SAY NAME2 @80002
+
+COPY ~thecalling/cre/cd09spc.cre~ ~override~
+  SAY NAME1 @80003
+  SAY NAME2 @80003
+
+COPY ~thecalling/cre/cd09th2.cre~ ~override~
+  SAY NAME1 @80004
+  SAY NAME2 @80004
+
+COPY ~thecalling/cre/cd09fri.cre~ ~override~
+  SAY NAME1 @80005
+  SAY NAME2 @80005
+
+COPY ~thecalling/cre/cd09man.cre~ ~override~
+  SAY NAME1 @80006
+  SAY NAME2 @80006
+  
+  
+ACTION_IF tutu_gen BEGIN // adjust tutu item names
+
+  COPY_EXISTING ~cd09thi.cre~ ~override~
+                ~cd09hag.cre~ ~override~
+                ~cd09spc.cre~ ~override~
+                ~cd09th2.cre~ ~override~
+                //~cd09fri.cre~ ~override~ // no items
+                ~cd09man.cre~ ~override~ 
+    LPF tutuize_items INT_VAR item_number = (LONG_AT 0x2c0) item_offset = (LONG_AT 0x2bc) END
+    BUT_ONLY
+
+END
+  
+ACTION_IF game_is_eet BEGIN // adjust strings for EET soundsets
+
+  COPY_EXISTING ~cd09thi.cre~ ~override~
+                ~cd09hag.cre~ ~override~
+                //~cd09spc.cre~ ~override~ // uses animation defaults
+                ~cd09th2.cre~ ~override~
+                ~cd09fri.cre~ ~override~ // no items
+                ~cd09man.cre~ ~override~ 
+    LPM eetize_soundsets
+    BUT_ONLY
+
+END
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
+COPY ~thecalling/itm/cd09clu.itm~ ~override~
+  SAY NAME2 @80008
+  SAY DESC @80009
+
+COPY ~thecalling/itm/cd09amu.itm~ ~override~
+  SAY NAME2 @80011
+  SAY DESC @80012
+
+COPY ~thecalling/itm/cd09dag.itm~ ~override~
+  SAY NAME2 @80014
+  SAY DESC @80015
+
+COPY ~thecalling/itm/cd09rin.itm~ ~override~
+  SAY NAME2 @80017
+  SAY DESC @80018
+
+COPY_EXISTING ~scrl2k.itm~ ~override/cd09let.itm~
+  SAY NAME1 #7222
+  SAY NAME2 #7222
+  SAY 0x50 @80020
+  SAY 0x54 @80020
+
+COPY ~thecalling/itm/cd09pc.itm~ ~override~
+  SAY NAME1 @80021
+  SAY NAME2 @80022
+  SAY DESC @80023
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

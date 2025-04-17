@@ -1,0 +1,17 @@
+IF
+  Global("CDThiefCalling","GLOBAL",0)
+  Class(Player1,THIEF)
+THEN
+  RESPONSE #100
+    SetGlobal("CDThiefCalling","GLOBAL",1)
+    CreateCreature("CD09THI",[4120.3600],14)
+END
+
+IF
+  GlobalGT("CDThiefCalling","GLOBAL",5)
+  Global("CDThiefCallingMan","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDThiefCallingMan","MYAREA",1)
+    CreateCreature("CD09MAN",[1300.2900],11)
+END

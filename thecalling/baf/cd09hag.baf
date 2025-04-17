@@ -1,0 +1,16 @@
+IF
+  Global("CDPrepareForBattle","LOCALS",0)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ForceSpell([PC],WIZARD_POWER_WORD_SLEEP)
+    SetGlobal("CDPrepareForBattle","LOCALS",1)
+END
+
+IF
+  See([PC])
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END

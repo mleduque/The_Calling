@@ -1253,3 +1253,237 @@ The armor merchant at the Nashkel Carnival has a Starfell Whetstone, but he want
 @70272 = ~I thank you for this training my friend. I took enough of your time already. Know that I am also grateful for this chat. You said many things that truly made me think about things.~
 @70273 = ~It's time for some meditations now. We shall meet soon, my <PRO_BROTHERSISTER>, at the forge, when the blade is fixed and ready for its return back home.~
 @70274 = ~I... I see. Well, I won't take any more of your time, then. We shall meet soon, at the forge, when the blade is fixed and ready for its return back home.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// The Calling - Thief's Quest                      \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@80001 = ~Bdharlan the Simple~
+@80002 = ~Pelerlertiana~
+@80003 = ~Spore Colony~
+@80004 = ~Mysterious Woman~
+@80005 = ~Mallandrea~
+@80006 = ~Xamm~
+//@80007 = ~Club~
+@80008 = ~Cold Lout +1~
+@80009 = ~This magic club feels cold in touch. It was clearly enchanted to deal additional damage and cause frostbites. There is a little scratched heart cut in the wood, as well as a little note: Lulu + Grong (also scratched). Perhaps the weapon was a made from a branch that was supposed to be a sign of love but... it didn't last. 
+
+STATISTICS:
+
+Combat abilities:
+- Each succesful hit has a 75% chance to cause additional 1 cold damage
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+//@80010 = ~Amulet~
+@80011 = ~That One Stupid Gift~
+@80012 = ~This amulet looks slightly like a different one, known as The One Gift Lost. While they both can help the one that uses it throw powerful fiery missiles, this one is also... cursed and will make it harder for the one that uses it to focus and follow a perfectly clear conversation.
+
+STATISTICS:
+
+Equipped abilities:
+- Intelligence: -2
+- May only be removed with a Remove Curse spell
+
+Charge abilities:
+- Missile Blast
+  Damage: 6d6 fire (Save vs. Spell for half)
+  Range: 50 ft.
+  Area of Effect: 15-ft. radius
+
+Weight: 1~
+//@80013 = ~Dagger~
+@80014 = ~Laughing Old Prune +2~
+@80015 = ~Laughing Old Prunne was created by a green hag from the Sword Coast. It is a powerful weapon, very sharp, very dangerous, but those that use it in fight will also need to get used to its moody nature. While the blade is able to protect its wielder, hold it in a wrong way, be not gentle enough, and she will take some of that protection or even weaken you, if there is nothing else to take. 
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +6%
+- May only be removed with a Remove Curse spell
+
+Combat abilities:
+- Each succesful hit has a 10% chance to lower your magic resistance by 2% for 3 rounds. That vicious curse is very amusing to this weapon so it will laugh at you each time that happens... what can be also quite annoying and, to be quite frank, really rude
+
+THAC0: +2
+Damage: 1d4+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+//@80016 = ~Ring~
+@80017 = ~Ring of Smelly Feet~
+@80018 = ~This cursed ring is known as Ring of Smelly Feet. It was created by a Sembian bard that waned to make a prank on his friend. He gave him the ring but... some some reason the friend kept wearing it and said he like it quite a bit. A peculiar fellow, that's for sure.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: -1
+- Hide in Shadows: -5%
+- May only be removed with a Remove Curse spell
+
+Weight: 0~
+//@80019 = ~Letter~
+@80020 = ~Bdharlan,
+
+I understand you want to join our group. Who knows, perhaps you will fit in. I guess, however, Narlen will like to check if you'd be the right addition. That guy wants to make sure the new ones won't chicken out and will have his back. 
+
+Remember, though! If he approaches you, NEVER question the way he talks. We got used to it, but he's really sensitive when it comes to that. If the two of you work together, perhaps you'll get your first chance to eart a coin or two.
+
+With regards, 
+Friend~
+@80021 = ~Picks~
+@80022 = ~Picks of Mask's Pal~
+@80023 = ~This set of magic picks can surely help all those that want to pick a lock as soon as possibly and get out of... wherever the heist is happening.
+
+STATISTICS:
+
+Charge abilities:
+- May cast Knock once per day
+
+Equipped abilities:
+- Open Locks: +10%
+
+Weight: 0~
+@80024 = ~Take that stupid ants! Haha!~
+@80025 = ~Dammit! It's on my boot! Oh well... hehehe.~
+@80026 = ~Hahaha! Look who came back!~
+@80027 = ~Well, it looks like there are more like me, lucky fellas trying to get into the City of Baldur's Gate! I heard that's a place to start a new life! And earn a coin or two. And I think you know what I mean by "earn".~
+@80028 = ~Perhaps I do. By why would you want to start a new life?~
+@80029 = ~I have no idea what you're talking about. And I don't think I have time for any chit-chats, so... goodbye.~
+@80030 = ~Let's just say I know what does it mean to walk with an empty stomach for a day or two.~
+@80031 = ~But I heard there's a group in the city! I guild and I thought that maybe that's what I need! A group that would watch my back when I do what I do best! But there is a little problem that I need to deal with. One case I'd like to close before I can cross that bridge and enjoy my new life!~
+@80032 = ~What's exactly between your present life and your new life?~
+@80033 = ~Whatever. Look, I do not have time for such chit-chat and... I need to go.~
+@80034 = ~Wait! There's gold. There is so much gold and it can be yours. Just... help me finish something!~
+@80035 = ~And what sort of help you hope to get, hmm? What is this "case" you're speaking of?~
+@80036 = ~I'm not interested. Now get off my way or they'll find your dead body under that bridge over here.~
+@80037 = ~You see, I... encoutnered this woman and I tried to take something from her. Some food...~
+@80038 = ~...and a wand, it looked expensive...~
+@80039 = ~...and there was this amulet...~
+@80040 = ~...it was right next those golden coins she had near her pillow...~
+@80041 = ~...and I just needed few more things from her, like the pillow itself...~
+@80042 = ~...a new waterskin...~
+@80043 = ~...a healing potion...~
+@80044 = ~...some balm, I have that nasty itch... down there...~
+@80045 = ~...a new comb, I do want to look neat once I'm in Baldur's Gate...~
+@80046 = ~...a pair of scissors, I reall need to cut my fingernails...~
+@80047 = ~...I was hoping to maybe find some perfume...~
+@80048 = ~...and I really needed a fresh pair of socks! Mine are as sticky as if I stepped into honey or tree sap.~
+@80049 = ~That's... quite a list!~
+@80050 = ~Socks? Seriously? And seriously... Ew.~
+@80051 = ~If you also stole that underwear from someone else, no wonder you have that rash now.~
+@80052 = ~I don't have time for such nonsense. Sorry, but I need to go.~
+@80053 = ~Hey! No shaming! I've been living in a wild for quite a while and... and I had no other choice! Seriously!~
+@80054 = ~I know I tried to take a lot, but you know how it is. When you're starving you just want to take all you can get just in case things went wrong again. You want to prepare yourself for the worst.~
+@80055 = ~Anyway, I had to run. And I left my bag near that woman's tent and I need it. I really do. So I was hoping that maybe I would meet someone here, someone ready to help. Or someone like me, just more... stealthy.~
+@80056 = ~Eh, fine. If you want I can help you. Just show me the way.~
+@80057 = ~I don't have time for such nonsense. Now, I need to go.~
+@80058 = ~You'll help me? Oh, that's wonderful!~
+@80059 = ~Let me take my things, give me a second to... well, take a leak, and... just get back to me in a moment. And look away, eh? I don't think I need company in that sort of stuff.~
+@80060 = ~Dammit! I'll need to look for someone else, then.~
+@80061 = ~Let me take a leak in peace, hmm? If you wanna look, then sorry, but I'm not into that stuff.~
+@80062 = ~Aaah, my bladder's empty, so we can move on.~
+@80063 = ~Show me the way.~
+@80064 = ~I need a moment. Wait for me here.~
+@80065 = ~Mhm! Follow me.~
+@80066 = ~Ooo, haha! Just look at that one's face! Nicer that what I've seen in days!~
+@80067 = ~Oh, that even rhymes! That's even better! Mmm!~
+@80068 = ~We had a deal so... I present you your gift, hag. I hope you'll caccept it.~
+@80069 = ~It looks nice, mhm. But I suppose I should also check <PRO_HISHER> teeth, bad teeth and stinky breath aren't really appetizing! Hahaha!~
+@80070 = ~Nah. I think they should be fine.~
+@80071 = ~Now, I got you something in exchange for my own freedom. So free me. I promise I will never again try to steal from you.~
+@80072 = ~Hmm. Maybe I should... if you help me to sieze that one over here.~
+@80073 = ~Hey! I was just supposed to bring someone, not fight them!~
+@80074 = ~Serve me, little one, just another while and I'll do what you hearts and mind wasnt right now!~
+@80075 = ~Let me see into your chest and skull and see...! Mhm!~
+@80076 = ~I...~
+@80077 = ~You want it to stop itching! Hahaha! Good! I can help with that! The itching of your... branch shall end in a blink of an eye! My eye, of course, hahahaha!~
+@80078 = ~We have a deal.~
+@80079 = ~Seriously? You just sold me and agreed to seize me so your privates would stop itching? That's really low.~
+@80080 = ~If you think you will be able to stop me or even come near me, you are even more stupid than I thought.~
+@80081 = ~Please, don't do this! You don't have to serve that hag!~
+@80082 = ~Sorry, but I guess the deal's made and my affliction is getting worse.~
+@80083 = ~Come hag, let's get them!~
+@80084 = ~So, you did pretty good with Narlen, and I am sure Alatos would happily use you in a job or two, but there are also others that would gladly work with you. And by "others" I mean... myself, of course.~
+@80085 = ~Narlen's job was a low rank chore, but I can offer you more than just that. One more mission, nothing else, so I won't take much of your time. But it won't be easy.~
+@80086 = ~If you pay well, then I'm interested.~
+@80087 = ~Sorry, I'm not interested. Last time I tried to help someone like you, I was attacked by a green hag.~
+@80088 = ~Of course I do.~
+@80089 = ~You see, I need someone gone. And I don't care how it happens. Kill him, make him skip towns... I don't really care.~
+@80090 = ~Who is that man you want gone?~
+@80091 = ~I... think I changed my mind. Sorry, but I'm not interested in such job.~
+@80092 = ~A man. A Flaming Fist member. Xamm. He's been sleeping with my friend. She fell for his stupid charm. He's also sleeping with half of this damn city. He broke hearts of many girls. And I really don't get him why the rest, regardless of sex, wealth and education still believe he's worth any attention.~
+@80093 = ~I carely little about others, but my friend... she deserves some healing. She really does.~
+@80094 = ~Why won't you deal with him on your own.~
+@80095 = ~He sounds like a dog that knows more than just one trick, haha! But... if you pay, I can deal with him.~
+@80096 = ~He sounds like quite a jerk. I'll happily help you and make him leave Baldur's Gate.~
+@80097 = ~Sorry, but I'm not interested.~
+@80098 = ~Because I made a stupid promise that I won't try to confront him. That's why I need you.~
+@80099 = ~I see. Heh, he sounds like a dog that knows more than just one trick! But... if you pay, I can deal with him.~
+@80100 = ~I understand. He sounds like quite a jerk. I'll happily help you and make him leave Baldur's Gate.~
+@80101 = ~Mhm. Sorry, but I'm not interested. I think you'll need to look for someone else to help you.~
+@80102 = ~I'm glad to hear that!~
+@80103 = ~Now, the tricky part is that he doesn't have a home of his own. He's usually using other girls' places to rest, or taverns. To make it even more challanging, I need to know the job's done in three days. After that, I need to leave the city and I want to know Petunia's fine and will no longer be bother by that fool. But there is someone who may know where to find him.~
+@80104 = ~A family member? A friend? Some Colleague?~
+@80105 = ~You know what? I think I changed my mind. Sorry, but you'll need to work on your own on this.~
+@80106 = ~His friend, Mallandrea.~
+@80107 = ~From what I know, she should be in the Undercellars, right below the Blushing Mermaid.~
+@80108 = ~You managed to work well with Narlen, you helped him steal a thing, hmm? Now, let's see if you can find a target that's on the move.~
+@80109 = ~Remember, three days. I need to leave then and I won't be able to pay you if you don't make it in time. Once it's done, find me near the city gate. I hope you find you there really soon.~
+@80110 = ~Fool Argh! Fine. I'll find someone else! Get out of my way!~
+@80111 = ~Well, well, well! What a nice face you have. Quite kissable.~
+@80112 = ~I'm looking for Mallandrea. Would that be you?~
+@80113 = ~Why don't you come closer and do that, hmm?~
+@80114 = ~I'm not interested in that.~
+@80115 = ~Oh, darling! Sorry, but I'm not in the mood. But I'm sure that if you have a coin or two, it will help persuade some girl or boy, or just whoever you'd like.~
+@80116 = ~Oh! I'm famous! Hah! I didn't know that.~
+@80117 = ~I need to find your friend. He's name is Xamm.~
+@80118 = ~I have this fantasy: I always wanted to have a little fling with member of the Flaming Fist. I heard you know someone like that.~
+@80119 = ~And why would you need to talk to him.~
+@80120 = ~Here is a fee for not asking questions. Three hundred gold pieces. So, where can I find him?~
+@80121 = ~I have this fantasy: I always wanted to have a little fling with member of the Flaming Fist. I heard he's one of them. Who knows, maybe he'd be interested in some tomfoolery?~
+@80122 = ~Tell me where he is or I'll cut you to pieces and then leave one piece in each of Baldur's Gate's taverns.~
+@80123 = ~This is none of your business.~
+@80124 = ~That's... oddly specific. Mmm. I like it. He's always in the mood so fine, I'll tell you where to find him. And I'll hope he'll tell me later about how it went.~
+@80125 = ~Fine! I'll tell you! Just... keep your distance!~
+@80126 = ~Mmm. I like the way you solve your problems. Fine, I'll tell you where to find him.~
+@80127 = ~He decided to take a day off, he's just outside the city, near the river, enjoying some alone time. On the other hand... even his alone time include other people every now and then.~
+@80128 = ~Now excuse me, but I need to go.~
+@80129 = ~I'm sensing trouble! I'll tell you nothing!~
+@80130 = ~How dull. Well, excuse me now, but I'm busy.~
+@80131 = ~Ah, another someone looking for some thrills? A little... something? Sorry, <PRO_BOYGIRL>, I'm pumped out. Quite... literally.~
+@80132 = ~Ah, it sounds like you're the man I've been looking for. The infamous Flaming Fist soldier.~
+@80133 = ~Such a pity, because I thought we would play a bit! But I think I can still have some fun... but you won't like it.~
+@80134 = ~Infamous? Hmm.~
+@80135 = ~I must say I don't like your tone...~
+@80136 = ~Jokes aside: what do you want?~
+@80137 = ~Someone wants you gone. And I feel like I need to vent a bit. I usually vent during a fight.~
+@80138 = ~Someone wants you gone. So, we have two options: I kill you or you take this one hundred gold pieces and you leave and never return.~
+@80139 = ~Someone wants you gone. And... this place you picked is quite convenient. (Try to knock him out and push him into the river.)~
+@80140 = ~Someone wants you gone. Take your things and leave. Please.~
+@80141 = ~Who do you think I am? I do know how to use a sword and I'm not afraid of those like you!~
+@80142 = ~I... I am really in quite some trouble, hmm? Normally I wouldn't believe you, but you wouldn't offer me any gold if that was some bluff.~
+@80143 = ~Fine. I'll just leave. I heard there are many nice girls in Waterdeep.~
+@80144 = ~What...?! I... *splush*~
+@80145 = ~I trust the job is gone.~
+@80146 = ~It is. He's gone.~
+@80147 = ~I'm working on it.~
+@80148 = ~Good! I won't ask pointless questions, I'm satisfied with just the information he won't cause me or my friend any more problems.~
+@80149 = ~Good job. And as I promissed, I've got something for you. Five hundred an a little something that someone like you can find pretty useful.~
+@80150 = ~I must say that whoever you're looking for, that someone is in quite some trouble. And don't bother asking me if I heard you're looking for someone. Half of this city is looking for someone or something, and the other half is running from something. That's called life.~
+

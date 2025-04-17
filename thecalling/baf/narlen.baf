@@ -1,0 +1,29 @@
+IF
+  !Dead("CD09THI")
+  !Dead("CD09HAG")
+  Global("CDActivateThief","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDActivateThief","LOCALS",1)
+    Deactivate("%tutu_var%NARLEN")
+END
+
+IF
+  Dead("CD09THI")
+  Dead("CD09HAG")
+  OR(2)
+    Global("CDActivateThief","LOCALS",0)
+    Global("CDActivateThief","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CDActivateThief","LOCALS",2)
+    Activate("%tutu_var%NARLEN")
+END
+
+IF
+  AreaCheck("%EBaldursGate_ThievesGuild%")
+  !Class(Player1,THIEF_ALL)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

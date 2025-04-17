@@ -1,0 +1,26 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride("CD09THI",Enemy())
+    ActionOverride("CD09HAG",Enemy())
+    Wait(1)
+    CreateVisualEffect("SPANISUM",[850.350])
+    Wait(2)
+    CreateCreature("CD09SPC",[850.350],0)
+    Wait(1)
+    CreateVisualEffect("SPANISUM",[500.500])
+    Wait(2)
+    CreateCreature("%tutu_var%ANKHEG",[500.500],0)
+    Wait(1)
+    CreateVisualEffect("SPANISUM",[1000.520])
+    Wait(2)
+    CreateCreature("%tutu_var%GIBBER2",[1000.520],0)
+    Wait(1)
+    SetGlobal("CDThiefCalling","GLOBAL",4)
+    MultiPlayerSync()
+    EndCutSceneMode()
+END

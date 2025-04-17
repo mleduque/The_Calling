@@ -1,0 +1,18 @@
+IF
+  Global("CDThiefCalling","GLOBAL",6)
+  Global("CDThiefCallingTH2","%EBaldursGate%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CDThiefCallingTH2","%EBaldursGate%",1)
+    CreateCreature("CD09TH2",[3700.1500],7)
+END
+
+IF
+  AreaCheckObject("%EBaldursGate%",Player1)
+  GlobalGT("NarlenMove","GLOBAL",6)
+  Global("CDThiefCalling","GLOBAL",4)
+THEN
+  RESPONSE #100
+    SetGlobal("CDThiefCalling","GLOBAL",5)
+    ActionOverride(Player1,CreateCreature("CD09TH2",[-1.-1],0))
+END

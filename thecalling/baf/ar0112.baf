@@ -1,0 +1,7 @@
+IF
+  Global("CDThiefCalling","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("CDThiefCalling","GLOBAL",7)
+    CreateCreature("CD09FRI",[2000.500],1)
+END

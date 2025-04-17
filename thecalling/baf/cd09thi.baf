@@ -1,0 +1,30 @@
+IF
+  AreaCheck("%WyrmsCrossing%")
+  GlobalTimerExpired("CDTakeLeakTimer","LOCALS")
+  Global("CDTakeLeakNow","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CDTakeLeakTimer","LOCALS",4)
+    SetGlobal("CDTakeLeakNow","LOCALS",1)
+    DisplayStringHead(Myself,@80024)
+END
+
+IF
+  AreaCheck("%WyrmsCrossing%")
+  GlobalTimerExpired("CDTakeLeakTimer","LOCALS")
+  Global("CDTakeLeakNow","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CDTakeLeakNow","LOCALS",2)
+    DisplayStringHead(Myself,@80025)
+END
+
+IF
+  Range(Player1,18)
+  NumTimesTalkedTo(0)
+  Global("CDThiefCalling","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogueNoSet(Player1)
+END

@@ -634,3 +634,97 @@ Equipped abilities:
 – Armor Class vs. Crushing: +1
 
 Weight: 0~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// The Calling - Thief's Quest                      \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@80009 = ~This magic club feels cold in touch. It was clearly enchanted to deal additional damage and cause frostbites. There is a little scratched heart cut in the wood, as well as a little note: Lulu + Grong (also scratched). Perhaps the weapon was a made from a branch that was supposed to be a sign of love but... it didn't last. 
+
+STATISTICS:
+
+Combat abilities:
+– Each succesful hit has a 75% chance to cause additional 1 cold damage
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+
+@80012 = ~This amulet looks slightly like a different one, known as The One Gift Lost. While they both can help the one that uses it throw powerful fiery missiles, this one is also... cursed and will make it harder for the one that uses it to focus and follow a perfectly clear conversation.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: -2
+– May only be removed with a Remove Curse spell
+
+Charge abilities:
+– Missile Blast
+  Damage: 6d6 fire (Save vs. Spell for half)
+  Range: 50 ft.
+  Area of Effect: 15-ft. radius
+
+Weight: 1~
+
+@80015 = ~Laughing Old Prunne was created by a green hag from the Sword Coast. It is a powerful weapon, very sharp, very dangerous, but those that use it in fight will also need to get used to its moody nature. While the blade is able to protect its wielder, hold it in a wrong way, be not gentle enough, and she will take some of that protection or even weaken you, if there is nothing else to take. 
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +6%
+– May only be removed with a Remove Curse spell
+
+Combat abilities:
+– Each succesful hit has a 10% chance to lower your magic resistance by 2% for 3 rounds. That vicious curse is very amusing to this weapon so it will laugh at you each time that happens... what can be also quite annoying and, to be quite frank, really rude
+
+THAC0: +2
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+
+@80018 = ~This cursed ring is known as Ring of Smelly Feet. It was created by a Sembian bard that waned to make a prank on his friend. He gave him the ring but... some some reason the friend kept wearing it and said he like it quite a bit. A peculiar fellow, that's for sure.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: -1
+– Hide in Shadows: -5%
+– May only be removed with a Remove Curse spell
+
+Weight: 0~
+
+@80020 = ~Bdharlan,
+
+I understand you want to join our group. Who knows, perhaps you will fit in. I guess, however, Narlen will like to check if you'd be the right addition. That guy wants to make sure the new ones won't chicken out and will have his back. 
+
+Remember, though! If he approaches you, NEVER question the way he talks. We got used to it, but he's really sensitive when it comes to that. If the two of you work together, perhaps you'll get your first chance to eart a coin or two.
+
+With regards, 
+Friend~
+
+@80023 = ~This set of magic picks can surely help all those that want to pick a lock as soon as possibly and get out of... wherever the heist is happening.
+
+STATISTICS:
+
+Charge abilities:
+– May cast Knock once per day
+
+Equipped abilities:
+– Open Locks: +10%
+
+Weight: 0~
