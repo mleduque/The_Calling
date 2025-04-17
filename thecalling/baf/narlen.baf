@@ -23,6 +23,7 @@ END
 IF
   AreaCheck("%EBaldursGate_ThievesGuild%")
   !Class(Player1,THIEF_ALL)
+  !Global("CDMultistronghold","GLOBAL",1)
 THEN
   RESPONSE #100
     DestroySelf()

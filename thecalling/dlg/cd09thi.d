@@ -55,7 +55,7 @@ IF~~THEN REPLY @80057 EXTERN CD09THI 01.04
 CHAIN CD09THI 01.07
 @80058
 ==CD09THI @80059
-DO ~SetGlobal("CDThiefCalling","GLOBAL",2) SetGlobalTimer("CDTakeLeakTimer","LOCALS",4) MoveToPoint([4045.3700])~ EXIT
+DO ~SetGlobal("CDThiefCalling","GLOBAL",2) SetGlobalTimer("CDTakeLeakTimer","LOCALS",4) MoveToPointNoInterrupt([4045.3700])~ EXIT
 
 CHAIN CD09THI 01.04
 @80060

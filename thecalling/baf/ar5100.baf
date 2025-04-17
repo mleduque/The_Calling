@@ -1,7 +1,7 @@
 IF
   Global("CDSpawnFighterQuest","%GnollStronghold%",0)
   OR(2)
-    Class(Player1,FIGHTER)
+    Class(Player1,FIGHTER_ALL)
     Global("CDMultistronghold","GLOBAL",1)
 THEN
   RESPONSE #100

@@ -1259,19 +1259,26 @@ COPY ~thecalling/are/80~ ~override~ // bmp, mos, wed
 
 // new areas that connect to the gnoll stronghold need to use the platform-specific resref
 COPY ~thecalling/are/cd0902.are~ ~override~
-  PATCH_IF tutu_gen BEGIN // adjust tutu resource names
-    LPF tutuize_items INT_VAR item_number = (SHORT_AT 0x76) item_offset = (LONG_AT 0x78) END
-  END  
+  PATCH_IF !game_is_bgee BEGIN // travel regions set to ar099 by default; must adjust for eet/bgt/tutu
+    PATCH_IF game_is_bgt BEGIN SPRINT exit "Exit8300" END ELSE BEGIN SPRINT exit "Exit1400" END 
+    LPF ALTER_AREA_REGION STR_VAR region_name = CD_travelN destination_area = EVAL ~%WyrmsCrossing%~ entrance_name = EVAL ~%exit%~ END 
+    LPF ALTER_AREA_REGION STR_VAR region_name = CD_travelS destination_area = EVAL ~%WyrmsCrossing%~ entrance_name = EVAL ~%exit%~ END 
+    LPF ALTER_AREA_REGION STR_VAR region_name = CD_travelE destination_area = EVAL ~%WyrmsCrossing%~ entrance_name = EVAL ~%exit%~ END 
+    LPF ALTER_AREA_REGION STR_VAR region_name = CD_travelW destination_area = EVAL ~%WyrmsCrossing%~ entrance_name = EVAL ~%exit%~ END 
+    PATCH_IF tutu_gen BEGIN // adjust tutu resource names
+      LPF tutuize_items INT_VAR item_number = (SHORT_AT 0x76) item_offset = (LONG_AT 0x78) END
+    END  
+  END
 
 ACTION_IF enhanced_edition BEGIN
 
   // add new areas to the console menu listing
   COPY_EXISTING ~bgee.lua~ ~override~
-    SPRINT cd0902_descript @10023 // do it this way so that the entries can also be translated
+    SPRINT cd0902_descript @80007 // do it this way so that the entries can also be translated
     REPLACE_TEXTUALLY ~\({"%WyrmsCrossingTenyasHouse%",.+},\)~ ~\1
-	{"cd5104", "%cd0902_descript%"},~
+	{"cd0902", "%cd0902_descript%"},~
   
-  COPY ~thecalling/tilesets/80~            ~override~                       // new area tilesets/pvrz
+  COPY ~thecalling/tilesets/80~ ~override~                       // new area tilesets/pvrz
   
 END ELSE BEGIN
 

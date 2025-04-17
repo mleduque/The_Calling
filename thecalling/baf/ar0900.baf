@@ -1,6 +1,9 @@
 IF
   Global("CDThiefCalling","GLOBAL",0)
-  Class(Player1,THIEF)
+  OR(2)
+    Class(Player1,THIEF_ALL)
+    Global("CDMultistronghold","GLOBAL",1)
+  
 THEN
   RESPONSE #100
     SetGlobal("CDThiefCalling","GLOBAL",1)
