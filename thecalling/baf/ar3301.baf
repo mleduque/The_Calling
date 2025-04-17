@@ -9,6 +9,16 @@ END
 
 IF
   Global("CDMonkCalling","GLOBAL",11)
+  Global("cdmonkspar","GLOBAL",0) // means they never left
+  GlobalTimerExpired("CDMonkCallingBladeTime","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("CDMonkCalling","GLOBAL",12)
+END
+
+IF
+  Global("CDMonkCalling","GLOBAL",11)
+  !Global("cdmonkspar","GLOBAL",0) // means they left
   GlobalTimerExpired("CDMonkCallingBladeTime","GLOBAL")
 THEN
   RESPONSE #100

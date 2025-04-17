@@ -280,7 +280,7 @@ CHAIN CD23MON 08.01
 ==%tutu_var%taerom @70161
 ==CD23MON @70162
 DO ~TakePartyItem("CD23WHE") DestroyItem("CD23WHE") TakePartyGold(200) SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
-EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70235) AddJournalEntry(@70214,QUEST) EscapeArea()~ EXIT
+EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70235) AddJournalEntry(@70214,QUEST)~ EXIT
 
 CHAIN CD23MON 08.02
 @70163
@@ -289,7 +289,7 @@ CHAIN CD23MON 08.02
 ==%tutu_var%taerom @70166
 ==CD23MON @70167
 DO ~TakePartyItem("CD23WHE") DestroyItem("CD23WHE") DestroyItem("cd23rin") SetGlobal("CDMonkCalling","GLOBAL",11) SetGlobal("CDMonkCallingNotPaid","GLOBAL",1) SetGlobalTimer("CDMonkCallingBladeTime","GLOBAL",FOUR_DAYS) 
-EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70235) AddJournalEntry(@70213,QUEST) EscapeArea()~ EXIT
+EraseJournalEntry(@70211) EraseJournalEntry(@70212) EraseJournalEntry(@70235) AddJournalEntry(@70213,QUEST)~ EXIT
 
 //Talk 9 (Almost Fixed)
 
@@ -460,3 +460,109 @@ APPEND %tutu_var%MERCH2
     IF ~~ THEN EXIT
   END
 END
+
+/*MONK'S SPARING SESSION
+CDMonkCalling = 11 means taerom is forging the sword, and Inoshishi is hanging around Taerom's
+cdmonkspar
+0 - initiated
+1 - declined spar, ino goes away to respawn when the sword is forged
+2 - agree to spar, move outside
+3 - move outside cut complete, init dlg
+4 - outside dialogue complete, begin spar
+5 - spar cutscene complete, init post dialogue
+6 - post dialogue complete, leaves
+*/
+
+CHAIN IF ~Global("CDMonkCalling","GLOBAL",11) Global("cdmonkspar","GLOBAL",0)~ THEN CD23MON FRI.00
+@70236
+==CD23MON @70237
+END
+IF~~THEN REPLY @70238 EXTERN CD23MON FRI.01
+IF~~THEN REPLY @70239 EXTERN CD23MON FRI.02
+
+CHAIN CD23MON FRI.01
+@70240
+DO ~SetGlobal("cdmonkspar","GLOBAL",2)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("cd23sp1")~ EXIT // cutscene with a transition to a sparing spot
+
+CHAIN CD23MON FRI.02
+@70241
+DO ~SetGlobal("cdmonkspar","GLOBAL",1) EscapeArea()~ EXIT //leaves and the talk is skipped
+
+
+CHAIN IF ~Global("CDMonkCalling","GLOBAL",11) Global("cdmonkspar","GLOBAL",3)~ THEN CD23MON FRI.03
+@70242
+DO ~SetGlobal("cdmonkspar","GLOBAL",4)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("cd23sp2")~ EXIT // cutscene with fade to black and then back.
+
+CHAIN IF ~Global("CDMonkCalling","GLOBAL",11) Global("cdmonkspar","GLOBAL",5)~ THEN CD23MON FRI.04
+@70243
+==CD23MON @70244
+==CD23MON @70245
+END
+IF~~THEN REPLY @70246 EXTERN CD23MON FRI.05
+IF~~THEN REPLY @70247 EXTERN CD23MON FRI.06
+IF~~THEN REPLY @70248 EXTERN CD23MON FRI.07
+
+CHAIN CD23MON FRI.05
+@70249
+EXTERN CD23MON FRI.08
+
+CHAIN CD23MON FRI.06
+@70250
+EXTERN CD23MON FRI.08
+
+CHAIN CD23MON FRI.07
+@70251
+EXTERN CD23MON FRI.08
+
+CHAIN CD23MON FRI.08
+@70252
+==CD23MON @70253
+END
+IF~~THEN REPLY @70254 EXTERN CD23MON FRI.09
+IF~~THEN REPLY @70255 EXTERN CD23MON FRI.10
+
+CHAIN CD23MON FRI.09
+@70256
+==CD23MON @70257
+END
+IF~~THEN REPLY @70258 EXTERN CD23MON FRI.11
+IF~~THEN REPLY @70259 EXTERN CD23MON FRI.12
+IF~~THEN REPLY @70260 EXTERN CD23MON FRI.10
+IF~~THEN REPLY @70261 EXTERN CD23MON FRI.13
+
+CHAIN CD23MON FRI.11
+@70262
+EXTERN CD23MON FRI.14
+
+CHAIN CD23MON FRI.12
+@70263
+EXTERN CD23MON FRI.14
+
+CHAIN CD23MON FRI.13
+@70264
+EXTERN CD23MON FRI.14
+
+CHAIN CD23MON FRI.14
+@70265
+==CD23MON @70266
+==CD23MON @70267
+==CD23MON @70268
+END
+IF~~THEN REPLY @70269 EXTERN CD23MON FRI.15
+IF~~THEN REPLY @70270 EXTERN CD23MON FRI.15
+
+CHAIN CD23MON FRI.15
+@70271
+==CD23MON @70272
+==CD23MON @70273
+DO ~SetGlobal("cdmonkspar","GLOBAL",6) EscapeArea()~ EXIT
+
+CHAIN CD23MON FRI.10
+@70274
+DO ~SetGlobal("cdmonkspar","GLOBAL",6) EscapeArea()~ EXIT

@@ -1077,6 +1077,8 @@ COMPILE ~thecalling/baf/cd23mon.baf~
 COMPILE ~thecalling/baf/cd23rog.baf~
 COMPILE ~thecalling/baf/cd23vis.baf~
 COMPILE ~thecalling/baf/cd23fin.baf~ EVALUATE_BUFFER
+COMPILE ~thecalling/baf/cd23sp1.baf~ EVALUATE_BUFFER
+COMPILE ~thecalling/baf/cd23sp2.baf~
 
 EXTEND_BOTTOM ~%UlgothsBeard_BCS%.bcs~                  ~thecalling/baf/ar1000.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~%FriendlyArmInn_BCS%.bcs~                ~thecalling/baf/ar2300.baf~
@@ -1125,7 +1127,7 @@ ACTION_IF !enhanced_edition BEGIN // have to do old troll-revive on originals
     WRITE_ASCII 0x268 ~wtatroll~ #8
 
   COPY ~thecalling/spl/cd23trod.spl~ ~override~ // spell to transform back to living troll
-  COMPILE ~thecalling/baf/cd23tro.baf~          //scripting to transform to 'dead' troll
+  COMPILE ~thecalling/baf/cd23tro.baf~          // scripting to transform to 'dead' troll
           ~thecalling/baf/cd23trod.baf~         // scripting to revive
   COPY ~thecalling/cre/cd23trod.cre~ ~override~ // 'dead' troll
     SAY NAME1 @70004
