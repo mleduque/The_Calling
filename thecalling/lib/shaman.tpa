@@ -314,6 +314,7 @@ COPY ~thecalling/itm/cd41bow.itm~ ~override~
   SAY NAME1 #6864
   SAY NAME2 @60015
   SAY DESC @60016
+  LPF cd_eefp_mkhiin_animation END 
 
 COPY ~thecalling/itm/cd41fig.itm~ ~override~
   SAY NAME1 @60010

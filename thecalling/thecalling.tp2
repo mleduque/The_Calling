@@ -927,7 +927,7 @@ COPY ~thecalling/itm/cd51cha.itm~ ~override~
   PATCH_IF !opp_palette BEGIN // if using color only available with 1pp/EE
     LPF ALTER_EFFECT INT_VAR match_opcode = 7 match_parameter2 = 4 parameter1 = 52 END
     LPF ALTER_EFFECT INT_VAR match_opcode = 7 match_parameter2 = 5 parameter1 = 53 END
-  END                   	   
+  END                  	   
 
 COPY ~thecalling/itm/cd51clo.itm~ ~override~
   SAY NAME1 #12004
@@ -969,6 +969,7 @@ COPY ~thecalling/itm/cd51sta%enhanced_edition%.itm~ ~override/cd51sta.itm~
   SAY NAME2 @10011
   PATCH_IF enhanced_edition BEGIN
     SAY DESC @10028
+    LPF cd_eefp_mkhiin_animation END 
   END ELSE BEGIN 
     SAY DESC @10027
     PATCH_IF MOD_IS_INSTALLED ~1pp.tp2~ 207 BEGIN // wizard quarterstaves
@@ -1208,7 +1209,7 @@ COPY ~thecalling/itm/cd23rin.itm~ ~override~
   SAY DESC @70016       
 
 COPY ~thecalling/itm/cd23whe.itm~ ~override~
-  SAY NAME1 #70220
+  SAY NAME1 @70220
   SAY NAME2 @70220
   SAY 0x50 @70221   
   SAY 0x54 @70221              
