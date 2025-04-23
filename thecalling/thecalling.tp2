@@ -1059,14 +1059,14 @@ LABEL ~cd_the_calling_monk~
 ///// copies, preamble                                 \\\\\
 /////                                                  \\\\\
 
-COPY ~thecalling/bam/cd23amu.bam~  ~override~
-     ~thecalling/bam/cd23bra.bam~  ~override~
-     ~thecalling/bam/cd23fr1.bam~  ~override~
-     ~thecalling/bam/cd23fr2.bam~  ~override~
-     ~thecalling/bam/cd23kat.bam~  ~override~
-     ~thecalling/bam/cd23rin.bam~  ~override~
-     ~thecalling/bam/cd23whec.bam~ ~override~
-     ~thecalling/bam/cd23whei.bam~ ~override~
+COPY ~thecalling/bam/cd23amu%enhanced_edition%.bam~ ~override/cd23amu.bam~
+     ~thecalling/bam/cd23bra%enhanced_edition%.bam~ ~override/cd23bra.bam~
+     ~thecalling/bam/cd23fr1%enhanced_edition%.bam~ ~override/cd23fr1.bam~
+     ~thecalling/bam/cd23fr2%enhanced_edition%.bam~ ~override/cd23fr2.bam~
+     ~thecalling/bam/cd23kat%enhanced_edition%.bam~ ~override/cd23kat.bam~
+     ~thecalling/bam/cd23rin.bam~                   ~override~
+     ~thecalling/bam/cd23whec.bam~                  ~override~
+     ~thecalling/bam/cd23whei.bam~                  ~override~
 						
 ADD_JOURNAL TITLE (@70201) @70202 @70203 @70204 @70205 @70206 @70207 @70208 @70209 @70210 @70211 @70212 @70213 @70214 @70215 @70216 @70217 @70218 @70235
 
