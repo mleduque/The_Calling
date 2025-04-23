@@ -15,8 +15,19 @@ IF
   Global("CDTakeLeakNow","LOCALS",1)
 THEN
   RESPONSE #100
+    SetGlobalTimer("CDTakeLeakTimer","LOCALS",4)
     SetGlobal("CDTakeLeakNow","LOCALS",2)
     DisplayStringHead(Myself,@80025)
+END
+
+IF
+  AreaCheck("%WyrmsCrossing%")
+  GlobalTimerExpired("CDTakeLeakTimer","LOCALS")
+  Global("CDTakeLeakNow","LOCALS",2)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogueNoSet(Player1)
 END
 
 IF
