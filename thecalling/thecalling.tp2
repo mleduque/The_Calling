@@ -1242,11 +1242,11 @@ LABEL ~cd_the_calling_thief~
 ///// copies, preamble                                 \\\\\
 /////                                                  \\\\\
 
-COPY ~thecalling/bam/cd09amu.bam~ ~override~
-     ~thecalling/bam/cd09clu.bam~ ~override~
-     ~thecalling/bam/cd09dag.bam~ ~override~
-     ~thecalling/bam/cd09pc.bam~  ~override~
-     ~thecalling/bam/cd09rin.bam~ ~override~
+COPY ~thecalling/bam/cd09amu%enhanced_edition%.bam~ ~override/cd09amu.bam~
+     ~thecalling/bam/cd09clu%enhanced_edition%.bam~ ~override/cd09clu.bam~
+     ~thecalling/bam/cd09dag%enhanced_edition%.bam~ ~override/cd09dag.bam~
+     ~thecalling/bam/cd09pc%enhanced_edition%.bam~  ~override/cd09pc.bam~ 
+     ~thecalling/bam/cd09rin%enhanced_edition%.bam~ ~override/cd09rin.bam~
 
 LAF HANDLE_AUDIO STR_VAR audio_path = ~thecalling/audio/80~ oggdec_path = ~thecalling/audio~ sox_path = ~thecalling/audio~ END // ambients, audio
 						
