@@ -56,7 +56,7 @@ ALWAYS
 
 END
 
-VERSION ~v6_WIP_test_build_06242024~
+VERSION ~v6_WIP_test_build_04232025~
 README ~thecalling/readme-thecalling-%LANGUAGE%.html~ ~thecalling/readme-thecalling.html~
 AUTO_TRA ~%tra_location%/%s~
 
