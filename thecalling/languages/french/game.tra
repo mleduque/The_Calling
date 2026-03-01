@@ -927,7 +927,7 @@ poids : 1
 Utilisable par :
  Moine~
 
-@70013 = ~Saiai no Hito +1~
+@70013 = ~Saiai no Hito~
 @70014 = ~Cette épée est nommée Saiai no Hito. Elle é été créée par Ne Kurosuna, un ancien membre de Monastère de Saku. C'était un des membres d'origine du monastères et s'y est entraîné pendant des années. Il y était connu pour son esprit affûté et ses techniques pleines de grâce. Il était aussi fort, probablement l'un des moines les plus forts du monastère de Saku lorsqu'il y vivait encore.
 
 Lors de sa dixième année de travail, il s'est mis à développer des sentiments romantiques envers Shiroume Yakuchi, un autre moine du même monastère. Alors qu'il était considéré comme un maître de la discipline, du corps et de la stratégie, il n'était pas prêt à ça. Ne avait perdu son ancien bien-aimé, tué par des bandits  Il n'aurait pas imaginé ressentir à nouveau de tels sentiments, et sûrement pas pour quelqu'un du même monastère. Il en est résulté un sentiment de malaise, déchiré entre son ancien amour et celui qu'il venait de trouver. Il n'était pas sûr s'il devait faire part à Shiroume de ses sentiments. Que faire s'il ne pouvait répondre à ses sentiments ? Leur amitié s'en verrait-elle changée ? Serait-ce une trahison de son ancien bien-aimé ?
@@ -940,12 +940,11 @@ La magie contenue dans cette épée devait aider son porteur et lui apporter l'a
 
 PARAMÈTRE :
 
-Capacités d'équipement :
-- Protection contre la pétrification
-- Résistance aux dégâts contondants +10 % (moines seulement)
+Capacités de charge :
+- Une fois par jour, si maniée par un moine, le personnage gagne 1 attaque par round et +10 % de résistance auxdégâtscontondants pendant 3 tours.
 
 Capacité de combat :
-– Enchantement : +2
+- Frappe comme une arme +3.
 
 
 TAC0: +1
@@ -1085,7 +1084,7 @@ Classe d'armure : +1 contre les armes contondantes.~
 @70135 = ~Oh, quel jour miraculeux ! Nous avons les deux parties de l'épée !~
 @70136 = ~Maintenant, nous devons la réparer. Elle doit retrouver son état d'origine et je sais qui peut aider.~
 @70137 = ~Quand j'étais à Bérégost, j'ai discuté avec le forgeron de la ville. Il est compétent et je pense qu'il peut réparer l'épée.~
-@70138 = ~Rejoignons-nous là-bas. Je suppose que vous avez besoin de vous reposer mais, quand vous êtes prêts, retrouvez-moi à sa forge, dans la ville. Ne me faites pas attendre trop longtemps, s'il vous plait.~
+@70138 = ~Récupérez une pierre d'étoile à aiguiser et retrouvez-moi à Bérégost. Je suppose que vous aurez besoin de vous reposer mais, quand vous serez prêts, retrouvez-moi à sa forge, dans la ville. Ne me faites pas attendre trop longtemps, s'il vous plait.~
 @70139 = ~Ah ! Ceci pourrait avoir de la valeur...~
 @70140 = ~Halte ! Qui êtes-vous ? Vous essayez de prendre mes trésors !~
 @70141 = ~Je cherche seulement un fragment d'épée. On m'a dit qu'il devait être à proximité d'un phare, alors je vérifie s'il est ici.~
@@ -1179,7 +1178,7 @@ J'ai récupéré la lame de l'épée dans l'estomac d'un troll. Je dois encore t
 J'ai récupéré les deux fragments de l'épée. Je devrais retourner voir Inoshishi, qui m'attend à l'extérieur du Temple de la sagesse.~
 @70211 = ~Réparation de Saiai no Hito
 
-J'ai récupéré les deux fragments de l'épée.et les ai donnés à Inoshishi. Il est partir devant nous vers Bérégost, où il nous attendra à la Forge de Grondemarteau.~
+J'ai récupéré les deux fragments de l'épée.et les ai donnés à Inoshishi. Il est partir devant nous vers Bérégost, où il nous attendra à la Forge de Grondemarteau. De mon côté, je dois me rendre au carnaval de Nashkel pour y trouver une pierre d'étoile à aiguiser~
 @70212 = ~Réparation de Saiai no Hito
 
 J'ai retrouvé Inoshishi mais la forge était fermée. J'y retournerai quand elle sera ouverte.~
@@ -1204,3 +1203,65 @@ J'ai aidé Inoshishi à rendre son ancienne gloire à Saiai no Hito. Je l'ai con
 
 J'ai aidé Inoshishi à rendre son ancienne gloire à Saiai no Hito. Il a essayé de me payer avec des babioles ridicules mais j'ai exigé l'épée elle-même.~
 @70219 = ~Et il venait toujours en aide à ses autres frères. Il est alors tombé amoureux de l'un es nôtres et, même si je ne comprends pas ce qu'il a pu ressentir, partagé entre ancien et nouvel amour, ou l'incertitude, ne pas savoir si ses sentiments étaient partagés, j'ai lu les documents et je sais que c'était un homme honnête et fort et qu'il ne faillait pas l'oublier.~
+@70220 = ~Pierre d'étoile à aiguiser~
+@70221 = ~La pierre d'étoile à aiguiser est un composé alchimique peu commun, connu pour sa couleur azur déconcertante.
+
+PARAMÈTRES :
+
+Poids : 5~
+@70222 = ~Je cherche quelque chose : une pierre d'étoile à aiguiser. Il parait que quelqu'un ici pourrait en avoir une.~
+@70223 = ~Désolé, ce n'est pas moi. Vous allez devoir chercher ailleurs.~
+@70224 = ~J'en ai déjà vu une, mais c'était à Athkatla. C'est dommage, mais je n'ai rien de ce genre, désolé.~
+@70225 = ~C'est vraiment rare ! Il y a peut-être quelqu'un par ici qui en a une, mais ce n'est pas moi, désolé.~
+@70226 = ~J'ai entendu dire que quelqu'un ici avait demandé des carapaces d'ankheg ! Je les ai avec moi.~
+@70227 = ~J'ai bien une pierre de ce genre, si c'est ce que vous cherchez, mais il me faudra quelque chose en échange.~
+@70228 = ~Vous voyez, j'ai entendu parler de ces armures d'ankhegs. Et j'ai pensé que je m'essaierai bien à la fabrication d'armures de ce genre quand le carnaval sera fini et que je serai de retour chez-moi. Enfin, avec l'aide de mon forgeron habituel, Cromwell.~
+@70229 = ~Mais pour ça il me faudra les matériaux. Cinq carapaces d'ankheg. Apportez-les-moi et je vous laisserai la pierre à aiguiser. Croyez-moi, c'est une offre équitable. Le minerai de pierre d'étoile est vraiment rare !~
+@70230 = ~Vous les avez vraiment ? Vous savez comment surprendre les gens. De bonne façon, j'entends !~
+@70231 = ~Voilà, la pierre à aiguiser que vous cherchiez. Et je vais prendre ces carapaces et... Ah maintenant va falloir que je me débrouille à les ramener au sud.~
+@70232 = ~Merci pour ça ! Souvenez-vous, il m'en faut cinq.~
+@70233 = ~Je suis sûr qu'il aura besoin d'une pierre d'étoile à aiguiser. Pendant que vous cherchiez les pièces de l'épée, je me suis renseigné et je crois que quelqu'un en a une au carnaval de Nashkel.~
+@70234 = ~J'ai aussi obtenu cette rare pierre d'étoile à aiguiser pour que vous vous en serviez.~
+@70235 = ~Réparation de Saiai no Hito
+
+Le marchand d'armure au carnaval de Nashkel a une pierre d'étoile à aiguiser, mais il veut s'essayer à la fabrication d'armures à partir de carapaces d'ankheg. Il est d'accord pour échanger la pierre contre cinq carapaces d'ankheg.~
+
+@70236 = ~Maintenant, nous n'avons plus qu'à attendre. Avant que vous partiez, j'aimerais vous proposer quelque chose.~
+@70237 = ~Cela fait bien longtemps que je ne me suis pas entrainé avec mes frères et sœurs. Et j'ai pensé que peut-être, avant que vous retourniez à vos autres missions, vous aimeriez vous entrainer contre moi, frère ?~~Cela fait bien longtemps que je ne me suis pas entrainé avec mes frères et sœurs. Et j'ai pensé que peut-être, avant que vous retourniez à vos autres missions, vous aimeriez vous entrainer contre moi, sœur ?~
+@70238 = ~Je suppose qu'une bonne séance d'entrainement ne me ferait pas de mal. Oui, je peux faire ça, Inoshishi.~
+@70239 = ~Je suis désolé, mais je n'ai pas le temps pour ça. Nous nous reverrons quand l'épée sera réparée.~~Je suis désolée, mais je n'ai pas le temps pour ça. Nous nous reverrons quand l'épée sera réparée.~
+@70240 = ~Je suis content de l'entendre ! Maintenant, trouvons un endroit adéquat.~
+@70241 = ~Je comprends, bien sûr. Vous avez l'air très occupé. Nous nous reverrons ici quand l'épée sera à nouveau entière.~ ~Je comprends, bien sûr. Vous avez l'air très occupée. Nous nous reverrons ici quand l'épée sera à nouveau entière.~
+@70242 = ~Cet endroit a l'air parfait. Alors, frère, si vous êtes prêt, commençons !~ ~Cet endroit a l'air parfait. Alors, sœur, si vous êtes prête, commençons !~
+@70243 = ~Et bien... Je... pense que c'était une sacrée séance ! Vous devez avoir combattu bien des batailles ! Votre technique de combat est... remarquable ! Pardon, je crois que j'ai besoin de reprendre mon souffle.~
+@70244 = ~Une chance, j'ai ma gourde d'eau ici. Vous pouvez l'utiliser si vous avez soif.~
+@70245 = ~Où avez-vous grandi, déjà ? Sur un champ de bataille, jep parie.~
+@70246 = ~Ça ressemblait plus à... une bibliothèque.~
+@70247 = ~Non, pas exactement. Mais j'avais toujours le sentiment que je devais toujours être prêt à n'importe quoi. Et je veux toujours avoir le contrôle de mes forces et mes faiblesses.~
+@70248 = ~Cela ne vous regarde pas. Nous devions faire une combat amical, pas un échange d'informations privées.~
+@70249 = ~Une bibliothèque ? C'est difficile à croire ! Mais vous n'avez aucune raison de mentir. Ah et moi qui croyais qu'Inoshishi était bon pour son âge et le temps passé à travailler son équilibre et sa force !~
+@70250 = ~On voit que vous savez ce que vous faites... Ah et moi qui croyais qu'Inoshishi était bon pour son âge et le temps passé à travailler son équilibre et sa force !~
+@70251 = ~D'accord. Je suis désolé, je ne voulais pas être indiscret.~
+@70252 = ~Cette séance m'a rappelé comment c'était au monastère Saku. Les séances d'entrainement, la méditation. Tout cela me manque aussi bien que l'atmosphère, l'encens et les soirées de méditation après une bonne journée, alors que le soleil se cache à l'horizon et que la lune s'élève.~
+@70253 = ~Beaucoup pensent que la vie de monastère est ennuyeuse, mais elle s'accompagne de joie, d'assurance et de finalité.~
+@70254 = ~Que voulez-vous dire ?~
+@70255 = ~Écoutez, c'est bien beau tout ça, mais je dois y aller. Merci pour la séance d'entrainement. Nous nous reverrons à la forge quand l'épée sera réparée, dans deux jours.~
+@70256 = ~Une fois, j'ai entendu des gens dire que perdons notre temps en contemplation et en discipline inutiles, alors que nous pourrions profiter de notre vie en liberté. Mais notre vie au monastère est ce que j'appelle la liberté. C'est là que je me suis préparé à ma mission. C'est là que je me comprends mieux moi-même. Et c'est aussi là que j'ai appris à me défendre quand les choses se gâtent.~
+@70257 = ~C'est une forme de liberté. Ou du moins un chemin qui pourrait m'y conduire.~
+@70258 = ~Disons que c'est à chacun de trouver sa voie vers la liberté. Et il semble bien que vous avez trouvé la vôtre, mon ami.~~Disons que c'est à chacun de trouver sa voie vers la liberté. Et il semble bien que vous avez trouvé la vôtre, mon amie.~
+@70259 = ~Vous dites que vous vous y êtes préparé pour votre mission, et pourtant c'est bien moi qui fais tout le boulot. Non, ce dont vous parlez n'est pas de liberté. C'est une cage. Faite d'or et de paix, mais toujours une cage.~
+@70260 = ~Je ne connais pas votre monastère et je ne pense pas que ce genre de conversation m'intéresse. À vrai dire, je pense qu'il est temps pour moi de passer à autre chose. On se reverra à la forge quand l'épée sera réparée, dans deux jours..~
+@70261 = ~Ces gens dont vous parlez suivaient simplement un chemin différent. Ils suivent un appel différent.~
+@70262 = ~Je suppose que c'est vrai.~
+@70263 = ~Je ne suis pas d'accord, mais je vais certainement réfléchir à vos paroles, mes amis. Ne serait-ce que pour comprendre pourquoi vous l'avez dit. Merci.~
+@70264 = ~Mmm. Je suppose que vous avez raison. Ça ne devrait pas me mettre en colère et peut-être vos paroles vont m'aider à laisser les leurs derrière moi.~
+@70265 = ~...~
+@70266 = ~Je pense que nous suivons tous les deux une voie intéressante. Qui demande à la fois de la discipline et... être disposés à confronter les questions pourraient mettre en cause nos esprits et nos âmes. J'ai reçu ma quête et ça m'amène à me demander si vous n'avez pas déjà reçu la vôtre. Ou alors si ce que vous affrontez maintenant ne serait qu'un prélude à quelque chose de plus grand. Mais...~
+@70267 = ~...Pardonnez-moi. Parfois, je peux poser un déluge de questions ou de paroles quand mon interlocuteur aurait simplement besoin de se reposer quelques instants. En tout cas, c'est ce que Sakurachi, une de mes amirs, me disait. Pour tout dire, elle me manque bien.~
+@70268 = ~Il est temps de se dresser et... Ahh ! Vous m'avez infligé une correction tout à l'heure, avec tous ces mouvements que je n'était pas prêt à voir ni à esquiver ! C'est une bonne chose que je sois aussi robuste que mon nom le suggère.. Ahahah !~
+@70269 = ~Je ne suis pas sûr de comprendre...~~Je ne suis pas sûre de comprendre...~
+@70270 = ~Attendez, "Inoshishi" veut dire...~
+@70271 = ~Inoshishi signifie simplement "sanglier". Et j'ai toujours éprouvé affection pour ces animaux. On les voit comme à lafois forts et résilients. Et plutôt poilus hein ! Je n'y peux rien, c'est juste dans mes gênes.~
+@70272 = ~Merci pour cet entrainement, ami. Vous m'avez déjà assez consacré de votre temps. Soyez sûr que je suis aussi reconnaissant pour cette conversation. Beaucoup dans ce que vous avez dit m'amène à réfléchir.~~Merci pour cet entrainement, amie. Vous m'avez déjà assez consacré de votre temps. Soyez sûr que je suis aussi reconnaissant pour cette conversation. Beaucoup dans ce que vous avez dit m'amène à réfléchir.~
+@70273 = ~Il est temps de méditer un peu maintenant. Nous nous reverrons bientôt, frère, à la forge, quand l'épée sera prête pour sont retour au pays.~~Il est temps de méditer un peu maintenant. Nous nous reverrons bientôt, sœur, à la forge, quand l'épée sera prête pour sont retour au pays.~
+@70274 = ~Je... Je vois. D'accord, je ne vais pas prendre plus de votre temps.Nous nous reverrons bientôt, sœur, à la forge, quand l'épée sera prête pour sont retour au pays.~
