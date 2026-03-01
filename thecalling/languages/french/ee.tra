@@ -611,11 +611,12 @@ PARAMÈTRE :
 Capacités d'équipement :
 – Protection contre la pétrification
 – Résistance aux dégâts contondants +10 % (moines seulement)
+- 1/2 attaque supplémentaire par round (moines seulement)
 
 Capacité de combat :
-– Enchantement contre les créatures d'alignement mauvais : +2
+- Frappe comme une arme +3.
 
-TAC0: +1
+TAC0: +2
 Dégâts : 1d10+1 (tranchant) +1 Feu
 Facteur de vitesse : 3
 Type de compétence : katana
