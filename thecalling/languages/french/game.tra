@@ -38,13 +38,15 @@ PARAMÈTRES :
 
 PARAMÈTRES :
 
-- Neutralise les capacités d'incantation~
+- Neutralise les capacités d'incantation
+- Spécial : ne peut être annulé que par un sort de délivrance de la malédiction~
 @123 = ~Amulette de l'imbécile~
 @124 = ~Ce type d'amulette est très populaire auprès des marchands sans scrupules. Ces objets ressemblent à des amulettes ornées et coûteuses et sont souvent offerts en cadeau à des clients potentiels, des rivaux ou d'autres contacts commerciaux. Elles sont conçues seulement pour endormir l'esprit, en toute discrétion ; ce qui permet au marchand de prendre l'avantage pendant des négociations complexes.
 
 PARAMÈTRES :
 
-- Réduit l'intelligence, la sagesse et le charisme de 2 points~
+- Réduit l'intelligence, la sagesse et le charisme de 2 points
+- Spécial : ne peut être annulé que par un sort de délivrance de la malédiction~
 @125 = ~Perle noire~
 @126 = ~Perle blanche~
 @127 = ~Une perle noire dans son coquillage~ 
@@ -381,7 +383,9 @@ PARAMÈTRES :
 @1329 = ~Que dois-je faire de ces bracelets maintenant ?~
 @1330 = ~Autre chose ?~
 @1331 = ~C'est une perle de toute beauté, mais malheureusement, elle n'est pas assez raffinée pour arriver à nos fins. Je serais reconnaissant si vous en trouviez une autre.~
-@1332 = ~Pour être utilisée selon nos besoins, la perle noire devra être plus mature, plus proche de la perfection.~ 
+@1332 = ~Pour être utilisée selon nos besoins, la perle noire devra être plus mature, plus proche de la perfection.~
+@1333 = ~Nous devrons cependant attendre le retour de Mélicamp avant de commencer la divination.~
+@1334 = ~Quand on parle du loup, on en voit la queue. Commençons.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -484,9 +488,11 @@ You were given this cloak as a token of trust and gratitude for securing the Gno
 
 PARAMÈTRES :
 
-Classe d'Armure : bonus de +2
-Jets de sauvegarde : bonus de +2
-Charisme :  passe à 19 (guerriers seulement)
+Classe d'Armure : bonus de +1
+Jets de sauvegarde : bonus de +1
+TAC0 : +1 contre les guerriers, moines, paladins, rôdeurs
+Dégâts : +1 contre les guerriers, moines, paladins, rôdeurs
+Charisme :  une fois par jour, bonus de 1d4 pendant 10 tours (guerriers seulement)
 Poids :  3~
 @10031 = ~Livre de rituels des gnolls~
 @10032 = ~Ce livre décrit des rituels, certains pour contrôler l'énergie naturelle, d'autres pour satisfaire Yeenoghu, la Bête de la boucherie. L'un d'entre eux, particulièrement morbide, décrit la crémation de crânes humains.~
@@ -1265,3 +1271,234 @@ Le marchand d'armure au carnaval de Nashkel a une pierre d'étoile à aiguiser, 
 @70272 = ~Merci pour cet entrainement, ami. Vous m'avez déjà assez consacré de votre temps. Soyez sûr que je suis aussi reconnaissant pour cette conversation. Beaucoup dans ce que vous avez dit m'amène à réfléchir.~~Merci pour cet entrainement, amie. Vous m'avez déjà assez consacré de votre temps. Soyez sûr que je suis aussi reconnaissant pour cette conversation. Beaucoup dans ce que vous avez dit m'amène à réfléchir.~
 @70273 = ~Il est temps de méditer un peu maintenant. Nous nous reverrons bientôt, frère, à la forge, quand l'épée sera prête pour sont retour au pays.~~Il est temps de méditer un peu maintenant. Nous nous reverrons bientôt, sœur, à la forge, quand l'épée sera prête pour sont retour au pays.~
 @70274 = ~Je... Je vois. D'accord, je ne vais pas prendre plus de votre temps.Nous nous reverrons bientôt, sœur, à la forge, quand l'épée sera prête pour sont retour au pays.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// The Calling - Thief's Quest                      \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@80001 = ~Bdharlan le simplet~
+@80002 = ~Pelerlertiana~
+@80003 = ~Colonie de spores~
+@80004 = ~Femme mystérieuse~
+@80005 = ~Mallandrea~
+@80006 = ~Xamm~
+@80007 = ~Clairière de Pelerlertiana~
+@80008 = ~Rustre froid +1~
+@80009 = ~Ce gourdin magique est froid au toucher. Il a de toute évidence été enchanté pour infliger des dégâts de froid et causer des gelures. Il y a un petit cœeur rayé gravé dans le bois, ainsi qu'une petite inscription, "Lulu + Grong" (elle aussi rayée). L'arme a peut-être été fabriquée à partir d'une branche qui devait être une marque d'amour... qui n'a pas duré.
+
+CARACTÉRISTIQUES :
+
+Capacités de combat :
+  Chaque coup réussi a 75 % de chances d'infliger 1 point de dégât de froid supplémentaire.
+
+TAC0 : +1
+Dégâts : 1d6+1 (contondant)
+Facteur de vitesse : 3
+Type de compétence : gourdin
+Type : arme à une main
+Nécessite : 5 en Force
+
+Poids : 2~
+//@80010 = ~Amulet~
+@80011 = ~Ce cadeau stupide~
+@80012 = ~Cette amulette ressemble un peu à une autre connue comme Le Cadeau perdu. Les deux peuvent aider le porteur à lancer de puissants projectiles, celle-ci est aussi... maudite, et il sera plus compliqué pour le porteur de se concentrer ou de suivre une conversation pourtant claire.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+- Intelligence : -2
+- ne peut être ôté qu'à l'aide d'un sort de Délivrance de la malédiction
+
+Capacités de charge :
+- Explosion :
+  Dégâts : 6d6 points de dégâts de feu (jet de sauvegarde contre les sorts pour diviser par deux)
+  Portée : 15 m
+  Zone d'effet : rayon de 4,5 m
+
+Poids : 1~
+//@80013 = ~Dagger~
+@80014 = ~Mégère moqueuse +2~
+@80015 = ~La Mégère moqueuse a été créée par une guenaude verte de la Côte des épées. C'est uen arme puissante, très affutée, très dangereuse, mais ceux qui l'utilisent au combat doivent s'habituer à sa nature capricieuse. L'arme est capable de protéger sont porteur, mais maniez-la de travers, ou pas avec assez de délicatesse, et elle va retirer de sa protection, ou même vous affaiblir s'il n'y a plus rien à retirer.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+- résistance à la magie : +6 %
+- ne peut être ôté qu'à l'aide d'un sort de Délivrance de la malédiction
+
+Capacités de combat :
+- Chaque coup réussi a 10 % de chances d'abaisser votre résistance à la magie de 2 % pendant 3 rounds. Cette malédiction cruelle est très amusante pour cette arme, qui en rit à chaque fois que cela se produit. Ce peut être très ennuyeux et, pour être honnête, est vraiment malpoli.
+
+TAC0 : +2
+  Dégâts : 1d4+2 (perforant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+Poids : 1~
+//@80016 = ~Ring~
+@80017 = ~Anneau des pieds qui puent~
+@80018 = ~Cet anneau maudit est connu sous le nom d'Anneau des pieds qui puent. Un barde de Sembie l'a créé pour faire une farce aux dépens d'un ami. Il lui offrit mais... pour une raison indéterminée, l'ami en question continua de le porter et affirmait beaucoup l'aimer. Une bien étrange personne, assurément.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+- Charisme : -1
+- Se cacher dans l'ombre : -5 %
+- ne peut être ôté qu'à l'aide d'un sort de Délivrance de la malédiction
+
+Poids : 0~
+//@80019 = ~Letter~
+@80020 = ~Bdharlan,
+
+Je crois comprendre que tu souhaite rejoindre notre groupe. Qui sait, peut-être que tu trouveras ta place. Narlen voudra vérifier si tu conviens bien. Ce gars-là tient à s'assurer que les nouveaux ne vont pas se dégonfler et le couvriront.
+
+Mais souviens-toi ! S'il te contacte, il ne faut en aucun cas remettre en cause sa façon de parler.. Nous nous sommes habitués, mais il est très chatouilleux à ce sujet. Si vous travailler ensemble, tu auras peut-être ta première occasion de gagner une pièce ou deux.
+
+Avec mon estime,
+Un ami~
+@80021 = ~Crochets~
+@80022 = ~Crochets du pote de Mask~
+@80023 = ~Cet ensemble de crochets magiques peut certainement faciliter la tâche à tous ceux qui veulent crocheter une serrure le plus rapidement possible et partir aussitôt de... l'endroit du cambriolage, quel qu'il soit.
+
+CARACTÉRISTIQUES :
+
+Capacités de charge :
+- Déblocage une fois par jour
+
+Capacité d'équipement :
+- Crochetage : +10 %
+
+Poids : 0~
+@80024 = ~Bien fait pour vous, stupides fourmis ! Ah ah!~
+@80025 = ~Saleté ! Il y en sur mes bottes ! Oh, c'est pas grave... Eh eh eh.~
+@80026 = ~Ah ah ah ! Voyez qui est de retour !~
+@80027 = ~Alors, il y en a d'autre comme moi, des gars chanceux qui veulent entrer dans les Portes de Baldur. On raconte que c'est le bon endroit pour démarrer une nouvelle vie. Et gagner une pièce ou deux. Et vous avez l'aur de savoir ce que je veux dire par "gagner".~
+@80028 = ~Possible que je sache. Mais pourquoi voudriez-vous commencer une nouvelle vie ?~
+@80029 = ~Pas la moindre idée de ce que vous voulez dire. Et je n'ai pas le temps pour des bavardages, alors.. au revoir.~
+@80030 = ~Disons que je sais ce que j'ai que marcher une journée ou deux sur un estomac vide~
+@80031 = ~Mais j'ai entendu parler de ce groupe en ville ! Je me suis dit que c'était peut-être ce qu'il me fallait ! Un groupe pour le soutenir pendant que je fais... ce que je fais le mieux ! Mais il y a ce petit problème que je dois régler avant tout. Que je dois régler avant.de traverser ce pont et commencer ma nouvelle vie !~
+@80032 = ~Et qu'est-ce qui s'interpose entre vous et votre nouvelle vie ?~
+@80033 = ~D'accord... Écoutez, je n'ai pas le temps de bavasser et... je dois y aller.~
+@80034 = ~Attendez ! Il y a de l'or. Il y a tout cet or et vous pouvez le garder mais... aidez-moi à finir ça !~
+@80035 = ~Et qde quel genre d'aide vous parlez, hein ? Quel est ce "problème"que vous devez régler ?~
+@80036 = ~Je ne suis pas intéressé. Maintenant, laissez-moi passer ou quelqu'un trouvera votre cadavre sous ce pont.~~Je ne suis pas intéressée. Maintenant, laissez-moi passer ou quelqu'un trouvera votre cadavre sous ce pont.~
+@80037 = ~Voyez... J'ai... rencontré cette femme et... j'ai voulu lui prendre quelque chose. À manger.~
+@80038 = ~... et une baguette. Elle avait l'air d'avoir de la valeur...~
+@80039 = ~... et il y avait cette amulette...~
+@80040 = ~... juste à côté de ces pièces d'or près de son oreiller...~
+@80041 = ~... et il me fallait seulement une ou deux choses en plus, comme l'oreiller lui-même...~
+@80042 = ~... une nouvelle outre à eau...~
+@80043 = ~... une potion de soins...~
+@80044 = ~... un baume, voyez, j'ai ces démangeaisons.. en bas...~
+@80045 = ~... un nouveau peigne. Je veux bien paraitre quand je serai aux Portes de Baldur...~
+@80046 = ~... une paire de ciseaux, il faut vraiment que je me coupe les ongles...~
+@80047 = ~... J'espérais aussi trouver du parfum...~
+@80048 = ~... et il me faut vraiment une nouvelle paire de chaussettes ! Les miennes collents, comme si j'avais marché dans du miel ou de la sève.~
+@80049 = ~C'est... une belle liste !~
+@80050 = ~Des chaussettes ? Vraiment ? Et... vraiment ? Beeeh...~
+@80051 = ~Si vous avez volé ces sous-vêtements à quelqu'un, il ne faut pas s'étonner si vous avez des rougeurs.~
+@80052 = ~Je n'ai pas le temps pour ces sornettes. Désolé mais je dois vous laisser.~~Je n'ai pas le temps pour ces sornettes. Désolée mais je dois vous laisser.~
+@80053 = ~Hé ! pas besoin de m'humilier ! J'ai vécu à la dure pendant un bout de temps et... Je n'avais pas de choix ! Vraiment !~
+@80054 = ~Je sais, j'ai voulu trop prendre, mais vous savez ce que c'est.Quand on meurt de faim, on veut prendre tout ce qu'on peut, au cas où les choses prennent à nouveau un mauvais tour. Pour être prêt au pire.~
+@80055 = ~De toute façon, j'ai dû fuir et j'ai laissé mon sac près de la tente de cette femme et maintenant j'en ai besoin. J'en ai vraiment besoin. Alors j'espérais qu'ici je rencontrerais quelqu'un qui serait prêt à m'aider. Ou quelqu"un comme moi, quelqu'un de plus... discret.~
+@80056 = ~Bon, d'accord. Si vous voulez, je peux vous aider. Montrez-moi le chemin.~
+@80057 = ~Je n'ai pas le temps pour ces bêtises. Je dois y aller.~
+@80058 = ~Vous allez vraiment m'aider ? Magnifique !~
+@80059 = ~Donnez-moi une seconde, je prends mes affaires, je pisse un coup et... Revenez dans un moment, je n'ai pas besoin d'aide pour ce genre de choses.~
+@80060 = ~Bon sang ! Il faut que je trouve quelqu'un d'autre.~
+@80061 = ~Laissez-moi pisser en paix, d'accord ? Si vous voulez regarder, désolé mais ce n'est pas mon truc.~
+@80062 = ~Aaah, ma vessie est vide, nous pouvons y aller.~
+@80063 = ~Guidez-moi.~
+@80064 = ~J'ai besoin d'un moment. Attendez-moi ici.~
+@80065 = ~Suivez-moi.~
+@80066 = ~Ooo, Ah ah! Regardez-moi cette figure ! La meilleure que j'ai vue ces derniers jours !~
+@80067 = ~Oh, ça rime, en plus ! C'est encore mieux !~
+@80068 = ~Nous avions un accord, alors... Je t'amène ton cadeau, guenaude. J'espère qu'il te conviendra~
+@80069 = ~Hm, il semble correct. Mais je pense que je devrais aussi vérifier <PRO_HISHER> dents. Les dents pourries et la mauvaise haleine ne sont pas appétissants. Ah ah ah !~
+@80070 = ~Non, je pense qu'il n'y a pas de soucis de ce côté-là.~
+@80071 = ~Bon, je te les ai amenés en échange de ma liberté. Alors libère-moi ! Je promets de ne jamais essayer de te voler à nouveau.~
+@80072 = ~Hmm. peut-être que je peux faire ça... Si tu m'aides à capturer celui-là.~~Hmm. peut-être que je peux faire ça... Si tu m'aides à capturer celle-là.~
+@80073 = ~Hé ! Je devais amener quelqu'un, pas me battre !~
+@80074 = ~Aide-moi, mon petit,juste une seule fois encore, et je ferai ce que ton cœur désire le plus !~
+@80075 = ~Laisse-moi regarer dans ton crâne et dans tes entrailles... !~
+@80076 = ~Je...~
+@80077 = ~Tu veux que les démangeaisons s'arrêtent ! Ah ah ah ! Excellent ! C'est à ma portée ! Les démangeaisons de... ta branche disparaitront d'un battement de cil ! De mes cils, bien sûr ! Ah ah ah !~
+@80078 = ~Marché conclu.~
+@80079 = ~Vraiment ? Vous venez de me vendre et d'accepter de ma capturer juste pour que vos parties intimes ar^ete,nt de vous gratter ? C'est misérable.~
+@80080 = ~Si vous vous imaginez pouvoir m'arrêter ou même vous approcher de moi, vous êtes encore plus benêt que je pensais.~
+@80081 = ~S'il vous plait, ne faites pas ça ! Vous n'avez pas à obéir à cess guenaude !~
+@80082 = ~Désolé, mais nous avons un accord et mes irritation vont de pireen pire.~
+@80083 = ~Viens, guenaude, on les attrape !~
+@80084 = ~Alors, comme ça, tout s'est bien passé avec Narlen, et je suis certain qu'Alatos serait ravi d'avoir recours à vous pour un boulot ou deux, mais il y en a d'autres qui seraient enchantés de travailler avec vous. Et quand je dis d'autres, je parle de moi, bien sûr.~
+@80085 = ~L'affaire avec Narlen était une besogne de bas étage, je peux proposer bien mieux que ça. Une seule mission supplémentaire, je ne demande pas plus de votre temps. Mais la tâche ne sera pas facile.~
+@80086 = ~Si ça rapporte, je suis intéressé.~~Si ça rapporte, je suis intéressée.~
+@80087 = ~Désolé, mais je ne suis pas intéressé. La dernière fois que j'ai voulu aider quelqu'un comme vous, j'ai été attaqué par une guenaude verte.~
+@80088 = ~Je vous assure que c'est le cas.~
+@80089 = ~Voyez, j'ai besoin que quelqu'un disparaisse. Et le comment ne m'intéresse pas. Tuez-le, faites-le déguerpir, peu m'importe.~
+@80090 = ~Quel est cet homme que vous voulez voir disparaitre ?~
+@80091 = ~Je crois... que j'ai changé d'avis. Désolé mais ce genre de boulot ne m'intéresse pas.~~Je crois... que j'ai changé d'avis. Désolée mais ce genre de boulot ne m'intéresse pas.~
+@80092 = ~Un homme. Un membre du Poing enflammé nommé Xamm. Il couche avec mon amie. Elle a craqué pour son charme. Il couche aussi avec la moitié de la ville. Il a brisé le cœur de bien des filles. Et je ne comprends pas bien pourquoi les autres croient encore qu'il mérite leur attention, même en prenant en compte ses performance, son argent ou son éducation.~
+@80093 = ~Les autres, je m'en fiche, mais mon amie... mérite de s'en sortir.~
+@80094 = ~Pourquoi ne pas vous en occuper vous-même ?~
+@80095 = ~Il m'a l'air d'un chien qui connait plus d'un tour, ah, ah, ah ! Si vous payez bien, je peux m'en occuper.~
+@80096 = ~Il m'a l'air d'être un sacré salaud. Je serais ravi de vous aider et de lui faire quitter les Portes de Baldur.~~Il m'a l'air d'être un sacré salaud. Je serais ravie de vous aider et de lui faire quitter les Portes de Baldur.~
+@80097 = ~Désolé, je ne suis pas intéressé.~~Désolée, je ne suis pas intéressé.~
+@80098 = ~J'ai fait la promesse de ne pas le prendre à partie.C'est pour ça que j'ai besoin de vous.~
+@80099 = ~Je vois. Ça alors, il m'a l'air d'un chien qui connait plus d'un tour ! Mais... si vous payez bien, je peux m'en occuper.~
+@80100 = ~Je comprends. Il m'a l'air d'être un sacré salaud. Je serais ravi de vous aider et de lui faire quitter les Portes de Baldur.~~Je comprends. Il m'a l'air d'être un sacré salaud. Je serais ravie de vous aider et de lui faire quitter les Portes de Baldur.~
+@80101 = ~Ah. Désolé, je ne suis pas intéressé. Il va falloir que vous cherchiez quelqu'un d'autre pour vous aider.~ ~Ah. Désolée, je ne suis pas intéressée. Il va falloir que vous cherchiez quelqu'un d'autre pour vous aider.~
+@80102 = ~Je suis ravi de l'entendre !~
+@80103 = ~Maintenant, le problème, c'est qu'il n'habite réellement nulle part. Il dort généralement chez une des filles ou dans une taverne. Pour rendre les choses encore plus compliquées, j'ai besoin de savoir que tout est réglé dans les trois jours. Après ça, j'ai affaire hors de ville et il faut que je sache avant de partir que Petunia va bien et que l'homme ne l'importunera plus. Mais je connais quelqu'un qui saura peut-être où le trouver.~
+@80104 = ~Quelqu'un de sa famille ? Un ami à lui ? Un collègue ?~
+@80105 = ~Bon, vous savez quoi ? J'ai changé d'avis. Désolé mais vous allez devoir vous débrouiller sans moi.~~Bon, vous savez quoi ? J'ai changé d'avis. Désolés mais vous allez devoir vous débrouiller sans moi.~
+@80106 = ~Hon amie, Mallandrea.~
+@80107 = ~D'après mes informations, elle devrait être dans les Caves souterraines,sous la Sirène rouissante..~
+@80108 = ~Vous avez su travailler avec Narlen, vous l'avez aidé à barboter quelque chose, hein ? Voyons si vous pouvez trouver quelqu'un qui ne reste pas en place.~
+@80109 = ~Souvenez-vous, trois jours. Après, je dois parti et je ne serai pas là pour vous payer si vous n'êtes pas dans les délais. Quand ce sera fait, retrouvez-moi près des portes de la ville. J'espère vous y voir très bientôt.~
+@80110 = ~Crétin ! Ah, bien, je vais trouver quelqu'un d'autre. Fichez-moi le camp !~~Crétine ! Ah, bien, je vais trouver quelqu'un d'autre. Fichez-moi le camp !~
+@80111 = ~Eh bien, que voilà un joli visage  ! Parfait pour embrasser.~
+@80112 = ~Je cherche une Mallandrea. Est-ce que c'est vous ?~
+@80113 = ~Pourquoi ne pas venir plus près pour le faire ?~
+@80114 = ~Ça ne m'intéresse pas.~
+@80115 = ~Oh, désolée trésor !Je ne suis pas d'humeur à ça. Mais je suis sûre qu'une pièce ou deux suffiront à convaincre une fille, ou un garçon, ou qui tu voudras.~
+@80116 = ~Oh ! Je suis célèbre ? Voyez vous ça ?~
+@80117 = ~J'aurais besoin de rencontrer un ami à vous. Il s'appelle Xamm.~
+@80118 = ~J'ai un fantasme, vous voyez.J'ai toujours rêvé d'avoir une aventure avec un membre du Poing enflammé. Il parait que vous connaissez quelqu'un qui pourrait me satisfaire.~
+@80119 = ~Et pourquoi donc veux-tu lui parler ?~
+@80120 = ~J'ai ici un bonus pour ne pas poser de question. Trois cent pièces d'or. Alors, où puis-je le trouver ?~
+@80121 = ~J'ai un fantasme, vous voyez.J'ai toujours rêvé d'avoir une aventure avec un membre du Poing enflammé. J'ai entendu dire qu'il en fait partie. Sait-on jamais, il serait peut-être intéressé pour batifoler un peu ?~
+@80122 = ~Dites-moi tout de suite où te trouver sinon je vous découpe en morceaux et je laisse un bout dans chaque taverne des Portes de Baldur.~
+@80123 = ~Cela ne vous regarde pas.~
+@80124 = ~C'est... assez particulier. Enfin, ça me plait. Il est toujours partant, alors, très bien, je vais cous dire où le trouver. Et j'espère qu'il me racontera.~
+@80125 = ~Très bien ! Je vais vous dire ce que vous voulez, mais restez loin de moi !~
+@80126 = ~Mmm. Votre façon de régler vos affaires me plait. Très bien, je vais vous dire où le trouver.~
+@80127 = ~Il a eu envie de prendre un jour de repos. Il est à l'écart de la ville, près de la rivière, à profiter d'un peu de solitude. Mais en même temps, pour lui, la solitude implique parfois d'autres personnes.~
+@80128 = ~Maintenant, veuillez m'excuser s'il vous plait.~
+@80129 = ~Je sens venir les ennuis ! Je ne vous dirai rien !~
+@80130 = ~Vous êtes d'un ennui... Mes excuses, je suis occupée.~
+@80131 = ~Ah, encore quelqu'un qui cherche des frissons ? Je suis désolé gamin, je suis épuisé. Littéralement.~~Ah, encore quelqu'un qui cherche des frissons ? Je suis désolé gamine, je suis épuisé. Littéralement.~
+@80132 = ~Ah, je crois bien que vous êtes l'homme que je recherche. Le tristement célèbre soldate du Poing enflammé.~
+@80133 = ~C'est bien dommage, j'espérais que nous jouerions un peu. Mais je pense qie je vais quand même m'amuser. Par contre ça risque de ne pas vous plaire.~
+@80134 = ~Tristement célèbre ?~
+@80135 = ~Je n'apprécie pas particulièrement votre ton...~
+@80136 = ~Trêve de plaisanteries. Que voulez-vous ?~
+@80137 = ~Quelqu'un veut vous voir disparaitre. Et j'ai envie de me défouler un peu. Les combats ont tendance à bien me défouler.~
+@80138 = ~Quelqu'un veut vous voir disparaitre. Je vois deux options. Je vous tue ou vous prenez ces cent pièces d'or et vous partez pour ne jamais revenir.~
+@80139 = ~Quelqu'un veut vous voir disparaitre. Et... vous avez choisi un endroit bien pratique. (Essayer de l'assommer et de le jeter dans la rivière)~
+@80140 = ~Quelqu'un veut vous voir disparaitre. Rassemblez vos affaires et partez, s'il vous plait.~
+@80141 = ~À qui croyez-vous parler ? Je sais me servir d'une épée et les gens de votre espèce de me font pas peur !~
+@80142 = ~Je... Je suis dans le pétrin, pas vrai ? Normalement, je n'aurais pas de raison de vous croire, mais vous n'offririez pas d'argent si c'était du bluff.~
+@80143 = ~D'accord. Je m'en vais. Il parait qu'il y a plein de jolie filles à Eauprofonde.~
+@80144 = ~Que... ? Je... *plouf*~
+@80145 = ~Je suppose que le travail est bien fait.~
+@80146 = ~C'est le cas. Il n'est plus là.~
+@80147 = ~J'y travaille.~
+@80148 = ~Parfait ! Je ne poserai pas de questions inutiles, je me contenterai de savoir qu'il ne posera plus de problème, ni à moi ni à mes amis.~
+@80149 = ~Comme promis, j'ai une récompense pur vous. Cinq cent pièces d'or et une bricole, mais quelqu'un comme veut peut la trouver très pratique.~
+@80150 = ~Je dois dire, la personne que vous cherchez à des soucis à se faire. Et pas la peine de me demander comment je sais que vous cherchez quelqu'un. La moitié des gens dans cette ville cherche quelqu'un ou quelque chose et l'autre moitié essaie d'échapper à quelque chose. C'est la vie.~
