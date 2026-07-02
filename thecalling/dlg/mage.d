@@ -67,10 +67,15 @@ END
 
 // start quest by breaking into melicamp
 EXTEND_BOTTOM ~%tutu_var%MELICA~ 24
-  IF ~Global("CDPlayerHasCalling","GLOBAL",0)
-      OR(2)
-        Class(Player1,MAGE_ALL)
-        Global("CDMultistronghold","GLOBAL",1)~ THEN EXTERN ~%tutu_var%THALAN~ CDBeginBracerQuest
+  COPY_TRANS %rewards_dlg% %rewards_state% // preserve OG quest rewards, journal stuff
+END 
+ALTER_TRANS ~%tutu_var%MELICA~ BEGIN 24 END BEGIN %meli24_trans% END 
+BEGIN
+  "TRIGGER" ~Global("CDPlayerHasCalling","GLOBAL",0)
+OR(2)
+  Class(Player1,MAGE_ALL)
+  Global("CDMultistronghold","GLOBAL",1)~
+  "EPILOGUE" "EXTERN %tutu_var%THALAN CDBeginBracerQuest"
 END
 
 // change branching on Ruffie so questions can be asked

@@ -1,0 +1,1 @@
+ADD_TRANS_TRIGGER %tutu_var%melica 24 ~False()~ DO %targeted_trans%

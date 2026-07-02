@@ -193,7 +193,44 @@ STRING_SET 16380 @111 // add scrying stuff to descript of zircon
 COPY_EXISTING ~%tutu_var%halffg.dlg~ ~override/cdiris.dlg~
               ~%tutu_var%halfgu.dlg~ ~override/cdlargo.dlg~
 
-ACTION_IF game_is_bgt BEGIN OUTER_SPRINT thalan_states "1 35" END ELSE BEGIN OUTER_SPRINT thalan_states "1" END
+/* 
+alright, so some BS follows. The original quest rewards the PC in melica 25 (BGT/Tutu)
+or thalan 32 (BGEE), which both fall after we fork melica 24 for the quest initiation. So 
+we copy transitions from those rewards state and then use alter_trans to fork the newly copied
+transitions to have the proper triggers and GOTO target. We have additional checks to see if
+we're copying multiple transitions from the reward state, and then have to also account for 
+other mods adding transitions to melica 24 so that alter_trans hits the right state. Any 
+extra transitions from the rewards state get False()d in the OUTER_FOR loop below. 
+*/
+OUTER_SPRINT rewards_dlg "%tutu_var%melica" 
+OUTER_SET rewards_state = 25
+ACTION_IF game_is_bgt BEGIN 
+  OUTER_SPRINT thalan_states "1 35" 
+END ELSE BEGIN 
+  OUTER_SPRINT thalan_states "1" 
+  ACTION_IF game_is_bgee BEGIN 
+    OUTER_SPRINT rewards_dlg "thalan"  
+    OUTER_SET rewards_state = 32
+  END   
+END
+
+OUTER_SET meli24_trans = 1 // failsafe value
+COPY_EXISTING ~%tutu_var%melica.dlg~ ~override~
+  READ_LONG 0x08 state_num
+  READ_LONG 0x0c state_off
+  PATCH_IF state_num >= 23 BEGIN 
+    READ_LONG (state_off + 0x08 + (0x10 * 23)) meli24_trans
+  END
+  BUT_ONLY
+
+OUTER_SET rewardsdlg_trans = 1 // failsafe value
+COPY_EXISTING ~%rewards_dlg%.dlg~ ~override~
+  READ_LONG 0x08 state_num
+  READ_LONG 0x0c state_off
+  PATCH_IF state_num >= rewards_state BEGIN 
+    READ_LONG (state_off + 0x08 + (0x10 * rewards_state)) rewardsdlg_trans
+  END
+  BUT_ONLY
               
 ACTION_IF enhanced_edition BEGIN // on EEs, have Thalantyr identify the Black Pearl before giving it to player in case Anthology's 'gems require ID is installed'
 
@@ -235,7 +272,13 @@ COMPILE EVALUATE_BUFFER ~thecalling/dlg/mage.d~
                         ~thecalling/baf/cdiris.baf~
                         ~thecalling/baf/cdlargo.baf~
                         ~thecalling/baf/cdminer1.baf~
-              
+
+// false extra transitions that get added to meli 24 via COPY_TRANS
+OUTER_FOR (index = 1 ; index < rewardsdlg_trans ; ++index) BEGIN
+  OUTER_SET targeted_trans = index + meli24_trans
+  COMPILE EVALUATE_BUFFER ~thecalling/dlg/meli24.d~
+END
+
 // melicamp needed for quests, so make sure he always survives anti-chickenator
 ACTION_IF enhanced_edition BEGIN // ees move the cutscene to the dialogue, so
 
