@@ -1457,7 +1457,7 @@ Poids : 0~
 @80103 = ~Maintenant, le problème, c'est qu'il n'habite réellement nulle part. Il dort généralement chez une des filles ou dans une taverne. Pour rendre les choses encore plus compliquées, j'ai besoin de savoir que tout est réglé dans les trois jours. Après ça, j'ai affaire hors de ville et il faut que je sache avant de partir que Petunia va bien et que l'homme ne l'importunera plus. Mais je connais quelqu'un qui saura peut-être où le trouver.~
 @80104 = ~Quelqu'un de sa famille ? Un ami à lui ? Un collègue ?~
 @80105 = ~Bon, vous savez quoi ? J'ai changé d'avis. Désolé mais vous allez devoir vous débrouiller sans moi.~~Bon, vous savez quoi ? J'ai changé d'avis. Désolés mais vous allez devoir vous débrouiller sans moi.~
-@80106 = ~Hon amie, Mallandrea.~
+@80106 = ~Mon amie, Mallandrea.~
 @80107 = ~D'après mes informations, elle devrait être dans les Caves souterraines,sous la Sirène rouissante..~
 @80108 = ~Vous avez su travailler avec Narlen, vous l'avez aidé à barboter quelque chose, hein ? Voyons si vous pouvez trouver quelqu'un qui ne reste pas en place.~
 @80109 = ~Souvenez-vous, trois jours. Après, je dois parti et je ne serai pas là pour vous payer si vous n'êtes pas dans les délais. Quand ce sera fait, retrouvez-moi près des portes de la ville. J'espère vous y voir très bientôt.~
@@ -1502,6 +1502,69 @@ Poids : 0~
 @80148 = ~Parfait ! Je ne poserai pas de questions inutiles, je me contenterai de savoir qu'il ne posera plus de problème, ni à moi ni à mes amis.~
 @80149 = ~Comme promis, j'ai une récompense pur vous. Cinq cent pièces d'or et une bricole, mais quelqu'un comme veut peut la trouver très pratique.~
 @80150 = ~Je dois dire, la personne que vous cherchez à des soucis à se faire. Et pas la peine de me demander comment je sais que vous cherchez quelqu'un. La moitié des gens dans cette ville cherche quelqu'un ou quelque chose et l'autre moitié essaie d'échapper à quelque chose. C'est la vie.~
+
+// journal entries
+@80151 = ~De l'aide pour Bdharlan~
+@80152 = ~De l'aide pour Bdharlan
+
+Bdharlan m'a abordé au Travers du ver pour me proposer un marché, mais je n'étais pas intéressé.~ ~De l'aide pour Bdharlan
+
+Bdharlan m'a abordée au Travers du ver pour me proposer un marché, mais je n'étais pas intéressée.~
+@80153 = ~De l'aide pour Bdharlan
+
+Bdharlan m'a abordé au Travers du ver pour me proposer un marché et m'a demandé de le suivre... après une pause biologique.~~De l'aide pour Bdharlan
+
+Bdharlan m'a abordée au Travers du ver pour me proposer un marché et m'a demandé de le suivre... après une pause biologique.~
+@80154 = ~De l'aide pour Bdharlan
+
+Bdharlan m'a pigeonné avec sa partenaire la guenaude, mais ils ont sous-estimé la menace. Lui et sa maitresse sont morts et j'y ai gagné quelques babioles.~~De l'aide pour Bdharlan
+
+Bdharlan m'a pigeonnée avec sa partenaire la guenaude, mais ils ont sous-estimé la menace. Lui et sa maitresse sont morts et j'y ai gagné quelques babioles.~
+@80155 = ~De l'aide pour Bdharlan
+
+Bdharlan m'a trahi mais j'ai pris mes jambes à mon cou.~~De l'aide pour Bdharlan
+
+Bdharlan m'a trahie mais j'ai pris mes jambes à mon cou.~
+@80156 = ~Un travail pour la femme mystérieuse~
+@80157 = ~Un travail pour la femme mystérieuse
+
+Une femme m'a abordé devant la Guilde des voleurs des Portes de Baldur. Elle a entendu parler de mon affaire avec Narlen et m'a proposé du travail, mais je ne le sentais pas et ai refusé.~ ~Un travail pour la femme mystérieuse
+
+Une femme m'a abordée devant la Guilde des voleurs des Portes de Baldur. Elle a entendu parler de mon affaire avec Narlen et m'a proposé du travail, mais je ne le sentais pas et ai refusé.~
+@80158 = ~Un travail pour la femme mystérieuse
+
+Une femme m'a abordé devant la Guilde des voleurs des Portes de Baldur. Elle a entendu parler de mon affaire avec Narlen et m'a proposé du travail. Je devais la débarrasser de Xamm, du Poing enflammé, qui importunait son amie. Pour le trouver, devais aller parler à Mallandrea dans les Caves souterraines.
+
+La tâche doit être accomplie sous trois jours.~~Un travail pour la femme mystérieuse
+
+Une femme m'a abordée devant la Guilde des voleurs des Portes de Baldur. Elle a entendu parler de mon affaire avec Narlen et m'a proposé du travail. Je devais la débarrasser de Xamm, du Poing enflammé, qui importunait son amie. Pour le trouver, devais aller parler à Mallandrea dans les Caves souterraines.
+
+La tâche doit être accomplie sous trois jours.~
+@80159 = ~Un travail pour la femme mystérieuse
+
+J'ai parlé à Mallandrea dans les Caves souterraines, qui m'a dit que je pourrais trouver Xamm preès de la rivière hors de la ville.~
+@80160 = ~Un travail pour la femme mystérieuse
+
+J'ai parlé à Mallandrea dans les Caves souterraines, mais elle ne m'a pas dit où trouver Xamm. Tout ce que je peux espérer, maintenant, c'est le trouver par pur hasard.~
+@80161 = ~Un travail pour la femme mystérieuse
+
+J'ai trouvé Xamm près de la rivière, près des portes de la ville et il n'ennuiera plus personne. Il faut que je retourne en ville et que je retrouve la femme mystérieuse à l'intérieur, à proximité des portes de la ville.~
+@80162 = ~Un travail pour la femme mystérieuse
+
+La femme mystérieuse était heureuse de savoir que Xamm n'ennuierait plus son amie. Elle m'a dédommagé pour le temps passé.~~Un travail pour la femme mystérieuse
+
+La femme mystérieuse était heureuse de savoir que Xamm n'ennuierait plus son amie. Elle m'a dédommagée pour le temps passé.~
+@80163 = ~Un travail pour la femme mystérieuse
+
+Je n'ai pas été en mesure de trouver et m'occuper de Xamm dans le délai trois jours.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Replace Bandit Scalps with Badges                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 // this block is straight text replacements for existing durlyle/delainy lines. Any alterations here are for where the
 // dialogue assumes the gender of player1. Numbers at the end are the original bg/bgee string references
