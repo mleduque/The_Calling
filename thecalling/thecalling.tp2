@@ -485,7 +485,7 @@ COPY ~thecalling/cre/cdgrace.cre~ ~override~
 BEGIN @10000 DESIGNATED 10
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee tutu tutu_totsc bgt eet~ @0
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR 
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
                    ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_fighter~
 
@@ -1249,7 +1249,7 @@ BEGIN @60001 DESIGNATED 60 // dialogue from the Heart of Dream *appears like thi
 SUBCOMPONENT @60000 
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @7 // shaman not available on originals
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR 
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
                    ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_shaman_normal_text~
 
@@ -1265,7 +1265,7 @@ BEGIN @60002 DESIGNATED 61 // dialogue from the Heart of Dream is gold-colored
 SUBCOMPONENT @60000 
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @7 // shaman not available on originals
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR 
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
                    ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_shaman_golden_text~
 
@@ -1284,7 +1284,7 @@ INCLUDE ~thecalling/lib/shaman.tpa~
 BEGIN @70000 DESIGNATED 70
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee tutu tutu_totsc bgt eet~ @0
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR 
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
                    ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_monk~
 
@@ -1492,7 +1492,8 @@ END
 BEGIN @80000 DESIGNATED 80
 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~bgee tutu tutu_totsc bgt eet~ @0
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_thief~
 
 /*
@@ -1722,7 +1723,8 @@ EXTEND_BOTTOM ~baldur.bcs~ ~thecalling/baf/cheat2.baf~
 
 BEGIN @90000 DESIGNATED 90
 GROUP @9
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 REQUIRE_PREDICATE GAME_IS ~bgt bgee tutu_totsc eet~ @2 // totsc required
 LABEL ~cd_the_calling_yaoi_yuri_ahead~
 
@@ -1882,7 +1884,8 @@ INCLUDE ~thecalling/lib/exotic.tpa~
 BEGIN @100000 DESIGNATED 100
 GROUP @9
 REQUIRE_PREDICATE GAME_IS ~bgee tutu tutu_totsc bgt eet~ @0
-REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0) @5 // skip if translation doesn't exist
+REQUIRE_PREDICATE ("%LANGUAGE%" STRING_COMPARE_CASE "english" = 0 OR
+                   ("%LANGUAGE%" STRING_COMPARE_CASE "french" = 0)) @5 // skip if translation doesn't exist
 LABEL ~cd_the_calling_badges_for_scalps~
 
 // new art

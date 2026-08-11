@@ -1511,3 +1511,34 @@ Poids : 0~
 @90003 = ~Rapportez-nous la cape s'il vous plaît. Vous gagnerez ma reconnaissance. Vous avez l'air d'un brave homme.~~Rapportez-nous la cape s'il vous plaît. Vous gagnerez ma reconnaissance. Vous avez l'air d'une brave femme.~// 22453
 @90004 = ~Vous voulez bien m'écouter ? Bien peu de villageois s'intéressent à l'histoire et j'aime beaucoup en parler. Aucun récit n'est très clair, j'en ai peur. Nous ne nous occupions pas de les consigner quand nous sommes arrivés. Ils sont... embellis, mais les intentions sont nobles, c'est sûr. Bienvenu à mes côtés... si vous le désirez, cher monsieur~ ~Vous voulez bien m'écouter ? Bien peu de villageois s'intéressent à l'histoire et j'aime beaucoup en parler. Aucun récit n'est très clair, j'en ai peur. Nous ne nous occupions pas de les consigner quand nous sommes arrivés. Ils sont... embellis, mais les intentions sont nobles, c'est sûr. Bienvenue à mes côtés... si vous le désirez, chère madame~ // 22487
 @90005 = ~On dirait que les autres avaient raison au sujet des étrangers. Vous ne vous échapperez pas de cette île, m'sieur ! ~ // 21697
+
+// new name/descript for bandit scalps
+@100001 = ~Insigne de bronze~
+@100002 = ~Ce petit insigne de bronze est attachée à une petite chaine. Il a été récupéré sur le cadavre d'un bandit et pourrait avoir de la valeur, à condition de trouver le bon acheteur.~
+// for the rest of these, it's the original lines but the scalp references ae changed to bronze badges
+// bgee strref 19466
+@100003 = ~Depuis votre retour de Nashkel, les bandits sont de plus en plus actifs. Je les prenais pour de simples hors-la-loi avides d'argent facile en cette période troublée, mais j'ai changé d'avis. Ils sont au service de quelqu'un... Quel gâchis, n'est-ce pas ? De toute manière, je dois rapatrier mes troupes à la Porte de Baldur ! J'offre 50 pièces d'or par insigne de bandit en bronze... et vous pouvez le dire haut et fort. Je veux que l'on nettoie la région, et par les Neuf Enfers, je veux savoir ce qui se passe ici !~
+// gee strref 19469
+@100004 = ~J'ai deux lois qui s'appliquent à votre petite personne, <CHARNAME> : ne venez pas me servir de beaux discours, et ne me parlez pas de pitié. Bon, reprenons depuis le début dans un langage que même vous comprendrez... J'offre 50 pièces d'or par insigne de bandit en bronze... et vous pouvez le dire haut et fort. Je veux que l'on nettoie la région avant qu'il y ait vraiment du vilain, c'est compris ? Parfait. À présent, débarrassez-moi le plancher !~
+
+// bgee strref 19470
+@100005 = ~Mon contingent et moi sommes coupés de la Porte de Baldur. Nous n'avons pas reçu d'ordres depuis près d'une semaine et, pour tout vous dire, je n'aime pas ça du tout ! Depuis votre retour de Nashkel, les bandits sont de plus en plus actifs. Je les prenais pour de simples hors-la-loi avides d'argent facile en cette période troublée, mais j'ai changé d'avis. Ils sont au service de quelqu'un... De toute manière, je dois rapatrier mes troupes à la Porte de Baldur ! J'offre 50 pièces d'or par insigne de bandit en bronze... et vous pouvez le dire haut et fort. Je veux que l'on nettoie la région avant l'arrivée de l'hiver.~
+// bgee strref 19472
+@100006 = ~On a su s'occuper, je vois. Continuez. Plus j'aurai d'insigne de bandits en bronze, plus vous gagnerez d'argent. Je les prends tous.~
+
+// bgee strref 19703 - also removed the part about it being a bloody business
+@100007 = ~J'espère que votre voyage s'est bien passé, <CHARNAME>. Souvenez-vous, si vous voulez la récompense pour les bandits morts, il me faut leur insigne de bronze comme preuve.~
+
+// bgee strref 27501
+@100008 = ~La prime de Vaï
+
+L'officier Jessa Vaï, du Poing Enflammé, est coincée avec tout son contingent à Bérégost. Elle a tellement hâte de regagner la Porte de Baldur qu'elle m'offre 50 pièces d'or par insigne de bandit en bronze que je lui apporterai. Elle m'attendra à l'auberge du Jongleur Jovial.~
+
+// bgt from chloe's dialogue
+@100009 = ~A la recherche d'insignes de bandits.
+
+Une dénommée Chloé nous a dit qu'un officier du nom de Vaï nous attend au Jongleur Jovial pour nous parler.~
+// bgt final quest entry - also delete last line about tanner/taxidermist
+@100010 = ~A la recherche d'insignes de bandits.
+
+Nous avons fait une bonne affaire en vendant les insigne de bandits en bronze à l'officier Vaï du Poing Enflammé. Elle a reçu l'ordre de revenir à la Porte de Baldur pour faire son rapport sur l'élimination de la menace des bandits.~

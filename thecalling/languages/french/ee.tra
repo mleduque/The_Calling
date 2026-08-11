@@ -634,3 +634,17 @@ Capacités d'équipement :
 – Classe d'armure : +1 contre les armes contondantes.
 
 Poids : 0~
+
+@100002 = ~Ce petit insigne de bronze est attachée à une petite chaine. Il a été récupéré sur le cadavre d'un bandit et pourrait avoir de la valeur, à condition de trouver le bon acheteur.
+
+PARAMÈTRE :
+
+Poids : 0~
+
+// 100003, 100005 are here for proper em dashes; 100008 is here for a proper title
+@100003 = ~Depuis votre retour de Nashkel, les bandits sont de plus en plus actifs. Je les prenais pour de simples hors-la-loi avides d'argent facile en cette période troublée, mais j'ai changé d'avis. Ils sont au service de quelqu'un... Quel gâchis, n'est-ce pas ? De toute manière, je dois rapatrier mes troupes à la Porte de Baldur ! J'offre 50 pièces d'or par insigne de bandit en bronze... et vous pouvez le dire haut et fort. Je veux que l'on nettoie la région, et par les Neuf Enfers, je veux savoir ce qui se passe ici !~
+
+@100005 = ~Mon contingent et moi sommes coupés de la Porte de Baldur. Nous n'avons pas reçu d'ordres depuis près d'une semaine et, pour tout vous dire, je n'aime pas ça du tout ! Depuis votre retour de Nashkel, les bandits sont de plus en plus actifs. Je les prenais pour de simples hors-la-loi avides d'argent facile en cette période troublée, mais j'ai changé d'avis. Ils sont au service de quelqu'un... De toute manière, je dois rapatrier mes troupes à la Porte de Baldur ! J'offre 50 pièces d'or par insigne de bandit en bronze... et vous pouvez le dire haut et fort. Je veux que l'on nettoie la région avant l'arrivée de l'hiver.~
+
+@19471 = ~La prime de Vaï
+L'officier Jessa Vaï, du Poing Enflammé, est coincée avec tout son contingent à Bérégost. Elle a tellement hâte de regagner la Porte de Baldur qu'elle m'offre 50 pièces d'or par insigne de bandit en bronze que je lui apporterai. Elle m'attendra à l'auberge du Jongleur Jovial.~
