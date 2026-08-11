@@ -1502,3 +1502,12 @@ Poids : 0~
 @80148 = ~Parfait ! Je ne poserai pas de questions inutiles, je me contenterai de savoir qu'il ne posera plus de problème, ni à moi ni à mes amis.~
 @80149 = ~Comme promis, j'ai une récompense pur vous. Cinq cent pièces d'or et une bricole, mais quelqu'un comme veut peut la trouver très pratique.~
 @80150 = ~Je dois dire, la personne que vous cherchez à des soucis à se faire. Et pas la peine de me demander comment je sais que vous cherchez quelqu'un. La moitié des gens dans cette ville cherche quelqu'un ou quelque chose et l'autre moitié essaie d'échapper à quelque chose. C'est la vie.~
+
+// this block is straight text replacements for existing durlyle/delainy lines. Any alterations here are for where the
+// dialogue assumes the gender of player1. Numbers at the end are the original bg/bgee string references
+
+@90001 = ~Voyons... Ne soyez pas si formelle, "m'dame". Je m'appelle Delainie et je suis enchantée de vous rencontrer.~ // 22008
+@90002 = ~Les formalités sont inutiles, "m'sire". Mon nom c'est Durlyle et je suis enchanté de vous rencontrer.~ // 22382
+@90003 = ~Rapportez-nous la cape s'il vous plaît. Vous gagnerez ma reconnaissance. Vous avez l'air d'un brave homme.~~Rapportez-nous la cape s'il vous plaît. Vous gagnerez ma reconnaissance. Vous avez l'air d'une brave femme.~// 22453
+@90004 = ~Vous voulez bien m'écouter ? Bien peu de villageois s'intéressent à l'histoire et j'aime beaucoup en parler. Aucun récit n'est très clair, j'en ai peur. Nous ne nous occupions pas de les consigner quand nous sommes arrivés. Ils sont... embellis, mais les intentions sont nobles, c'est sûr. Bienvenu à mes côtés... si vous le désirez, cher monsieur~ ~Vous voulez bien m'écouter ? Bien peu de villageois s'intéressent à l'histoire et j'aime beaucoup en parler. Aucun récit n'est très clair, j'en ai peur. Nous ne nous occupions pas de les consigner quand nous sommes arrivés. Ils sont... embellis, mais les intentions sont nobles, c'est sûr. Bienvenue à mes côtés... si vous le désirez, chère madame~ // 22487
+@90005 = ~On dirait que les autres avaient raison au sujet des étrangers. Vous ne vous échapperez pas de cette île, m'sieur ! ~ // 21697
