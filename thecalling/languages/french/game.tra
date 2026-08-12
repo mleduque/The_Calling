@@ -387,6 +387,145 @@ PARAMÈTRES :
 @1333 = ~Nous devrons cependant attendre le retour de Mélicamp avant de commencer la divination.~
 @1334 = ~Quand on parle du loup, on en voit la queue. Commençons.~
 
+// journal entries
+@1335 = ~Détruire les bracelets maudits~
+@1336 = ~Détruire les bracelets maudits
+
+Thalantyr a demandé mon aide pour détruire les bracelets qui ont maudit Mélicamp, mais j'ai refusé.~
+@1337 = ~Détruire les bracelets maudits
+
+Thalantyr a demandé mon aide pour détruire les bracelets qui ont maudit Mélicamp. Notre tâche consiste à construire un dispositif de scrutation. Pendant que Mélicamp se rend à Bérégost pour travailler avec Taërom, je dois réunir trois gemmes différentes pour alimenter l'appareil. Je dois garder l'œil ouvert et faire preuve de jugement.~
+@1338 = ~Détruire les bracelets maudits
+Thalantyr a demandé mon aide pour détruire les bracelets qui ont maudit Mélicamp. Notre tâche consiste à construire un dispositif de scrutation. Pendant que Mélicamp se rend à Bérégost pour travailler avec Taërom, je dois réunir trois gemmes pour alimenter l'appareil. D'après Thalantyr, les perles noires seront utiles mais, à part ça, je dois garder l'œil ouvert et faire preuve de jugement.~
+@1339 = ~Détruire les bracelets maudits
+
+J'ai remis Trois gemmes à Thalantyr pour alimenter l'appareil de scrutation. Mais comme Mélicamp n'est pas encore revenu de sa visite chez Taërom à Bérégost, Thalantyr m'a demandé d'aller voir son avancement.~
+@1340 = ~Détruire les bracelets maudits
+
+J'ai remis Trois gemmes à Thalantyr pour alimenter l'appareil de scrutation. Mélicamp n'est pas encore revenu de sa visite chez Taërom à Bérégost. Je n'ai pas le temps d'aller voir où il est est, il finira bien par revenir.~
+@1341 = ~Détruire les bracelets maudits
+
+Taërom ne disposait pas du minerai nécessaire pour l'appareil de scrutation, alors il a envoyé Mélicamp rencontrer son contact, Grace, aux mines de Nashkel. Il faudrait que j'y aille pour voir où il en est.~
+@1342 = ~Détruire les bracelets maudits
+
+Grace a fourni une partie du minerai nécessaire à Mélicamp, mais il n'y en avait pas assez. Mélicamp est allé dans les mines pour en trouver plus.~
+@1343 = ~Détruire les bracelets maudits
+
+La magie de Mélicamp s'est retournée contre deux mineurs, Sal et James, et a effacé leurs mémoires. Comme j'ai refusé de m'occuper de ce bazar, Mélicamp est parti avec les mineurs pour les aider. Je suis sûr qu'il finira par retourner chez Thalantyr.~ ~Détruire les bracelets maudits
+
+La magie de Mélicamp s'est retournée contre deux mineurs, Sal et James, et a effacé leurs mémoires. Comme j'ai refusé de m'occuper de ce bazar, Mélicamp est parti avec les mineurs pour les aider. Je suis sûre qu'il finira par retourner chez Thalantyr.~
+@1344 = ~Détruire les bracelets maudits
+
+La magie de Mélicamp s'est retournée contre deux mineurs, Sal et James, et a effacé leurs mémoires. Mélicamp a suggéré de discuter avec les autres mineurs. Avec des détails sur leurs vies, nous pourrions leur rafraichir la mémoire et retrouver ce qu'ils ont perdu.~
+@1345 = ~Détruire les bracelets maudits
+
+J'ai aidé le mineur nommé Sal en l'aidant à se souvenir de ses jumeaux.~
+@1346 = ~Détruire les bracelets maudits
+
+J'ai aidé le mineur nommé  James en l'aidant à se souvenir de son aimée à Bérégost.~
+@1347 = ~Détruire les bracelets maudits
+
+Les mineurs ont été sauvés et Mélicamp m'a donné le minerai. Pendant qu'il retourne chez Thalantyr, je vais apporter le minerai à Taërom pour qu'il forge l'appareil de scrutation.~
+@1348 = ~Détruire les bracelets maudits
+
+J'ai apporté le minerai à Taërom pour qu'il forge l'appareil. Il a dit qu'il serait prêt dans deux jours.~
+@1349 = ~Détruire les bracelets maudits
+
+Taërom a forgé l'appareil de scrutation et me l'a donné. Il faudrait que je retourne à Haute-Haie pour que Thalantyr puisse rechercher les bracelets.~
+@1350 = ~Détruire les bracelets maudits
+
+Thalantyr a utilisé l'appareil de scrutation pour localiser les bracelets, mais mon choix de gemmes a été si médiocre que nous avons seulement pu réduire la recherche à une zone au nord de Flammevin.~
+@1351 = ~Détruire les bracelets maudits
+
+Thalantyr a utilisé l'appareil de scrutation pour localiser les bracelets, mais mon choix de gemmes était médiocre et nous avons seulement pu réduire la recherche à une zone au nord de Flammevin. Thalantyr a suggéré de chercher une fleur.~
+@1352 = ~Détruire les bracelets maudits
+
+Thalantyr a utilisé l'appareil de scrutation pour localiser les bracelets, mais mon choix de gemmes était satisfaisant et nous avons pu réduire la recherche à Gullykin.~
+@1353 = ~Détruire les bracelets maudits
+
+Thalantyr a utilisé l'appareil de scrutation pour localiser les bracelets, mais mon choix de gemmes était bon et nous avons pu localiser les bracelets sur une femme petite-personne à Gullykin.~
+@1354 = ~Détruire les bracelets maudits
+
+Thalantyr a utilisé l'appareil de scrutation pour localiser les bracelets, mais mon choix de gemmes était excellent et nous avons pu localiser les bracelets sur une femme petite-personne nommée Iris Cotton à Gullykin.~
+@1355 = ~Détruire les bracelets maudits
+
+J'ai enfin localisé les bracelets ! Nous avons rencontré Largo Cotton à Gullykin et découvert que son épouse, Iris, a été transformée en écureuil. Largo veut voir si le prêtre local, Alvanhendar, peut aider avant d'entreprendre le voyage vers Haute-Haie. Il faudrait que je rencontre Alvanhendar au temple de Gullykin.~
+@1356 = ~Détruire les bracelets maudits
+
+J'ai enfin localisé les bracelets ! Nous avons rencontré Largo Cotton à Gullykin et découvert que son épouse, Iris, a été transformée en écureuil. J'ai convaincu Largo de fair ele voyage jusqu'à Haute-Haie pour rencontrer Thalantyr. Il faudrait que je m'y rende, moi aussi.~
+@1357 = ~Détruire les bracelets maudits
+
+Malheureusement, Alvanhendar, le prêtre local, n'a pas pu libérer Iris Cotton de la malédiction des bracelets. Les Cotton sont partis à Haute-Haie pour rencontrer Thalantyr. at High Hedge. Il faudrait que je m'y rende, moi aussi.~
+@1358 = ~Détruire les bracelets maudits
+
+Thalantyr, Mélicamp et moi avons réussi à libérer Iris Cotton de la malédiction des bracelets. J'ai bien peur de m'être trompé dans ma partie de l'incantation. Iris a été blessée et les bracelets ont disparu.
+
+Thalantyr m'a remercié pour mes efforts et mon rôle est terminé. Thalantyr et Mélicamp vont essayer de retrouver les bracelets sans moi.~ ~Détruire les bracelets maudits
+
+Thalantyr, Mélicamp et moi avons réussi à libérer Iris Cotton de la malédiction des bracelets. J'ai bien peur de m'être trompée dans ma partie de l'incantation. Iris a été blessée et les bracelets ont disparu.
+
+Thalantyr m'a remerciée pour mes efforts et mon rôle est terminé. Thalantyr et Mélicamp vont essayer de retrouver les bracelets sans moi.~
+@1359 = ~Détruire les bracelets maudits
+
+Thalantyr, Mélicamp et moi avons réussi à libérer Iris Cotton de la malédiction des bracelets. J'ai fait quelques erreurs dans l'incantation, mais Iris n'a subit qu'un peu d'inconfort et les bracelets ont disparu.
+
+Thalantyr m'a remercié pour mes efforts et mon rôle est terminé. Thalantyr et Mélicamp vont essayer de retrouver les bracelets sans moi.~ ~Détruire les bracelets maudits
+
+Thalantyr, Mélicamp et moi avons réussi à libérer Iris Cotton de la malédiction des bracelets. J'ai fait quelques erreurs dans l'incantation, mais Iris n'a subit qu'un peu d'inconfort et les bracelets ont disparu.
+
+Thalantyr m'a remerciée pour mes efforts et mon rôle est terminé. Thalantyr et Mélicamp vont essayer de retrouver les bracelets sans moi.~
+@1360 = ~Détruire les bracelets maudits
+
+Thalantyr, Mélicamp et moi avons réussi à libérer Iris Cotton de la malédiction des bracelets. J'ai assez bien géré l'incantation et Iris n'a subit aucun effet secondaire.
+
+Je dois apporter les bracelets, avec une poudre spéciale fournie par Thalantyr, à Taërom à Bérégost. La poudre permettra à sa forge d'êtr eassez chaude pour détruire les bracelets une fois pour toute.~
+@1361 = ~Détruire les bracelets maudits
+
+Thalantyr, Mélicamp et moi avons réussi à libérer Iris Cotton de la malédiction des bracelets avec une incantation parfaitement exécutée.
+
+Je dois apporter les bracelets, avec une poudre spéciale fournie par Thalantyr, à Taërom à Bérégost. La poudre permettra à sa forge d'êtr eassez chaude pour détruire les bracelets une fois pour toute~
+@1362 = ~Détruire les bracelets maudits
+
+Les bracelets sont enfin détruits, réduit à l'état de scories par la chaleur magiquement augmentée de la forge de Taërom. Taërom a proposé d'essayer de forger un nouvel objet magique avec les résidus, mais comme ils proviennent d'un objet maudit, j'ai préféré ne pas prendre ce risque.~
+@1363 = ~Détruire les bracelets maudits
+
+Les bracelets sont enfin détruits. La chaleur magiquement augmentée de la forge de Taërom les a détruits et Taërom a pu forger un nouvel objet avec les résidus. Il reste encore à voir si l'objet a conservé une partie de la malédiction d'origine ou si le nouvel objet est au contraire bénéfique.~
+
+
+/*
+*1 quest accepted, promps meli cutscene
+*2 after cutscene
+*3 in thalantyr's post-cutscene dlg
+*4 one gem returned
+*5 two gems in
+*6 all three gems, go see taerom
+7 taerom met, go see grace at mines
+8 grace spoken with
+9 meli spawned in nashkel
+10 miners fixed, meli returning, go speak to taerom again
+11 device in progress
+*12 device ready
+13 melicamp-nashkel stuff skipped
+14 melicamp returns device
+15 thalantyr does divination
+*16 divination cutscene done
+17 go get bracers from halflings
+18 halfling cutscene, dialogue; goes to 19 or 80
+*19 halflings sent to high hedge
+20 incantation complete, go to cutscene
+*21 cutscene complete
+22 bracers removed badly, quest over
+23 bracers removed, take 'em to taerom
+24 spoken to taerom, start cutscene
+25 cutscene end, last taerom dialogue
+26 quest over, completed successfully
+
+80 cottons move to the local temple and try to get Alvanhendar to help - he can't, routed back to 19
+
+98 refused quest
+99 melicamp gone on quest instead
+*/
+
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
