@@ -1744,3 +1744,9 @@ Une dénommée Chloé nous a dit qu'un officier du nom de Vaï nous attend au Jo
 @100010 = ~A la recherche d'insignes de bandits.
 
 Nous avons fait une bonne affaire en vendant les insigne de bandits en bronze à l'officier Vaï du Poing Enflammé. Elle a reçu l'ordre de revenir à la Porte de Baldur pour faire son rapport sur l'élimination de la menace des bandits.~
+
+// sotsc compat - these were originally @25, 26, 31, 32 in l#plast.tra
+@100011 = ~Hmm, seulement si vous vous occupez de quelques... mauvaises graines. Je peux vous donner une fleur pour cinq insignes de bronze pris sur ces bandits grossiers.~
+@100012 = ~J'ai les insignes ici même.~
+@100013 = ~Très bien. Cinq insignes pour une de mes magnifiques fleurs. Prenez-en soin.~
+@100014 = ~...hmm, peut-être que je devrais vendre ces insignes pour acheter du compost.~
