@@ -22,6 +22,8 @@ c) Autoriser plusieurs appels, sans restriction de classe.~
 @30000 = ~Culte de Movanic~
 
 @40000 = ~Pack d'objets exotiques~
+@40023 = ~Ajouter des objets exotiques~
+@40024 = ~Ajouter des objets exotiques et supprimer les objets exotiques ajoutés par BGEE~
 
 @50000 = ~Rendre toutes les quetes de Calling accessibles a toutes les classes~
 
